@@ -1,0 +1,79 @@
+{
+  "updated": "2026-07-22 11:15:50",
+  "items": [
+    {
+      "id": "s1",
+      "nickname": "國王一號院3房平車90坪",
+      "type": "sale",
+      "url": "https://sale.591.com.tw/home/house/detail/2/20294965.html",
+      "price": 3150,
+      "prevPrice": 3150,
+      "status": "active",
+      "error": null,
+      "lvrDeals": [
+        {
+          "date": "2025-10-23",
+          "totalPrice": 24200000,
+          "unitPrice": 269170,
+          "unitPriceWanPerPing": 26.92,
+          "size": 89.91,
+          "floor": "二十一層/三十三層",
+          "address": "苓雅區民族二路００７２號二十一樓之１",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-07-01",
+          "totalPrice": 28000000,
+          "unitPrice": 335636,
+          "unitPriceWanPerPing": 33.56,
+          "size": 83.42,
+          "floor": "十二層/三十三層",
+          "address": "苓雅區民族二路００７２號十二樓之２",
+          "community": "國王1號院",
+          "layout": "4房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-05-31",
+          "totalPrice": 25080000,
+          "unitPrice": 274225,
+          "unitPriceWanPerPing": 27.42,
+          "size": 91.46,
+          "floor": "十三層/二十七層",
+          "address": "苓雅區民族二路００３６號十三樓之１",
+          "community": "經典皇家",
+          "layout": "6房2廳3衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lastChecked": "2026-07-22 11:15:04"
+    },
+    {
+      "id": "r1",
+      "nickname": "國王一號院3房83坪",
+      "type": "rent",
+      "url": "https://rent.591.com.tw/21232871",
+      "price": 68000,
+      "prevPrice": 68000,
+      "status": "active",
+      "error": null,
+      "lvrDeals": [
+        {
+          "date": "2023-03-25",
+          "totalPrice": 45000,
+          "unitPrice": 542,
+          "unitPriceWanPerPing": 0.05,
+          "size": 83.14,
+          "floor": "二十二層/二十七層",
+          "address": "苓雅區民族二路３６號２２樓之１",
+          "community": "經典皇家",
+          "layout": "5房2廳3衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lastChecked": "2026-07-22 11:15:35"
+    }
+  ]
+}

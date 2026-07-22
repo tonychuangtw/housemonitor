@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🏠 房源監控</title>
+<meta name="theme-color" content="#0d0d10">
+<style>
+  :root {
+    --bg:#0d0d10; --card:#17171c; --border:#2a2a33; --text:#ececf1; --text2:#9a9aa8;
+    --accent:#6aa8ff; --ok:#4cc38a; --okbg:#0f2a1e; --dim:#6b6b78; --chip:#22222b; --bad:#e5484d;
+    --up:#e5484d; --down:#4cc38a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:0 12px 60px; background:var(--bg); color:var(--text);
+    font-family:-apple-system,"PingFang TC","Noto Sans TC",sans-serif; line-height:1.5;
+    max-width:820px; margin-inline:auto; }
+  h1 { font-size:1.35rem; margin:20px 0 2px; }
+  h2 { font-size:1.05rem; margin:0 0 8px; }
+  .sub { color:var(--text2); font-size:0.85rem; margin:0 0 14px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px; margin:14px 0; }
+  label { display:block; font-size:0.85rem; color:var(--text2); margin:10px 0 4px; }
+  input, select { width:100%; padding:10px; border-radius:9px; border:1px solid var(--border);
+    background:var(--bg); color:var(--text); font-size:0.95rem; }
+  input:focus, select:focus{ outline:none; border-color:var(--accent); }
+  .row2{ display:flex; gap:10px; } .row2>div{ flex:1; }
+  .radio-row{ display:flex; gap:14px; padding:4px 0 2px; }
+  .radio-row label{ margin:0; display:inline-flex; gap:5px; align-items:center; color:var(--text); font-size:0.95rem; }
+  .radio-row input{ width:auto; }
+  button{ border:none; border-radius:9px; padding:11px 18px; font-size:0.95rem; cursor:pointer; font-weight:600; }
+  .primary{ background:var(--accent); color:#06131c; width:100%; margin-top:14px; } .primary:disabled{ opacity:.5; }
+  .del{ background:transparent; color:var(--bad); border:1px solid var(--border); padding:5px 11px; font-size:0.82rem; }
+  .pause{ background:transparent; color:var(--text2); border:1px solid var(--border); padding:5px 11px; font-size:0.82rem; }
+  .btn-row{ display:flex; gap:6px; flex-shrink:0; }
+  .msg{ font-size:0.88rem; color:var(--text2); min-height:1.2em; margin-top:8px; } .msg.err{ color:var(--bad); }
+  .hidden{ display:none; }
+  .entry{ border-bottom:1px solid var(--border); padding:10px 0; } .entry:last-child{ border-bottom:none; }
+  .entry-head{ display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .entry-name{ font-weight:700; } .entry-meta{ color:var(--text2); font-size:0.84rem; margin-top:2px; }
+  .badge{ display:inline-block; padding:1px 8px; border-radius:99px; font-size:0.74rem; border:1px solid var(--border); color:var(--text2); }
+  .badge.sale{ color:var(--accent); border-color:var(--accent); } .badge.rent{ color:var(--ok); border-color:var(--ok); }
+  .badge.paused{ color:var(--text2); }
+  /* results table */
+  .summary{ display:flex; gap:8px; flex-wrap:wrap; margin:6px 0 12px; }
+  .stat{ background:var(--card); border:1px solid var(--border); border-radius:10px; padding:7px 13px; font-size:0.88rem; }
+  .stat b{ font-size:1.1rem; color:var(--accent); } .stat.ok b{ color:var(--ok); }
+  table{ width:100%; border-collapse:collapse; font-size:0.85rem; }
+  thead th{ text-align:left; color:var(--text2); font-weight:600; font-size:0.74rem; padding:5px 7px; border-bottom:1px solid var(--border); white-space:nowrap; }
+  tbody td{ padding:7px; border-bottom:1px solid var(--border); vertical-align:top; }
+  tr.delisted td{ color:var(--dim); } tr.errrow td{ color:var(--bad); }
+  .up{ color:var(--up); font-weight:700; } .down{ color:var(--down); font-weight:700; }
+  .lvr{ color:var(--text2); font-size:0.79rem; line-height:1.6; }
+  .foot{ color:var(--dim); font-size:0.78rem; margin-top:22px; text-align:center; }
+  a{ color:var(--accent); }
+  @media (max-width:560px){
+    thead{ display:none; } table,tbody,tr,td{ display:block; width:100%; }
+    tbody tr{ border:1px solid var(--border); border-radius:10px; margin:8px 0; padding:4px 2px; }
+    tbody td{ border:none; padding:3px 10px; } tbody td::before{ content:attr(data-l)"："; color:var(--text2); font-size:0.76rem; }
+    tbody td.main::before{ content:""; } tbody td.main{ font-weight:700; font-size:0.96rem; padding-top:8px; }
+  }
+</style>
+</head>
+<body>
+<h1>🏠 房源監控</h1>
+<p class="sub">上方登入後新增監控需求；下方是 591 + 實價登錄的監控結果</p>
+
+<div id="signin-card" class="card">
+  <p>用 Google 登入後管理監控需求（僅限 Tony 本人帳號）</p>
+  <div id="gsi-btn"></div>
+</div>
+
+<div id="app" class="hidden">
+  <div class="card">
+    <h2>➕ 新增監控需求</h2>
+    <label>類型</label>
+    <div class="radio-row">
+      <label><input type="radio" name="f-type" value="sale" checked> 買賣</label>
+      <label><input type="radio" name="f-type" value="rent"> 租屋</label>
+    </div>
+    <label>591 物件網址</label>
+    <input id="f-url" placeholder="例：https://sale.591.com.tw/home/house/detail/2/19967563.html" maxlength="200">
+    <label>暱稱</label>
+    <input id="f-nickname" placeholder="例：北投聽濤園3房華廈" maxlength="50">
+    <div class="row2">
+      <div><label>縣市</label><select id="f-city"></select></div>
+      <div><label>行政區</label><select id="f-district"></select></div>
+    </div>
+    <div class="row2">
+      <div><label>社區名（選填）</label><input id="f-community" placeholder="例：聽濤園" maxlength="50"></div>
+      <div><label>路段（選填）</label><input id="f-road" placeholder="例：珠海路" maxlength="50"></div>
+    </div>
+    <label>坪數範圍（選填）</label>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <input id="f-size-min" type="number" min="1" step="1" placeholder="最小" style="flex:1">
+      <span style="color:var(--text2)">到</span>
+      <input id="f-size-max" type="number" min="1" step="1" placeholder="最大" style="flex:1">
+      <span style="color:var(--text2)">坪</span>
+    </div>
+    <label>每日掃描次數</label>
+    <select id="f-scan">
+      <option value="2" selected>2 次</option>
+      <option value="4">4 次</option>
+      <option value="8">8 次</option>
+    </select>
+    <button id="f-submit" class="primary">送出</button>
+    <p id="f-msg" class="msg"></p>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:0 0 8px;">
+      <h2 style="margin:0;">📋 監控需求清單</h2>
+      <button id="test-push" class="pause">🔔 測試推播</button>
+    </div>
+    <p id="push-msg" class="msg" style="margin:0 0 4px;"></p>
+    <div id="watchlist"><p class="msg">載入中…</p></div>
+  </div>
+</div>
+
+<h2 style="margin-top:26px;">🎯 監控結果</h2>
+<p class="sub" id="res-sub">載入中…</p>
+<div class="summary" id="summary"></div>
+<div id="results"><p class="msg">載入中…</p></div>
+<p class="foot">591 經 camofox 仿真人定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新</p>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+(function () {
+  "use strict";
+  var CLIENT_ID="481860179039-gb37qsdogd4vgnn2g5umh73jen02avj4.apps.googleusercontent.com";
+  var API="https://claudebot500.tailfcf67f.ts.net", TOKEN_KEY="housemonitor.token";
+  // lvr 縣市/行政區代碼（來源：lvr.land.moi.gov.tw /SERVICE/CITY 與 /SERVICE/CITY/{code}/）
+  var CITIES={
+    "A":{name:"台北市",districts:{
+      "A01":"松山區","A02":"信義區","A03":"大安區","A04":"中山區","A05":"中正區","A06":"大同區",
+      "A07":"萬華區","A08":"文山區","A09":"南港區","A10":"內湖區","A11":"士林區","A12":"北投區"
+    }},
+    "F":{name:"新北市",districts:{
+      "F01":"板橋區","F02":"三重區","F03":"中和區","F04":"永和區","F05":"新莊區","F06":"新店區",
+      "F07":"樹林區","F08":"鶯歌區","F09":"三峽區","F10":"淡水區","F11":"汐止區","F12":"瑞芳區",
+      "F13":"土城區","F14":"蘆洲區","F15":"五股區","F16":"泰山區","F17":"林口區","F18":"深坑區",
+      "F19":"石碇區","F20":"坪林區","F21":"三芝區","F22":"石門區","F23":"八里區","F24":"平溪區",
+      "F25":"雙溪區","F26":"貢寮區","F27":"金山區","F28":"萬里區","F29":"烏來區"
+    }},
+    "E":{name:"高雄市",districts:{
+      "E01":"鹽埕區","E02":"鼓山區","E03":"左營區","E04":"楠梓區","E05":"三民區","E06":"新興區",
+      "E07":"前金區","E08":"苓雅區","E09":"前鎮區","E10":"旗津區","E11":"小港區","E12":"鳳山區",
+      "E13":"林園區","E14":"大寮區","E15":"大樹區","E16":"大社區","E17":"仁武區","E18":"鳥松區",
+      "E19":"岡山區","E20":"橋頭區","E21":"燕巢區","E22":"田寮區","E23":"阿蓮區","E24":"路竹區",
+      "E25":"湖內區","E26":"茄萣區","E27":"永安區","E28":"彌陀區","E29":"梓官區","E30":"旗山區",
+      "E31":"美濃區","E32":"六龜區","E33":"甲仙區","E34":"杉林區","E35":"內門區","E36":"茂林區",
+      "E37":"桃源區","E38":"那瑪夏區"
+    }}
+  };
+  var TYPE_LABEL={sale:"買賣",rent:"租屋"};
+  function $(id){return document.getElementById(id);}
+  function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function token(){try{return localStorage.getItem(TOKEN_KEY);}catch(e){return null;}}
+  function fmtTime(ms){if(!ms)return "—";var d=new Date(ms);return (d.getMonth()+1)+"/"+d.getDate()+" "+d.getHours()+":"+String(d.getMinutes()).padStart(2,"0");}
+  function fmtPrice(v,type){if(v==null)return "—";return type==="sale"?(v+" 萬"):(v.toLocaleString()+" 元/月");}
+
+  function api(method,path,body,cb){
+    var x=new XMLHttpRequest(); x.open(method,API+path);
+    x.setRequestHeader("Authorization","Bearer "+token());
+    if(body)x.setRequestHeader("Content-Type","application/json"); x.timeout=20000;
+    x.onload=function(){var d=null;try{d=JSON.parse(x.responseText);}catch(e){}
+      if(x.status===401){signOut();return;}
+      cb(x.status>=200&&x.status<300?null:((d&&d.error)||("HTTP "+x.status)),d);};
+    x.onerror=function(){cb("連線失敗（500 主機可能離線）");}; x.ontimeout=function(){cb("連線逾時");};
+    x.send(body?JSON.stringify(body):null);
+  }
+
+  // ---- watchlist (managed) ----
+  function condSummary(w){
+    var l=w.lvr||{};
+    var parts=[l.cityName||"",l.districtName||""].filter(Boolean);
+    if(l.community)parts.push(l.community);
+    if(l.road)parts.push(l.road);
+    if(l.sizeMin!=null||l.sizeMax!=null){
+      parts.push((l.sizeMin!=null?l.sizeMin:"?")+"~"+(l.sizeMax!=null?l.sizeMax:"?")+"坪");
+    }
+    return parts.join(" · ");
+  }
+  function renderWatch(ws){
+    var el=$("watchlist");
+    if(!ws||!ws.length){el.innerHTML='<p class="msg">還沒有監控需求，用上面表單新增。</p>';return;}
+    el.innerHTML="";
+    ws.forEach(function(w){
+      var div=document.createElement("div"); div.className="entry";
+      var paused=w.active===false;
+      div.innerHTML='<div class="entry-head"><div>'
+        +'<div class="entry-name">'+esc(w.nickname)+' <span class="badge '+esc(w.type)+'">'+esc(TYPE_LABEL[w.type]||w.type)+'</span>'
+        +(paused?' <span class="badge paused">⏸ 暫停中</span>':'')+'</div>'
+        +'<div class="entry-meta">'+esc(condSummary(w))+' · 每日'+(w.scanPerDay||2)+'掃</div></div>'
+        +'<div class="btn-row"><button class="pause">'+(paused?"▶ 恢復":"⏸ 暫停")+'</button><button class="del">刪除</button></div></div>';
+      div.querySelector(".pause").addEventListener("click",function(){
+        api("PATCH","/api/house/watch/"+encodeURIComponent(w.id),{active:paused},function(e,d){if(e){alert("更新失敗："+e);return;}renderWatch(d.items);});});
+      div.querySelector(".del").addEventListener("click",function(){
+        if(!confirm("停止監控「"+w.nickname+"」？"))return;
+        api("DELETE","/api/house/watch/"+encodeURIComponent(w.id),null,function(e,d){if(e){alert("刪除失敗："+e);return;}renderWatch(d.items);});});
+      el.appendChild(div);
+    });
+  }
+  function refreshWatch(){ api("GET","/api/house/watch",null,function(e,d){ if(e){$("watchlist").innerHTML='<p class="msg err">載入失敗：'+esc(e)+"</p>";return;} renderWatch(d.items); }); }
+
+  function submitForm(){
+    var m=$("f-msg");
+    var type=document.querySelector('input[name="f-type"]:checked').value;
+    var url=$("f-url").value.trim(), nickname=$("f-nickname").value.trim();
+    var urlRe=/^https:\/\/(sale|rent)\.591\.com\.tw\//;
+    if(!urlRe.test(url)){m.textContent="網址必須是 https://sale.591.com.tw/ 或 https://rent.591.com.tw/ 開頭";m.className="msg err";return;}
+    if((url.indexOf("https://sale.")===0)!==(type==="sale")){m.textContent="網址類型與買賣/租屋選擇不一致";m.className="msg err";return;}
+    if(!nickname){m.textContent="請填暱稱";m.className="msg err";return;}
+    var city=$("f-city").value, district=$("f-district").value;
+    if(!city||!district){m.textContent="請選縣市與行政區";m.className="msg err";return;}
+    var sMin=$("f-size-min").value?Number($("f-size-min").value):null;
+    var sMax=$("f-size-max").value?Number($("f-size-max").value):null;
+    if((sMin!=null&&(!isFinite(sMin)||sMin<=0))||(sMax!=null&&(!isFinite(sMax)||sMax<=0))){m.textContent="坪數要是正數";m.className="msg err";return;}
+    if(sMin!=null&&sMax!=null&&sMin>sMax){m.textContent="坪數範圍最小不能大於最大";m.className="msg err";return;}
+    var btn=$("f-submit"); btn.disabled=true; m.textContent="送出中…"; m.className="msg";
+    api("POST","/api/house/watch",{type:type,url:url,nickname:nickname,
+      city:city,cityName:CITIES[city].name,district:district,districtName:CITIES[city].districts[district],
+      community:$("f-community").value.trim(),road:$("f-road").value.trim(),
+      sizeMin:sMin,sizeMax:sMax,scanPerDay:parseInt($("f-scan").value,10)},function(e,d){
+      btn.disabled=false;
+      if(e){m.textContent="失敗："+e;m.className="msg err";return;}
+      m.textContent="✅ 已加入「"+nickname+"」"; m.className="msg"; renderWatch(d.items);
+    });
+  }
+
+  // ---- results table (public) ----
+  var ALL=[];
+  function priceDiff(r){
+    if(r.price==null||r.prevPrice==null||r.price===r.prevPrice)return "—";
+    var d=r.price-r.prevPrice, arrow=d>0?"▲":"▼", cls=d>0?"up":"down";
+    var unit=r.type==="sale"?" 萬":" 元";
+    return '<span class="'+cls+'">'+arrow+Math.abs(d).toLocaleString()+unit+'</span>';
+  }
+  function statusBadge(r){
+    if(r.error)return '<span style="color:var(--bad)">⚠ 錯誤</span>';
+    if(r.status==="delisted")return '<span style="color:var(--dim)">已下架</span>';
+    if(r.status==="active")return '<span style="color:var(--ok)">在架上</span>';
+    return esc(r.status||"—");
+  }
+  function lvrCell(r){
+    if(!r.lvrDeals||!r.lvrDeals.length)return '<span class="lvr">查無成交</span>';
+    return '<div class="lvr">'+r.lvrDeals.slice(0,3).map(function(d){
+      var unit=d.unitPriceWanPerPing!=null?d.unitPriceWanPerPing+"萬/坪":"—";
+      var total=d.totalPrice!=null?(r.type==="sale"?Math.round(d.totalPrice/10000)+"萬":d.totalPrice.toLocaleString()+"元/月"):"—";
+      return esc(d.date)+" "+esc(total)+" · "+esc(unit)+(d.floor?" "+esc(d.floor)+"F":"");
+    }).join("<br>")+'</div>';
+  }
+  function renderResults(){
+    var el=$("results");
+    if(!ALL.length){el.innerHTML='<p class="msg">還沒有監控結果 —— 上方登入後用表單新增需求，掃描後結果會顯示在這裡。</p>';return;}
+    var html='<table><thead><tr><th>暱稱</th><th>現價/租金</th><th>前次價</th><th>漲跌</th><th>狀態</th><th>實價登錄最近成交</th><th>連結</th></tr></thead><tbody>';
+    ALL.forEach(function(r){
+      var cls=r.error?"errrow":(r.status==="delisted"?"delisted":"");
+      html+='<tr class="'+cls+'"><td class="main" data-l="暱稱">'+esc(r.nickname)+'</td>'
+        +'<td data-l="現價/租金">'+esc(fmtPrice(r.price,r.type))+'</td>'
+        +'<td data-l="前次價">'+esc(fmtPrice(r.prevPrice,r.type))+'</td>'
+        +'<td data-l="漲跌">'+priceDiff(r)+'</td>'
+        +'<td data-l="狀態">'+statusBadge(r)+'</td>'
+        +'<td data-l="實價登錄">'+lvrCell(r)+'</td>'
+        +'<td data-l="連結"><a href="'+esc(r.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
+    });
+    html+='</tbody></table>';
+    el.innerHTML=html;
+  }
+  function loadResults(){
+    fetch("results.json?t="+Date.now()).then(function(r){return r.json();}).then(function(d){
+      ALL=d.items||[];
+      $("res-sub").textContent="最後更新 "+(d.updated||"—")+"（台北時間） · 共 "+ALL.length+" 筆";
+      var na=ALL.filter(function(r){return r.status==="active"&&!r.error;}).length;
+      $("summary").innerHTML='<div class="stat">監控 <b>'+ALL.length+'</b></div><div class="stat ok">在架上 <b>'+na+'</b></div>';
+      renderResults();
+    }).catch(function(e){$("results").innerHTML='<p class="msg">載入 results.json 失敗：'+esc(e.message)+'</p>';});
+  }
+  // 自動刷新：每 5 分鐘重抓 results.json；切回分頁時也立刻抓
+  setInterval(loadResults,5*60*1000);
+  document.addEventListener("visibilitychange",function(){if(!document.hidden)loadResults();});
+
+  function showApp(){$("signin-card").classList.add("hidden");$("app").classList.remove("hidden");refreshWatch();}
+  function signOut(){try{localStorage.removeItem(TOKEN_KEY);}catch(e){}$("app").classList.add("hidden");$("signin-card").classList.remove("hidden");}
+
+  function rebuildDistricts(){
+    var city=$("f-city").value, sel=$("f-district");
+    sel.innerHTML="";
+    if(!city||!CITIES[city])return;
+    Object.keys(CITIES[city].districts).forEach(function(code){
+      var o=document.createElement("option"); o.value=code; o.textContent=CITIES[city].districts[code]; sel.appendChild(o);
+    });
+  }
+
+  window.addEventListener("load",function(){
+    function initGsi(){
+      if(!window.google||!google.accounts){setTimeout(initGsi,200);return;}
+      google.accounts.id.initialize({client_id:CLIENT_ID,callback:function(resp){try{localStorage.setItem(TOKEN_KEY,resp.credential);}catch(e){}showApp();}});
+      google.accounts.id.renderButton($("gsi-btn"),{theme:"filled_black",size:"large",text:"signin_with"});
+    }
+    (function(){
+      var cs=$("f-city");
+      Object.keys(CITIES).forEach(function(code){
+        var o=document.createElement("option"); o.value=code; o.textContent=CITIES[code].name; cs.appendChild(o);
+      });
+      cs.addEventListener("change",rebuildDistricts);
+      rebuildDistricts();
+    })();
+    initGsi(); if(token())showApp();
+    $("f-submit").addEventListener("click",submitForm);
+    $("test-push").addEventListener("click",function(){
+      var m=$("push-msg"); m.textContent="發送中…"; m.className="msg";
+      api("POST","/api/house/test-push",{},function(e){ if(e){m.textContent="推播失敗："+e;m.className="msg err";return;} m.textContent="✅ 已發送，看 @housemonitortwbot"; });});
+    loadResults();
+  });
+})();
+</script>
+</body>
+</html>

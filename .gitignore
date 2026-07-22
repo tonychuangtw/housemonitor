@@ -11,3 +11,4 @@ scan.sh
 render.js
 *.log
 server.js.bak*
+PROGRESS.md
