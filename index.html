@@ -244,7 +244,9 @@
   function lvrCell(r){
     if(!r.lvrDeals||!r.lvrDeals.length)return '<span class="lvr">查無成交</span>';
     return '<div class="lvr">'+r.lvrDeals.slice(0,3).map(function(d){
-      var unit=d.unitPriceWanPerPing!=null?d.unitPriceWanPerPing+"萬/坪":"—";
+      var unit=r.type==="sale"
+        ?(d.unitPriceWanPerPing!=null?d.unitPriceWanPerPing+"萬/坪":"—")
+        :(d.unitPrice!=null?Math.round(d.unitPrice).toLocaleString()+"元/坪":"—");
       var total=d.totalPrice!=null?(r.type==="sale"?Math.round(d.totalPrice/10000)+"萬":d.totalPrice.toLocaleString()+"元/月"):"—";
       return esc(d.date)+" "+esc(total)+" · "+esc(unit)+(d.floor?" "+esc(d.floor)+"F":"");
     }).join("<br>")+'</div>';
