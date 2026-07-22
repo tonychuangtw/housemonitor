@@ -1,39 +1,14 @@
 {
   "items": [
     {
-      "id": "s1",
-      "type": "sale",
-      "nickname": "國王一號院3房平車90坪",
-      "url": "https://sale.591.com.tw/home/house/detail/2/20294965.html",
-      "lvr": {
-        "city": "E",
-        "cityName": "高雄市",
-        "district": "E08",
-        "districtName": "苓雅區",
-        "community": "國王一號院",
-        "road": "民族二路",
-        "sizeMin": 60,
-        "sizeMax": 110
-      },
-      "scanPerDay": 2,
-      "active": true,
-      "added": 1753084800000
-    },
-    {
-      "id": "r1",
-      "type": "rent",
-      "nickname": "國王一號院3房83坪",
-      "url": "https://rent.591.com.tw/21232871",
-      "lvr": {
-        "city": "E",
-        "cityName": "高雄市",
-        "district": "E08",
-        "districtName": "苓雅區",
-        "community": "國王一號院",
-        "road": "民族二路",
-        "sizeMin": 60,
-        "sizeMax": 110
-      },
+      "id": "c-king1",
+      "name": "國王一號院",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E08",
+      "districtName": "苓雅區",
+      "sizeMin": null,
+      "sizeMax": null,
       "scanPerDay": 2,
       "active": true,
       "added": 1753084800000

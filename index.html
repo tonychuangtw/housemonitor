@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>🏠 房源監控</title>
+<title>🏠 社區房源監控</title>
 <meta name="theme-color" content="#0d0d10">
 <style>
   :root {
@@ -24,9 +24,6 @@
     background:var(--bg); color:var(--text); font-size:0.95rem; }
   input:focus, select:focus{ outline:none; border-color:var(--accent); }
   .row2{ display:flex; gap:10px; } .row2>div{ flex:1; }
-  .radio-row{ display:flex; gap:14px; padding:4px 0 2px; }
-  .radio-row label{ margin:0; display:inline-flex; gap:5px; align-items:center; color:var(--text); font-size:0.95rem; }
-  .radio-row input{ width:auto; }
   button{ border:none; border-radius:9px; padding:11px 18px; font-size:0.95rem; cursor:pointer; font-weight:600; }
   .primary{ background:var(--accent); color:#06131c; width:100%; margin-top:14px; } .primary:disabled{ opacity:.5; }
   .del{ background:transparent; color:var(--bad); border:1px solid var(--border); padding:5px 11px; font-size:0.82rem; }
@@ -38,18 +35,23 @@
   .entry-head{ display:flex; justify-content:space-between; align-items:center; gap:10px; }
   .entry-name{ font-weight:700; } .entry-meta{ color:var(--text2); font-size:0.84rem; margin-top:2px; }
   .badge{ display:inline-block; padding:1px 8px; border-radius:99px; font-size:0.74rem; border:1px solid var(--border); color:var(--text2); }
-  .badge.sale{ color:var(--accent); border-color:var(--accent); } .badge.rent{ color:var(--ok); border-color:var(--ok); }
+  .badge.new{ color:var(--ok); border-color:var(--ok); }
   .badge.paused{ color:var(--text2); }
-  /* results table */
+  /* community result cards */
   .summary{ display:flex; gap:8px; flex-wrap:wrap; margin:6px 0 12px; }
   .stat{ background:var(--card); border:1px solid var(--border); border-radius:10px; padding:7px 13px; font-size:0.88rem; }
   .stat b{ font-size:1.1rem; color:var(--accent); } .stat.ok b{ color:var(--ok); }
+  .comm-title{ display:flex; justify-content:space-between; align-items:baseline; gap:8px; flex-wrap:wrap; }
+  .comm-title .meta{ color:var(--text2); font-size:0.8rem; }
+  .sect{ margin-top:14px; }
+  .sect-head{ font-weight:700; font-size:0.95rem; margin:0 0 6px; }
   table{ width:100%; border-collapse:collapse; font-size:0.85rem; }
   thead th{ text-align:left; color:var(--text2); font-weight:600; font-size:0.74rem; padding:5px 7px; border-bottom:1px solid var(--border); white-space:nowrap; }
   tbody td{ padding:7px; border-bottom:1px solid var(--border); vertical-align:top; }
-  tr.delisted td{ color:var(--dim); } tr.errrow td{ color:var(--bad); }
+  tr.delisted td{ color:var(--dim); } tr.delisted a{ color:var(--dim); }
   .up{ color:var(--up); font-weight:700; } .down{ color:var(--down); font-weight:700; }
-  .lvr{ color:var(--text2); font-size:0.79rem; line-height:1.6; }
+  .lvr{ color:var(--text2); font-size:0.79rem; line-height:1.6; margin-top:6px; }
+  .lvr b{ color:var(--text2); font-weight:600; }
   .foot{ color:var(--dim); font-size:0.78rem; margin-top:22px; text-align:center; }
   a{ color:var(--accent); }
   @media (max-width:560px){
@@ -61,8 +63,8 @@
 </style>
 </head>
 <body>
-<h1>🏠 房源監控</h1>
-<p class="sub">上方登入後新增監控需求；下方是 591 + 實價登錄的監控結果</p>
+<h1>🏠 社區房源監控</h1>
+<p class="sub">登入後新增「社區」監控；掃描器自動列出該社區全部在售/在租 591 房源 + 實價登錄</p>
 
 <div id="signin-card" class="card">
   <p>用 Google 登入後管理監控需求（僅限 Tony 本人帳號）</p>
@@ -71,23 +73,12 @@
 
 <div id="app" class="hidden">
   <div class="card">
-    <h2>➕ 新增監控需求</h2>
-    <label>類型</label>
-    <div class="radio-row">
-      <label><input type="radio" name="f-type" value="sale" checked> 買賣</label>
-      <label><input type="radio" name="f-type" value="rent"> 租屋</label>
-    </div>
-    <label>591 物件網址</label>
-    <input id="f-url" placeholder="例：https://sale.591.com.tw/home/house/detail/2/19967563.html" maxlength="200">
-    <label>暱稱</label>
-    <input id="f-nickname" placeholder="例：北投聽濤園3房華廈" maxlength="50">
+    <h2>➕ 新增社區監控</h2>
+    <label>社區名（必填，591 上的社區名稱）</label>
+    <input id="f-name" placeholder="例：國王一號院" maxlength="50">
     <div class="row2">
       <div><label>縣市</label><select id="f-city"></select></div>
       <div><label>行政區</label><select id="f-district"></select></div>
-    </div>
-    <div class="row2">
-      <div><label>社區名（選填）</label><input id="f-community" placeholder="例：聽濤園" maxlength="50"></div>
-      <div><label>路段（選填）</label><input id="f-road" placeholder="例：珠海路" maxlength="50"></div>
     </div>
     <label>坪數範圍（選填）</label>
     <div style="display:flex;align-items:center;gap:8px;">
@@ -120,7 +111,7 @@
 <p class="sub" id="res-sub">載入中…</p>
 <div class="summary" id="summary"></div>
 <div id="results"><p class="msg">載入中…</p></div>
-<p class="foot">591 經 camofox 仿真人定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新</p>
+<p class="foot">591 社區在架列表走官方 bff JSON API 定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新</p>
 
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 <script>
@@ -151,12 +142,10 @@
       "E37":"桃源區","E38":"那瑪夏區"
     }}
   };
-  var TYPE_LABEL={sale:"買賣",rent:"租屋"};
   function $(id){return document.getElementById(id);}
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   function token(){try{return localStorage.getItem(TOKEN_KEY);}catch(e){return null;}}
-  function fmtTime(ms){if(!ms)return "—";var d=new Date(ms);return (d.getMonth()+1)+"/"+d.getDate()+" "+d.getHours()+":"+String(d.getMinutes()).padStart(2,"0");}
-  function fmtPrice(v,type){if(v==null)return "—";return type==="sale"?(v+" 萬"):(v.toLocaleString()+" 元/月");}
+  function fmtPrice(v,kind){if(v==null)return "—";return kind==="sale"?(v.toLocaleString()+" 萬"):(v.toLocaleString()+" 元/月");}
 
   function api(method,path,body,cb){
     var x=new XMLHttpRequest(); x.open(method,API+path);
@@ -171,12 +160,9 @@
 
   // ---- watchlist (managed) ----
   function condSummary(w){
-    var l=w.lvr||{};
-    var parts=[l.cityName||"",l.districtName||""].filter(Boolean);
-    if(l.community)parts.push(l.community);
-    if(l.road)parts.push(l.road);
-    if(l.sizeMin!=null||l.sizeMax!=null){
-      parts.push((l.sizeMin!=null?l.sizeMin:"?")+"~"+(l.sizeMax!=null?l.sizeMax:"?")+"坪");
+    var parts=[w.cityName||"",w.districtName||""].filter(Boolean);
+    if(w.sizeMin!=null||w.sizeMax!=null){
+      parts.push((w.sizeMin!=null?w.sizeMin:"?")+"~"+(w.sizeMax!=null?w.sizeMax:"?")+"坪");
     }
     return parts.join(" · ");
   }
@@ -188,14 +174,13 @@
       var div=document.createElement("div"); div.className="entry";
       var paused=w.active===false;
       div.innerHTML='<div class="entry-head"><div>'
-        +'<div class="entry-name">'+esc(w.nickname)+' <span class="badge '+esc(w.type)+'">'+esc(TYPE_LABEL[w.type]||w.type)+'</span>'
-        +(paused?' <span class="badge paused">⏸ 暫停中</span>':'')+'</div>'
+        +'<div class="entry-name">'+esc(w.name)+(paused?' <span class="badge paused">⏸ 暫停中</span>':'')+'</div>'
         +'<div class="entry-meta">'+esc(condSummary(w))+' · 每日'+(w.scanPerDay||2)+'掃</div></div>'
         +'<div class="btn-row"><button class="pause">'+(paused?"▶ 恢復":"⏸ 暫停")+'</button><button class="del">刪除</button></div></div>';
       div.querySelector(".pause").addEventListener("click",function(){
         api("PATCH","/api/house/watch/"+encodeURIComponent(w.id),{active:paused},function(e,d){if(e){alert("更新失敗："+e);return;}renderWatch(d.items);});});
       div.querySelector(".del").addEventListener("click",function(){
-        if(!confirm("停止監控「"+w.nickname+"」？"))return;
+        if(!confirm("停止監控「"+w.name+"」？"))return;
         api("DELETE","/api/house/watch/"+encodeURIComponent(w.id),null,function(e,d){if(e){alert("刪除失敗："+e);return;}renderWatch(d.items);});});
       el.appendChild(div);
     });
@@ -204,12 +189,8 @@
 
   function submitForm(){
     var m=$("f-msg");
-    var type=document.querySelector('input[name="f-type"]:checked').value;
-    var url=$("f-url").value.trim(), nickname=$("f-nickname").value.trim();
-    var urlRe=/^https:\/\/(sale|rent)\.591\.com\.tw\//;
-    if(!urlRe.test(url)){m.textContent="網址必須是 https://sale.591.com.tw/ 或 https://rent.591.com.tw/ 開頭";m.className="msg err";return;}
-    if((url.indexOf("https://sale.")===0)!==(type==="sale")){m.textContent="網址類型與買賣/租屋選擇不一致";m.className="msg err";return;}
-    if(!nickname){m.textContent="請填暱稱";m.className="msg err";return;}
+    var name=$("f-name").value.trim();
+    if(!name){m.textContent="請填社區名";m.className="msg err";return;}
     var city=$("f-city").value, district=$("f-district").value;
     if(!city||!district){m.textContent="請選縣市與行政區";m.className="msg err";return;}
     var sMin=$("f-size-min").value?Number($("f-size-min").value):null;
@@ -217,63 +198,85 @@
     if((sMin!=null&&(!isFinite(sMin)||sMin<=0))||(sMax!=null&&(!isFinite(sMax)||sMax<=0))){m.textContent="坪數要是正數";m.className="msg err";return;}
     if(sMin!=null&&sMax!=null&&sMin>sMax){m.textContent="坪數範圍最小不能大於最大";m.className="msg err";return;}
     var btn=$("f-submit"); btn.disabled=true; m.textContent="送出中…"; m.className="msg";
-    api("POST","/api/house/watch",{type:type,url:url,nickname:nickname,
+    api("POST","/api/house/watch",{name:name,
       city:city,cityName:CITIES[city].name,district:district,districtName:CITIES[city].districts[district],
-      community:$("f-community").value.trim(),road:$("f-road").value.trim(),
       sizeMin:sMin,sizeMax:sMax,scanPerDay:parseInt($("f-scan").value,10)},function(e,d){
       btn.disabled=false;
       if(e){m.textContent="失敗："+e;m.className="msg err";return;}
-      m.textContent="✅ 已加入「"+nickname+"」"; m.className="msg"; renderWatch(d.items);
+      m.textContent="✅ 已加入「"+name+"」"; m.className="msg"; $("f-name").value=""; renderWatch(d.items);
     });
   }
 
-  // ---- results table (public) ----
-  var ALL=[];
-  function priceDiff(r){
-    if(r.price==null||r.prevPrice==null||r.price===r.prevPrice)return "—";
-    var d=r.price-r.prevPrice, arrow=d>0?"▲":"▼", cls=d>0?"up":"down";
-    var unit=r.type==="sale"?" 萬":" 元";
+  // ---- results (public) ----
+  var COMMUNITIES=[];
+  function priceDiff(l,kind){
+    if(l.price==null||l.prevPrice==null||l.price===l.prevPrice)return "—";
+    var d=l.price-l.prevPrice, arrow=d>0?"▲":"▼", cls=d>0?"up":"down";
+    var unit=kind==="sale"?" 萬":" 元";
     return '<span class="'+cls+'">'+arrow+Math.abs(d).toLocaleString()+unit+'</span>';
   }
-  function statusBadge(r){
-    if(r.error)return '<span style="color:var(--bad)">⚠ 錯誤</span>';
-    if(r.status==="delisted")return '<span style="color:var(--dim)">已下架</span>';
-    if(r.status==="active")return '<span style="color:var(--ok)">在架上</span>';
-    return esc(r.status||"—");
+  function listingTable(list,kind){
+    if(!list||!list.length)return '<p class="msg">目前無在架物件</p>';
+    var priceLabel=kind==="sale"?"開價":"月租";
+    var html='<table><thead><tr><th>標題</th><th>'+priceLabel+'</th><th>前次價</th><th>漲跌</th><th>坪數</th><th>樓層</th><th>連結</th></tr></thead><tbody>';
+    list.forEach(function(l){
+      var cls=l.status==="delisted"?' class="delisted"':"";
+      var title=esc(l.title)+(l.isNew?' <span class="badge new">NEW</span>':"")+(l.status==="delisted"?' <span class="badge">已下架</span>':"");
+      html+='<tr'+cls+'><td class="main" data-l="標題">'+title+'</td>'
+        +'<td data-l="'+priceLabel+'">'+esc(fmtPrice(l.price,kind))+'</td>'
+        +'<td data-l="前次價">'+esc(fmtPrice(l.prevPrice,kind))+'</td>'
+        +'<td data-l="漲跌">'+priceDiff(l,kind)+'</td>'
+        +'<td data-l="坪數">'+(l.size!=null?esc(l.size)+" 坪":"—")+'</td>'
+        +'<td data-l="樓層">'+esc(l.floor||"—")+'</td>'
+        +'<td data-l="連結"><a href="'+esc(l.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
+    });
+    html+='</tbody></table>';
+    return html;
   }
-  function lvrCell(r){
-    if(!r.lvrDeals||!r.lvrDeals.length)return '<span class="lvr">查無成交</span>';
-    return '<div class="lvr">'+r.lvrDeals.slice(0,3).map(function(d){
-      var unit=r.type==="sale"
+  function lvrBlock(deals,kind,label){
+    var html='<div class="lvr"><b>實價登錄'+label+'最近成交：</b>';
+    if(!deals||!deals.length)return html+'查無成交</div>';
+    html+=deals.slice(0,3).map(function(d){
+      var unit=kind==="sale"
         ?(d.unitPriceWanPerPing!=null?d.unitPriceWanPerPing+"萬/坪":"—")
         :(d.unitPrice!=null?Math.round(d.unitPrice).toLocaleString()+"元/坪":"—");
-      var total=d.totalPrice!=null?(r.type==="sale"?Math.round(d.totalPrice/10000)+"萬":d.totalPrice.toLocaleString()+"元/月"):"—";
-      return esc(d.date)+" "+esc(total)+" · "+esc(unit)+(d.floor?" "+esc(d.floor)+"F":"");
-    }).join("<br>")+'</div>';
+      var total=d.totalPrice!=null?(kind==="sale"?Math.round(d.totalPrice/10000).toLocaleString()+"萬":d.totalPrice.toLocaleString()+"元/月"):"—";
+      return esc(d.date)+" "+esc(total)+" · "+esc(unit)+(d.size!=null?" "+esc(d.size)+"坪":"")+(d.floor?" "+esc(d.floor)+"F":"");
+    }).join("<br>");
+    return html+'</div>';
   }
   function renderResults(){
     var el=$("results");
-    if(!ALL.length){el.innerHTML='<p class="msg">還沒有監控結果 —— 上方登入後用表單新增需求，掃描後結果會顯示在這裡。</p>';return;}
-    var html='<table><thead><tr><th>暱稱</th><th>現價/租金</th><th>前次價</th><th>漲跌</th><th>狀態</th><th>實價登錄最近成交</th><th>連結</th></tr></thead><tbody>';
-    ALL.forEach(function(r){
-      var cls=r.error?"errrow":(r.status==="delisted"?"delisted":"");
-      html+='<tr class="'+cls+'"><td class="main" data-l="暱稱">'+esc(r.nickname)+'</td>'
-        +'<td data-l="現價/租金">'+esc(fmtPrice(r.price,r.type))+'</td>'
-        +'<td data-l="前次價">'+esc(fmtPrice(r.prevPrice,r.type))+'</td>'
-        +'<td data-l="漲跌">'+priceDiff(r)+'</td>'
-        +'<td data-l="狀態">'+statusBadge(r)+'</td>'
-        +'<td data-l="實價登錄">'+lvrCell(r)+'</td>'
-        +'<td data-l="連結"><a href="'+esc(r.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
+    if(!COMMUNITIES.length){el.innerHTML='<p class="msg">還沒有監控結果 —— 上方登入後用表單新增社區，掃描後結果會顯示在這裡。</p>';return;}
+    el.innerHTML="";
+    COMMUNITIES.forEach(function(c){
+      var card=document.createElement("div"); card.className="card";
+      var saleActive=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
+      var rentActive=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
+      var html='<div class="comm-title"><h2>🏘 '+esc(c.name)+'</h2>'
+        +'<span class="meta">'+esc(c.cityName)+esc(c.districtName)+' · 更新 '+(c.lastChecked||"—")+'</span></div>';
+      if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
+      html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
+        +listingTable(c.sale,"sale")
+        +lvrBlock(c.lvrSale,"sale","買賣")+'</div>';
+      html+='<div class="sect"><p class="sect-head">🔑 租賃（'+rentActive+' 筆在租）</p>'
+        +listingTable(c.rent,"rent")
+        +lvrBlock(c.lvrRent,"rent","租賃")+'</div>';
+      card.innerHTML=html;
+      el.appendChild(card);
     });
-    html+='</tbody></table>';
-    el.innerHTML=html;
   }
   function loadResults(){
     fetch("results.json?t="+Date.now()).then(function(r){return r.json();}).then(function(d){
-      ALL=d.items||[];
-      $("res-sub").textContent="最後更新 "+(d.updated||"—")+"（台北時間） · 共 "+ALL.length+" 筆";
-      var na=ALL.filter(function(r){return r.status==="active"&&!r.error;}).length;
-      $("summary").innerHTML='<div class="stat">監控 <b>'+ALL.length+'</b></div><div class="stat ok">在架上 <b>'+na+'</b></div>';
+      COMMUNITIES=d.communities||[];
+      $("res-sub").textContent="最後更新 "+(d.updated||"—")+"（台北時間） · 共 "+COMMUNITIES.length+" 個社區";
+      var ns=0,nr=0;
+      COMMUNITIES.forEach(function(c){
+        ns+=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
+        nr+=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
+      });
+      $("summary").innerHTML='<div class="stat">社區 <b>'+COMMUNITIES.length+'</b></div>'
+        +'<div class="stat">在售 <b>'+ns+'</b></div><div class="stat ok">在租 <b>'+nr+'</b></div>';
       renderResults();
     }).catch(function(e){$("results").innerHTML='<p class="msg">載入 results.json 失敗：'+esc(e.message)+'</p>';});
   }
