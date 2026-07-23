@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 09:08:47",
+  "updated": "2026-07-23 21:01:52",
   "communities": [
     {
       "id": "mrvzb6fv40ia",
@@ -103,6 +103,17 @@
           "size": 44.52,
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20582967.html",
+          "status": "active",
+          "isNew": false
+        },
+        {
+          "id": "20602618",
+          "title": "捷運文化中心｜邊間採光大兩房｜獨立平車",
+          "price": 1198,
+          "prevPrice": null,
+          "size": 44.52,
+          "floor": "8F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20602618.html",
           "status": "active",
           "isNew": false
         },
@@ -395,7 +406,7 @@
         }
       ],
       "error": null,
-      "lastChecked": "2026-07-23 09:08:15"
+      "lastChecked": "2026-07-23 21:01:25"
     }
   ]
 }
