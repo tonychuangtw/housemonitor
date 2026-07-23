@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 21:01:52",
+  "updated": "2026-07-23 21:03:34",
   "communities": [
     {
       "id": "mrvzb6fv40ia",
@@ -110,7 +110,7 @@
           "id": "20602618",
           "title": "捷運文化中心｜邊間採光大兩房｜獨立平車",
           "price": 1198,
-          "prevPrice": null,
+          "prevPrice": 1198,
           "size": 44.52,
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20602618.html",
@@ -285,28 +285,6 @@
           "isNew": false
         },
         {
-          "id": "21508126",
-          "title": "✨近文化中心高層次精緻大1+1房✨[有心家]",
-          "price": 22000,
-          "prevPrice": 22000,
-          "size": 12,
-          "floor": "12F/29F",
-          "url": "https://rent.591.com.tw/21508126",
-          "status": "active",
-          "isNew": false
-        },
-        {
-          "id": "21505370",
-          "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
-          "price": 21000,
-          "prevPrice": 21000,
-          "size": 12,
-          "floor": "20F/29F",
-          "url": "https://rent.591.com.tw/21505370",
-          "status": "active",
-          "isNew": false
-        },
-        {
           "id": "21557119",
           "title": "固豪👍信義國小大悅高樓1+1房",
           "price": 21000,
@@ -326,6 +304,28 @@
           "floor": "20F/29F",
           "url": "https://rent.591.com.tw/21673303",
           "status": "active",
+          "isNew": false
+        },
+        {
+          "id": "21508126",
+          "title": "✨近文化中心高層次精緻大1+1房✨[有心家]",
+          "price": 22000,
+          "prevPrice": 22000,
+          "size": 12,
+          "floor": "12F/29F",
+          "url": "https://rent.591.com.tw/21508126",
+          "status": "delisted",
+          "isNew": false
+        },
+        {
+          "id": "21505370",
+          "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
+          "price": 21000,
+          "prevPrice": 21000,
+          "size": 12,
+          "floor": "20F/29F",
+          "url": "https://rent.591.com.tw/21505370",
+          "status": "delisted",
           "isNew": false
         }
       ],
@@ -406,7 +406,7 @@
         }
       ],
       "error": null,
-      "lastChecked": "2026-07-23 21:01:25"
+      "lastChecked": "2026-07-23 21:03:08"
     }
   ]
 }
