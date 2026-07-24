@@ -28,6 +28,8 @@
   .primary{ background:var(--accent); color:#06131c; width:100%; margin-top:14px; } .primary:disabled{ opacity:.5; }
   .del{ background:transparent; color:var(--bad); border:1px solid var(--border); padding:5px 11px; font-size:0.82rem; }
   .pause{ background:transparent; color:var(--text2); border:1px solid var(--border); padding:5px 11px; font-size:0.82rem; }
+  .scan{ background:transparent; color:var(--accent); border:1px solid var(--border); padding:5px 11px; font-size:0.82rem; }
+  .scan:disabled{ opacity:.5; cursor:default; }
   .btn-row{ display:flex; gap:6px; flex-shrink:0; }
   .msg{ font-size:0.88rem; color:var(--text2); min-height:1.2em; margin-top:8px; } .msg.err{ color:var(--bad); }
   .hidden{ display:none; }
@@ -272,7 +274,16 @@
       div.innerHTML='<div class="entry-head"><div>'
         +'<div class="entry-name">'+esc(w.name)+(paused?' <span class="badge paused">⏸ 暫停中</span>':'')+'</div>'
         +'<div class="entry-meta">'+esc(condSummary(w))+' · 每日'+(w.scanPerDay||2)+'掃</div></div>'
-        +'<div class="btn-row"><button class="pause">'+(paused?"▶ 恢復":"⏸ 暫停")+'</button><button class="del">刪除</button></div></div>';
+        +'<div class="btn-row">'+(paused?'':'<button class="scan" title="立刻掃一次這個社區，約 1-2 分鐘後結果更新，有變動會推 TG">⚡ 立即掃</button>')
+        +'<button class="pause">'+(paused?"▶ 恢復":"⏸ 暫停")+'</button><button class="del">刪除</button></div></div>';
+      var sb=div.querySelector(".scan");
+      if(sb)sb.addEventListener("click",function(){
+        sb.disabled=true; sb.textContent="⏳ 掃描中…";
+        api("POST","/api/house/scan/"+encodeURIComponent(w.id),{},function(e){
+          if(e){alert("觸發失敗："+e);sb.disabled=false;sb.textContent="⚡ 立即掃";return;}
+          sb.textContent="✅ 已觸發";
+          setTimeout(function(){sb.disabled=false;sb.textContent="⚡ 立即掃";},60000);
+        });});
       div.querySelector(".pause").addEventListener("click",function(){
         api("PATCH","/api/house/watch/"+encodeURIComponent(w.id),{active:paused},function(e,d){if(e){alert("更新失敗："+e);return;}renderWatch(d.items);});});
       div.querySelector(".del").addEventListener("click",function(){
