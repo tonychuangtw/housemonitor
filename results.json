@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 10:54:04",
+  "updated": "2026-07-24 11:02:13",
   "communities": [
     {
       "id": "mrvzb6fv40ia",
@@ -173,17 +173,6 @@
           "isNew": false
         },
         {
-          "id": "20436547",
-          "title": "低總價-文化中心輕屋齡-時尚質感兩房",
-          "price": 798,
-          "prevPrice": 798,
-          "size": 22.01,
-          "floor": "23F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20436547.html",
-          "status": "active",
-          "isNew": false
-        },
-        {
           "id": "20585408",
           "title": "文化中心｜雙捷運｜大悅優質兩房｜溫馨成家首選",
           "price": 788,
@@ -225,6 +214,17 @@
           "floor": "3F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20542781.html",
           "status": "active",
+          "isNew": false
+        },
+        {
+          "id": "20436547",
+          "title": "低總價-文化中心輕屋齡-時尚質感兩房",
+          "price": 798,
+          "prevPrice": 798,
+          "size": 22.01,
+          "floor": "23F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20436547.html",
+          "status": "delisted",
           "isNew": false
         }
       ],
@@ -288,12 +288,12 @@
           "id": "21695539",
           "title": "高級豪華二房出租",
           "price": 23000,
-          "prevPrice": null,
+          "prevPrice": 23000,
           "size": 19.44,
           "floor": "21F/29F",
           "url": "https://rent.591.com.tw/21695539",
           "status": "active",
-          "isNew": true
+          "isNew": false
         },
         {
           "id": "21557119",
@@ -417,7 +417,7 @@
         }
       ],
       "error": null,
-      "lastChecked": "2026-07-24 10:52:47"
+      "lastChecked": "2026-07-24 11:01:06"
     },
     {
       "id": "mrych48q56fu",
