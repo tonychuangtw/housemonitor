@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 21:04:09",
+  "updated": "2026-07-24 21:06:12",
   "communities": [
     {
       "id": "mrvzb6fv40ia",
@@ -152,7 +152,7 @@
         },
         {
           "id": "20332545",
-          "title": "【Tina】五福學區大悅文化中心捷運高樓層景觀宅",
+          "title": "【Tina】五福學區大悅��化中心捷運高樓層景觀宅",
           "price": 816,
           "prevPrice": 816,
           "size": 19.03,
@@ -417,7 +417,7 @@
         }
       ],
       "error": null,
-      "lastChecked": "2026-07-24 21:03:15"
+      "lastChecked": "2026-07-24 21:05:17"
     },
     {
       "id": "mrych48q56fu",
@@ -425,17 +425,6 @@
       "cityName": "高雄市",
       "districtName": "新興區",
       "sale": [
-        {
-          "id": "20264833",
-          "title": "神秘寶藏驚喜專員捷運文化中心國王一號院豪宅稀有超大雙露臺平車",
-          "price": 3380,
-          "prevPrice": 3380,
-          "size": 96.55,
-          "floor": "6F/33F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20264833.html",
-          "status": "active",
-          "isNew": false
-        },
         {
           "id": "20058340",
           "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
@@ -600,6 +589,17 @@
           "url": "https://sale.591.com.tw/home/house/detail/2/20539644.html",
           "status": "active",
           "isNew": false
+        },
+        {
+          "id": "20264833",
+          "title": "神秘寶藏驚喜專員捷運文化中心國王一號院豪宅稀有超大雙露臺平車",
+          "price": 3380,
+          "prevPrice": 3380,
+          "size": 96.55,
+          "floor": "6F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20264833.html",
+          "status": "delisted",
+          "isNew": false
         }
       ],
       "rent": [
@@ -629,21 +629,10 @@
           "id": "21698165",
           "title": "｜國王一號院｜市景高樓3+1房平車｜",
           "price": 68000,
-          "prevPrice": null,
+          "prevPrice": 68000,
           "size": 83.23,
           "floor": "16F/33F",
           "url": "https://rent.591.com.tw/21698165",
-          "status": "active",
-          "isNew": true
-        },
-        {
-          "id": "21514351",
-          "title": "👑O6信義MRT｜國王一號院｜品味高樓豪景4房-權威",
-          "price": 60000,
-          "prevPrice": 60000,
-          "size": 90.3,
-          "floor": "32F/33F",
-          "url": "https://rent.591.com.tw/21514351",
           "status": "active",
           "isNew": false
         },
@@ -667,6 +656,17 @@
           "floor": "7F/33F",
           "url": "https://rent.591.com.tw/21592475",
           "status": "active",
+          "isNew": false
+        },
+        {
+          "id": "21514351",
+          "title": "👑O6信義MRT｜國王一號院｜品味高樓豪景4房-權威",
+          "price": 60000,
+          "prevPrice": 60000,
+          "size": 90.3,
+          "floor": "32F/33F",
+          "url": "https://rent.591.com.tw/21514351",
+          "status": "delisted",
           "isNew": false
         }
       ],
@@ -747,7 +747,7 @@
         }
       ],
       "error": null,
-      "lastChecked": "2026-07-24 21:03:41"
+      "lastChecked": "2026-07-24 21:05:45"
     }
   ]
 }
