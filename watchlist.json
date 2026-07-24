@@ -12,6 +12,19 @@
       "scanPerDay": 2,
       "active": true,
       "added": 1784718492763
+    },
+    {
+      "id": "mrych48q56fu",
+      "name": "國王一號院",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E06",
+      "districtName": "新興區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "active": true,
+      "added": 1784861537210
     }
   ]
 }

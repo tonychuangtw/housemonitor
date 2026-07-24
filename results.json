@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 09:08:41",
+  "updated": "2026-07-24 10:54:04",
   "communities": [
     {
       "id": "mrvzb6fv40ia",
@@ -285,6 +285,17 @@
           "isNew": false
         },
         {
+          "id": "21695539",
+          "title": "高級豪華二房出租",
+          "price": 23000,
+          "prevPrice": null,
+          "size": 19.44,
+          "floor": "21F/29F",
+          "url": "https://rent.591.com.tw/21695539",
+          "status": "active",
+          "isNew": true
+        },
+        {
           "id": "21557119",
           "title": "固豪👍信義國小大悅高樓1+1房",
           "price": 21000,
@@ -406,7 +417,326 @@
         }
       ],
       "error": null,
-      "lastChecked": "2026-07-24 09:08:15"
+      "lastChecked": "2026-07-24 10:52:47"
+    },
+    {
+      "id": "mrych48q56fu",
+      "name": "國王一號院",
+      "cityName": "高雄市",
+      "districtName": "新興區",
+      "sale": [
+        {
+          "id": "20264833",
+          "title": "神秘寶藏驚喜專員捷運文化中心國王一號院豪宅稀有超大雙露臺平車",
+          "price": 3380,
+          "prevPrice": null,
+          "size": 96.55,
+          "floor": "6F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20264833.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20058340",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20058340.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20287949",
+          "title": "💯國王1號院拎包入住精緻裝潢最低價高級豪宅平車💯",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20287949.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20289936",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20289936.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20290646",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20290646.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20294965",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20294965.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20308000",
+          "title": "國王1號院拎包入住新精裝最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20308000.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20325272",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20325272.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20363941",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20363941.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20486301",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": null,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20486301.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20578469",
+          "title": "專-捷運文化中心五福國中國王一號院鋼骨豪邸",
+          "price": 3080,
+          "prevPrice": null,
+          "size": 83.75,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20578469.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20593460",
+          "title": "🍎捷運文化中心五福國中/國王一號院鋼骨豪邸",
+          "price": 3080,
+          "prevPrice": null,
+          "size": 83.74,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20593460.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "19975137",
+          "title": "文化中心/信義國小/高樓大坪數平車豪邸",
+          "price": 2988,
+          "prevPrice": null,
+          "size": 83.23,
+          "floor": "19F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/19975137.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20376613",
+          "title": "國王一號院文化中心質感大宅｜三房平車",
+          "price": 2688,
+          "prevPrice": null,
+          "size": 82.87,
+          "floor": "4F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20376613.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20484057",
+          "title": "【國王一號院】文化中心質感大宅｜三房平車",
+          "price": 2688,
+          "prevPrice": null,
+          "size": 82.87,
+          "floor": "4F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20484057.html",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20539644",
+          "title": "國王一號院文化中心質感大宅｜三房平車",
+          "price": 2688,
+          "prevPrice": null,
+          "size": 82.87,
+          "floor": "4F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20539644.html",
+          "status": "active",
+          "isNew": true
+        }
+      ],
+      "rent": [
+        {
+          "id": "20887248",
+          "title": "🍊O6國王一號院泳池採光典雅3+1房附平車",
+          "price": 68000,
+          "prevPrice": null,
+          "size": 83.21,
+          "floor": "16F/33F",
+          "url": "https://rent.591.com.tw/20887248",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "21232871",
+          "title": "固豪👍文化中心國王一號院3房平車",
+          "price": 68000,
+          "prevPrice": null,
+          "size": 83.23,
+          "floor": "16F/33F",
+          "url": "https://rent.591.com.tw/21232871",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "21514351",
+          "title": "👑O6信義MRT｜國王一號院｜品味高樓豪景4房-權威",
+          "price": 60000,
+          "prevPrice": null,
+          "size": 90.3,
+          "floor": "32F/33F",
+          "url": "https://rent.591.com.tw/21514351",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "20654497",
+          "title": "固豪👍信義國小國王一號院3+1房平車",
+          "price": 55000,
+          "prevPrice": null,
+          "size": 83.75,
+          "floor": "7F/33F",
+          "url": "https://rent.591.com.tw/20654497",
+          "status": "active",
+          "isNew": true
+        },
+        {
+          "id": "21592475",
+          "title": "國王一號院💎4房平車💎適公司主管",
+          "price": 55000,
+          "prevPrice": null,
+          "size": 83,
+          "floor": "7F/33F",
+          "url": "https://rent.591.com.tw/21592475",
+          "status": "active",
+          "isNew": true
+        }
+      ],
+      "lvrSale": [
+        {
+          "date": "2026-06-22",
+          "totalPrice": 3080000,
+          "unitPrice": 160826,
+          "unitPriceWanPerPing": 16.08,
+          "size": 19.15,
+          "floor": "十層/十二層",
+          "address": "新興區五福二路０１９２號１０樓之７",
+          "community": "冠軍華廈",
+          "layout": "2房2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2026-06-17",
+          "totalPrice": 10000000,
+          "unitPrice": 372565,
+          "unitPriceWanPerPing": 37.26,
+          "size": 26.84,
+          "floor": "十四層/二十九層",
+          "address": "新興區七賢一路０１８６號十四樓之７",
+          "community": "時尚帝寶",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2026-06-15",
+          "totalPrice": 2080000,
+          "unitPrice": 150922,
+          "unitPriceWanPerPing": 15.09,
+          "size": 13.78,
+          "floor": "五層/十二層",
+          "address": "新興區復興一路００５７號５樓之３",
+          "community": "天興",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrRent": [
+        {
+          "date": "2023-08-29",
+          "totalPrice": 36000,
+          "unitPrice": null,
+          "unitPriceWanPerPing": null,
+          "size": 63.81,
+          "floor": "全/四層",
+          "address": "新興區中正三路１之１５號",
+          "community": "",
+          "layout": "4房2廳2衛",
+          "buildingType": "透天厝"
+        },
+        {
+          "date": "2023-08-22",
+          "totalPrice": 50500,
+          "unitPrice": 889,
+          "unitPriceWanPerPing": 0.09,
+          "size": 56.72,
+          "floor": "見其他登記事項/五層",
+          "address": "新興區大同一路３３號、３５號",
+          "community": "",
+          "layout": "",
+          "buildingType": "公寓(5樓含以下無電梯)"
+        },
+        {
+          "date": "2023-08-16",
+          "totalPrice": 41500,
+          "unitPrice": 902,
+          "unitPriceWanPerPing": 0.09,
+          "size": 46,
+          "floor": "見其他登記事項/十五層",
+          "address": "新興區八德一路２０６號",
+          "community": "",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "error": null,
+      "lastChecked": "2026-07-24 10:53:16"
     }
   ]
 }
