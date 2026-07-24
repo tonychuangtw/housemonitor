@@ -35,7 +35,7 @@
   .entry-head{ display:flex; justify-content:space-between; align-items:center; gap:10px; }
   .entry-name{ font-weight:700; } .entry-meta{ color:var(--text2); font-size:0.84rem; margin-top:2px; }
   .badge{ display:inline-block; padding:1px 8px; border-radius:99px; font-size:0.74rem; border:1px solid var(--border); color:var(--text2); }
-  .badge.new{ color:var(--ok); border-color:var(--ok); }
+  .badge.new{ color:var(--ok); border-color:var(--ok); font-weight:700; }
   .badge.drop{ color:var(--down); border-color:var(--down); font-weight:700; }
   .badge.paused{ color:var(--text2); }
   /* community result cards */
@@ -322,7 +322,8 @@
         var unit=kind==="sale"?" 萬":" 元";
         dropBadge=' <span class="badge drop">📉降價 '+(l.prevPrice-l.price).toLocaleString()+unit+'</span>';
       }
-      var title=dropBadge+esc(l.title)+(l.isNew?' <span class="badge new">NEW</span>':"")+(l.status==="delisted"?' <span class="badge">已下架</span>':"");
+      var newBadge=l.isNew?' <span class="badge new">🆕新上架</span>':"";
+      var title=dropBadge+newBadge+esc(l.title)+(l.status==="delisted"?' <span class="badge">已下架</span>':"");
       html+='<tr'+cls+'><td class="main" data-l="標題">'+title+'</td>'
         +'<td data-l="'+priceLabel+'">'+esc(fmtPrice(l.price,kind))+'</td>'
         +'<td data-l="前次價">'+esc(fmtPrice(l.prevPrice,kind))+'</td>'
