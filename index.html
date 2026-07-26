@@ -136,6 +136,11 @@
 <h2 style="margin-top:26px;">🎯 監控結果</h2>
 <p class="sub" id="res-sub">載入中…</p>
 <div class="summary" id="summary"></div>
+<div class="card" style="padding:10px 16px 12px;">
+  🤝 議價假設：成交價 = 開價 × <b id="deal-pct-v" style="color:var(--accent)">100%</b>
+  <input type="range" id="deal-pct" min="70" max="100" step="1" value="100" style="width:100%;margin:8px 0 4px;">
+  <span class="msg" style="margin:0;">拉動滑桿看「預估獲利」欄在不同砍價幅度下的變化；欄位 tooltip 有每筆的損益兩平出價</span>
+</div>
 <div id="results"><p class="msg">載入中…</p></div>
 <p class="foot">591 社區在架列表走官方 bff JSON API 定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新<br>
 預估獲利 = 同坪數組(±20%)實登中位數轉售價 − 開價 − 交易成本(買2%+賣4%) − 房地合一稅45%(持有≤2年)；未計土地漲價總數額/費用推計/議價空間，僅供粗篩</p>
@@ -362,14 +367,25 @@
     unit:{l:"單價",v:function(l){return l.unitPricePerPing;}},
     diff:{l:"漲跌",v:function(l){return (l.price!=null&&l.prevPrice!=null)?l.price-l.prevPrice:null;}},
     size:{l:"坪數",v:function(l){return l.size;}},
-    profit:{l:"預估獲利",v:function(l){return l.estProfit;}}
+    profit:{l:"預估獲利",v:function(l){return profitAt(l,DEAL_PCT);}}
   };
+  var DEAL_PCT=100;
+  function profitAt(l,pct){
+    if(l.estResale==null||l.price==null)return null;
+    var assumed=l.price*pct/100;
+    var net=l.estResale-assumed-(assumed*0.02+l.estResale*0.04);
+    return Math.round(net>0?net*0.55:net);
+  }
+  function breakEven(l){ return (l.estResale!=null&&l.price)?Math.round(l.estResale*0.96/1.02):null; }
   function fmtProfit(l){
-    if(l.estProfit==null)return "—";
-    var cls=l.estProfit>0?"down":"up"; // 綠=賺 紅=賠（沿用 down=綠 up=紅）
-    var sign=l.estProfit>0?"+":"";
-    var tip="照開價買、照同坪數組實登中位數賣（估 "+(l.estResale!=null?l.estResale.toLocaleString()+"萬":"?")+"），扣交易成本(買2%+賣4%)與 2 年內房地合一稅 45% 的粗估";
-    return '<span class="'+cls+'" title="'+esc(tip)+'">'+sign+l.estProfit.toLocaleString()+" 萬</span>";
+    var p=profitAt(l,DEAL_PCT);
+    if(p==null)return "—";
+    var cls=p>0?"down":"up"; // 綠=賺 紅=賠（沿用 down=綠 up=紅）
+    var be=breakEven(l);
+    var tip="成交假設 "+Math.round(l.price*DEAL_PCT/100).toLocaleString()+"萬（開價"+DEAL_PCT+"%）→ 轉售估 "
+      +l.estResale.toLocaleString()+"萬，扣交易成本(買2%+賣4%)與 2 年內房地合一稅 45%"
+      +(be!=null?"；損益兩平出價 ≈ "+be.toLocaleString()+"萬（開價的 "+Math.round(be/l.price*100)+"%）":"");
+    return '<span class="'+cls+'" title="'+esc(tip)+'">'+(p>0?"+":"")+p.toLocaleString()+" 萬</span>";
   }
   function sortList(list,skey,dir){
     var spec=SORTS[skey]; if(!spec)return list;
@@ -442,6 +458,24 @@
         return esc(g.lo+"–"+g.hi+"坪")+'：'+g.n+'筆 · 中位 '+g.median+' · 均價 '+g.avg;
       }).join('<br>');
     }
+    var tr=c.lvrTrend||[];
+    if(tr.length>=2){
+      var W=260,H=40,P=4;
+      var vals=tr.map(function(t){return t.median;});
+      var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),span=(mx-mn)||1;
+      var pts=tr.map(function(t,i){
+        return {x:P+i*(W-2*P)/(tr.length-1), y:H-P-(t.median-mn)*(H-2*P)/span, t:t};
+      });
+      var chg=((vals[vals.length-1]-vals[0])/vals[0]*100).toFixed(1);
+      html+='<br><b>季走勢：</b>'+esc(tr[0].q)+' '+vals[0]+' → '+esc(tr[tr.length-1].q)+' '+vals[vals.length-1]
+        +' 萬/坪（'+(chg>0?"+":"")+chg+'%）'
+        +'<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-width:320px;height:40px;display:block;margin-top:3px;" role="img" aria-label="季度單價中位數走勢">'
+        +'<polyline fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="'
+        +pts.map(function(p){return p.x.toFixed(1)+","+p.y.toFixed(1);}).join(" ")+'"/>'
+        +pts.map(function(p){return '<circle cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="8" fill="transparent"><title>'+esc(p.t.q)+'：'+p.t.median+' 萬/坪（'+p.t.n+' 筆）</title></circle>';}).join("")
+        +'<circle cx="'+pts[pts.length-1].x.toFixed(1)+'" cy="'+pts[pts.length-1].y.toFixed(1)+'" r="2.5" fill="var(--accent)"/>'
+        +'</svg>';
+    }
     var all=c.lvrSaleAll||[];
     if(all.length){
       html+='<details class="lvr-detail"><summary>明細（'+all.length+' 筆，點此展開）</summary>'
@@ -465,6 +499,20 @@
       return esc(d.date)+" "+esc(total)+" · "+esc(unit)+(d.size!=null?" "+esc(d.size)+"坪":"")+(d.floor?" "+esc(d.floor)+"F":"");
     }).join("<br>");
     return html+'</div>';
+  }
+  function liquidityBlock(c){
+    var q=c.liquidity; if(!q)return "";
+    var parts=[];
+    if(q.delistedMedianDays!=null)parts.push("已下架 "+q.delistedN+" 筆・上架→下架中位 <b>"+q.delistedMedianDays+" 天</b>");
+    else parts.push("尚無下架樣本");
+    if(q.activeMedianDays!=null)parts.push("在售中位已在架 <b>"+q.activeMedianDays+" 天</b>");
+    return '<div class="lvr"><b>⏱ 脫手速度：</b>'+parts.join("・")+'（自監控起算，早於監控的上架時間抓不到）</div>';
+  }
+  function rentYieldBlock(c){
+    var y=c.rentYield; if(!y)return "";
+    var two=(y.yieldPct*2).toFixed(1);
+    return '<div class="lvr"><b>💰 租金報酬率：</b>在租中位 '+y.rentUnit.toLocaleString()+' 元/坪/月（'+y.n+' 筆・約 '+y.rentSize+' 坪）÷ 同坪數實登 '+y.baseUnit+' 萬/坪 → 年化 <b>'+y.yieldPct+'%</b>'
+      +'<br><b>持有策略：</b>2 年內轉售房地合一 45%，持滿 2 年降到 35%（價差每 100 萬省 10 萬稅）＋期間收租約 '+two+'%（兩年毛租金，未扣持有成本）</div>';
   }
   function matchBlock(c){
     var ms=c.lvrMatches||[];
@@ -512,10 +560,10 @@
       if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
       html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
         +listingTable(c.sale,"sale",c.id+":sale")
-        +lvrSaleBlock(c)+matchBlock(c)+'</div>';
+        +liquidityBlock(c)+lvrSaleBlock(c)+matchBlock(c)+'</div>';
       html+='<div class="sect"><p class="sect-head">🔑 租賃（'+rentActive+' 筆在租）</p>'
         +listingTable(c.rent,"rent",c.id+":rent")
-        +lvrBlock(c.lvrRent,"rent","租賃")+'</div>';
+        +lvrBlock(c.lvrRent,"rent","租賃")+rentYieldBlock(c)+'</div>';
       card.innerHTML=html;
       el.appendChild(card);
     });
@@ -584,6 +632,11 @@
       rebuildDistricts();
     })();
     initGsi(); if(token())showApp();
+    $("deal-pct").addEventListener("input",function(){
+      DEAL_PCT=parseInt(this.value,10)||100;
+      $("deal-pct-v").textContent=DEAL_PCT+"%";
+      renderResults();
+    });
     $("f-submit").addEventListener("click",submitForm);
     $("test-push").addEventListener("click",function(){
       var m=$("push-msg"); m.textContent="發送中…"; m.className="msg";
