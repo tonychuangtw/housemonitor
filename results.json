@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 21:06:21",
+  "updated": "2026-07-26 21:08:26",
   "events": [
     {
       "ts": "2026-07-26 20:58:34",
@@ -1711,7 +1711,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 21:04:27"
+      "lastChecked": "2026-07-26 21:06:24"
     },
     {
       "id": "mrych48q56fu",
@@ -2463,7 +2463,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 21:04:59"
+      "lastChecked": "2026-07-26 21:06:55"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -2625,7 +2625,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 21:05:27"
+      "lastChecked": "2026-07-26 21:07:24"
     },
     {
       "id": "ms1szpz342t7",
@@ -3951,7 +3951,24 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 21:05:52"
+      "lastChecked": "2026-07-26 21:07:49"
+    },
+    {
+      "id": "ms1t9u1fslfj",
+      "name": "遠雄utown",
+      "cityName": "新北市",
+      "districtName": "汐止區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [],
+      "lvrRent": [],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "lvrSaleStats": [],
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": "591 community not found: 遠雄utown (candidates: 遠雄U-TOWN,遠雄PARK ONE,遠雄左岸-錦繡園,遠雄左岸-紫金園,遠雄左岸-牡丹園,遠雄CASA,遠雄青青,遠雄國都,遠雄首品,遠雄九五,遠雄耶魯,遠雄國匯,遠雄豐河,遠雄國滙,遠雄悦河,遠雄百富,遠雄日安,遠雄鉑翠,遠雄集美,遠雄達利,遠雄擎光,遠雄京都,遠雄江翠,遠雄國都,遠雄新宿,遠雄合雅,遠雄錸儷,遠雄和光,遠雄悅來I,遠雄紫京城)",
+      "lastChecked": "2026-07-26 21:08:16"
     }
   ]
 }
