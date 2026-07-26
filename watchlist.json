@@ -51,6 +51,19 @@
       "scanPerDay": 2,
       "active": true,
       "added": 1785070677567
+    },
+    {
+      "id": "ms1t9u1fslfj",
+      "name": "遠雄utown",
+      "city": "F",
+      "cityName": "新北市",
+      "district": "F28",
+      "districtName": "汐止區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "active": true,
+      "added": 1785071149395
     }
   ]
 }
