@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 19:56:12",
+  "updated": "2026-07-26 20:46:20",
   "events": [
     {
       "ts": "2026-07-26 19:36:53",
@@ -82,6 +82,8 @@
           "unitPricePerPing": 34.53,
           "premiumPct": 40,
           "marketN": 23,
+          "estResale": 1098,
+          "estProfit": -515,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -99,6 +101,8 @@
           "unitPricePerPing": 34.53,
           "premiumPct": 40,
           "marketN": 23,
+          "estResale": 1098,
+          "estProfit": -515,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -116,6 +120,8 @@
           "unitPricePerPing": 32,
           "premiumPct": 29.8,
           "marketN": 23,
+          "estResale": 1070,
+          "estProfit": -389,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -133,6 +139,8 @@
           "unitPricePerPing": 32,
           "premiumPct": 29.8,
           "marketN": 23,
+          "estResale": 1070,
+          "estProfit": -389,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -150,6 +158,8 @@
           "unitPricePerPing": 32.28,
           "premiumPct": 30.9,
           "marketN": 23,
+          "estResale": 1060,
+          "estProfit": -398,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -167,6 +177,8 @@
           "unitPricePerPing": 28.47,
           "premiumPct": 15.5,
           "marketN": 23,
+          "estResale": 1098,
+          "estProfit": -239,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -184,6 +196,8 @@
           "unitPricePerPing": 26.92,
           "premiumPct": 9.2,
           "marketN": 23,
+          "estResale": 1097,
+          "estProfit": -169,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -201,6 +215,8 @@
           "unitPricePerPing": 26.91,
           "premiumPct": 9.1,
           "marketN": 23,
+          "estResale": 1098,
+          "estProfit": -168,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -218,6 +234,8 @@
           "unitPricePerPing": 26.91,
           "premiumPct": 9.1,
           "marketN": 23,
+          "estResale": 1098,
+          "estProfit": -168,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -235,6 +253,8 @@
           "unitPricePerPing": 26.91,
           "premiumPct": 9.1,
           "marketN": 23,
+          "estResale": 1098,
+          "estProfit": -168,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -252,6 +272,8 @@
           "unitPricePerPing": 31.03,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -269,6 +291,8 @@
           "unitPricePerPing": 29.88,
           "premiumPct": 16.5,
           "marketN": 11,
+          "estResale": 927,
+          "estProfit": -212,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -286,6 +310,8 @@
           "unitPricePerPing": 38.16,
           "premiumPct": 8.3,
           "marketN": 37,
+          "estResale": 775,
+          "estProfit": -113,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -303,6 +329,8 @@
           "unitPricePerPing": 42.88,
           "premiumPct": 21.7,
           "marketN": 32,
+          "estResale": 670,
+          "estProfit": -189,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -320,6 +348,8 @@
           "unitPricePerPing": 41.03,
           "premiumPct": 16.5,
           "marketN": 32,
+          "estResale": 685,
+          "estProfit": -156,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -337,6 +367,8 @@
           "unitPricePerPing": 43.23,
           "premiumPct": 21.4,
           "marketN": 27,
+          "estResale": 649,
+          "estProfit": -181,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -354,6 +386,8 @@
           "unitPricePerPing": 42.68,
           "premiumPct": 19.8,
           "marketN": 27,
+          "estResale": 649,
+          "estProfit": -171,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -371,6 +405,8 @@
           "unitPricePerPing": 42.7,
           "premiumPct": 19.9,
           "marketN": 27,
+          "estResale": 649,
+          "estProfit": -171,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -388,6 +424,8 @@
           "unitPricePerPing": 31.87,
           "premiumPct": -9.5,
           "marketN": 37,
+          "estResale": 772,
+          "estProfit": 15,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -405,6 +443,8 @@
           "unitPricePerPing": 36.26,
           "premiumPct": 3,
           "marketN": 37,
+          "estResale": 775,
+          "estProfit": -70,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -424,6 +464,8 @@
           "unitPricePerPing": 803,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -441,6 +483,8 @@
           "unitPricePerPing": 1388,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -458,6 +502,8 @@
           "unitPricePerPing": 1282,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -475,6 +521,8 @@
           "unitPricePerPing": 1209,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -492,6 +540,8 @@
           "unitPricePerPing": 1616,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -509,6 +559,8 @@
           "unitPricePerPing": 523,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -526,6 +578,8 @@
           "unitPricePerPing": 1172,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -543,6 +597,8 @@
           "unitPricePerPing": 2019,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -560,6 +616,8 @@
           "unitPricePerPing": 1833,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -577,6 +635,8 @@
           "unitPricePerPing": 1750,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1462,7 +1522,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 19:55:14"
+      "lastChecked": "2026-07-26 20:45:17"
     },
     {
       "id": "mrych48q56fu",
@@ -1483,6 +1543,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1500,6 +1562,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1517,6 +1581,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1534,6 +1600,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1551,6 +1619,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1568,6 +1638,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1585,6 +1657,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1602,6 +1676,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1619,6 +1695,8 @@
           "unitPricePerPing": 34.78,
           "premiumPct": 25.9,
           "marketN": 11,
+          "estResale": 2502,
+          "estProfit": -811,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1636,6 +1714,8 @@
           "unitPricePerPing": 36.78,
           "premiumPct": 32.8,
           "marketN": 10,
+          "estResale": 2319,
+          "estProfit": -915,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1653,6 +1733,8 @@
           "unitPricePerPing": 36.78,
           "premiumPct": 32.8,
           "marketN": 10,
+          "estResale": 2319,
+          "estProfit": -915,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1670,6 +1752,8 @@
           "unitPricePerPing": 35.9,
           "premiumPct": 29.6,
           "marketN": 10,
+          "estResale": 2305,
+          "estProfit": -835,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1687,6 +1771,8 @@
           "unitPricePerPing": 32.44,
           "premiumPct": 17.2,
           "marketN": 10,
+          "estResale": 2295,
+          "estProfit": -539,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1704,6 +1790,8 @@
           "unitPricePerPing": 32.44,
           "premiumPct": 17.2,
           "marketN": 10,
+          "estResale": 2295,
+          "estProfit": -539,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1721,6 +1809,8 @@
           "unitPricePerPing": 32.44,
           "premiumPct": 17.2,
           "marketN": 10,
+          "estResale": 2295,
+          "estProfit": -539,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1738,6 +1828,8 @@
           "unitPricePerPing": 35.01,
           "premiumPct": 29,
           "marketN": 15,
+          "estResale": 2619,
+          "estProfit": -933,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1757,6 +1849,8 @@
           "unitPricePerPing": 817,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1774,6 +1868,8 @@
           "unitPricePerPing": 817,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1791,6 +1887,8 @@
           "unitPricePerPing": 817,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1808,6 +1906,8 @@
           "unitPricePerPing": 657,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1825,6 +1925,8 @@
           "unitPricePerPing": 663,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1842,6 +1944,8 @@
           "unitPricePerPing": 664,
           "premiumPct": null,
           "marketN": null,
+          "estResale": null,
+          "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -2170,7 +2274,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 19:55:42"
+      "lastChecked": "2026-07-26 20:45:51"
     }
   ]
 }

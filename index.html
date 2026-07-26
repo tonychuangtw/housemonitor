@@ -137,7 +137,8 @@
 <p class="sub" id="res-sub">載入中…</p>
 <div class="summary" id="summary"></div>
 <div id="results"><p class="msg">載入中…</p></div>
-<p class="foot">591 社區在架列表走官方 bff JSON API 定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新</p>
+<p class="foot">591 社區在架列表走官方 bff JSON API 定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新<br>
+預估獲利 = 同坪數組(±20%)實登中位數轉售價 − 開價 − 交易成本(買2%+賣4%) − 房地合一稅45%(持有≤2年)；未計土地漲價總數額/費用推計/議價空間，僅供粗篩</p>
 
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 <script>
@@ -360,8 +361,16 @@
     price:{l:"總價",v:function(l){return l.price;}},
     unit:{l:"單價",v:function(l){return l.unitPricePerPing;}},
     diff:{l:"漲跌",v:function(l){return (l.price!=null&&l.prevPrice!=null)?l.price-l.prevPrice:null;}},
-    size:{l:"坪數",v:function(l){return l.size;}}
+    size:{l:"坪數",v:function(l){return l.size;}},
+    profit:{l:"預估獲利",v:function(l){return l.estProfit;}}
   };
+  function fmtProfit(l){
+    if(l.estProfit==null)return "—";
+    var cls=l.estProfit>0?"down":"up"; // 綠=賺 紅=賠（沿用 down=綠 up=紅）
+    var sign=l.estProfit>0?"+":"";
+    var tip="照開價買、照同坪數組實登中位數賣（估 "+(l.estResale!=null?l.estResale.toLocaleString()+"萬":"?")+"），扣交易成本(買2%+賣4%)與 2 年內房地合一稅 45% 的粗估";
+    return '<span class="'+cls+'" title="'+esc(tip)+'">'+sign+l.estProfit.toLocaleString()+" 萬</span>";
+  }
   function sortList(list,skey,dir){
     var spec=SORTS[skey]; if(!spec)return list;
     return list.slice().sort(function(a,b){
@@ -388,7 +397,7 @@
         }).join("")
       +'</select></div>'
       +'<table><thead><tr><th>標題</th>'+th(priceLabel,"price")+'<th>前次價</th>'+th("漲跌","diff")+th(unitLabel,"unit")
-      +(kind==="sale"?'<th>vs行情</th>':"")+th("坪數","size")+'<th>樓層</th><th>連結</th></tr></thead><tbody>';
+      +(kind==="sale"?'<th>vs行情</th>'+th("預估獲利","profit"):"")+th("坪數","size")+'<th>樓層</th><th>連結</th></tr></thead><tbody>';
     rows.forEach(function(l){
       var cls=l.status==="delisted"?' class="delisted"':"";
       var badges="";
@@ -415,7 +424,7 @@
         +'<td data-l="前次價">'+esc(fmtPrice(l.prevPrice,kind))+'</td>'
         +'<td data-l="漲跌">'+priceDiff(l,kind)+'</td>'
         +'<td data-l="'+unitLabel+'">'+esc(fmtUnit(l,kind))+'</td>'
-        +(kind==="sale"?'<td data-l="vs行情">'+fmtVs(l)+'</td>':"")
+        +(kind==="sale"?'<td data-l="vs行情">'+fmtVs(l)+'</td><td data-l="預估獲利">'+fmtProfit(l)+'</td>':"")
         +'<td data-l="坪數">'+(l.size!=null?esc(l.size)+" 坪":"—")+'</td>'
         +'<td data-l="樓層">'+esc(l.floor||"—")+'</td>'
         +'<td data-l="連結"><a href="'+esc(l.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
