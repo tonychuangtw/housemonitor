@@ -1,5 +1,67 @@
 {
-  "updated": "2026-07-26 09:08:12",
+  "updated": "2026-07-26 19:56:12",
+  "events": [
+    {
+      "ts": "2026-07-26 19:36:53",
+      "community": "大悅",
+      "kind": "bargain",
+      "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
+      "kindOfListing": "sale",
+      "price": 1198,
+      "url": "https://sale.591.com.tw/home/house/detail/2/19946291.html",
+      "premiumPct": -22.1
+    },
+    {
+      "ts": "2026-07-26 19:36:53",
+      "community": "大悅",
+      "kind": "bargain",
+      "title": "❤️五福國中信義國小採光景觀2房+平車❤️",
+      "kindOfListing": "sale",
+      "price": 1268,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20404178.html",
+      "premiumPct": -17.6
+    },
+    {
+      "ts": "2026-07-26 19:36:53",
+      "community": "大悅",
+      "kind": "bargain",
+      "title": "（專約）文化中心捷運｜邊間雙面採光｜大兩房＋平車",
+      "kindOfListing": "sale",
+      "price": 1198,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20503106.html",
+      "premiumPct": -22.1
+    },
+    {
+      "ts": "2026-07-26 19:36:53",
+      "community": "大悅",
+      "kind": "bargain",
+      "title": "大悅｜五福學區｜邊間雙採光2房改一房｜車位",
+      "kindOfListing": "sale",
+      "price": 1080,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20572992.html",
+      "premiumPct": -16.1
+    },
+    {
+      "ts": "2026-07-26 19:36:53",
+      "community": "大悅",
+      "kind": "bargain",
+      "title": "找巧芯~文化中心捷運｜大兩房＋平車｜邊間雙面採光｜興富發大悅",
+      "kindOfListing": "sale",
+      "price": 1198,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20582967.html",
+      "premiumPct": -22.1
+    },
+    {
+      "ts": "2026-07-26 19:36:53",
+      "community": "大悅",
+      "kind": "bargain",
+      "title": "捷運文化中心｜邊間採光大兩房｜獨立平車",
+      "kindOfListing": "sale",
+      "price": 1198,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20602618.html",
+      "premiumPct": -22.1
+    }
+  ],
   "communities": [
     {
       "id": "mrvzb6fv40ia",
@@ -16,7 +78,13 @@
           "floor": "22F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20370381.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.53,
+          "premiumPct": 40,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20470469",
@@ -27,7 +95,13 @@
           "floor": "22F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20470469.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.53,
+          "premiumPct": 40,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20429064",
@@ -38,7 +112,13 @@
           "floor": "9F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20429064.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 32,
+          "premiumPct": 29.8,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20433532",
@@ -49,7 +129,13 @@
           "floor": "9F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20433532.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 32,
+          "premiumPct": 29.8,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20435679",
@@ -60,7 +146,13 @@
           "floor": "9F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20435679.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 32.28,
+          "premiumPct": 30.9,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20404178",
@@ -71,7 +163,13 @@
           "floor": "21F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20404178.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 28.47,
+          "premiumPct": 15.5,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "19946291",
@@ -82,7 +180,13 @@
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/19946291.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 26.92,
+          "premiumPct": 9.2,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20503106",
@@ -93,7 +197,13 @@
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20503106.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 26.91,
+          "premiumPct": 9.1,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20582967",
@@ -104,7 +214,13 @@
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20582967.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 26.91,
+          "premiumPct": 9.1,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20602618",
@@ -115,7 +231,13 @@
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20602618.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 26.91,
+          "premiumPct": 9.1,
+          "marketN": 23,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20406500",
@@ -126,7 +248,13 @@
           "floor": "17F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20406500.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 31.03,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20572992",
@@ -137,7 +265,13 @@
           "floor": "15F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20572992.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 29.88,
+          "premiumPct": 16.5,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20327904",
@@ -148,7 +282,13 @@
           "floor": "22F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20327904.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 38.16,
+          "premiumPct": 8.3,
+          "marketN": 37,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20332545",
@@ -159,7 +299,13 @@
           "floor": "16F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20332545.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 42.88,
+          "premiumPct": 21.7,
+          "marketN": 32,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20435675",
@@ -170,7 +316,13 @@
           "floor": "15F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20435675.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 41.03,
+          "premiumPct": 16.5,
+          "marketN": 32,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20585408",
@@ -181,7 +333,13 @@
           "floor": "3F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20585408.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 43.23,
+          "premiumPct": 21.4,
+          "marketN": 27,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20411818",
@@ -192,7 +350,13 @@
           "floor": "6F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20411818.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 42.68,
+          "premiumPct": 19.8,
+          "marketN": 27,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20456930",
@@ -203,7 +367,13 @@
           "floor": "6F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20456930.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 42.7,
+          "premiumPct": 19.9,
+          "marketN": 27,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20542781",
@@ -214,7 +384,13 @@
           "floor": "3F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20542781.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 31.87,
+          "premiumPct": -9.5,
+          "marketN": 37,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20436547",
@@ -225,7 +401,13 @@
           "floor": "23F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20436547.html",
           "status": "delisted",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 36.26,
+          "premiumPct": 3,
+          "marketN": 37,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         }
       ],
       "rent": [
@@ -238,7 +420,13 @@
           "floor": "23F/29F",
           "url": "https://rent.591.com.tw/19881417",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 803,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21634119",
@@ -249,7 +437,13 @@
           "floor": "8F/29F",
           "url": "https://rent.591.com.tw/21634119",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 1388,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21560299",
@@ -260,7 +454,13 @@
           "floor": "27F/29F",
           "url": "https://rent.591.com.tw/21560299",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 1282,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21695539",
@@ -271,7 +471,13 @@
           "floor": "21F/29F",
           "url": "https://rent.591.com.tw/21695539",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 1209,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21530871",
@@ -282,7 +488,13 @@
           "floor": "4F/29F",
           "url": "https://rent.591.com.tw/21530871",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 1616,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21647813",
@@ -293,7 +505,13 @@
           "floor": "10F/29F",
           "url": "https://rent.591.com.tw/21647813",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 523,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21557119",
@@ -304,7 +522,13 @@
           "floor": "27F/29F",
           "url": "https://rent.591.com.tw/21557119",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 1172,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21673303",
@@ -315,7 +539,13 @@
           "floor": "20F/29F",
           "url": "https://rent.591.com.tw/21673303",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 2019,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21508126",
@@ -326,7 +556,13 @@
           "floor": "12F/29F",
           "url": "https://rent.591.com.tw/21508126",
           "status": "delisted",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 1833,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21505370",
@@ -337,7 +573,13 @@
           "floor": "20F/29F",
           "url": "https://rent.591.com.tw/21505370",
           "status": "delisted",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 1750,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         }
       ],
       "lvrSale": [
@@ -416,8 +658,811 @@
           "buildingType": "住宅大樓(11層含以上有電梯)"
         }
       ],
+      "lvrSaleMatched": true,
+      "lvrSaleCount": 64,
+      "lvrSaleStats": [
+        {
+          "lo": 10,
+          "hi": 20,
+          "n": 27,
+          "median": 35.62,
+          "avg": 36.09
+        },
+        {
+          "lo": 20,
+          "hi": 30,
+          "n": 13,
+          "median": 32.51,
+          "avg": 32.79
+        },
+        {
+          "lo": 30,
+          "hi": 40,
+          "n": 1,
+          "median": 28.61,
+          "avg": 28.61
+        },
+        {
+          "lo": 40,
+          "hi": 50,
+          "n": 23,
+          "median": 24.66,
+          "avg": 25.1
+        }
+      ],
+      "lvrSaleAll": [
+        {
+          "date": "2026-02-17",
+          "totalPrice": 6700000,
+          "unitPrice": 351960,
+          "unitPriceWanPerPing": 35.2,
+          "size": 19.04,
+          "floor": "二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二樓之６",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2026-01-08",
+          "totalPrice": 9200000,
+          "unitPrice": 332783,
+          "unitPriceWanPerPing": 33.28,
+          "size": 27.65,
+          "floor": "五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號五樓之８",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-12-29",
+          "totalPrice": 9560000,
+          "unitPrice": 286132,
+          "unitPriceWanPerPing": 28.61,
+          "size": 33.41,
+          "floor": "九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號九樓之８",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-11-28",
+          "totalPrice": 7500000,
+          "unitPrice": 411441,
+          "unitPriceWanPerPing": 41.14,
+          "size": 18.23,
+          "floor": "五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號五樓之５",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-09-13",
+          "totalPrice": 11000000,
+          "unitPrice": 267755,
+          "unitPriceWanPerPing": 26.78,
+          "size": 41.08,
+          "floor": "二十八層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十八樓之６",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-08-12",
+          "totalPrice": 6980000,
+          "unitPrice": 366668,
+          "unitPriceWanPerPing": 36.67,
+          "size": 19.04,
+          "floor": "十八層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十八樓之６",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-08-11",
+          "totalPrice": 6700000,
+          "unitPrice": 344512,
+          "unitPriceWanPerPing": 34.45,
+          "size": 19.45,
+          "floor": "八層/二十九層",
+          "address": "苓雅區七賢一路０１２１號八樓之１２",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-07-15",
+          "totalPrice": 12500000,
+          "unitPrice": 286840,
+          "unitPriceWanPerPing": 28.68,
+          "size": 43.58,
+          "floor": "二十七層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十七樓之１",
+          "community": "大悅",
+          "layout": "1房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-06-26",
+          "totalPrice": 10380000,
+          "unitPrice": 242040,
+          "unitPriceWanPerPing": 24.2,
+          "size": 42.89,
+          "floor": "十五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十五樓之１３",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-03-16",
+          "totalPrice": 6850000,
+          "unitPrice": 359838,
+          "unitPriceWanPerPing": 35.98,
+          "size": 19.04,
+          "floor": "五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號五樓之６",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-03-07",
+          "totalPrice": 5720000,
+          "unitPrice": 300479,
+          "unitPriceWanPerPing": 30.05,
+          "size": 19.04,
+          "floor": "十六層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十六樓之２",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-02-11",
+          "totalPrice": 12390000,
+          "unitPrice": 293736,
+          "unitPriceWanPerPing": 29.37,
+          "size": 42.18,
+          "floor": "二十八層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十八樓之１１",
+          "community": "大悅",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-02-09",
+          "totalPrice": 8150000,
+          "unitPrice": 370288,
+          "unitPriceWanPerPing": 37.03,
+          "size": 22.01,
+          "floor": "六層/二十九層",
+          "address": "苓雅區七賢一路０１２１號六樓之１０",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-01-23",
+          "totalPrice": 7650000,
+          "unitPrice": 393362,
+          "unitPriceWanPerPing": 39.34,
+          "size": 19.45,
+          "floor": "二十八層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十八樓之１０",
+          "community": "大悅",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-01-14",
+          "totalPrice": 8120000,
+          "unitPrice": 417531,
+          "unitPriceWanPerPing": 41.75,
+          "size": 19.45,
+          "floor": "十二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十二樓之１２",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-10-23",
+          "totalPrice": 8700000,
+          "unitPrice": 314698,
+          "unitPriceWanPerPing": 31.47,
+          "size": 27.65,
+          "floor": "五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號五樓之８",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-10-05",
+          "totalPrice": 7600000,
+          "unitPrice": 416926,
+          "unitPriceWanPerPing": 41.69,
+          "size": 18.23,
+          "floor": "五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號五樓之３",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-09-28",
+          "totalPrice": 12500000,
+          "unitPrice": 288202,
+          "unitPriceWanPerPing": 28.82,
+          "size": 43.37,
+          "floor": "九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號九樓之１",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-08-05",
+          "totalPrice": 12100000,
+          "unitPrice": 271795,
+          "unitPriceWanPerPing": 27.18,
+          "size": 44.52,
+          "floor": "十三層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十三樓之７",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-08-01",
+          "totalPrice": 9700000,
+          "unitPrice": 404261,
+          "unitPriceWanPerPing": 40.43,
+          "size": 23.99,
+          "floor": "二十二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十二樓之３",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-07-29",
+          "totalPrice": 8600000,
+          "unitPrice": 442212,
+          "unitPriceWanPerPing": 44.22,
+          "size": 19.45,
+          "floor": "二十層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十樓之１２",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-07-23",
+          "totalPrice": 12880000,
+          "unitPrice": 308248,
+          "unitPriceWanPerPing": 30.82,
+          "size": 41.78,
+          "floor": "二十七層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十七樓之８",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以��有電梯)"
+        },
+        {
+          "date": "2024-07-16",
+          "totalPrice": 7400000,
+          "unitPrice": 405954,
+          "unitPriceWanPerPing": 40.6,
+          "size": 18.23,
+          "floor": "七層/二十九層",
+          "address": "苓雅區七賢一路０１２１號七樓之３",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-07-15",
+          "totalPrice": 9380000,
+          "unitPrice": 390926,
+          "unitPriceWanPerPing": 39.09,
+          "size": 23.99,
+          "floor": "二十六層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十六樓之５",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-07-14",
+          "totalPrice": 12300000,
+          "unitPrice": 276288,
+          "unitPriceWanPerPing": 27.63,
+          "size": 44.52,
+          "floor": "二十五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十五樓之７",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-06-29",
+          "totalPrice": 5800000,
+          "unitPrice": 318182,
+          "unitPriceWanPerPing": 31.82,
+          "size": 18.23,
+          "floor": "二十一層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十一樓之３",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-06-23",
+          "totalPrice": 11460000,
+          "unitPrice": 274264,
+          "unitPriceWanPerPing": 27.43,
+          "size": 41.78,
+          "floor": "十七層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十七樓之８",
+          "community": "大悅",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-06-21",
+          "totalPrice": 11000000,
+          "unitPrice": 256496,
+          "unitPriceWanPerPing": 25.65,
+          "size": 42.89,
+          "floor": "十九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十九樓之１３",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-06-15",
+          "totalPrice": 7750000,
+          "unitPrice": 352116,
+          "unitPriceWanPerPing": 35.21,
+          "size": 22.01,
+          "floor": "五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號五樓之１０",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-06-13",
+          "totalPrice": 7280000,
+          "unitPrice": 399372,
+          "unitPriceWanPerPing": 39.94,
+          "size": 18.23,
+          "floor": "十五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十五樓之５",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-05-30",
+          "totalPrice": 7350000,
+          "unitPrice": 377937,
+          "unitPriceWanPerPing": 37.79,
+          "size": 19.45,
+          "floor": "十四層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十四樓之１２",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-04-15",
+          "totalPrice": 7250000,
+          "unitPrice": 380850,
+          "unitPriceWanPerPing": 38.09,
+          "size": 19.04,
+          "floor": "十三層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十三樓之２",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-03-30",
+          "totalPrice": 11400000,
+          "unitPrice": 256069,
+          "unitPriceWanPerPing": 25.61,
+          "size": 44.52,
+          "floor": "十七層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十七樓之７",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-03-12",
+          "totalPrice": 10510000,
+          "unitPrice": 235967,
+          "unitPriceWanPerPing": 23.6,
+          "size": 44.54,
+          "floor": "二十二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十二樓之１",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-03-09",
+          "totalPrice": 6800000,
+          "unitPrice": 310188,
+          "unitPriceWanPerPing": 31.02,
+          "size": 21.92,
+          "floor": "二十三層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十三樓之１１",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-03-04",
+          "totalPrice": 10700000,
+          "unitPrice": 236000,
+          "unitPriceWanPerPing": 23.6,
+          "size": 45.34,
+          "floor": "五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號五樓之７",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-02-25",
+          "totalPrice": 6850000,
+          "unitPrice": 359838,
+          "unitPriceWanPerPing": 35.98,
+          "size": 19.04,
+          "floor": "十二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十二樓之２",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-02-01",
+          "totalPrice": 8000000,
+          "unitPrice": 179699,
+          "unitPriceWanPerPing": 17.97,
+          "size": 44.52,
+          "floor": "十二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十二樓之７",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-01-08",
+          "totalPrice": 6850000,
+          "unitPrice": 352225,
+          "unitPriceWanPerPing": 35.22,
+          "size": 19.45,
+          "floor": "二十八層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十八樓之７",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-01-03",
+          "totalPrice": 6600000,
+          "unitPrice": 346704,
+          "unitPriceWanPerPing": 34.67,
+          "size": 19.04,
+          "floor": "十九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十九樓之６",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-01-01",
+          "totalPrice": 7800000,
+          "unitPrice": 325078,
+          "unitPriceWanPerPing": 32.51,
+          "size": 23.99,
+          "floor": "二十四層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十四樓之５",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-12-29",
+          "totalPrice": 9850000,
+          "unitPrice": 229683,
+          "unitPriceWanPerPing": 22.97,
+          "size": 42.89,
+          "floor": "二十二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十二樓之１３",
+          "community": "大悅",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-12-26",
+          "totalPrice": 10700000,
+          "unitPrice": 240347,
+          "unitPriceWanPerPing": 24.03,
+          "size": 44.52,
+          "floor": "十層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十樓之７",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-12-23",
+          "totalPrice": 10500000,
+          "unitPrice": 242208,
+          "unitPriceWanPerPing": 24.22,
+          "size": 43.35,
+          "floor": "十九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十九樓之７",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-12-02",
+          "totalPrice": 9800000,
+          "unitPrice": 228516,
+          "unitPriceWanPerPing": 22.85,
+          "size": 42.89,
+          "floor": "十六層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十六樓之１３",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-11-18",
+          "totalPrice": 7100000,
+          "unitPrice": 389498,
+          "unitPriceWanPerPing": 38.95,
+          "size": 18.23,
+          "floor": "二十層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十樓之５",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-11-07",
+          "totalPrice": 8680000,
+          "unitPrice": 361752,
+          "unitPriceWanPerPing": 36.18,
+          "size": 23.99,
+          "floor": "二十一層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十一樓之５",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-10-19",
+          "totalPrice": 6850000,
+          "unitPrice": 352225,
+          "unitPriceWanPerPing": 35.22,
+          "size": 19.45,
+          "floor": "二十六層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十六樓之１２",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-09-27",
+          "totalPrice": 10980000,
+          "unitPrice": 246638,
+          "unitPriceWanPerPing": 24.66,
+          "size": 44.52,
+          "floor": "二十五層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十五樓之７",
+          "community": "大悅",
+          "layout": "2房1廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-08-24",
+          "totalPrice": 10050000,
+          "unitPrice": 225745,
+          "unitPriceWanPerPing": 22.57,
+          "size": 44.52,
+          "floor": "十八層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十八樓之７",
+          "community": "大悅",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-08-24",
+          "totalPrice": 8060000,
+          "unitPrice": 290182,
+          "unitPriceWanPerPing": 29.02,
+          "size": 27.78,
+          "floor": "十三層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十三樓之１０",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-08-17",
+          "totalPrice": 6400000,
+          "unitPrice": 329088,
+          "unitPriceWanPerPing": 32.91,
+          "size": 19.45,
+          "floor": "十一層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十一樓之１２",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-08-11",
+          "totalPrice": 11100000,
+          "unitPrice": 254714,
+          "unitPriceWanPerPing": 25.47,
+          "size": 43.58,
+          "floor": "二十七層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十七樓之１",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-07-31",
+          "totalPrice": 6780000,
+          "unitPrice": 356162,
+          "unitPriceWanPerPing": 35.62,
+          "size": 19.04,
+          "floor": "二十三層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十三樓之２",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-07-16",
+          "totalPrice": 6300000,
+          "unitPrice": 323944,
+          "unitPriceWanPerPing": 32.39,
+          "size": 19.45,
+          "floor": "十四層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十四樓之１２",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-07-10",
+          "totalPrice": 6300000,
+          "unitPrice": 345610,
+          "unitPriceWanPerPing": 34.56,
+          "size": 18.23,
+          "floor": "十九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十九樓之３",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-07-01",
+          "totalPrice": 7000000,
+          "unitPrice": 291736,
+          "unitPriceWanPerPing": 29.17,
+          "size": 23.99,
+          "floor": "二十六層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十六樓之５",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-06-24",
+          "totalPrice": 6200000,
+          "unitPrice": 325693,
+          "unitPriceWanPerPing": 32.57,
+          "size": 19.04,
+          "floor": "十三層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十三樓之２",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-06-07",
+          "totalPrice": 6580000,
+          "unitPrice": 300152,
+          "unitPriceWanPerPing": 30.02,
+          "size": 21.92,
+          "floor": "十四層/二十九層",
+          "address": "苓雅區七賢一路０１２１號十四樓之１１",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-05-24",
+          "totalPrice": 8880000,
+          "unitPrice": 207064,
+          "unitPriceWanPerPing": 20.71,
+          "size": 42.89,
+          "floor": "二十二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十二樓之１３",
+          "community": "大悅",
+          "layout": "1房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-05-17",
+          "totalPrice": 5200000,
+          "unitPrice": 285266,
+          "unitPriceWanPerPing": 28.53,
+          "size": 18.23,
+          "floor": "二層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二樓之５",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-04-09",
+          "totalPrice": 10000000,
+          "unitPrice": 224516,
+          "unitPriceWanPerPing": 22.45,
+          "size": 44.54,
+          "floor": "二十四層/二十九層",
+          "address": "苓雅區七賢一路０１２１號二十四樓之１",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-03-02",
+          "totalPrice": 4800000,
+          "unitPrice": 218083,
+          "unitPriceWanPerPing": 21.81,
+          "size": 22.01,
+          "floor": "九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號九樓之１０",
+          "community": "大悅",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-02-07",
+          "totalPrice": 5650000,
+          "unitPrice": 290522,
+          "unitPriceWanPerPing": 29.05,
+          "size": 19.45,
+          "floor": "九層/二十九層",
+          "address": "苓雅區七賢一路０１２１號九樓之９",
+          "community": "大悅",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 09:07:15"
+      "lastChecked": "2026-07-26 19:55:14"
     },
     {
       "id": "mrych48q56fu",
@@ -434,7 +1479,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20058340.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20287949",
@@ -445,7 +1496,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20287949.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20289936",
@@ -456,7 +1513,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20289936.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20290646",
@@ -467,7 +1530,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20290646.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20294965",
@@ -478,7 +1547,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20294965.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20308000",
@@ -489,7 +1564,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20308000.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20325272",
@@ -500,7 +1581,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20325272.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20363941",
@@ -511,7 +1598,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20363941.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20486301",
@@ -522,7 +1615,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20486301.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.9,
+          "marketN": 11,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20578469",
@@ -533,7 +1632,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20578469.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 36.78,
+          "premiumPct": 32.8,
+          "marketN": 10,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20593460",
@@ -544,7 +1649,13 @@
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20593460.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 36.78,
+          "premiumPct": 32.8,
+          "marketN": 10,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "19975137",
@@ -555,7 +1666,13 @@
           "floor": "19F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/19975137.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 35.9,
+          "premiumPct": 29.6,
+          "marketN": 10,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20376613",
@@ -566,7 +1683,13 @@
           "floor": "4F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20376613.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 32.44,
+          "premiumPct": 17.2,
+          "marketN": 10,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20484057",
@@ -577,7 +1700,13 @@
           "floor": "4F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20484057.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 32.44,
+          "premiumPct": 17.2,
+          "marketN": 10,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20539644",
@@ -588,7 +1717,13 @@
           "floor": "4F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20539644.html",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 32.44,
+          "premiumPct": 17.2,
+          "marketN": 10,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20264833",
@@ -599,7 +1734,13 @@
           "floor": "6F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20264833.html",
           "status": "delisted",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 35.01,
+          "premiumPct": 29,
+          "marketN": 15,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         }
       ],
       "rent": [
@@ -612,7 +1753,13 @@
           "floor": "16F/33F",
           "url": "https://rent.591.com.tw/20887248",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 817,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21232871",
@@ -623,7 +1770,13 @@
           "floor": "16F/33F",
           "url": "https://rent.591.com.tw/21232871",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 817,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21698165",
@@ -634,7 +1787,13 @@
           "floor": "16F/33F",
           "url": "https://rent.591.com.tw/21698165",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 817,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "20654497",
@@ -645,7 +1804,13 @@
           "floor": "7F/33F",
           "url": "https://rent.591.com.tw/20654497",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 657,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21592475",
@@ -656,7 +1821,13 @@
           "floor": "7F/33F",
           "url": "https://rent.591.com.tw/21592475",
           "status": "active",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 663,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         },
         {
           "id": "21514351",
@@ -667,7 +1838,13 @@
           "floor": "32F/33F",
           "url": "https://rent.591.com.tw/21514351",
           "status": "delisted",
-          "isNew": false
+          "isNew": false,
+          "unitPricePerPing": 664,
+          "premiumPct": null,
+          "marketN": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         }
       ],
       "lvrSale": [
@@ -746,8 +1923,254 @@
           "buildingType": "住宅大樓(11層含以上有電梯)"
         }
       ],
+      "lvrSaleMatched": true,
+      "lvrSaleCount": 17,
+      "lvrSaleStats": [
+        {
+          "lo": 80,
+          "hi": 90,
+          "n": 7,
+          "median": 28.41,
+          "avg": 29.15
+        },
+        {
+          "lo": 90,
+          "hi": 100,
+          "n": 3,
+          "median": 24.29,
+          "avg": 24.3
+        },
+        {
+          "lo": 100,
+          "hi": 110,
+          "n": 1,
+          "median": 21.95,
+          "avg": 21.95
+        },
+        {
+          "lo": 110,
+          "hi": 120,
+          "n": 5,
+          "median": 24.73,
+          "avg": 24.78
+        },
+        {
+          "lo": 120,
+          "hi": 130,
+          "n": 1,
+          "median": 29.55,
+          "avg": 29.55
+        }
+      ],
+      "lvrSaleAll": [
+        {
+          "date": "2025-10-23",
+          "totalPrice": 24200000,
+          "unitPrice": 269170,
+          "unitPriceWanPerPing": 26.92,
+          "size": 89.91,
+          "floor": "二十一層/三十三層",
+          "address": "苓雅區民族二路００７２號二十一樓之１",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-07-01",
+          "totalPrice": 28000000,
+          "unitPrice": 335636,
+          "unitPriceWanPerPing": 33.56,
+          "size": 83.42,
+          "floor": "十二層/三十三層",
+          "address": "苓雅區民族二路００７２號十二樓之２",
+          "community": "國王1號院",
+          "layout": "4房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-04-21",
+          "totalPrice": 34280000,
+          "unitPrice": 295511,
+          "unitPriceWanPerPing": 29.55,
+          "size": 120.34,
+          "floor": "二十九層/三十三層",
+          "address": "苓雅區民族二路００７２號二十九樓",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-10-02",
+          "totalPrice": 27000000,
+          "unitPrice": 277537,
+          "unitPriceWanPerPing": 27.75,
+          "size": 97.28,
+          "floor": "五層/三十三層",
+          "address": "苓雅區中東街０１８５號五樓",
+          "community": "國王1號院",
+          "layout": "3房2廳3衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-06-16",
+          "totalPrice": 31800000,
+          "unitPrice": 275937,
+          "unitPriceWanPerPing": 27.59,
+          "size": 115.24,
+          "floor": "二十七層/三十三層",
+          "address": "苓雅區民族二路００７２號二十七樓",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-05-22",
+          "totalPrice": 20000000,
+          "unitPrice": 208476,
+          "unitPriceWanPerPing": 20.85,
+          "size": 96.95,
+          "floor": "四層/三十三層",
+          "address": "苓雅區中東街０１８５號四樓",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-05-16",
+          "totalPrice": 23000000,
+          "unitPrice": 276344,
+          "unitPriceWanPerPing": 27.63,
+          "size": 83.23,
+          "floor": "十九層/三十三層",
+          "address": "苓雅區中東街０１８５號十九樓之２",
+          "community": "國王1號院",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-02-03",
+          "totalPrice": 22580000,
+          "unitPrice": 271296,
+          "unitPriceWanPerPing": 27.13,
+          "size": 83.23,
+          "floor": "十五層/三十三層",
+          "address": "苓雅區民族二路００７２號十五樓之２",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-01-27",
+          "totalPrice": 22000000,
+          "unitPrice": 242926,
+          "unitPriceWanPerPing": 24.29,
+          "size": 90.56,
+          "floor": "七層/三十三層",
+          "address": "苓雅區中東街０１８５號七樓之１",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-01-27",
+          "totalPrice": 28600000,
+          "unitPrice": 247276,
+          "unitPriceWanPerPing": 24.73,
+          "size": 115.66,
+          "floor": "十六層/三十三層",
+          "address": "苓雅區民族二路００７２號十六樓",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-09-26",
+          "totalPrice": 23620000,
+          "unitPrice": 284526,
+          "unitPriceWanPerPing": 28.45,
+          "size": 83.02,
+          "floor": "二十八層/三十三層",
+          "address": "苓雅區民族二路００７２號二十八樓之２",
+          "community": "國王1號院",
+          "layout": "3房1廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-06-25",
+          "totalPrice": 23500000,
+          "unitPrice": 219514,
+          "unitPriceWanPerPing": 21.95,
+          "size": 107.05,
+          "floor": "十七層/三十三層",
+          "address": "苓雅區民族二路００７２號十七樓",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-06-20",
+          "totalPrice": 25500000,
+          "unitPrice": 284060,
+          "unitPriceWanPerPing": 28.41,
+          "size": 89.77,
+          "floor": "二十九層/三十三層",
+          "address": "苓雅區民族二路００７２號二十九樓之１",
+          "community": "國王1號院",
+          "layout": "4房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-05-14",
+          "totalPrice": 29800000,
+          "unitPrice": 258231,
+          "unitPriceWanPerPing": 25.82,
+          "size": 115.4,
+          "floor": "二十二層/三十三層",
+          "address": "苓雅區民族二路００７２號二十二樓",
+          "community": "國王1號院",
+          "layout": "3房2廳3衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-05-14",
+          "totalPrice": 26500000,
+          "unitPrice": 319207,
+          "unitPriceWanPerPing": 31.92,
+          "size": 83.02,
+          "floor": "二十層/三十三層",
+          "address": "苓雅區民族二路００７２號二十樓之２",
+          "community": "國王1號院",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-05-14",
+          "totalPrice": 26800000,
+          "unitPrice": 231712,
+          "unitPriceWanPerPing": 23.17,
+          "size": 115.66,
+          "floor": "十五層/三十三層",
+          "address": "苓雅區民族二路００７２號十五樓",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-03-08",
+          "totalPrice": 26580000,
+          "unitPrice": 226043,
+          "unitPriceWanPerPing": 22.6,
+          "size": 116.25,
+          "floor": "六層/三十三層",
+          "address": "苓雅區民族二路００７２號六樓",
+          "community": "國王1號院",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 09:07:43"
+      "lastChecked": "2026-07-26 19:55:42"
     }
   ]
 }

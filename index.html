@@ -39,7 +39,21 @@
   .badge{ display:inline-block; padding:1px 8px; border-radius:99px; font-size:0.74rem; border:1px solid var(--border); color:var(--text2); }
   .badge.new{ color:var(--ok); border-color:var(--ok); font-weight:700; }
   .badge.drop{ color:var(--down); border-color:var(--down); font-weight:700; }
+  .badge.bargain{ color:#ffd166; border-color:#ffd166; font-weight:700; }
+  .badge.matched{ color:var(--accent); border-color:var(--accent); font-weight:700; }
   .badge.paused{ color:var(--text2); }
+  th.sortable{ cursor:pointer; user-select:none; }
+  th.sortable:hover{ color:var(--text); }
+  .sort-row{ display:none; margin:0 0 6px; }
+  .sort-row select{ width:auto; padding:5px 8px; font-size:0.82rem; }
+  .timeline{ margin:0; padding:0; list-style:none; font-size:0.85rem; }
+  .timeline li{ padding:4px 0; border-bottom:1px solid var(--border); color:var(--text2); }
+  .timeline li:last-child{ border-bottom:none; }
+  .timeline .t{ color:var(--dim); font-size:0.76rem; margin-right:6px; }
+  details.lvr-detail{ margin-top:6px; font-size:0.82rem; }
+  details.lvr-detail summary{ cursor:pointer; color:var(--text2); font-size:0.8rem; }
+  details.lvr-detail table{ margin-top:6px; }
+  .match-table td, .match-table th{ white-space:nowrap; }
   /* community result cards */
   .summary{ display:flex; gap:8px; flex-wrap:wrap; margin:6px 0 12px; }
   .stat{ background:var(--card); border:1px solid var(--border); border-radius:10px; padding:7px 13px; font-size:0.88rem; }
@@ -62,6 +76,12 @@
     tbody tr{ border:1px solid var(--border); border-radius:10px; margin:8px 0; padding:4px 2px; }
     tbody td{ border:none; padding:3px 10px; } tbody td::before{ content:attr(data-l)"："; color:var(--text2); font-size:0.76rem; }
     tbody td.main::before{ content:""; } tbody td.main{ font-weight:700; font-size:0.96rem; padding-top:8px; }
+    .sort-row{ display:block; }
+    details.lvr-detail table, details.lvr-detail tbody, details.lvr-detail tr, details.lvr-detail td{ display:table; }
+    details.lvr-detail table{ width:100%; } details.lvr-detail tbody{ display:table-row-group; }
+    details.lvr-detail tr{ display:table-row; border:none; margin:0; padding:0; }
+    details.lvr-detail td{ display:table-cell; border-bottom:1px solid var(--border); padding:5px 7px; }
+    details.lvr-detail td::before{ content:""; }
   }
 </style>
 </head>
@@ -109,6 +129,9 @@
     <div id="watchlist"><p class="msg">載入中…</p></div>
   </div>
 </div>
+
+<h2 style="margin-top:26px;">📅 近 7 天變動</h2>
+<div class="card" id="events-card"><p class="msg">載入中…</p></div>
 
 <h2 style="margin-top:26px;">🎯 監控結果</h2>
 <p class="sub" id="res-sub">載入中…</p>
@@ -315,36 +338,112 @@
   }
 
   // ---- results (public) ----
-  var COMMUNITIES=[];
+  var COMMUNITIES=[], EVENTS=[];
+  var sortState={}; // key: communityId+kind → {key,dir}
   function priceDiff(l,kind){
     if(l.price==null||l.prevPrice==null||l.price===l.prevPrice)return "—";
     var d=l.price-l.prevPrice, arrow=d>0?"▲":"▼", cls=d>0?"up":"down";
     var unit=kind==="sale"?" 萬":" 元";
     return '<span class="'+cls+'">'+arrow+Math.abs(d).toLocaleString()+unit+'</span>';
   }
-  function listingTable(list,kind){
+  function fmtUnit(l,kind){
+    if(l.unitPricePerPing==null)return "—";
+    return kind==="sale"?(l.unitPricePerPing.toLocaleString()+" 萬/坪"):(l.unitPricePerPing.toLocaleString()+" 元/坪");
+  }
+  function fmtVs(l){
+    if(l.premiumPct==null)return "樣本不足";
+    var cls=l.premiumPct<0?"down":(l.premiumPct>0?"up":"");
+    var sign=l.premiumPct>0?"+":"";
+    return '<span class="'+cls+'">'+sign+l.premiumPct+"%</span>";
+  }
+  var SORTS={
+    price:{l:"總價",v:function(l){return l.price;}},
+    unit:{l:"單價",v:function(l){return l.unitPricePerPing;}},
+    diff:{l:"漲跌",v:function(l){return (l.price!=null&&l.prevPrice!=null)?l.price-l.prevPrice:null;}},
+    size:{l:"坪數",v:function(l){return l.size;}}
+  };
+  function sortList(list,skey,dir){
+    var spec=SORTS[skey]; if(!spec)return list;
+    return list.slice().sort(function(a,b){
+      var va=spec.v(a), vb=spec.v(b);
+      if(va==null&&vb==null)return 0; if(va==null)return 1; if(vb==null)return -1;
+      return dir==="asc"?va-vb:vb-va;
+    });
+  }
+  function listingTable(list,kind,sortKey){
     if(!list||!list.length)return '<p class="msg">目前無在架物件</p>';
+    var st=sortState[sortKey]||{key:null,dir:"desc"};
     var priceLabel=kind==="sale"?"開價":"月租";
-    var html='<table><thead><tr><th>標題</th><th>'+priceLabel+'</th><th>前次價</th><th>漲跌</th><th>坪數</th><th>樓層</th><th>連結</th></tr></thead><tbody>';
-    list.forEach(function(l){
+    var unitLabel=kind==="sale"?"單價":"單價";
+    function th(label,key){
+      var arrow=st.key===key?(st.dir==="asc"?" ▲":" ▼"):"";
+      return '<th class="sortable" data-sk="'+sortKey+'" data-k="'+key+'">'+label+arrow+'</th>';
+    }
+    var rows=st.key?sortList(list,st.key,st.dir):list;
+    var html='<div class="sort-row">排序 <select data-ssk="'+sortKey+'">'
+      +'<option value="">預設</option>'
+      +Object.keys(SORTS).map(function(k){
+          return '<option value="'+k+':desc"'+(st.key===k&&st.dir==="desc"?" selected":"")+'>'+SORTS[k].l+' 高→低</option>'
+               + '<option value="'+k+':asc"'+(st.key===k&&st.dir==="asc"?" selected":"")+'>'+SORTS[k].l+' 低→高</option>';
+        }).join("")
+      +'</select></div>'
+      +'<table><thead><tr><th>標題</th>'+th(priceLabel,"price")+'<th>前次價</th>'+th("漲跌","diff")+th(unitLabel,"unit")
+      +(kind==="sale"?'<th>vs行情</th>':"")+th("坪數","size")+'<th>樓層</th><th>連結</th></tr></thead><tbody>';
+    rows.forEach(function(l){
       var cls=l.status==="delisted"?' class="delisted"':"";
-      var dropBadge="";
+      var badges="";
       if(l.price!=null&&l.prevPrice!=null&&l.price<l.prevPrice){
         var unit=kind==="sale"?" 萬":" 元";
-        dropBadge=' <span class="badge drop">📉降價 '+(l.prevPrice-l.price).toLocaleString()+unit+'</span>';
+        badges+=' <span class="badge drop">📉降價 '+(l.prevPrice-l.price).toLocaleString()+unit+'</span>';
       }
-      var newBadge=l.isNew?' <span class="badge new">🆕新上架</span>':"";
-      var title=dropBadge+newBadge+esc(l.title)+(l.status==="delisted"?' <span class="badge">已下架</span>':"");
+      if(l.drops>=2){
+        var u2=kind==="sale"?"萬":"元";
+        badges+=' <span class="badge drop">📉降價'+l.drops+'次 累計-'+Number(l.totalDrop).toLocaleString()+u2+'</span>';
+      }
+      if(kind==="sale"&&l.premiumPct!=null&&l.premiumPct<=-15&&l.status==="active"){
+        badges+=' <span class="badge bargain">💎低於行情'+Math.abs(l.premiumPct)+'%</span>';
+      }
+      if(l.isNew)badges+=' <span class="badge new">🆕新上架</span>';
+      var title=badges+esc(l.title)+(l.status==="delisted"?' <span class="badge">已下架</span>':"");
+      if(l.status==="delisted"&&l.lvrMatch){
+        var m=l.lvrMatch;
+        title+=' <span class="badge matched">🎯疑似成交 '+(m.totalPrice!=null?Number(m.totalPrice).toLocaleString()+"萬":"")
+          +(m.diffPct!=null?"（"+(m.diffPct>0?"+":"")+m.diffPct+"%）":"")+'</span>';
+      }
       html+='<tr'+cls+'><td class="main" data-l="標題">'+title+'</td>'
         +'<td data-l="'+priceLabel+'">'+esc(fmtPrice(l.price,kind))+'</td>'
         +'<td data-l="前次價">'+esc(fmtPrice(l.prevPrice,kind))+'</td>'
         +'<td data-l="漲跌">'+priceDiff(l,kind)+'</td>'
+        +'<td data-l="'+unitLabel+'">'+esc(fmtUnit(l,kind))+'</td>'
+        +(kind==="sale"?'<td data-l="vs行情">'+fmtVs(l)+'</td>':"")
         +'<td data-l="坪數">'+(l.size!=null?esc(l.size)+" 坪":"—")+'</td>'
         +'<td data-l="樓層">'+esc(l.floor||"—")+'</td>'
         +'<td data-l="連結"><a href="'+esc(l.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
     });
     html+='</tbody></table>';
     return html;
+  }
+  function lvrSaleBlock(c){
+    var html='<div class="lvr"><b>實價登錄買賣（近 3 年）：</b>';
+    if(!c.lvrSaleMatched)return html+'社區對不到實登（顯示行政區級距，不做行情統計）</div>';
+    html+='社區成交 '+(c.lvrSaleCount||0)+' 筆';
+    var stats=c.lvrSaleStats||[];
+    if(stats.length){
+      html+='<br>坪數分組（萬/坪）：'+stats.map(function(g){
+        return esc(g.lo+"–"+g.hi+"坪")+'：'+g.n+'筆 · 中位 '+g.median+' · 均價 '+g.avg;
+      }).join('<br>');
+    }
+    var all=c.lvrSaleAll||[];
+    if(all.length){
+      html+='<details class="lvr-detail"><summary>明細（'+all.length+' 筆，點此展開）</summary>'
+        +'<table><thead><tr><th>日期</th><th>總價</th><th>單價</th><th>坪數</th><th>樓層</th></tr></thead><tbody>'
+        +all.map(function(d){
+          return '<tr><td>'+esc(d.date)+'</td><td>'+(d.totalPrice!=null?Math.round(d.totalPrice/10000).toLocaleString()+"萬":"—")+'</td>'
+            +'<td>'+(d.unitPriceWanPerPing!=null?d.unitPriceWanPerPing+"萬/坪":"—")+'</td>'
+            +'<td>'+(d.size!=null?d.size+"坪":"—")+'</td><td>'+esc(d.floor||"—")+'</td></tr>';
+        }).join("")+'</tbody></table></details>';
+    }
+    return html+'</div>';
   }
   function lvrBlock(deals,kind,label){
     var html='<div class="lvr"><b>實價登錄'+label+'最近成交：</b>';
@@ -358,6 +457,39 @@
     }).join("<br>");
     return html+'</div>';
   }
+  function matchBlock(c){
+    var ms=c.lvrMatches||[];
+    var html='<div class="lvr"><b>🎯 疑似成交對照：</b>';
+    if(!ms.length)return html+'尚無配對</div>';
+    html+='<table class="match-table"><thead><tr><th>標題</th><th>最後開價</th><th>成交價</th><th>差額</th><th>成交日</th></tr></thead><tbody>'
+      +ms.map(function(m){
+        var pct=m.diffPct!=null?((m.diffPct>0?"+":"")+m.diffPct+"%"):"—";
+        return '<tr><td>'+(m.url?'<a href="'+esc(m.url)+'" target="_blank" rel="noopener">'+esc(m.title)+'</a>':esc(m.title))+'</td>'
+          +'<td>'+(m.askPrice!=null?Number(m.askPrice).toLocaleString()+"萬":"—")+'</td>'
+          +'<td>'+(m.totalPrice!=null?Number(m.totalPrice).toLocaleString()+"萬":"—")+'</td>'
+          +'<td>'+pct+'</td><td>'+esc(m.date||"—")+'</td></tr>';
+      }).join("")+'</tbody></table>';
+    return html+'</div>';
+  }
+  function eventLine(e){
+    var t=String(e.ts||"").slice(5,16);
+    var link=e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.title||"物件")+'</a>':esc(e.title||"");
+    var s;
+    if(e.kind==="new_listing")s='🆕 '+esc(e.community)+' 新上架：'+link+(e.price!=null?' '+Number(e.price).toLocaleString()+(e.kindOfListing==="sale"?"萬":"元/月"):"");
+    else if(e.kind==="price")s=(e.to<e.from?'📉 ':'📈 ')+esc(e.community)+' ：'+link+' '+Number(e.from).toLocaleString()+' → '+Number(e.to).toLocaleString();
+    else if(e.kind==="delisted")s='🚪 '+esc(e.community)+' 下架：'+link;
+    else if(e.kind==="relisted")s='♻️ '+esc(e.community)+' 重新上架：'+link;
+    else if(e.kind==="bargain")s='💎 '+esc(e.community)+' 低於行情'+Math.abs(e.premiumPct)+'%：'+link;
+    else if(e.kind==="lvr_match")s='🎯 '+esc(e.community)+' 疑似成交：'+link+(e.match&&e.match.totalPrice!=null?' 成交'+Number(e.match.totalPrice).toLocaleString()+'萬':"");
+    else if(e.kind==="lvr_new")s='🏷 '+esc(e.community)+' 實登新成交 '+(e.count||1)+' 筆';
+    else s=esc(e.community)+' '+esc(e.kind);
+    return '<li><span class="t">'+esc(t)+'</span>'+s+'</li>';
+  }
+  function renderEvents(){
+    var el=$("events-card");
+    if(!EVENTS.length){el.innerHTML='<p class="msg" style="margin:0">近 7 天無變動</p>';return;}
+    el.innerHTML='<ul class="timeline">'+EVENTS.map(eventLine).join("")+'</ul>';
+  }
   function renderResults(){
     var el=$("results");
     if(!COMMUNITIES.length){el.innerHTML='<p class="msg">還沒有監控結果 —— 上方登入後用表單新增社區，掃描後結果會顯示在這裡。</p>';return;}
@@ -370,18 +502,37 @@
         +'<span class="meta">'+esc(c.cityName)+esc(c.districtName)+' · 更新 '+(c.lastChecked||"—")+'</span></div>';
       if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
       html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
-        +listingTable(c.sale,"sale")
-        +lvrBlock(c.lvrSale,"sale","買賣")+'</div>';
+        +listingTable(c.sale,"sale",c.id+":sale")
+        +lvrSaleBlock(c)+matchBlock(c)+'</div>';
       html+='<div class="sect"><p class="sect-head">🔑 租賃（'+rentActive+' 筆在租）</p>'
-        +listingTable(c.rent,"rent")
+        +listingTable(c.rent,"rent",c.id+":rent")
         +lvrBlock(c.lvrRent,"rent","租賃")+'</div>';
       card.innerHTML=html;
       el.appendChild(card);
+    });
+    // 表頭點擊排序（桌面）；手機用下拉
+    el.querySelectorAll("th.sortable").forEach(function(th){
+      th.addEventListener("click",function(){
+        var sk=th.getAttribute("data-sk"), k=th.getAttribute("data-k");
+        var st=sortState[sk]||{key:null,dir:"desc"};
+        sortState[sk]={key:k,dir:(st.key===k&&st.dir==="desc")?"asc":"desc"};
+        renderResults();
+      });
+    });
+    el.querySelectorAll("select[data-ssk]").forEach(function(sel){
+      sel.addEventListener("change",function(){
+        var v=sel.value;
+        if(!v){delete sortState[sel.getAttribute("data-ssk")];}
+        else{var p=v.split(":");sortState[sel.getAttribute("data-ssk")]={key:p[0],dir:p[1]};}
+        renderResults();
+      });
     });
   }
   function loadResults(){
     fetch("results.json?t="+Date.now()).then(function(r){return r.json();}).then(function(d){
       COMMUNITIES=d.communities||[];
+      EVENTS=d.events||[];
+      renderEvents();
       $("res-sub").textContent="最後更新 "+(d.updated||"—")+"（台北時間） · 共 "+COMMUNITIES.length+" 個社區";
       var ns=0,nr=0;
       COMMUNITIES.forEach(function(c){

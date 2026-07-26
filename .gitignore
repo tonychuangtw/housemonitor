@@ -12,3 +12,5 @@ render.js
 *.log
 server.js.bak*
 PROGRESS.md
+notify.js
+lvr-districts.json
