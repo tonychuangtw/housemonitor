@@ -25,6 +25,19 @@
       "scanPerDay": 2,
       "active": true,
       "added": 1784861537210
+    },
+    {
+      "id": "ms1sosbl0bgc",
+      "name": "宏傑肯泰",
+      "city": "A",
+      "cityName": "台北市",
+      "district": "A09",
+      "districtName": "大同區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "active": true,
+      "added": 1785070167393
     }
   ]
 }

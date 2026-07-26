@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 20:46:20",
+  "updated": "2026-07-26 20:51:32",
   "events": [
     {
       "ts": "2026-07-26 19:36:53",
@@ -938,7 +938,7 @@
           "unitPriceWanPerPing": 31.47,
           "size": 27.65,
           "floor": "五層/二十九層",
-          "address": "苓雅區七賢一路０１２１號五樓之８",
+          "address": "苓雅區七賢一路０１２１號五樓之���",
           "community": "大悅",
           "layout": "2房2廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -1013,7 +1013,7 @@
           "address": "苓雅區七賢一路０１２１號二十七樓之８",
           "community": "大悅",
           "layout": "2房1廳1衛",
-          "buildingType": "住宅大樓(11層含以��有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2024-07-16",
@@ -1522,7 +1522,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 20:45:17"
+      "lastChecked": "2026-07-26 20:49:57"
     },
     {
       "id": "mrych48q56fu",
@@ -2274,7 +2274,169 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-26 20:45:51"
+      "lastChecked": "2026-07-26 20:50:31"
+    },
+    {
+      "id": "ms1sosbl0bgc",
+      "name": "宏傑肯泰",
+      "cityName": "台北市",
+      "districtName": "大同區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [
+        {
+          "date": "2026-04-22",
+          "totalPrice": 55000000,
+          "unitPrice": 1540962,
+          "unitPriceWanPerPing": 154.1,
+          "size": 35.69,
+          "floor": "一層,騎樓/十二層",
+          "address": "大同區南京西路００６１號",
+          "community": "宏傑肯泰",
+          "layout": "2房2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-12-18",
+          "totalPrice": 25000000,
+          "unitPrice": 813352,
+          "unitPriceWanPerPing": 81.34,
+          "size": 30.74,
+          "floor": "十層/十二層",
+          "address": "大同區南京西路００６１號十樓之６",
+          "community": "宏傑肯泰",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-11-04",
+          "totalPrice": 63300000,
+          "unitPrice": 822192,
+          "unitPriceWanPerPing": 82.22,
+          "size": 76.99,
+          "floor": "四層/十二層",
+          "address": "大同區南京西路００６１號四樓",
+          "community": "宏傑肯泰",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrRent": [
+        {
+          "date": "2023-08-18",
+          "totalPrice": 38000,
+          "unitPrice": 1124,
+          "unitPriceWanPerPing": 0.11,
+          "size": 33.77,
+          "floor": "六層/十一層",
+          "address": "大同區長安西路２８７號６樓之８",
+          "community": "森城富祥商業",
+          "layout": "3房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-08-14",
+          "totalPrice": 16800,
+          "unitPrice": 1279,
+          "unitPriceWanPerPing": 0.13,
+          "size": 13.14,
+          "floor": "八層/十一層",
+          "address": "大同區南京西路１６５號８樓之７",
+          "community": "全家福",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-08-08",
+          "totalPrice": 45000,
+          "unitPrice": 1587,
+          "unitPriceWanPerPing": 0.16,
+          "size": 28.39,
+          "floor": "一層/三層",
+          "address": "大同區民族西路２３６號１樓",
+          "community": "",
+          "layout": "1衛",
+          "buildingType": "公寓(5樓含以下無電梯)"
+        }
+      ],
+      "lvrSaleMatched": true,
+      "lvrSaleCount": 4,
+      "lvrSaleStats": [
+        {
+          "lo": 10,
+          "hi": 20,
+          "n": 1,
+          "median": 74.47,
+          "avg": 74.47
+        },
+        {
+          "lo": 30,
+          "hi": 40,
+          "n": 2,
+          "median": 117.72,
+          "avg": 117.72
+        },
+        {
+          "lo": 70,
+          "hi": 80,
+          "n": 1,
+          "median": 82.22,
+          "avg": 82.22
+        }
+      ],
+      "lvrSaleAll": [
+        {
+          "date": "2026-04-22",
+          "totalPrice": 55000000,
+          "unitPrice": 1540962,
+          "unitPriceWanPerPing": 154.1,
+          "size": 35.69,
+          "floor": "一層,騎樓/十二層",
+          "address": "大同區南京西路００６１號",
+          "community": "宏傑肯泰",
+          "layout": "2房2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-12-18",
+          "totalPrice": 25000000,
+          "unitPrice": 813352,
+          "unitPriceWanPerPing": 81.34,
+          "size": 30.74,
+          "floor": "十層/十二層",
+          "address": "大同區南京西路００６１號十樓之６",
+          "community": "宏傑肯泰",
+          "layout": "2房2廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-11-04",
+          "totalPrice": 63300000,
+          "unitPrice": 822192,
+          "unitPriceWanPerPing": 82.22,
+          "size": 76.99,
+          "floor": "四層/十二層",
+          "address": "大同區南京西路００６１號四樓",
+          "community": "宏傑肯泰",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-01-13",
+          "totalPrice": 9500000,
+          "unitPrice": 744724,
+          "unitPriceWanPerPing": 74.47,
+          "size": 12.76,
+          "floor": "十層/十二層",
+          "address": "大同區南京西路００６１號十樓之２",
+          "community": "宏傑肯泰",
+          "layout": "1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrMatches": [],
+      "error": null,
+      "lastChecked": "2026-07-26 20:51:04"
     }
   ]
 }
