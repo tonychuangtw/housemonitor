@@ -11,7 +11,24 @@
       "sizeMax": null,
       "scanPerDay": 2,
       "active": true,
-      "added": 1784718492763
+      "added": 1784718492763,
+      "mgmtFee": 80.0,
+      "info": {
+        "lejuName": "興富發大悅",
+        "lejuUrl": "https://www.leju.com.tw/community/L2e011027119b98",
+        "address": "七賢一路121號",
+        "units": 321.0,
+        "ageYears": 7.0,
+        "floors": "29 樓",
+        "zoning": "商5",
+        "publicRatio": 34.83,
+        "parking": 116.0,
+        "structure": "RC+SC",
+        "builder": "興富發建設",
+        "histHigh": 50.47,
+        "histLow": 17.76,
+        "source": "樂居 2026-07-26"
+      }
     },
     {
       "id": "mrych48q56fu",
@@ -24,7 +41,24 @@
       "sizeMax": null,
       "scanPerDay": 2,
       "active": true,
-      "added": 1784861537210
+      "added": 1784861537210,
+      "mgmtFee": 60.0,
+      "info": {
+        "lejuName": "國王1號院",
+        "lejuUrl": "https://www.leju.com.tw/community/L6f6109058efeef",
+        "address": "民族二路72號",
+        "units": 181.0,
+        "ageYears": 11.0,
+        "floors": "33 樓",
+        "zoning": "商5",
+        "publicRatio": 34.0,
+        "parking": 241.0,
+        "structure": "SRC",
+        "builder": "興富發建設",
+        "histHigh": 34.73,
+        "histLow": 16.78,
+        "source": "樂居 2026-07-26"
+      }
     },
     {
       "id": "ms1sosbl0bgc",
@@ -37,7 +71,24 @@
       "sizeMax": null,
       "scanPerDay": 2,
       "active": true,
-      "added": 1785070167393
+      "added": 1785070167393,
+      "mgmtFee": null,
+      "info": {
+        "lejuName": "宏傑肯泰大樓",
+        "lejuUrl": "https://www.leju.com.tw/community/L593138453bac",
+        "address": "南京西路61號",
+        "units": 57.0,
+        "ageYears": 43.0,
+        "floors": "12 樓",
+        "zoning": "住宅區、商業區",
+        "publicRatio": 19.31,
+        "parking": null,
+        "structure": "RC",
+        "builder": "宏建開發",
+        "histHigh": 84.43,
+        "histLow": 62.14,
+        "source": "樂居 2026-07-26"
+      }
     },
     {
       "id": "ms1szpz342t7",
@@ -50,7 +101,24 @@
       "sizeMax": null,
       "scanPerDay": 2,
       "active": true,
-      "added": 1785070677567
+      "added": 1785070677567,
+      "mgmtFee": null,
+      "info": {
+        "lejuName": "遠東世界中心",
+        "lejuUrl": "https://www.leju.com.tw/community/Lfbb20313e7d7f",
+        "address": "新台五路一段75號",
+        "units": 725.0,
+        "ageYears": 32.0,
+        "floors": "20、21 樓",
+        "zoning": "工業區",
+        "publicRatio": 26.49,
+        "parking": null,
+        "structure": "SC",
+        "builder": "品川企業",
+        "histHigh": 33.52,
+        "histLow": 15.5,
+        "source": "樂居 2026-07-26"
+      }
     },
     {
       "id": "ms1t9u1fslfj",
@@ -63,7 +131,24 @@
       "sizeMax": null,
       "scanPerDay": 2,
       "active": true,
-      "added": 1785071149395
+      "added": 1785071149395,
+      "mgmtFee": null,
+      "info": {
+        "lejuName": "遠雄U-TOWN",
+        "lejuUrl": "https://www.leju.com.tw/community/Lc209696074857",
+        "address": "新台五路一段99號",
+        "units": 1561.0,
+        "ageYears": 11.0,
+        "floors": "35、37 樓",
+        "zoning": "乙種工業區",
+        "publicRatio": 37.97,
+        "parking": 1000.0,
+        "structure": "SC",
+        "builder": "遠雄建設",
+        "histHigh": 41.68,
+        "histLow": 26.84,
+        "source": "樂居 2026-07-26"
+      }
     }
   ]
 }

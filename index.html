@@ -110,6 +110,8 @@
       <input id="f-size-max" type="number" min="1" step="1" placeholder="最大" style="flex:1">
       <span style="color:var(--text2)">坪</span>
     </div>
+    <label>管理費（元/坪/月，選填；樂居社區頁可查，填了租金報酬會算淨額）</label>
+    <input id="f-fee" type="number" min="1" step="1" placeholder="例：80">
     <label>每日掃描次數</label>
     <select id="f-scan">
       <option value="2" selected>2 次</option>
@@ -336,7 +338,8 @@
     var btn=$("f-submit"); btn.disabled=true; m.textContent="送出中…"; m.className="msg";
     api("POST","/api/house/watch",{name:name,
       city:city,cityName:CITIES[city].name,district:district,districtName:CITIES[city].districts[district],
-      sizeMin:sMin,sizeMax:sMax,scanPerDay:parseInt($("f-scan").value,10)},function(e,d){
+      sizeMin:sMin,sizeMax:sMax,scanPerDay:parseInt($("f-scan").value,10),
+      mgmtFee:$("f-fee").value?Number($("f-fee").value):null},function(e,d){
       btn.disabled=false;
       if(e){m.textContent="失敗："+e;m.className="msg err";return;}
       m.textContent="✅ 已加入「"+name+"」"; m.className="msg"; $("f-name").value=""; renderWatch(d.items);
@@ -449,14 +452,21 @@
     return html;
   }
   function lvrSaleBlock(c){
-    var html='<div class="lvr"><b>實價登錄買賣（近 3 年）：</b>';
+    var html='<div class="lvr"><b>實價登錄買賣（近 3 年，統計剔除一樓）：</b>';
     if(!c.lvrSaleMatched)return html+'社區對不到實登（顯示行政區級距，不做行情統計）</div>';
     html+='社區成交 '+(c.lvrSaleCount||0)+' 筆';
     var stats=c.lvrSaleStats||[];
     if(stats.length){
       html+='<br>坪數分組（萬/坪）：'+stats.map(function(g){
-        return esc(g.lo+"–"+g.hi+"坪")+'：'+g.n+'筆 · 中位 '+g.median+' · 均價 '+g.avg;
+        return esc(g.lo+"–"+g.hi+"坪")+'：'+g.n+'筆 · 中位 '+g.median+' · 均價 '+g.avg
+          +(g.parkPct!=null?' · '+g.parkPct+'%含車位':'');
       }).join('<br>');
+    }
+    var fb=c.lvrFloorStats||[];
+    if(fb.length){
+      html+='<br>樓層別（萬/坪，未按坪數分組，社區產品混雜時僅供參考）：'+fb.map(function(b){
+        return b.label+'('+b.lo+'–'+b.hi+'F)：'+b.n+'筆 · 中位 '+b.median;
+      }).join('・');
     }
     var tr=c.lvrTrend||[];
     if(tr.length>=2){
@@ -500,6 +510,23 @@
     }).join("<br>");
     return html+'</div>';
   }
+  function infoBlock(c){
+    var f=c.info; if(!f)return "";
+    var bits=[];
+    if(f.ageYears!=null)bits.push("屋齡 "+f.ageYears+" 年");
+    if(f.units!=null)bits.push(f.units+" 戶");
+    if(f.floors)bits.push("樓高 "+esc(f.floors));
+    if(f.publicRatio!=null)bits.push("公設比 "+f.publicRatio+"%");
+    if(c.mgmtFee!=null)bits.push("管理費 "+c.mgmtFee+" 元/坪/月");
+    if(f.parking!=null)bits.push("車位 "+f.parking);
+    if(f.structure)bits.push(esc(f.structure));
+    if(f.builder)bits.push(esc(f.builder));
+    if(f.zoning)bits.push(esc(f.zoning));
+    var s='<div class="lvr" style="margin:2px 0 6px;">🏢 '+bits.join("・");
+    if(f.histHigh!=null&&f.histLow!=null)s+="・歷史成交 "+f.histLow+"–"+f.histHigh+" 萬/坪";
+    if(f.lejuUrl)s+='・<a href="'+esc(f.lejuUrl)+'" target="_blank" rel="noopener">樂居</a>';
+    return s+'</div>';
+  }
   function liquidityBlock(c){
     var q=c.liquidity; if(!q)return "";
     var parts=[];
@@ -510,9 +537,12 @@
   }
   function rentYieldBlock(c){
     var y=c.rentYield; if(!y)return "";
-    var two=(y.yieldPct*2).toFixed(1);
-    return '<div class="lvr"><b>💰 租金報酬率：</b>在租中位 '+y.rentUnit.toLocaleString()+' 元/坪/月（'+y.n+' 筆・約 '+y.rentSize+' 坪）÷ 同坪數實登 '+y.baseUnit+' 萬/坪 → 年化 <b>'+y.yieldPct+'%</b>'
-      +'<br><b>持有策略：</b>2 年內轉售房地合一 45%，持滿 2 年降到 35%（價差每 100 萬省 10 萬稅）＋期間收租約 '+two+'%（兩年毛租金，未扣持有成本）</div>';
+    var eff=y.netYieldPct!=null?y.netYieldPct:y.yieldPct;
+    var two=(eff*2).toFixed(1);
+    var yieldTxt='年化 <b>'+y.yieldPct+'%</b>';
+    if(y.netYieldPct!=null)yieldTxt+='（扣管理費 '+y.mgmtFee+' 元/坪/月 → 淨 <b>'+y.netYieldPct+'%</b>）';
+    return '<div class="lvr"><b>💰 租金報酬率：</b>在租中位 '+y.rentUnit.toLocaleString()+' 元/坪/月（'+y.n+' 筆・約 '+y.rentSize+' 坪）÷ 同坪數實登 '+y.baseUnit+' 萬/坪 → '+yieldTxt
+      +'<br><b>持有策略：</b>2 年內轉售房地合一 45%，持滿 2 年降到 35%（價差每 100 萬省 10 萬稅）＋期間收租約 '+two+'%（兩年'+(y.netYieldPct!=null?'淨':'毛')+'租金'+(y.netYieldPct!=null?'':'，未扣持有成本')+'）</div>';
   }
   function matchBlock(c){
     var ms=c.lvrMatches||[];
@@ -557,6 +587,7 @@
       var rentActive=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
       var html='<div class="comm-title"><h2>🏘 '+esc(c.name)+'</h2>'
         +'<span class="meta">'+esc(c.cityName)+esc(c.districtName)+' · 更新 '+(c.lastChecked||"—")+'</span></div>';
+      html+=infoBlock(c);
       if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
       html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
         +listingTable(c.sale,"sale",c.id+":sale")
