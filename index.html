@@ -283,7 +283,7 @@
     x.onload=function(){var d=null;try{d=JSON.parse(x.responseText);}catch(e){}
       if(x.status===401){signOut();return;}
       cb(x.status>=200&&x.status<300?null:((d&&d.error)||("HTTP "+x.status)),d);};
-    x.onerror=function(){cb("連線失敗（500 主機可能離線）");}; x.ontimeout=function(){cb("連線逾時");};
+    x.onerror=function(){cb("連線失敗（主機或對外通道中斷；看門狗每 10 分鐘檢查一次，稍後重試）");}; x.ontimeout=function(){cb("連線逾時");};
     x.send(body?JSON.stringify(body):null);
   }
 
