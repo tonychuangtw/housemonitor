@@ -1,8 +1,107 @@
 {
-  "updated": "2026-07-28 21:04:57",
+  "updated": "2026-07-29 12:02:42",
   "events": [
     {
-      "ts": "2026-07-28 21:04:57",
+      "ts": "2026-07-29 12:02:42",
+      "community": "大悅",
+      "kind": "delisted",
+      "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
+      "kindOfListing": "sale",
+      "price": 1198,
+      "url": "https://sale.591.com.tw/home/house/detail/2/19946291.html"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "大悅",
+      "kind": "delisted",
+      "title": "💎興富發豪宅︱雙捷運核心地段︱豪奢美宅配置【綠的傢俱】",
+      "kindOfListing": "rent",
+      "price": 23000,
+      "url": "https://rent.591.com.tw/21530871"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "國王一號院",
+      "kind": "delisted",
+      "title": "💯國王1號院拎包入住精緻裝潢最低價高級豪宅平車💯",
+      "kindOfListing": "sale",
+      "price": 3150,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20287949.html"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "國王一號院",
+      "kind": "delisted",
+      "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+      "kindOfListing": "sale",
+      "price": 3150,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20289936.html"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "國王一號院",
+      "kind": "delisted",
+      "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+      "kindOfListing": "sale",
+      "price": 3150,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20294965.html"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "遠東世界中心",
+      "kind": "delisted",
+      "title": "遠東世界中心高樓層角間面101景觀戶",
+      "kindOfListing": "rent",
+      "price": 91000,
+      "url": "https://rent.591.com.tw/21111324"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "遠東世界中心",
+      "kind": "delisted",
+      "title": "🍎全新裝潢~優質辦公室誠可議(含管理費水電)",
+      "kindOfListing": "rent",
+      "price": 18000,
+      "url": "https://rent.591.com.tw/21153972"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "遠東世界中心",
+      "kind": "delisted",
+      "title": "小型辦公室出租",
+      "kindOfListing": "rent",
+      "price": 38000,
+      "url": "https://rent.591.com.tw/21157663"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "遠雄utown",
+      "kind": "delisted",
+      "title": "遠雄U-TOWN高樓景觀商辦",
+      "kindOfListing": "sale",
+      "price": 4200,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20296769.html"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "遠雄utown",
+      "kind": "delisted",
+      "title": "邊間有陽台/有裝潢/遠雄U-town-21商仲",
+      "kindOfListing": "rent",
+      "price": 111500,
+      "url": "https://rent.591.com.tw/21171389"
+    },
+    {
+      "ts": "2026-07-29 12:02:42",
+      "community": "遠雄utown",
+      "kind": "delisted",
+      "title": "21商仲-遠雄文青亮麗廠辦U-town",
+      "kindOfListing": "rent",
+      "price": 111500,
+      "url": "https://rent.591.com.tw/21634897"
+    },
+    {
+      "ts": "2026-07-29 11:58:03",
       "community": "大悅",
       "kind": "new_listing",
       "title": "✨近文化中心高層次精緻大1+1房✨[有心家]",
@@ -11,7 +110,7 @@
       "url": "https://rent.591.com.tw/21715589"
     },
     {
-      "ts": "2026-07-28 21:04:57",
+      "ts": "2026-07-29 11:58:03",
       "community": "國王一號院",
       "kind": "new_listing",
       "title": "文化中心【國王一號院】毛胚鋼骨豪邸",
@@ -20,7 +119,7 @@
       "url": "https://sale.591.com.tw/home/house/detail/2/20617250.html"
     },
     {
-      "ts": "2026-07-28 21:04:57",
+      "ts": "2026-07-29 11:58:03",
       "community": "遠東世界中心",
       "kind": "new_listing",
       "title": "🍎全新裝潢~優質辦公室誠可議(含管理費水電)",
@@ -29,7 +128,7 @@
       "url": "https://rent.591.com.tw/21711676"
     },
     {
-      "ts": "2026-07-28 21:04:57",
+      "ts": "2026-07-29 11:58:03",
       "community": "遠雄utown",
       "kind": "new_listing",
       "title": "大坪數現有租客買來即收租、兩面採光完美隔間",
@@ -38,7 +137,16 @@
       "url": "https://sale.591.com.tw/home/house/detail/2/20622002.html"
     },
     {
-      "ts": "2026-07-28 21:04:57",
+      "ts": "2026-07-29 11:58:03",
+      "community": "遠雄utown",
+      "kind": "new_listing",
+      "title": "近新台五路、隔間裝潢完善、現成OA家具",
+      "kindOfListing": "rent",
+      "price": 170000,
+      "url": "https://rent.591.com.tw/21724595"
+    },
+    {
+      "ts": "2026-07-29 11:58:03",
       "community": "遠雄utown",
       "kind": "new_listing",
       "title": "遠雄Utown辦公室電梯大樓⭐商辦進駐的最佳選擇",
@@ -224,25 +332,6 @@
           "marketN": 13,
           "estResale": 1141,
           "estProfit": -198,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "19946291",
-          "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
-          "price": 1198,
-          "prevPrice": 1198,
-          "size": 44.5,
-          "floor": "8F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/19946291.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 26.92,
-          "premiumPct": 5.1,
-          "marketN": 13,
-          "estResale": 1140,
-          "estProfit": -128,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -476,6 +565,25 @@
           "lvrMatch": null
         },
         {
+          "id": "19946291",
+          "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
+          "price": 1198,
+          "prevPrice": 1198,
+          "size": 44.5,
+          "floor": "8F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/19946291.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 26.92,
+          "premiumPct": 5.1,
+          "marketN": 13,
+          "estResale": 1140,
+          "estProfit": -128,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20436547",
           "title": "低總價-文化中心輕屋齡-時尚質感兩房",
           "price": 798,
@@ -573,25 +681,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21530871",
-          "title": "💎興富發豪宅︱雙捷運核心地段︱豪奢美宅配置【綠的傢俱】",
-          "price": 23000,
-          "prevPrice": 23000,
-          "size": 14.23,
-          "floor": "4F/29F",
-          "url": "https://rent.591.com.tw/21530871",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1616,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21647813",
           "title": "七賢民族文化中心商圈精緻全新大2房(可租補)",
           "price": 23000,
@@ -614,12 +703,12 @@
           "id": "21715589",
           "title": "✨近文化中心高層次精緻大1+1房✨[有心家]",
           "price": 22000,
-          "prevPrice": null,
+          "prevPrice": 22000,
           "size": 12,
           "floor": "12F/29F",
           "url": "https://rent.591.com.tw/21715589",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 1833,
           "premiumPct": null,
           "marketN": null,
@@ -659,6 +748,25 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 2019,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21530871",
+          "title": "💎興富發豪宅︱雙捷運核心地段︱豪奢美宅配置【綠的傢俱】",
+          "price": 23000,
+          "prevPrice": 23000,
+          "size": 14.23,
+          "floor": "4F/29F",
+          "url": "https://rent.591.com.tw/21530871",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1616,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -860,18 +968,18 @@
         }
       ],
       "liquidity": {
-        "delistedN": 1,
-        "delistedMedianDays": 1,
+        "delistedN": 2,
+        "delistedMedianDays": 3,
         "activeMedianDays": 6
       },
       "rentYield": {
-        "rentUnit": 1282,
-        "rentSize": 18.7,
-        "n": 9,
+        "rentUnit": 1246,
+        "rentSize": 19.1,
+        "n": 8,
         "baseUnit": 35.22,
-        "yieldPct": 4.37,
+        "yieldPct": 4.24,
         "mgmtFee": 80,
-        "netYieldPct": 4.1
+        "netYieldPct": 3.97
       },
       "lvrTrend": [
         {
@@ -1911,7 +2019,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-28 21:01:49"
+      "lastChecked": "2026-07-29 11:58:16"
     },
     {
       "id": "mrych48q56fu",
@@ -1939,44 +2047,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20287949",
-          "title": "💯國王1號院拎包入住精緻裝潢最低價高級豪宅平車💯",
-          "price": 3150,
-          "prevPrice": 3150,
-          "size": 90.56,
-          "floor": "7F/33F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20287949.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 34.78,
-          "premiumPct": 25.3,
-          "marketN": 3,
-          "estResale": 2513,
-          "estProfit": -801,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20289936",
-          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
-          "price": 3150,
-          "prevPrice": 3150,
-          "size": 90.56,
-          "floor": "7F/33F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20289936.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 34.78,
-          "premiumPct": 25.3,
-          "marketN": 3,
-          "estResale": 2513,
-          "estProfit": -801,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20290646",
           "title": "文化中心捷運旁/精裝豪邸平車",
           "price": 3150,
@@ -1984,25 +2054,6 @@
           "size": 90.56,
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20290646.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 34.78,
-          "premiumPct": 25.3,
-          "marketN": 3,
-          "estResale": 2513,
-          "estProfit": -801,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20294965",
-          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
-          "price": 3150,
-          "prevPrice": 3150,
-          "size": 90.56,
-          "floor": "7F/33F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20294965.html",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 34.78,
@@ -2132,12 +2183,12 @@
           "id": "20617250",
           "title": "文化中心【國王一號院】毛胚鋼骨豪邸",
           "price": 3080,
-          "prevPrice": null,
+          "prevPrice": 3080,
           "size": 83.74,
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20617250.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 36.78,
           "premiumPct": 32.5,
           "marketN": 3,
@@ -2238,6 +2289,63 @@
           "marketN": 4,
           "estResale": 2586,
           "estProfit": -965,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20287949",
+          "title": "💯國王1號院拎包入住精緻裝潢最低價高級豪宅平車💯",
+          "price": 3150,
+          "prevPrice": 3150,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20287949.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.3,
+          "marketN": 3,
+          "estResale": 2513,
+          "estProfit": -801,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20289936",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": 3150,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20289936.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.3,
+          "marketN": 3,
+          "estResale": 2513,
+          "estProfit": -801,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20294965",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": 3150,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20294965.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 25.3,
+          "marketN": 3,
+          "estResale": 2513,
+          "estProfit": -801,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -2513,9 +2621,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 1,
-        "delistedMedianDays": 0,
-        "activeMedianDays": 4
+        "delistedN": 4,
+        "delistedMedianDays": 2,
+        "activeMedianDays": 5
       },
       "rentYield": {
         "rentUnit": 817,
@@ -2814,7 +2922,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-28 21:02:26"
+      "lastChecked": "2026-07-29 11:59:13"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3044,8 +3152,8 @@
         }
       ],
       "lvrMatches": [],
-      "error": null,
-      "lastChecked": "2026-07-28 21:03:00"
+      "error": "lvr timeout",
+      "lastChecked": "2026-07-29 12:00:17"
     },
     {
       "id": "ms1szpz342t7",
@@ -3265,25 +3373,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21111324",
-          "title": "遠東世界中心高樓層角間面101景觀戶",
-          "price": 91000,
-          "prevPrice": 91000,
-          "size": 77.17,
-          "floor": "13F/21F",
-          "url": "https://rent.591.com.tw/21111324",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1179,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21625348",
           "title": "超級景觀超值辦公",
           "price": 80000,
@@ -3332,25 +3421,6 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 650,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "21157663",
-          "title": "小型辦公室出租",
-          "price": 38000,
-          "prevPrice": 38000,
-          "size": 20.85,
-          "floor": "14F/20F",
-          "url": "https://rent.591.com.tw/21157663",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1823,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -3436,13 +3506,13 @@
           "lvrMatch": null
         },
         {
-          "id": "21153972",
+          "id": "21711676",
           "title": "🍎全新裝潢~優質辦公室誠可議(含管理費水電)",
           "price": 18000,
           "prevPrice": 18000,
           "size": 13,
           "floor": "3F/20F",
-          "url": "https://rent.591.com.tw/21153972",
+          "url": "https://rent.591.com.tw/21711676",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 1385,
@@ -3455,15 +3525,53 @@
           "lvrMatch": null
         },
         {
-          "id": "21711676",
+          "id": "21111324",
+          "title": "遠東世界中心高樓層角間面101景觀戶",
+          "price": 91000,
+          "prevPrice": 91000,
+          "size": 77.17,
+          "floor": "13F/21F",
+          "url": "https://rent.591.com.tw/21111324",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1179,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21157663",
+          "title": "小型辦公室出租",
+          "price": 38000,
+          "prevPrice": 38000,
+          "size": 20.85,
+          "floor": "14F/20F",
+          "url": "https://rent.591.com.tw/21157663",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1823,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21153972",
           "title": "🍎全新裝潢~優質辦公室誠可議(含管理費水電)",
           "price": 18000,
-          "prevPrice": null,
+          "prevPrice": 18000,
           "size": 13,
           "floor": "3F/20F",
-          "url": "https://rent.591.com.tw/21711676",
-          "status": "active",
-          "isNew": true,
+          "url": "https://rent.591.com.tw/21153972",
+          "status": "delisted",
+          "isNew": false,
           "unitPricePerPing": 1385,
           "premiumPct": null,
           "marketN": null,
@@ -3728,7 +3836,13 @@
         "delistedMedianDays": null,
         "activeMedianDays": 2
       },
-      "rentYield": null,
+      "rentYield": {
+        "rentUnit": 869,
+        "rentSize": 73.3,
+        "n": 10,
+        "baseUnit": 26.29,
+        "yieldPct": 3.96
+      },
       "lvrTrend": [
         {
           "q": "2023Q1",
@@ -4722,7 +4836,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-28 21:03:28"
+      "lastChecked": "2026-07-29 12:01:10"
     },
     {
       "id": "ms1t9u1fslfj",
@@ -5133,12 +5247,12 @@
           "id": "20622002",
           "title": "大坪數現有租客買來即收租、兩面採光完美隔間",
           "price": 5136,
-          "prevPrice": null,
+          "prevPrice": 5136,
           "size": 140.73,
           "floor": "13F/35F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20622002.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 36.5,
           "premiumPct": 1.9,
           "marketN": 33,
@@ -5339,25 +5453,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20296769",
-          "title": "遠雄U-TOWN高樓景觀商辦",
-          "price": 4200,
-          "prevPrice": 4200,
-          "size": 117.42,
-          "floor": "26F/37F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20296769.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 35.77,
-          "premiumPct": -1.1,
-          "marketN": 43,
-          "estResale": 4247,
-          "estProfit": -207,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20297234",
           "title": "💥遠雄U-TOWN🌏B棟2個平面車位",
           "price": 4200,
@@ -5489,6 +5584,25 @@
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
+        },
+        {
+          "id": "20296769",
+          "title": "遠雄U-TOWN高樓景觀商辦",
+          "price": 4200,
+          "prevPrice": 4200,
+          "size": 117.42,
+          "floor": "26F/37F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20296769.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 35.77,
+          "premiumPct": -1.1,
+          "marketN": 43,
+          "estResale": 4247,
+          "estProfit": -207,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         }
       ],
       "rent": [
@@ -5496,12 +5610,12 @@
           "id": "21707539",
           "title": "遠雄Utown辦公室電梯大樓⭐商辦進駐的最佳選擇",
           "price": 965850,
-          "prevPrice": null,
+          "prevPrice": 965850,
           "size": 1287.8,
           "floor": "7F/37F",
           "url": "https://rent.591.com.tw/21707539",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 750,
           "premiumPct": null,
           "marketN": null,
@@ -5588,6 +5702,25 @@
           "lvrMatch": null
         },
         {
+          "id": "21724595",
+          "title": "近新台五路、隔間裝潢完善、現成OA家具",
+          "price": 170000,
+          "prevPrice": 170000,
+          "size": 120.98,
+          "floor": "23F/35F",
+          "url": "https://rent.591.com.tw/21724595",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 1405,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "21466816",
           "title": "U-TOWN辦公室、倉庫出租",
           "price": 160000,
@@ -5655,44 +5788,6 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 1303,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "21171389",
-          "title": "邊間有陽台/有裝潢/遠雄U-town-21商仲",
-          "price": 111500,
-          "prevPrice": 111500,
-          "size": 131.14,
-          "floor": "10F/35F",
-          "url": "https://rent.591.com.tw/21171389",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 850,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "21634897",
-          "title": "21商仲-遠雄文青亮麗廠辦U-town",
-          "price": 111500,
-          "prevPrice": 111500,
-          "size": 131.14,
-          "floor": "10F/35F",
-          "url": "https://rent.591.com.tw/21634897",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 850,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -6327,6 +6422,44 @@
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
+        },
+        {
+          "id": "21171389",
+          "title": "邊間有陽台/有裝潢/遠雄U-town-21商仲",
+          "price": 111500,
+          "prevPrice": 111500,
+          "size": 131.14,
+          "floor": "10F/35F",
+          "url": "https://rent.591.com.tw/21171389",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 850,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21634897",
+          "title": "21商仲-遠雄文青亮麗廠辦U-town",
+          "price": 111500,
+          "prevPrice": 111500,
+          "size": 131.14,
+          "floor": "10F/35F",
+          "url": "https://rent.591.com.tw/21634897",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 850,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
         }
       ],
       "lvrSale": [
@@ -6595,9 +6728,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 0,
-        "delistedMedianDays": null,
-        "activeMedianDays": 1
+        "delistedN": 1,
+        "delistedMedianDays": 0,
+        "activeMedianDays": 2
       },
       "rentYield": null,
       "lvrTrend": [
@@ -7818,7 +7951,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-28 21:03:59"
+      "lastChecked": "2026-07-29 12:01:52"
     }
   ]
 }
