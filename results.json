@@ -1,6 +1,33 @@
 {
-  "updated": "2026-07-29 12:02:42",
+  "updated": "2026-07-29 21:09:45",
   "events": [
+    {
+      "ts": "2026-07-29 21:09:45",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "文化中心｜精裝大兩房＋平車｜邊間雙面採光｜直接入住",
+      "kindOfListing": "sale",
+      "price": 1198,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20636437.html"
+    },
+    {
+      "ts": "2026-07-29 21:09:45",
+      "community": "遠雄utown",
+      "kind": "new_listing",
+      "title": "汐科園區裝潢陽台戶",
+      "kindOfListing": "rent",
+      "price": 88000,
+      "url": "https://rent.591.com.tw/21725803"
+    },
+    {
+      "ts": "2026-07-29 21:09:45",
+      "community": "遠雄utown",
+      "kind": "new_listing",
+      "title": "汐科園區U-Town陽台戶",
+      "kindOfListing": "rent",
+      "price": 123340,
+      "url": "https://rent.591.com.tw/21725793"
+    },
     {
       "ts": "2026-07-29 12:02:42",
       "community": "大悅",
@@ -384,6 +411,25 @@
           "url": "https://sale.591.com.tw/home/house/detail/2/20602618.html",
           "status": "active",
           "isNew": false,
+          "unitPricePerPing": 26.91,
+          "premiumPct": 5.1,
+          "marketN": 13,
+          "estResale": 1140,
+          "estProfit": -128,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20636437",
+          "title": "文化中心｜精裝大兩房＋平車｜邊間雙面採光｜直接入住",
+          "price": 1198,
+          "prevPrice": null,
+          "size": 44.52,
+          "floor": "8F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20636437.html",
+          "status": "active",
+          "isNew": true,
           "unitPricePerPing": 26.91,
           "premiumPct": 5.1,
           "marketN": 13,
@@ -970,7 +1016,7 @@
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 3,
-        "activeMedianDays": 6
+        "activeMedianDays": 7
       },
       "rentYield": {
         "rentUnit": 1246,
@@ -1264,7 +1310,7 @@
           "address": "苓雅區七賢一路０１２１號二十八樓之１０",
           "community": "大悅",
           "layout": "1房1廳1衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅��樓(11層含以上有電梯)"
         },
         {
           "date": "2025-01-14",
@@ -2019,7 +2065,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 11:58:16"
+      "lastChecked": "2026-07-29 21:06:51"
     },
     {
       "id": "mrych48q56fu",
@@ -2922,7 +2968,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 11:59:13"
+      "lastChecked": "2026-07-29 21:07:24"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3152,8 +3198,8 @@
         }
       ],
       "lvrMatches": [],
-      "error": "lvr timeout",
-      "lastChecked": "2026-07-29 12:00:17"
+      "error": null,
+      "lastChecked": "2026-07-29 21:07:58"
     },
     {
       "id": "ms1szpz342t7",
@@ -3488,7 +3534,7 @@
         },
         {
           "id": "21707441",
-          "title": "棧板可進出倉庫辦公室🍎(含管理費+電費)會議室",
+          "title": "倉庫辦公室🍎(含管理費+電費)會議室",
           "price": 21000,
           "prevPrice": 21000,
           "size": 18,
@@ -3834,7 +3880,7 @@
       "liquidity": {
         "delistedN": 0,
         "delistedMedianDays": null,
-        "activeMedianDays": 2
+        "activeMedianDays": 3
       },
       "rentYield": {
         "rentUnit": 869,
@@ -4453,7 +4499,7 @@
           "floorNum": 20,
           "parkCount": 2,
           "note": "",
-          "address": "汐止區新台五路一���００７５號２０樓之６",
+          "address": "汐止區新台五路一段００７５號２０樓之６",
           "community": "遠東世界中心",
           "layout": "3房1廳",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -4528,7 +4574,7 @@
           "floorNum": 16,
           "parkCount": 1,
           "note": "",
-          "address": "汐止區新台五路一段００７７號十六樓之１",
+          "address": "汐���區新台五路一段００７７號十六樓之１",
           "community": "遠東世界中心",
           "layout": "4房3廳",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -4836,7 +4882,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 12:01:10"
+      "lastChecked": "2026-07-29 21:08:24"
     },
     {
       "id": "ms1t9u1fslfj",
@@ -5797,6 +5843,25 @@
           "lvrMatch": null
         },
         {
+          "id": "21725793",
+          "title": "汐科園區U-Town陽台戶",
+          "price": 123340,
+          "prevPrice": null,
+          "size": 123.65,
+          "floor": "11F/37F",
+          "url": "https://rent.591.com.tw/21725793",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 997,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "21510908",
           "title": "遠雄U-TOWN辦公樓🍎可廠登🍎有大電即可入住使用",
           "price": 110000,
@@ -5901,6 +5966,25 @@
           "url": "https://rent.591.com.tw/21589218",
           "status": "active",
           "isNew": false,
+          "unitPricePerPing": 889,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21725803",
+          "title": "汐科園區裝潢陽台戶",
+          "price": 88000,
+          "prevPrice": null,
+          "size": 99.02,
+          "floor": "16F/37F",
+          "url": "https://rent.591.com.tw/21725803",
+          "status": "active",
+          "isNew": true,
           "unitPricePerPing": 889,
           "premiumPct": null,
           "marketN": null,
@@ -7001,7 +7085,7 @@
           "address": "汐止區新台五路一段００９９號十七樓之１２",
           "community": "遠雄U-TOWN",
           "layout": "",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有���梯)"
         },
         {
           "date": "2025-07-17",
@@ -7211,7 +7295,7 @@
           "address": "汐止區新台五路一段００９９號三十五樓之８",
           "community": "遠雄U-TOWN",
           "layout": "",
-          "buildingType": "住宅大樓(11層含��上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2024-10-23",
@@ -7601,7 +7685,7 @@
           "address": "汐止區新台五路一段００９９號十二樓之５",
           "community": "遠雄U-TOWN",
           "layout": "",
-          "buildingType": "住���大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2023-10-19",
@@ -7951,7 +8035,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 12:01:52"
+      "lastChecked": "2026-07-29 21:08:53"
     }
   ]
 }
