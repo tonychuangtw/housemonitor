@@ -1,6 +1,15 @@
 {
-  "updated": "2026-07-30 23:32:24",
+  "updated": "2026-07-30 23:37:24",
   "events": [
+    {
+      "ts": "2026-07-30 23:37:24",
+      "community": "國王一號院",
+      "kind": "delisted",
+      "title": "國王一號院💎4房平車💎適公司主管",
+      "kindOfListing": "rent",
+      "price": 55000,
+      "url": "https://rent.591.com.tw/21592475"
+    },
     {
       "ts": "2026-07-30 09:08:08",
       "community": "大悅",
@@ -1985,7 +1994,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 21:04:51"
+      "lastChecked": "2026-07-30 23:35:57"
     },
     {
       "id": "mrych48q56fu",
@@ -2395,25 +2404,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21592475",
-          "title": "國王一號院💎4房平車💎適公司主管",
-          "price": 55000,
-          "prevPrice": 55000,
-          "size": 83,
-          "floor": "7F/33F",
-          "url": "https://rent.591.com.tw/21592475",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 663,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21514351",
           "title": "👑O6信義MRT｜國王一號院｜品味高樓豪景4房-權威",
           "price": 60000,
@@ -2424,6 +2414,25 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 664,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21592475",
+          "title": "國王一號院💎4房平車💎適公司主管",
+          "price": 55000,
+          "prevPrice": 55000,
+          "size": 83,
+          "floor": "7F/33F",
+          "url": "https://rent.591.com.tw/21592475",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 663,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -2594,7 +2603,7 @@
       "rentYield": {
         "rentUnit": 817,
         "rentSize": 83.2,
-        "n": 5,
+        "n": 4,
         "baseUnit": 27.75,
         "yieldPct": 3.53,
         "mgmtFee": 60,
@@ -2888,7 +2897,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 21:05:23"
+      "lastChecked": "2026-07-30 23:36:27"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3119,61 +3128,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 21:05:56"
-    },
-    {
-      "id": "ms67bsln29n8",
-      "name": "雙峰匯",
-      "cityName": "新北市",
-      "districtName": "林口區",
-      "sale": [],
-      "rent": [],
-      "lvrSale": [],
-      "lvrRent": [],
-      "lvrSaleMatched": false,
-      "lvrSaleCount": 0,
-      "lvrSaleStats": [],
-      "lvrFloorStats": [],
-      "liquidity": {
-        "delistedN": 0,
-        "delistedMedianDays": null,
-        "activeMedianDays": null
-      },
-      "rentYield": null,
-      "lvrTrend": [],
-      "mgmtFee": null,
-      "info": null,
-      "lvrSaleAll": [],
-      "lvrMatches": [],
-      "error": "591 community not found: 雙峰匯 (candidates: 長耀PARK/長耀雙峰滙,潤泰峰匯,風華雙城匯,雙捷匯,雙站匯,三豐雙匯,合康雙匯,中興匯,櫻悅匯,水景匯,新濠一滙,愛家滙,富御匯,新美齊．匯,金城匯,上品匯,東城匯,半山滙,炎洲旺年匯,宏寬 永福匯,豐禾川匯,碧瑤大都滙,達麗大景滙,捷運匯境,合康世紀滙,璞石山匯,心都匯/永寧棧,長安幸福匯,玖長匯比壽,一品滙)",
-      "lastChecked": "2026-07-30 23:32:10"
-    },
-    {
-      "id": "ms67crtjyc91",
-      "name": "長耀雙夆滙",
-      "cityName": "新北市",
-      "districtName": "林口區",
-      "sale": [],
-      "rent": [],
-      "lvrSale": [],
-      "lvrRent": [],
-      "lvrSaleMatched": false,
-      "lvrSaleCount": 0,
-      "lvrSaleStats": [],
-      "lvrFloorStats": [],
-      "liquidity": {
-        "delistedN": 0,
-        "delistedMedianDays": null,
-        "activeMedianDays": null
-      },
-      "rentYield": null,
-      "lvrTrend": [],
-      "mgmtFee": null,
-      "info": null,
-      "lvrSaleAll": [],
-      "lvrMatches": [],
-      "error": null,
-      "lastChecked": null
+      "lastChecked": "2026-07-30 23:36:58"
     }
   ]
 }
