@@ -1,6 +1,24 @@
 {
-  "updated": "2026-07-29 21:09:45",
+  "updated": "2026-07-30 09:08:08",
   "events": [
+    {
+      "ts": "2026-07-30 09:08:08",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
+      "kindOfListing": "sale",
+      "price": 1198,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20639343.html"
+    },
+    {
+      "ts": "2026-07-30 09:08:08",
+      "community": "遠雄utown",
+      "kind": "delisted",
+      "title": "💥遠雄U-TOWN🌏B棟2個平面車位",
+      "kindOfListing": "sale",
+      "price": 4200,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20297234.html"
+    },
     {
       "ts": "2026-07-29 21:09:45",
       "community": "大悅",
@@ -424,13 +442,32 @@
           "id": "20636437",
           "title": "文化中心｜精裝大兩房＋平車｜邊間雙面採光｜直接入住",
           "price": 1198,
-          "prevPrice": null,
+          "prevPrice": 1198,
           "size": 44.52,
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20636437.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 26.91,
+          "premiumPct": 5.1,
+          "marketN": 13,
+          "estResale": 1140,
+          "estProfit": -128,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20639343",
+          "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
+          "price": 1198,
+          "prevPrice": null,
+          "size": 44.5,
+          "floor": "8F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20639343.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 26.92,
           "premiumPct": 5.1,
           "marketN": 13,
           "estResale": 1140,
@@ -1310,7 +1347,7 @@
           "address": "苓雅區七賢一路０１２１號二十八樓之１０",
           "community": "大悅",
           "layout": "1房1廳1衛",
-          "buildingType": "住宅��樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2025-01-14",
@@ -2065,7 +2102,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 21:06:51"
+      "lastChecked": "2026-07-30 09:04:51"
     },
     {
       "id": "mrych48q56fu",
@@ -2968,7 +3005,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 21:07:24"
+      "lastChecked": "2026-07-30 09:05:26"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3199,7 +3236,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 21:07:58"
+      "lastChecked": "2026-07-30 09:06:05"
     },
     {
       "id": "ms1szpz342t7",
@@ -4499,7 +4536,7 @@
           "floorNum": 20,
           "parkCount": 2,
           "note": "",
-          "address": "汐止區新台五路一段００７５號２０樓之６",
+          "address": "汐止區新台五路一���００７５號２０樓之６",
           "community": "遠東世界中心",
           "layout": "3房1廳",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -4574,7 +4611,7 @@
           "floorNum": 16,
           "parkCount": 1,
           "note": "",
-          "address": "汐���區新台五路一段００７７號十六樓之１",
+          "address": "汐止區新台五路一段００７７號十六樓之１",
           "community": "遠東世界中心",
           "layout": "4房3廳",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -4882,7 +4919,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 21:08:24"
+      "lastChecked": "2026-07-30 09:06:41"
     },
     {
       "id": "ms1t9u1fslfj",
@@ -5499,25 +5536,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20297234",
-          "title": "💥遠雄U-TOWN🌏B棟2個平面車位",
-          "price": 4200,
-          "prevPrice": 4200,
-          "size": 117.42,
-          "floor": "26F/37F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20297234.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 35.77,
-          "premiumPct": -1.1,
-          "marketN": 43,
-          "estResale": 4247,
-          "estProfit": -207,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20385636",
           "title": "U-Town明亮採光簡裝辦公空間-遠雄-21商仲",
           "price": 4200,
@@ -5639,6 +5657,25 @@
           "size": 117.42,
           "floor": "26F/37F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20296769.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 35.77,
+          "premiumPct": -1.1,
+          "marketN": 43,
+          "estResale": 4247,
+          "estProfit": -207,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20297234",
+          "title": "💥遠雄U-TOWN🌏B棟2個平面車位",
+          "price": 4200,
+          "prevPrice": 4200,
+          "size": 117.42,
+          "floor": "26F/37F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20297234.html",
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 35.77,
@@ -5846,12 +5883,12 @@
           "id": "21725793",
           "title": "汐科園區U-Town陽台戶",
           "price": 123340,
-          "prevPrice": null,
+          "prevPrice": 123340,
           "size": 123.65,
           "floor": "11F/37F",
           "url": "https://rent.591.com.tw/21725793",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 997,
           "premiumPct": null,
           "marketN": null,
@@ -5979,12 +6016,12 @@
           "id": "21725803",
           "title": "汐科園區裝潢陽台戶",
           "price": 88000,
-          "prevPrice": null,
+          "prevPrice": 88000,
           "size": 99.02,
           "floor": "16F/37F",
           "url": "https://rent.591.com.tw/21725803",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 889,
           "premiumPct": null,
           "marketN": null,
@@ -6812,9 +6849,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 1,
-        "delistedMedianDays": 0,
-        "activeMedianDays": 2
+        "delistedN": 2,
+        "delistedMedianDays": 1,
+        "activeMedianDays": 3
       },
       "rentYield": null,
       "lvrTrend": [
@@ -7085,7 +7122,7 @@
           "address": "汐止區新台五路一段００９９號十七樓之１２",
           "community": "遠雄U-TOWN",
           "layout": "",
-          "buildingType": "住宅大樓(11層含以上有���梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2025-07-17",
@@ -7295,7 +7332,7 @@
           "address": "汐止區新台五路一段００９９號三十五樓之８",
           "community": "遠雄U-TOWN",
           "layout": "",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含��上有電梯)"
         },
         {
           "date": "2024-10-23",
@@ -7685,7 +7722,7 @@
           "address": "汐止區新台五路一段００９９號十二樓之５",
           "community": "遠雄U-TOWN",
           "layout": "",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住���大樓(11層含以上有電梯)"
         },
         {
           "date": "2023-10-19",
@@ -8035,7 +8072,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-29 21:08:53"
+      "lastChecked": "2026-07-30 09:07:15"
     }
   ]
 }
