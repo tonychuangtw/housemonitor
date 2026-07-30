@@ -1,6 +1,33 @@
 {
-  "updated": "2026-07-30 09:08:08",
+  "updated": "2026-07-30 21:07:41",
   "events": [
+    {
+      "ts": "2026-07-30 21:07:41",
+      "community": "遠雄utown",
+      "kind": "new_listing",
+      "title": "遠雄U-T0WN高樓層~兩面採光/有水線",
+      "kindOfListing": "sale",
+      "price": 4300,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20642854.html"
+    },
+    {
+      "ts": "2026-07-30 21:07:41",
+      "community": "遠雄utown",
+      "kind": "new_listing",
+      "title": "🏆佳佳團隊🏆UTOWN整層出售企業總部高樓景觀戶",
+      "kindOfListing": "sale",
+      "price": 56920,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20641900.html"
+    },
+    {
+      "ts": "2026-07-30 21:07:41",
+      "community": "遠雄utown",
+      "kind": "new_listing",
+      "title": "21商仲-遠雄文青亮麗廠辦U-town",
+      "kindOfListing": "rent",
+      "price": 111500,
+      "url": "https://rent.591.com.tw/21734889"
+    },
     {
       "ts": "2026-07-30 09:08:08",
       "community": "大悅",
@@ -461,12 +488,12 @@
           "id": "20639343",
           "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
           "price": 1198,
-          "prevPrice": null,
+          "prevPrice": 1198,
           "size": 44.5,
           "floor": "8F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20639343.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 26.92,
           "premiumPct": 5.1,
           "marketN": 13,
@@ -1053,7 +1080,7 @@
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 3,
-        "activeMedianDays": 7
+        "activeMedianDays": 8
       },
       "rentYield": {
         "rentUnit": 1246,
@@ -2102,7 +2129,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 09:04:51"
+      "lastChecked": "2026-07-30 21:04:51"
     },
     {
       "id": "mrych48q56fu",
@@ -2706,7 +2733,7 @@
       "liquidity": {
         "delistedN": 4,
         "delistedMedianDays": 2,
-        "activeMedianDays": 5
+        "activeMedianDays": 6
       },
       "rentYield": {
         "rentUnit": 817,
@@ -3005,7 +3032,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 09:05:26"
+      "lastChecked": "2026-07-30 21:05:23"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3236,7 +3263,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 09:06:05"
+      "lastChecked": "2026-07-30 21:05:56"
     },
     {
       "id": "ms1szpz342t7",
@@ -3917,7 +3944,7 @@
       "liquidity": {
         "delistedN": 0,
         "delistedMedianDays": null,
-        "activeMedianDays": 3
+        "activeMedianDays": 4
       },
       "rentYield": {
         "rentUnit": 869,
@@ -4919,7 +4946,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 09:06:41"
+      "lastChecked": "2026-07-30 21:06:22"
     },
     {
       "id": "ms1t9u1fslfj",
@@ -4938,6 +4965,25 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 39.66,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20641900",
+          "title": "🏆佳佳團隊🏆UTOWN整層出售企業總部高樓景觀戶",
+          "price": 56920,
+          "prevPrice": null,
+          "size": 1329.3,
+          "floor": "33F/35F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20641900.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 42.82,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -5479,6 +5525,25 @@
           "lvrMatch": null
         },
         {
+          "id": "20642854",
+          "title": "遠雄U-T0WN高樓層~兩面採光/有水線",
+          "price": 4300,
+          "prevPrice": null,
+          "size": 121.47,
+          "floor": "19F/37F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20642854.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 35.4,
+          "premiumPct": -1.2,
+          "marketN": 43,
+          "estResale": 4352,
+          "estProfit": -208,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20555688",
           "title": "高樓層景觀優附優質裝潢隔間",
           "price": 4264,
@@ -5890,6 +5955,25 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 997,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21734889",
+          "title": "21商仲-遠雄文青亮麗廠辦U-town",
+          "price": 111500,
+          "prevPrice": null,
+          "size": 131.14,
+          "floor": "10F/35F",
+          "url": "https://rent.591.com.tw/21734889",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 850,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -8072,7 +8156,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 09:07:15"
+      "lastChecked": "2026-07-30 21:06:52"
     }
   ]
 }
