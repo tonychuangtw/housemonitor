@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30 21:07:41",
+  "updated": "2026-07-30 23:32:24",
   "events": [
     {
       "ts": "2026-07-30 09:08:08",
@@ -3120,6 +3120,60 @@
       "lvrMatches": [],
       "error": null,
       "lastChecked": "2026-07-30 21:05:56"
+    },
+    {
+      "id": "ms67bsln29n8",
+      "name": "雙峰匯",
+      "cityName": "新北市",
+      "districtName": "林口區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [],
+      "lvrRent": [],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "lvrSaleStats": [],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": null
+      },
+      "rentYield": null,
+      "lvrTrend": [],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": "591 community not found: 雙峰匯 (candidates: 長耀PARK/長耀雙峰滙,潤泰峰匯,風華雙城匯,雙捷匯,雙站匯,三豐雙匯,合康雙匯,中興匯,櫻悅匯,水景匯,新濠一滙,愛家滙,富御匯,新美齊．匯,金城匯,上品匯,東城匯,半山滙,炎洲旺年匯,宏寬 永福匯,豐禾川匯,碧瑤大都滙,達麗大景滙,捷運匯境,合康世紀滙,璞石山匯,心都匯/永寧棧,長安幸福匯,玖長匯比壽,一品滙)",
+      "lastChecked": "2026-07-30 23:32:10"
+    },
+    {
+      "id": "ms67crtjyc91",
+      "name": "長耀雙夆滙",
+      "cityName": "新北市",
+      "districtName": "林口區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [],
+      "lvrRent": [],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "lvrSaleStats": [],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": null
+      },
+      "rentYield": null,
+      "lvrTrend": [],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": null,
+      "lastChecked": null
     }
   ]
 }
