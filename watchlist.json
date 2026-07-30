@@ -89,6 +89,20 @@
         "histLow": 62.14,
         "source": "樂居 2026-07-26"
       }
+    },
+    {
+      "id": "ms7outtntjzf",
+      "name": "長耀雙峰滙",
+      "city": "F",
+      "cityName": "新北市",
+      "district": "F02",
+      "districtName": "林口區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785426527867
     }
   ]
 }
