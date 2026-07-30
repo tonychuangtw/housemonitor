@@ -319,7 +319,7 @@
         api("PATCH","/api/house/watch/"+encodeURIComponent(w.id),{active:paused},function(e,d){if(e){alert("更新失敗："+e);return;}renderWatch(d.items);});});
       div.querySelector(".del").addEventListener("click",function(){
         if(!confirm("停止監控「"+w.name+"」？"))return;
-        api("DELETE","/api/house/watch/"+encodeURIComponent(w.id),null,function(e,d){if(e){alert("刪除失敗："+e);return;}renderWatch(d.items);});});
+        api("DELETE","/api/house/watch/"+encodeURIComponent(w.id),null,function(e,d){if(e){alert("刪除失敗："+e);return;}renderWatch(d.items);dropCommunity(w.id,w.name);});});
       el.appendChild(div);
     });
   }
@@ -616,20 +616,32 @@
       });
     });
   }
+  var lastUpdated="—";
+  function renderAll(){
+    renderEvents();
+    $("res-sub").textContent="最後更新 "+lastUpdated+"（台北時間） · 共 "+COMMUNITIES.length+" 個社區";
+    var ns=0,nr=0;
+    COMMUNITIES.forEach(function(c){
+      ns+=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
+      nr+=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
+    });
+    $("summary").innerHTML='<div class="stat">社區 <b>'+COMMUNITIES.length+'</b></div>'
+      +'<div class="stat">在售 <b>'+ns+'</b></div><div class="stat ok">在租 <b>'+nr+'</b></div>';
+    renderResults();
+  }
+  // 刪除監控需求後，下面的結果與事件立刻消失，不用等下一輪掃描（後端 scan.sh 會同步把
+  // results.json 裡的該社區清掉並 push，所以重新整理也不會又跑出來）
+  function dropCommunity(id,name){
+    COMMUNITIES=COMMUNITIES.filter(function(c){return c.id!==id;});
+    EVENTS=EVENTS.filter(function(e){return e.community!==name;});
+    renderAll();
+  }
   function loadResults(){
     fetch("results.json?t="+Date.now()).then(function(r){return r.json();}).then(function(d){
       COMMUNITIES=d.communities||[];
       EVENTS=d.events||[];
-      renderEvents();
-      $("res-sub").textContent="最後更新 "+(d.updated||"—")+"（台北時間） · 共 "+COMMUNITIES.length+" 個社區";
-      var ns=0,nr=0;
-      COMMUNITIES.forEach(function(c){
-        ns+=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
-        nr+=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
-      });
-      $("summary").innerHTML='<div class="stat">社區 <b>'+COMMUNITIES.length+'</b></div>'
-        +'<div class="stat">在售 <b>'+ns+'</b></div><div class="stat ok">在租 <b>'+nr+'</b></div>';
-      renderResults();
+      lastUpdated=d.updated||"—";
+      renderAll();
     }).catch(function(e){$("results").innerHTML='<p class="msg">載入 results.json 失敗：'+esc(e.message)+'</p>';});
   }
   // 自動刷新：每 5 分鐘重抓 results.json；切回分頁時也立刻抓
