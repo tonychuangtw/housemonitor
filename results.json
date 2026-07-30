@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30 23:37:24",
+  "updated": "2026-07-30 23:51:05",
   "events": [
     {
       "ts": "2026-07-30 23:37:24",
@@ -1239,7 +1239,7 @@
           "address": "苓雅區七賢一路０１２１號二十八樓之１０",
           "community": "大悅",
           "layout": "1房1廳1衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅��樓(11層含以上有電梯)"
         },
         {
           "date": "2025-01-14",
@@ -1994,7 +1994,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 23:35:57"
+      "lastChecked": "2026-07-30 23:49:26"
     },
     {
       "id": "mrych48q56fu",
@@ -2897,7 +2897,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 23:36:27"
+      "lastChecked": "2026-07-30 23:49:57"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3128,7 +3128,34 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-30 23:36:58"
+      "lastChecked": "2026-07-30 23:50:28"
+    },
+    {
+      "id": "ms7outtntjzf",
+      "name": "長耀雙峰滙",
+      "cityName": "新北市",
+      "districtName": "林口區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [],
+      "lvrRent": [],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "lvrSaleStats": [],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": null
+      },
+      "rentYield": null,
+      "lvrTrend": [],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": "591 community not found: 長耀雙峰滙 (candidates: 長耀PARK/長耀雙峰滙,長耀會,長耀 IPARK,玖長匯比壽)",
+      "lastChecked": "2026-07-30 23:50:55"
     }
   ]
 }
