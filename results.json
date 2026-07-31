@@ -1,6 +1,46 @@
 {
-  "updated": "2026-07-31 09:04:05",
+  "updated": "2026-07-31 21:08:57",
   "events": [
+    {
+      "ts": "2026-07-31 21:08:57",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "近信義國小捷運站｜大悅｜超美高樓2房(寵物可談)",
+      "kindOfListing": "rent",
+      "price": 20500,
+      "url": "https://rent.591.com.tw/21740446"
+    },
+    {
+      "ts": "2026-07-31 21:08:57",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "信義國小站-大悅超美高樓2房出租馬上入住",
+      "kindOfListing": "rent",
+      "price": 20500,
+      "url": "https://rent.591.com.tw/21739951"
+    },
+    {
+      "ts": "2026-07-31 21:08:57",
+      "community": "大悅",
+      "kind": "price",
+      "title": "高級豪華二房出租",
+      "kindOfListing": "rent",
+      "price": 23000,
+      "url": "https://rent.591.com.tw/21695539",
+      "from": 23500,
+      "to": 23000
+    },
+    {
+      "ts": "2026-07-31 21:08:57",
+      "community": "長耀雙峰滙",
+      "kind": "price",
+      "title": "【雙峰滙】稀有三井商圈+扶輪公園免裝潢景觀2房平車",
+      "kindOfListing": "sale",
+      "price": 1875,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20585166.html",
+      "from": 1988,
+      "to": 1875
+    },
     {
       "ts": "2026-07-30 23:37:24",
       "community": "國王一號院",
@@ -600,7 +640,7 @@
         },
         {
           "id": "21634119",
-          "title": "興富發大悅社區2房住家",
+          "title": "台灣金聯/興富發大悅社區2房住家",
           "price": 26000,
           "prevPrice": 26000,
           "size": 18.73,
@@ -637,25 +677,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21695539",
-          "title": "高級豪華二房出租",
-          "price": 23500,
-          "prevPrice": 23500,
-          "size": 19.44,
-          "floor": "21F/29F",
-          "url": "https://rent.591.com.tw/21695539",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1209,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21647813",
           "title": "七賢民族文化中心商圈精緻全新大2房(可租補)",
           "price": 23000,
@@ -672,6 +693,25 @@
           "estProfit": null,
           "drops": 0,
           "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21695539",
+          "title": "高級豪華二房出租",
+          "price": 23000,
+          "prevPrice": 23000,
+          "size": 19.44,
+          "floor": "21F/29F",
+          "url": "https://rent.591.com.tw/21695539",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 1183,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 1,
+          "totalDrop": 500,
           "lvrMatch": null
         },
         {
@@ -723,6 +763,44 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 2019,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21739951",
+          "title": "信義國小站-大悅超美高樓2房出租馬上入住",
+          "price": 20500,
+          "prevPrice": null,
+          "size": 12.6,
+          "floor": "20F/29F",
+          "url": "https://rent.591.com.tw/21739951",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 1627,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21740446",
+          "title": "近信義國小捷運站｜大悅｜超美高樓2房(寵物可談)",
+          "price": 20500,
+          "prevPrice": null,
+          "size": 12,
+          "floor": "20F/29F",
+          "url": "https://rent.591.com.tw/21740446",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 1708,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -945,16 +1023,16 @@
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 3,
-        "activeMedianDays": 8
+        "activeMedianDays": 9
       },
       "rentYield": {
-        "rentUnit": 1246,
-        "rentSize": 19.1,
-        "n": 8,
+        "rentUnit": 1335,
+        "rentSize": 18.3,
+        "n": 10,
         "baseUnit": 35.22,
-        "yieldPct": 4.24,
+        "yieldPct": 4.55,
         "mgmtFee": 80,
-        "netYieldPct": 3.97
+        "netYieldPct": 4.28
       },
       "lvrTrend": [
         {
@@ -1994,7 +2072,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-31 09:01:51"
+      "lastChecked": "2026-07-31 21:06:51"
     },
     {
       "id": "mrych48q56fu",
@@ -2598,7 +2676,7 @@
       "liquidity": {
         "delistedN": 4,
         "delistedMedianDays": 2,
-        "activeMedianDays": 6
+        "activeMedianDays": 7
       },
       "rentYield": {
         "rentUnit": 817,
@@ -2897,7 +2975,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-31 09:02:26"
+      "lastChecked": "2026-07-31 21:07:21"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3128,7 +3206,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-31 09:02:56"
+      "lastChecked": "2026-07-31 21:07:50"
     },
     {
       "id": "ms7outtntjzf",
@@ -3973,25 +4051,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20585166",
-          "title": "【雙峰滙】三井扶輪旁高樓極景美妝2房車",
-          "price": 1988,
-          "prevPrice": 1988,
-          "size": 32.25,
-          "floor": "27F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20585166.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 61.64,
-          "premiumPct": 25.2,
-          "marketN": 12,
-          "estResale": 1588,
-          "estProfit": -503,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20634338",
           "title": "時尚💡長耀雙峰滙🤩高樓景觀2房車",
           "price": 1988,
@@ -4217,6 +4276,25 @@
           "estProfit": -388,
           "drops": 0,
           "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20585166",
+          "title": "【雙峰滙】稀有三井商圈+扶輪公園免裝潢景觀2房平車",
+          "price": 1875,
+          "prevPrice": 1875,
+          "size": 32.25,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20585166.html",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 58.14,
+          "premiumPct": 18.1,
+          "marketN": 12,
+          "estResale": 1588,
+          "estProfit": -388,
+          "drops": 1,
+          "totalDrop": 113,
           "lvrMatch": null
         },
         {
@@ -5522,7 +5600,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-07-31 09:03:24"
+      "lastChecked": "2026-07-31 21:08:14"
     }
   ]
 }
