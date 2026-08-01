@@ -1,6 +1,35 @@
 {
-  "updated": "2026-08-01 09:05:04",
+  "updated": "2026-08-01 21:12:04",
   "events": [
+    {
+      "ts": "2026-08-01 21:12:04",
+      "community": "大悅",
+      "kind": "price",
+      "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
+      "kindOfListing": "rent",
+      "price": 20500,
+      "url": "https://rent.591.com.tw/21673303",
+      "from": 21000,
+      "to": 20500
+    },
+    {
+      "ts": "2026-08-01 21:12:04",
+      "community": "長耀雙峰滙",
+      "kind": "new_listing",
+      "title": "職人向宇精選🔥三井扶輪公園高樓景觀採光大兩房車｜找我最好談",
+      "kindOfListing": "sale",
+      "price": 1875,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20655537.html"
+    },
+    {
+      "ts": "2026-08-01 21:12:04",
+      "community": "長耀雙峰滙",
+      "kind": "new_listing",
+      "title": "0+1看好宅｜俯瞰全林口的精品美宅｜空間更舒適｜27景觀戶",
+      "kindOfListing": "sale",
+      "price": 1875,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20655480.html"
+    },
     {
       "ts": "2026-08-01 09:05:04",
       "community": "大悅",
@@ -497,10 +526,10 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 38.16,
-          "premiumPct": 7.2,
-          "marketN": 20,
-          "estResale": 784,
-          "estProfit": -104,
+          "premiumPct": 8.3,
+          "marketN": 21,
+          "estResale": 775,
+          "estProfit": -113,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -517,7 +546,7 @@
           "isNew": false,
           "unitPricePerPing": 42.88,
           "premiumPct": 21.7,
-          "marketN": 19,
+          "marketN": 20,
           "estResale": 670,
           "estProfit": -189,
           "drops": 0,
@@ -536,7 +565,7 @@
           "isNew": false,
           "unitPricePerPing": 41.03,
           "premiumPct": 16.5,
-          "marketN": 19,
+          "marketN": 20,
           "estResale": 685,
           "estProfit": -156,
           "drops": 0,
@@ -554,10 +583,10 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 43.23,
-          "premiumPct": 20.2,
-          "marketN": 15,
-          "estResale": 656,
-          "estProfit": -174,
+          "premiumPct": 21.4,
+          "marketN": 16,
+          "estResale": 649,
+          "estProfit": -181,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -573,10 +602,10 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 42.68,
-          "premiumPct": 18.6,
-          "marketN": 15,
-          "estResale": 656,
-          "estProfit": -164,
+          "premiumPct": 19.9,
+          "marketN": 16,
+          "estResale": 649,
+          "estProfit": -171,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -592,10 +621,10 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 42.7,
-          "premiumPct": 18.7,
-          "marketN": 15,
-          "estResale": 656,
-          "estProfit": -164,
+          "premiumPct": 19.9,
+          "marketN": 16,
+          "estResale": 649,
+          "estProfit": -171,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -611,10 +640,10 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 31.87,
-          "premiumPct": -10.5,
-          "marketN": 20,
-          "estResale": 781,
-          "estProfit": 20,
+          "premiumPct": -9.5,
+          "marketN": 21,
+          "estResale": 772,
+          "estProfit": 15,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -649,10 +678,10 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 36.26,
-          "premiumPct": 1.9,
-          "marketN": 20,
-          "estResale": 784,
-          "estProfit": -61,
+          "premiumPct": 3,
+          "marketN": 21,
+          "estResale": 775,
+          "estProfit": -70,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -795,20 +824,20 @@
         {
           "id": "21673303",
           "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
-          "price": 21000,
-          "prevPrice": 21000,
+          "price": 20500,
+          "prevPrice": 20500,
           "size": 10.4,
           "floor": "20F/29F",
           "url": "https://rent.591.com.tw/21673303",
           "status": "active",
           "isNew": false,
-          "unitPricePerPing": 2019,
+          "unitPricePerPing": 1971,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
           "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
+          "drops": 1,
+          "totalDrop": 500,
           "lvrMatch": null
         },
         {
@@ -1002,14 +1031,14 @@
         }
       ],
       "lvrSaleMatched": true,
-      "lvrSaleCount": 63,
+      "lvrSaleCount": 64,
       "lvrSaleStats": [
         {
           "lo": 10,
           "hi": 20,
-          "n": 15,
-          "median": 35.98,
-          "avg": 36.52,
+          "n": 16,
+          "median": 35.6,
+          "avg": 36.44,
           "parkPct": 0
         },
         {
@@ -1049,21 +1078,21 @@
           "label": "中樓層",
           "lo": 13,
           "hi": 19,
-          "n": 12,
-          "median": 28.73
+          "n": 13,
+          "median": 27.43
         },
         {
           "label": "高樓層",
-          "lo": 19,
+          "lo": 21,
           "hi": 28,
           "n": 11,
-          "median": 29.37
+          "median": 30.82
         }
       ],
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 3,
-        "activeMedianDays": 9
+        "activeMedianDays": 10
       },
       "rentYield": {
         "rentUnit": 1335,
@@ -1092,8 +1121,8 @@
         },
         {
           "q": "2024Q1",
-          "n": 4,
-          "median": 32.84
+          "n": 5,
+          "median": 34.67
         },
         {
           "q": "2024Q2",
@@ -1174,7 +1203,7 @@
           "floorNum": 5,
           "parkCount": 0,
           "note": "親友、員工、共有人或其他特殊關係間之交易;",
-          "address": "苓雅區七賢一路０１２��號五樓之８",
+          "address": "苓雅區七賢一路０１２１號五樓之８",
           "community": "大悅",
           "layout": "2房2廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -1297,7 +1326,7 @@
           "address": "苓雅區七賢一路０１２１號五樓之６",
           "community": "大悅",
           "layout": "2房1廳1衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以��有電梯)"
         },
         {
           "date": "2025-03-07",
@@ -1534,7 +1563,7 @@
           "floorNum": 21,
           "parkCount": 0,
           "note": "",
-          "address": "苓雅區七賢一路０１２１號二十一樓之３",
+          "address": "苓��區七賢一路０１２１號二十一樓之３",
           "community": "大悅",
           "layout": "2房1廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -1715,6 +1744,21 @@
           "parkCount": 1,
           "note": "含傢俱設備費;親友、員工、共有人或其他特殊關係間之交易;",
           "address": "苓雅區七賢一路０１２１號十二樓之７",
+          "community": "大悅",
+          "layout": "2房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-01-08",
+          "totalPrice": 6850000,
+          "unitPrice": 352225,
+          "unitPriceWanPerPing": 35.22,
+          "size": 19.45,
+          "floor": "二十八層/二十九層",
+          "floorNum": 28,
+          "parkCount": 0,
+          "note": "",
+          "address": "苓雅區七賢一路０１２１號二十八樓之７",
           "community": "大悅",
           "layout": "2房1廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -2097,7 +2141,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 09:02:51"
+      "lastChecked": "2026-08-01 21:09:51"
     },
     {
       "id": "mrych48q56fu",
@@ -2701,7 +2745,7 @@
       "liquidity": {
         "delistedN": 5,
         "delistedMedianDays": 2,
-        "activeMedianDays": 7
+        "activeMedianDays": 8
       },
       "rentYield": {
         "rentUnit": 817,
@@ -2920,7 +2964,7 @@
           "address": "苓雅區民族二路００７２號二十八樓之２",
           "community": "國王1號院",
           "layout": "3房1廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以��有電梯)"
         },
         {
           "date": "2023-06-25",
@@ -3015,7 +3059,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 09:03:26"
+      "lastChecked": "2026-08-01 21:10:26"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3246,7 +3290,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 09:03:56"
+      "lastChecked": "2026-08-01 21:10:53"
     },
     {
       "id": "ms7outtntjzf",
@@ -3313,7 +3357,7 @@
         },
         {
           "id": "20398115",
-          "title": "珺選美宅🏡���獨家】~林口扶輪公園景觀雙峰匯裝潢大三房車~",
+          "title": "珺選美宅🏡【獨家】~林口扶輪公園景觀雙峰匯裝潢大三房車~",
           "price": 3288,
           "prevPrice": 3288,
           "size": 54.46,
@@ -4316,6 +4360,44 @@
           "estProfit": -388,
           "drops": 1,
           "totalDrop": 113,
+          "lvrMatch": null
+        },
+        {
+          "id": "20655480",
+          "title": "0+1看好宅｜俯瞰全林口的精品美宅｜空間更舒適｜27景觀戶",
+          "price": 1875,
+          "prevPrice": null,
+          "size": 32.25,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20655480.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 58.14,
+          "premiumPct": 18.1,
+          "marketN": 12,
+          "estResale": 1588,
+          "estProfit": -388,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20655537",
+          "title": "職人向宇精選🔥三井扶輪公園高樓景觀採光大兩房車｜找我最好談",
+          "price": 1875,
+          "prevPrice": null,
+          "size": 32.25,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20655537.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 58.14,
+          "premiumPct": 18.1,
+          "marketN": 12,
+          "estResale": 1588,
+          "estProfit": -388,
+          "drops": 0,
+          "totalDrop": 0,
           "lvrMatch": null
         },
         {
@@ -5640,7 +5722,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 09:04:23"
+      "lastChecked": "2026-08-01 21:11:22"
     }
   ]
 }
