@@ -1,6 +1,42 @@
 {
-  "updated": "2026-08-01 21:12:04",
+  "updated": "2026-08-02 09:07:07",
   "events": [
+    {
+      "ts": "2026-08-02 09:07:07",
+      "community": "大悅",
+      "kind": "delisted",
+      "title": "文化中心日系二房／月租／短租(價錢不同)",
+      "kindOfListing": "rent",
+      "price": 25000,
+      "url": "https://rent.591.com.tw/21560299"
+    },
+    {
+      "ts": "2026-08-02 09:07:07",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "【長耀雙峰匯】近林口三井OUTLET高樓二房車，傢俱家電可贈",
+      "kindOfListing": "sale",
+      "price": 1998,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20314642.html"
+    },
+    {
+      "ts": "2026-08-02 09:07:07",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "高樓層《長耀雙峰滙》3改2房１平車",
+      "kindOfListing": "sale",
+      "price": 2980,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20317728.html"
+    },
+    {
+      "ts": "2026-08-02 09:07:07",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "林口💯長耀雙峰滙💯飯店式管理🏆高檔裝潢小豪宅",
+      "kindOfListing": "sale",
+      "price": 1698,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20318280.html"
+    },
     {
       "ts": "2026-08-01 21:12:04",
       "community": "大悅",
@@ -727,25 +763,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21560299",
-          "title": "文化中心日系二房／月租／短租(價錢不同)",
-          "price": 25000,
-          "prevPrice": 25000,
-          "size": 19.5,
-          "floor": "27F/29F",
-          "url": "https://rent.591.com.tw/21560299",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1282,
-          "premiumPct": null,
-          "marketN": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21647813",
           "title": "七賢民族文化中心商圈精緻全新大2房(可租補)",
           "price": 23000,
@@ -870,6 +887,25 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 1708,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21560299",
+          "title": "文化中心日系二房／月租／短租(價錢不同)",
+          "price": 25000,
+          "prevPrice": 25000,
+          "size": 19.5,
+          "floor": "27F/29F",
+          "url": "https://rent.591.com.tw/21560299",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1282,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -1095,13 +1131,13 @@
         "activeMedianDays": 10
       },
       "rentYield": {
-        "rentUnit": 1335,
-        "rentSize": 18.3,
-        "n": 10,
-        "baseUnit": 35.22,
-        "yieldPct": 4.55,
+        "rentUnit": 1388,
+        "rentSize": 17.9,
+        "n": 9,
+        "baseUnit": 35.599999999999994,
+        "yieldPct": 4.68,
         "mgmtFee": 80,
-        "netYieldPct": 4.28
+        "netYieldPct": 4.41
       },
       "lvrTrend": [
         {
@@ -1326,7 +1362,7 @@
           "address": "苓雅區七賢一路０１２１號五樓之６",
           "community": "大悅",
           "layout": "2房1廳1衛",
-          "buildingType": "住宅大樓(11層含以��有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2025-03-07",
@@ -1835,7 +1871,7 @@
           "note": "",
           "address": "苓雅區七賢一路０１２１號十九樓之７",
           "community": "大悅",
-          "layout": "2房2廳1衛",
+          "layout": "2房2廳1��",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -2141,7 +2177,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 21:09:51"
+      "lastChecked": "2026-08-02 09:04:51"
     },
     {
       "id": "mrych48q56fu",
@@ -3059,7 +3095,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 21:10:26"
+      "lastChecked": "2026-08-02 09:05:22"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3290,7 +3326,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 21:10:53"
+      "lastChecked": "2026-08-02 09:05:52"
     },
     {
       "id": "ms7outtntjzf",
@@ -3579,25 +3615,6 @@
           "marketN": 9,
           "estResale": 2462,
           "estProfit": -694,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20317728",
-          "title": "高樓層《長耀雙峰滙》3改2房１平車",
-          "price": 2980,
-          "prevPrice": 2980,
-          "size": 54.08,
-          "floor": "15F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20317728.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 55.1,
-          "premiumPct": 7.5,
-          "marketN": 10,
-          "estResale": 2771,
-          "estProfit": -379,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -3940,25 +3957,6 @@
           "marketN": 12,
           "estResale": 1589,
           "estProfit": -706,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20314642",
-          "title": "【長耀雙峰匯】近林口三井OUTLET高樓二房車，傢俱家電可贈",
-          "price": 1998,
-          "prevPrice": 1998,
-          "size": 32.25,
-          "floor": "12F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20314642.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 61.95,
-          "premiumPct": 25.8,
-          "marketN": 12,
-          "estResale": 1588,
-          "estProfit": -513,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -4366,12 +4364,12 @@
           "id": "20655480",
           "title": "0+1看好宅｜俯瞰全林口的精品美宅｜空間更舒適｜27景觀戶",
           "price": 1875,
-          "prevPrice": null,
+          "prevPrice": 1875,
           "size": 32.25,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20655480.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 58.14,
           "premiumPct": 18.1,
           "marketN": 12,
@@ -4385,12 +4383,12 @@
           "id": "20655537",
           "title": "職人向宇精選🔥三井扶輪公園高樓景觀採光大兩房車｜找我最好談",
           "price": 1875,
-          "prevPrice": null,
+          "prevPrice": 1875,
           "size": 32.25,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20655537.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 58.14,
           "premiumPct": 18.1,
           "marketN": 12,
@@ -4667,25 +4665,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20318280",
-          "title": "林口💯長耀雙峰滙💯飯店式管理🏆高檔裝潢小豪宅",
-          "price": 1698,
-          "prevPrice": 1698,
-          "size": 26.07,
-          "floor": "25F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20318280.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 65.13,
-          "premiumPct": 27.8,
-          "marketN": 4,
-          "estResale": 1329,
-          "estProfit": -456,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20350205",
           "title": "長耀雙峰匯✨高樓層☝️無敵景觀精美2房",
           "price": 1698,
@@ -4819,6 +4798,44 @@
           "lvrMatch": null
         },
         {
+          "id": "20317728",
+          "title": "高樓層《長耀雙峰滙》3改2房１平車",
+          "price": 2980,
+          "prevPrice": 2980,
+          "size": 54.08,
+          "floor": "15F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20317728.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 55.1,
+          "premiumPct": 7.5,
+          "marketN": 10,
+          "estResale": 2771,
+          "estProfit": -379,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20314642",
+          "title": "【長耀雙峰匯】近林口三井OUTLET高樓二房車，傢俱家電可贈",
+          "price": 1998,
+          "prevPrice": 1998,
+          "size": 32.25,
+          "floor": "12F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20314642.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 61.95,
+          "premiumPct": 25.8,
+          "marketN": 12,
+          "estResale": 1588,
+          "estProfit": -513,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20306587",
           "title": "稀有籃球場公設🏅機運Ａ９🏠長耀雙峰滙高樓景觀美裝潢２房車",
           "price": 1988,
@@ -4833,6 +4850,25 @@
           "marketN": 12,
           "estResale": 1588,
           "estProfit": -503,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20318280",
+          "title": "林口💯長耀雙峰滙💯飯店式管理🏆高檔裝潢小豪宅",
+          "price": 1698,
+          "prevPrice": 1698,
+          "size": 26.07,
+          "floor": "25F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20318280.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 65.13,
+          "premiumPct": 27.8,
+          "marketN": 4,
+          "estResale": 1329,
+          "estProfit": -456,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -5108,9 +5144,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 1,
-        "delistedMedianDays": 0,
-        "activeMedianDays": 1
+        "delistedN": 4,
+        "delistedMedianDays": 1,
+        "activeMedianDays": 2
       },
       "rentYield": {
         "rentUnit": 2105,
@@ -5551,7 +5587,7 @@
           "note": "親友、員工、共有人或其他特殊關係間之交易;",
           "address": "林口區忠孝路０１０３號十七樓",
           "community": "長耀雙峰匯",
-          "layout": "2���1廳1衛",
+          "layout": "2房1廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -5722,7 +5758,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-01 21:11:22"
+      "lastChecked": "2026-08-02 09:06:21"
     }
   ]
 }
