@@ -1,6 +1,33 @@
 {
-  "updated": "2026-08-03 09:05:03",
+  "updated": "2026-08-03 21:10:36",
   "events": [
+    {
+      "ts": "2026-08-03 21:10:36",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "★專約勿擾★五福國中學區景觀2房",
+      "kindOfListing": "sale",
+      "price": 888,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20665930.html"
+    },
+    {
+      "ts": "2026-08-03 21:10:36",
+      "community": "國王一號院",
+      "kind": "new_listing",
+      "title": "👑信義MRT國王景觀品味大坪數4房平車-權威",
+      "kindOfListing": "rent",
+      "price": 60000,
+      "url": "https://rent.591.com.tw/21760783"
+    },
+    {
+      "ts": "2026-08-03 21:10:36",
+      "community": "國王一號院",
+      "kind": "new_listing",
+      "title": "國王一號院💎4房平車💎適公司主管",
+      "kindOfListing": "rent",
+      "price": 55000,
+      "url": "https://rent.591.com.tw/21758686"
+    },
     {
       "ts": "2026-08-03 09:05:03",
       "community": "大悅",
@@ -552,6 +579,25 @@
           "marketN": 8,
           "estResale": 959,
           "estProfit": -181,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20665930",
+          "title": "★專約勿擾★五福國中學區景觀2房",
+          "price": 888,
+          "prevPrice": null,
+          "size": 22,
+          "floor": "21F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20665930.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 40.36,
+          "premiumPct": 14.6,
+          "marketN": 21,
+          "estResale": 775,
+          "estProfit": -162,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1171,7 +1217,7 @@
       "liquidity": {
         "delistedN": 4,
         "delistedMedianDays": 4,
-        "activeMedianDays": 11
+        "activeMedianDays": 12
       },
       "rentYield": {
         "rentUnit": 1388,
@@ -2220,7 +2266,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-03 09:02:51"
+      "lastChecked": "2026-08-03 21:08:23"
     },
     {
       "id": "mrych48q56fu",
@@ -2611,6 +2657,25 @@
           "lvrMatch": null
         },
         {
+          "id": "21760783",
+          "title": "👑信義MRT國王景觀品味大坪數4房平車-權威",
+          "price": 60000,
+          "prevPrice": null,
+          "size": 90.3,
+          "floor": "32F/33F",
+          "url": "https://rent.591.com.tw/21760783",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 664,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20654497",
           "title": "固豪👍信義國小國王一號院3+1房平車",
           "price": 55000,
@@ -2621,6 +2686,25 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 657,
+          "premiumPct": null,
+          "marketN": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21758686",
+          "title": "國王一號院💎4房平車💎適公司主管",
+          "price": 55000,
+          "prevPrice": null,
+          "size": 83,
+          "floor": "7F/33F",
+          "url": "https://rent.591.com.tw/21758686",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 663,
           "premiumPct": null,
           "marketN": null,
           "estResale": null,
@@ -2824,16 +2908,16 @@
       "liquidity": {
         "delistedN": 6,
         "delistedMedianDays": 2,
-        "activeMedianDays": 9
+        "activeMedianDays": 10
       },
       "rentYield": {
-        "rentUnit": 817,
+        "rentUnit": 741,
         "rentSize": 83.2,
-        "n": 4,
+        "n": 6,
         "baseUnit": 27.75,
-        "yieldPct": 3.53,
+        "yieldPct": 3.2,
         "mgmtFee": 60,
-        "netYieldPct": 3.27
+        "netYieldPct": 2.94
       },
       "lvrTrend": [
         {
@@ -3138,7 +3222,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-03 09:03:22"
+      "lastChecked": "2026-08-03 21:08:53"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3369,7 +3453,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-03 09:03:51"
+      "lastChecked": "2026-08-03 21:09:24"
     },
     {
       "id": "ms7outtntjzf",
@@ -5896,7 +5980,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-03 09:04:17"
+      "lastChecked": "2026-08-03 21:09:53"
     }
   ]
 }
