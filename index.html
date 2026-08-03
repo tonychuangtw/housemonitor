@@ -46,6 +46,9 @@
   th.sortable:hover{ color:var(--text); }
   .sort-row{ display:none; margin:0 0 6px; }
   .sort-row select{ width:auto; padding:5px 8px; font-size:0.82rem; }
+  .efilter{ display:flex; flex-wrap:wrap; gap:6px; margin:0 0 10px; }
+  .efilter button{ background:transparent; color:var(--text2); border:1px solid var(--border); padding:4px 11px; font-size:0.8rem; border-radius:999px; font-weight:600; }
+  .efilter button.on{ background:var(--accent); color:#06131c; border-color:var(--accent); }
   .timeline{ margin:0; padding:0; list-style:none; font-size:0.85rem; }
   .timeline li{ padding:4px 0; border-bottom:1px solid var(--border); color:var(--text2); }
   .timeline li:last-child{ border-bottom:none; }
@@ -572,10 +575,34 @@
     else s=esc(e.community)+' '+esc(e.kind);
     return '<li><span class="t">'+esc(t)+'</span>'+s+'</li>';
   }
+  var eventFilter=(function(){try{return localStorage.getItem("housemonitor.efilter")||"all";}catch(_){return "all";}})();
+  function eventCat(e){
+    if(e.kind==="new_listing")return "new";
+    if(e.kind==="price")return e.to<e.from?"down":"other";
+    if(e.kind==="delisted")return "delisted";
+    return "other";
+  }
   function renderEvents(){
     var el=$("events-card");
     if(!EVENTS.length){el.innerHTML='<p class="msg" style="margin:0">近 7 天無變動</p>';return;}
-    el.innerHTML='<ul class="timeline">'+EVENTS.map(eventLine).join("")+'</ul>';
+    var counts={all:EVENTS.length,"new":0,down:0,delisted:0,other:0};
+    EVENTS.forEach(function(e){counts[eventCat(e)]++;});
+    if(!(eventFilter in counts))eventFilter="all";
+    var tabs=[["all","全部"],["new","🆕 新上架"],["down","📉 降價"],["delisted","🚪 下架"],["other","其他"]];
+    var bar='<div class="efilter">'+tabs.map(function(t){
+      return '<button data-ef="'+t[0]+'"'+(eventFilter===t[0]?' class="on"':'')+'>'+t[1]+' '+counts[t[0]]+'</button>';
+    }).join("")+'</div>';
+    var list=eventFilter==="all"?EVENTS:EVENTS.filter(function(e){return eventCat(e)===eventFilter;});
+    el.innerHTML=bar+(list.length
+      ?'<ul class="timeline">'+list.map(eventLine).join("")+'</ul>'
+      :'<p class="msg" style="margin:0">此類別近 7 天無變動</p>');
+    el.querySelectorAll("[data-ef]").forEach(function(b){
+      b.addEventListener("click",function(){
+        eventFilter=b.getAttribute("data-ef");
+        try{localStorage.setItem("housemonitor.efilter",eventFilter);}catch(_){}
+        renderEvents();
+      });
+    });
   }
   function renderResults(){
     var el=$("results");
