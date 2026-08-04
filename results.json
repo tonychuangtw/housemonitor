@@ -1,6 +1,33 @@
 {
-  "updated": "2026-08-04 21:54:48",
+  "updated": "2026-08-04 21:57:23",
   "events": [
+    {
+      "ts": "2026-08-04 21:57:23",
+      "community": "大悅",
+      "kind": "delisted",
+      "title": "【Tina】五福學區大悅文化中心捷運高樓層景觀宅",
+      "kindOfListing": "sale",
+      "price": 816,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20332545.html"
+    },
+    {
+      "ts": "2026-08-04 21:57:23",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "🚩A9林口忠孝長耀雙峰匯✨3改2高樓公園景觀裝潢美屋近三井",
+      "kindOfListing": "sale",
+      "price": 2980,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20330815.html"
+    },
+    {
+      "ts": "2026-08-04 21:57:23",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "降價割愛✨雙峰滙✨質感高樓景觀裝潢兩房車",
+      "kindOfListing": "sale",
+      "price": 1875,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20337540.html"
+    },
     {
       "ts": "2026-08-04 21:10:08",
       "community": "大悅",
@@ -437,33 +464,6 @@
       "kindOfListing": "sale",
       "price": 1198,
       "url": "https://sale.591.com.tw/home/house/detail/2/19946291.html"
-    },
-    {
-      "ts": "2026-07-29 12:02:42",
-      "community": "大悅",
-      "kind": "delisted",
-      "title": "💎興富發豪宅︱雙捷運核心地段︱豪奢美宅配置【綠的傢俱】",
-      "kindOfListing": "rent",
-      "price": 23000,
-      "url": "https://rent.591.com.tw/21530871"
-    },
-    {
-      "ts": "2026-07-29 12:02:42",
-      "community": "國王一號院",
-      "kind": "delisted",
-      "title": "💯國王1號院拎包入住精緻裝潢最低價高級豪宅平車💯",
-      "kindOfListing": "sale",
-      "price": 3150,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20287949.html"
-    },
-    {
-      "ts": "2026-07-29 12:02:42",
-      "community": "國王一號院",
-      "kind": "delisted",
-      "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
-      "kindOfListing": "sale",
-      "price": 3150,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20289936.html"
     }
   ],
   "communities": [
@@ -515,12 +515,12 @@
           "id": "20672837",
           "title": "興富發大悅｜雙捷運高樓景觀全屋裝潢三房平車",
           "price": 1465,
-          "prevPrice": null,
+          "prevPrice": 1465,
           "size": 44.54,
           "floor": "22F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20672837.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 32.89,
           "premiumPct": 28.4,
           "marketN": 13,
@@ -702,25 +702,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20332545",
-          "title": "【Tina】五福學區大悅文化中心捷運高樓層景觀宅",
-          "price": 816,
-          "prevPrice": 816,
-          "size": 19.03,
-          "floor": "16F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20332545.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 42.88,
-          "premiumPct": 21.7,
-          "marketN": 20,
-          "estResale": 670,
-          "estProfit": -189,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20435675",
           "title": "特瑞莎v五福國中文化中心捷運景觀小巧舒適2房",
           "price": 798,
@@ -887,6 +868,25 @@
           "marketN": 13,
           "estResale": 1140,
           "estProfit": -128,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20332545",
+          "title": "【Tina】五福學區大悅文化中心捷運高樓層景觀宅",
+          "price": 816,
+          "prevPrice": 816,
+          "size": 19.03,
+          "floor": "16F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20332545.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 42.88,
+          "premiumPct": 21.7,
+          "marketN": 20,
+          "estResale": 670,
+          "estProfit": -189,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1333,8 +1333,8 @@
         }
       ],
       "liquidity": {
-        "delistedN": 6,
-        "delistedMedianDays": 7,
+        "delistedN": 7,
+        "delistedMedianDays": 10,
         "activeMedianDays": 13
       },
       "rentYield": {
@@ -2384,7 +2384,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 21:07:55"
+      "lastChecked": "2026-08-04 21:55:00"
     },
     {
       "id": "mrych48q56fu",
@@ -2529,12 +2529,12 @@
           "id": "20669501",
           "title": "文化中心/信義國小/高樓大坪數平車豪邸",
           "price": 2988,
-          "prevPrice": null,
+          "prevPrice": 2988,
           "size": 83.23,
           "floor": "19F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20669501.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 35.9,
           "premiumPct": 29.4,
           "marketN": 3,
@@ -3359,7 +3359,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 21:08:27"
+      "lastChecked": "2026-08-04 21:55:32"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3590,7 +3590,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 21:09:00"
+      "lastChecked": "2026-08-04 21:56:01"
     },
     {
       "id": "ms7outtntjzf",
@@ -3860,25 +3860,6 @@
           "marketN": 9,
           "estResale": 2462,
           "estProfit": -694,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20330815",
-          "title": "🚩A9林口忠孝長耀雙峰匯✨3改2高樓公園景觀裝潢美屋近三井",
-          "price": 2980,
-          "prevPrice": 2980,
-          "size": 54.09,
-          "floor": "15F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20330815.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 55.09,
-          "premiumPct": 7.5,
-          "marketN": 10,
-          "estResale": 2772,
-          "estProfit": -378,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -4286,12 +4267,12 @@
           "id": "20671148",
           "title": "💦長耀雙峰匯2房車💦精緻美裝*高樓山海景觀戶",
           "price": 1988,
-          "prevPrice": null,
+          "prevPrice": 1988,
           "size": 32.25,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20671148.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 61.64,
           "premiumPct": 25.2,
           "marketN": 12,
@@ -4299,25 +4280,6 @@
           "estProfit": -503,
           "drops": 0,
           "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20337540",
-          "title": "降價割愛✨雙峰滙✨質感高樓景觀裝潢兩房車",
-          "price": 1875,
-          "prevPrice": 1875,
-          "size": 32.25,
-          "floor": "27F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20337540.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 58.14,
-          "premiumPct": 18.1,
-          "marketN": 12,
-          "estResale": 1588,
-          "estProfit": -388,
-          "drops": 1,
-          "totalDrop": 1105,
           "lvrMatch": null
         },
         {
@@ -4647,12 +4609,12 @@
           "id": "20672920",
           "title": "大家房屋曹店長🏠⭐長耀雙峰滙高樓層美妝兩房車",
           "price": 1875,
-          "prevPrice": null,
+          "prevPrice": 1875,
           "size": 32.25,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20672920.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 58.14,
           "premiumPct": 18.1,
           "marketN": 12,
@@ -5157,6 +5119,25 @@
           "lvrMatch": null
         },
         {
+          "id": "20330815",
+          "title": "🚩A9林口忠孝長耀雙峰匯✨3改2高樓公園景觀裝潢美屋近三井",
+          "price": 2980,
+          "prevPrice": 2980,
+          "size": 54.09,
+          "floor": "15F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20330815.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 55.09,
+          "premiumPct": 7.5,
+          "marketN": 10,
+          "estResale": 2772,
+          "estProfit": -378,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20314642",
           "title": "【長耀雙峰匯】近林口三井OUTLET高樓二房車，傢俱家電可贈",
           "price": 1998,
@@ -5211,6 +5192,25 @@
           "estProfit": -503,
           "drops": 0,
           "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20337540",
+          "title": "降價割愛✨雙峰滙✨質感高樓景觀裝潢兩房車",
+          "price": 1875,
+          "prevPrice": 1875,
+          "size": 32.25,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20337540.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 58.14,
+          "premiumPct": 18.1,
+          "marketN": 12,
+          "estResale": 1588,
+          "estProfit": -388,
+          "drops": 1,
+          "totalDrop": 1105,
           "lvrMatch": null
         },
         {
@@ -5276,12 +5276,12 @@
           "id": "21765115",
           "title": "A9林口｜長耀Park｜全配2房車｜租金含車含管｜可報稅入籍",
           "price": 48000,
-          "prevPrice": null,
+          "prevPrice": 48000,
           "size": 22.8,
           "floor": "21F/29F",
           "url": "https://rent.591.com.tw/21765115",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 2105,
           "premiumPct": null,
           "marketN": null,
@@ -5560,7 +5560,7 @@
         }
       ],
       "liquidity": {
-        "delistedN": 9,
+        "delistedN": 11,
         "delistedMedianDays": 3,
         "activeMedianDays": 4
       },
@@ -6174,7 +6174,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 21:09:29"
+      "lastChecked": "2026-08-04 21:56:25"
     },
     {
       "id": "msepyyktt72w",
@@ -6201,7 +6201,7 @@
       "lvrSaleAll": [],
       "lvrMatches": [],
       "error": "591 community not found: 捷巿悅 (candidates: 捷市悅,捷運市,捷市樂,捷市館大廈,得邑捷市堡,捷市旅大樓)",
-      "lastChecked": "2026-08-04 21:54:36"
+      "lastChecked": "2026-08-04 21:57:13"
     }
   ]
 }
