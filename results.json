@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04 21:10:08",
+  "updated": "2026-08-04 21:54:48",
   "events": [
     {
       "ts": "2026-08-04 21:10:08",
@@ -6175,6 +6175,33 @@
       "lvrMatches": [],
       "error": null,
       "lastChecked": "2026-08-04 21:09:29"
+    },
+    {
+      "id": "msepyyktt72w",
+      "name": "捷巿悅",
+      "cityName": "高雄市",
+      "districtName": "楠梓區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [],
+      "lvrRent": [],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "lvrSaleStats": [],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": null
+      },
+      "rentYield": null,
+      "lvrTrend": [],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": "591 community not found: 捷巿悅 (candidates: 捷市悅,捷運市,捷市樂,捷市館大廈,得邑捷市堡,捷市旅大樓)",
+      "lastChecked": "2026-08-04 21:54:36"
     }
   ]
 }
