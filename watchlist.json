@@ -117,6 +117,20 @@
       "mgmtFee": null,
       "active": true,
       "added": 1785851663501
+    },
+    {
+      "id": "mserk1lv2gzp",
+      "name": "文陽河豐",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E04",
+      "districtName": "楠梓區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785854326819
     }
   ]
 }
