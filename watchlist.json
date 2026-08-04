@@ -103,6 +103,20 @@
       "mgmtFee": null,
       "active": true,
       "added": 1785426527867
+    },
+    {
+      "id": "msepyyktt72w",
+      "name": "捷巿悅",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E04",
+      "districtName": "楠梓區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785851663501
     }
   ]
 }
