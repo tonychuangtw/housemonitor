@@ -373,8 +373,58 @@
     unit:{l:"單價",v:function(l){return l.unitPricePerPing;}},
     diff:{l:"漲跌",v:function(l){return (l.price!=null&&l.prevPrice!=null)?l.price-l.prevPrice:null;}},
     size:{l:"坪數",v:function(l){return l.size;}},
-    profit:{l:"預估獲利",v:function(l){return profitAt(l,DEAL_PCT);}}
+    profit:{l:"預估獲利",v:function(l){return profitAt(l,DEAL_PCT);}},
+    prevpct:{l:"vs上一手",v:function(l){return l._prev?l._prev.pct:null;}}
   };
+  // 上一手實登配對：同樓層 + 坪數 ±8%，取最近一筆（門牌不同視為不同戶，多戶相近時標 ≈）。
+  // 排除已被「疑似成交」配走的那筆 —— 那是這次賣掉的價，不是上一手。
+  function listingFloorNumOf(f){
+    var m=/^(\d+)F/i.exec(String(f||"").trim());
+    return m?parseInt(m[1],10):null;
+  }
+  function prevLvrFor(l,c){
+    if(l.size==null)return null;
+    var lf=listingFloorNumOf(l.floor);
+    if(lf==null)return null;
+    var mm=l.lvrMatch||null;
+    var cands=(c.lvrSaleAll||[]).filter(function(d){
+      if(d.size==null||d.floorNum==null||d.floorNum!==lf)return false;
+      if(Math.abs(d.size-l.size)/l.size>0.08)return false;
+      if(mm&&d.date===mm.date&&d.totalPrice!=null&&Math.round(d.totalPrice/10000)===mm.totalPrice)return false;
+      return true;
+    });
+    if(!cands.length)return null;
+    var byAddr={};
+    cands.forEach(function(d){
+      var k=d.address||(d.date+"|"+d.size);
+      (byAddr[k]=byAddr[k]||[]).push(d);
+    });
+    var addrs=Object.keys(byAddr).sort(function(a,b){
+      var da=Math.min.apply(null,byAddr[a].map(function(d){return Math.abs(d.size-l.size);}));
+      var db=Math.min.apply(null,byAddr[b].map(function(d){return Math.abs(d.size-l.size);}));
+      return da-db;
+    });
+    var recs=byAddr[addrs[0]].slice().sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
+    var m=recs[0];
+    var wan=m.totalPrice!=null?Math.round(m.totalPrice/10000):null;
+    var pct=(wan&&l.price!=null)?+(((l.price-wan)/wan)*100).toFixed(1):null;
+    return {date:m.date,wan:wan,pct:pct,size:m.size,addr:m.address||"",layout:m.layout||"",unit:m.unitPriceWanPerPing,multi:addrs.length};
+  }
+  function fmtPrevLvr(l){
+    var p=l._prev;
+    if(!p)return '<span title="同樓層＋坪數±8% 內查無實登紀錄（資料約 2023 起，更早買進的查不到）" style="cursor:help;">—</span>';
+    var tip="上一手實登："+p.date+" 成交 "+(p.wan!=null?p.wan.toLocaleString()+"萬":"—")
+      +(p.unit!=null?"（"+p.unit+"萬/坪）":"")+(p.size!=null?"｜"+p.size+"坪":"")
+      +(p.layout?"｜"+p.layout:"")+(p.addr?"｜"+p.addr:"")
+      +"｜配對條件：同樓層＋坪數±8%"
+      +(p.multi>1?"｜⚠ 同層有 "+p.multi+" 戶條件相近，不保證同一戶":"")
+      +(p.pct!=null?"｜開價比上一手 "+(p.pct>0?"+":"")+p.pct+"%":"");
+    var cls=p.pct!=null?(p.pct>0?"up":(p.pct<0?"down":"")):"";
+    return '<span title="'+esc(tip)+'" style="cursor:help;">'+(p.multi>1?"≈":"")
+      +(p.wan!=null?p.wan.toLocaleString()+"萬":"—")
+      +' <small style="color:var(--text2);">'+esc(String(p.date||"").slice(2,7))+'</small>'
+      +(p.pct!=null?' <span class="'+cls+'">'+(p.pct>0?"+":"")+p.pct+'%</span>':'')+'</span>';
+  }
   var DEAL_PCT=100;
   function profitAt(l,pct){
     if(l.estResale==null||l.price==null)return null;
@@ -419,7 +469,7 @@
         }).join("")
       +'</select></div>'
       +'<table><thead><tr><th>標題</th>'+th(priceLabel,"price")+'<th>前次價</th>'+th("漲跌","diff")+th(unitLabel,"unit")
-      +(kind==="sale"?'<th>vs行情</th>'+th("預估獲利","profit"):"")+th("坪數","size")+'<th>樓層</th><th>連結</th></tr></thead><tbody>';
+      +(kind==="sale"?'<th>vs行情</th>'+th("預估獲利","profit")+th("上一手實登","prevpct"):"")+th("坪數","size")+'<th>樓層</th><th>連結</th></tr></thead><tbody>';
     rows.forEach(function(l){
       var cls=l.status==="delisted"?' class="delisted"':"";
       var badges="";
@@ -446,7 +496,7 @@
         +'<td data-l="前次價">'+esc(fmtPrice(l.prevPrice,kind))+'</td>'
         +'<td data-l="漲跌">'+priceDiff(l,kind)+'</td>'
         +'<td data-l="'+unitLabel+'">'+esc(fmtUnit(l,kind))+'</td>'
-        +(kind==="sale"?'<td data-l="vs行情">'+fmtVs(l)+'</td><td data-l="預估獲利">'+fmtProfit(l)+'</td>':"")
+        +(kind==="sale"?'<td data-l="vs行情">'+fmtVs(l)+'</td><td data-l="預估獲利">'+fmtProfit(l)+'</td><td data-l="上一手實登">'+fmtPrevLvr(l)+'</td>':"")
         +'<td data-l="坪數">'+(l.size!=null?esc(l.size)+" 坪":"—")+'</td>'
         +'<td data-l="樓層">'+esc(l.floor||"—")+'</td>'
         +'<td data-l="連結"><a href="'+esc(l.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
@@ -609,6 +659,7 @@
     if(!COMMUNITIES.length){el.innerHTML='<p class="msg">還沒有監控結果 —— 上方登入後用表單新增社區，掃描後結果會顯示在這裡。</p>';return;}
     el.innerHTML="";
     COMMUNITIES.forEach(function(c){
+      (c.sale||[]).forEach(function(l){ l._prev=prevLvrFor(l,c); });
       var card=document.createElement("div"); card.className="card";
       var saleActive=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
       var rentActive=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
