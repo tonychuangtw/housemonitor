@@ -377,26 +377,36 @@
     prevpct:{l:"vs上一手",v:function(l){return l._prev?l._prev.pct:null;}}
   };
   // 上一手實登配對：同樓層 + 坪數 ±8%，取最近一筆（門牌不同視為不同戶，多戶相近時標 ≈）。
+  // 資料來源優先用樂居（leju.json，全史且地址解析到戶），沒有才退回政府實登（lvrSaleAll，僅 2023 起）。
   // 排除已被「疑似成交」配走的那筆 —— 那是這次賣掉的價，不是上一手。
   function listingFloorNumOf(f){
     var m=/^(\d+)F/i.exec(String(f||"").trim());
     return m?parseInt(m[1],10):null;
+  }
+  function prevLvrRecords(c){
+    var lj=(LEJU&&LEJU.communities&&LEJU.communities[c.id]&&LEJU.communities[c.id].deals)||null;
+    if(lj&&lj.length)return lj.map(function(d){
+      return {date:d.date,size:d.size,floorNum:d.floorNum,wan:d.totalWan,addr:d.address||"",unit:d.unitPrice,layout:"",special:d.special,note:d.note||"",src:"樂居"};
+    });
+    return (c.lvrSaleAll||[]).map(function(d){
+      return {date:d.date,size:d.size,floorNum:d.floorNum,wan:d.totalPrice!=null?Math.round(d.totalPrice/10000):null,addr:d.address||"",unit:d.unitPriceWanPerPing,layout:d.layout||"",special:0,note:d.note||"",src:"實登"};
+    });
   }
   function prevLvrFor(l,c){
     if(l.size==null)return null;
     var lf=listingFloorNumOf(l.floor);
     if(lf==null)return null;
     var mm=l.lvrMatch||null;
-    var cands=(c.lvrSaleAll||[]).filter(function(d){
+    var cands=prevLvrRecords(c).filter(function(d){
       if(d.size==null||d.floorNum==null||d.floorNum!==lf)return false;
       if(Math.abs(d.size-l.size)/l.size>0.08)return false;
-      if(mm&&d.date===mm.date&&d.totalPrice!=null&&Math.round(d.totalPrice/10000)===mm.totalPrice)return false;
+      if(mm&&String(d.date).slice(0,7)===String(mm.date).slice(0,7)&&d.wan===mm.totalPrice)return false;
       return true;
     });
     if(!cands.length)return null;
     var byAddr={};
     cands.forEach(function(d){
-      var k=d.address||(d.date+"|"+d.size);
+      var k=d.addr||(d.date+"|"+d.size);
       (byAddr[k]=byAddr[k]||[]).push(d);
     });
     var addrs=Object.keys(byAddr).sort(function(a,b){
@@ -406,21 +416,21 @@
     });
     var recs=byAddr[addrs[0]].slice().sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
     var m=recs[0];
-    var wan=m.totalPrice!=null?Math.round(m.totalPrice/10000):null;
-    var pct=(wan&&l.price!=null)?+(((l.price-wan)/wan)*100).toFixed(1):null;
-    return {date:m.date,wan:wan,pct:pct,size:m.size,addr:m.address||"",layout:m.layout||"",unit:m.unitPriceWanPerPing,multi:addrs.length};
+    var pct=(m.wan&&l.price!=null)?+(((l.price-m.wan)/m.wan)*100).toFixed(1):null;
+    return {date:m.date,wan:m.wan,pct:pct,size:m.size,addr:m.addr,layout:m.layout,unit:m.unit,special:m.special,note:m.note,src:m.src,multi:addrs.length};
   }
   function fmtPrevLvr(l){
     var p=l._prev;
-    if(!p)return '<span title="同樓層＋坪數±8% 內查無實登紀錄（資料約 2023 起，更早買進的查不到）" style="cursor:help;">—</span>';
-    var tip="上一手實登："+p.date+" 成交 "+(p.wan!=null?p.wan.toLocaleString()+"萬":"—")
+    if(!p)return '<span title="同樓層＋坪數±8% 內查無實登紀錄" style="cursor:help;">—</span>';
+    var tip="上一手（"+p.src+"）："+p.date+" 成交 "+(p.wan!=null?p.wan.toLocaleString()+"萬":"—")
       +(p.unit!=null?"（"+p.unit+"萬/坪）":"")+(p.size!=null?"｜"+p.size+"坪":"")
       +(p.layout?"｜"+p.layout:"")+(p.addr?"｜"+p.addr:"")
       +"｜配對條件：同樓層＋坪數±8%"
+      +(p.special?"｜⚠ 特殊交易"+(p.note?"（"+p.note+"）":""):"")
       +(p.multi>1?"｜⚠ 同層有 "+p.multi+" 戶條件相近，不保證同一戶":"")
       +(p.pct!=null?"｜開價比上一手 "+(p.pct>0?"+":"")+p.pct+"%":"");
     var cls=p.pct!=null?(p.pct>0?"up":(p.pct<0?"down":"")):"";
-    return '<span title="'+esc(tip)+'" style="cursor:help;">'+(p.multi>1?"≈":"")
+    return '<span title="'+esc(tip)+'" style="cursor:help;">'+(p.multi>1?"≈":"")+(p.special?"⚠":"")
       +(p.wan!=null?p.wan.toLocaleString()+"萬":"—")
       +' <small style="color:var(--text2);">'+esc(String(p.date||"").slice(2,7))+'</small>'
       +(p.pct!=null?' <span class="'+cls+'">'+(p.pct>0?"+":"")+p.pct+'%</span>':'')+'</span>';
@@ -714,8 +724,11 @@
     EVENTS=EVENTS.filter(function(e){return e.community!==name;});
     renderAll();
   }
+  var LEJU=null; // leju.json：樂居全史實登（上一手配對用），沒有這個檔也照常運作
   function loadResults(){
-    fetch("results.json?t="+Date.now()).then(function(r){return r.json();}).then(function(d){
+    fetch("leju.json?t="+Date.now()).then(function(r){return r.ok?r.json():null;}).then(function(d){LEJU=d;})
+      .catch(function(_){LEJU=null;})
+      .then(function(){return fetch("results.json?t="+Date.now());}).then(function(r){return r.json();}).then(function(d){
       COMMUNITIES=d.communities||[];
       EVENTS=d.events||[];
       lastUpdated=d.updated||"—";
