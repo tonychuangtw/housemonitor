@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04 22:42:48",
+  "updated": "2026-08-05 09:08:06",
   "events": [
     {
       "ts": "2026-08-04 21:57:23",
@@ -2384,7 +2384,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 22:39:34"
+      "lastChecked": "2026-08-05 09:03:51"
     },
     {
       "id": "mrych48q56fu",
@@ -3359,7 +3359,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 22:40:04"
+      "lastChecked": "2026-08-05 09:04:25"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -3590,7 +3590,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 22:40:37"
+      "lastChecked": "2026-08-05 09:05:31"
     },
     {
       "id": "ms7outtntjzf",
@@ -5562,7 +5562,7 @@
       "liquidity": {
         "delistedN": 11,
         "delistedMedianDays": 3,
-        "activeMedianDays": 4
+        "activeMedianDays": 5
       },
       "rentYield": {
         "rentUnit": 1618,
@@ -6174,7 +6174,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 22:41:01"
+      "lastChecked": "2026-08-05 09:06:13"
     },
     {
       "id": "msepyyktt72w",
@@ -7766,7 +7766,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 22:41:47"
+      "lastChecked": "2026-08-05 09:06:58"
     },
     {
       "id": "mserk1lv2gzp",
@@ -8387,7 +8387,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-04 22:42:16"
+      "lastChecked": "2026-08-05 09:07:38"
     }
   ]
 }
