@@ -363,10 +363,11 @@
     return kind==="sale"?(l.unitPricePerPing.toLocaleString()+" 萬/坪"):(l.unitPricePerPing.toLocaleString()+" 元/坪");
   }
   function fmtVs(l){
-    if(l.premiumPct==null)return "樣本不足";
+    if(l.premiumPct==null)return '<span title="同社區實登（樂居＋政府合併）坪數±20% 近3-5年樣本不足 3 筆，不評" style="cursor:help;">樣本不足</span>';
     var cls=l.premiumPct<0?"down":(l.premiumPct>0?"up":"");
     var sign=l.premiumPct>0?"+":"";
-    return '<span class="'+cls+'">'+sign+l.premiumPct+"%</span>";
+    var tip="對比基準：同社區實登（樂居＋政府合併去重）坪數±20%、近"+(l.marketYears||3)+"年成交中位單價，樣本 "+(l.marketN!=null?l.marketN:"?")+" 筆（剔除一樓/特殊交易；單價均含車位混算）";
+    return '<span class="'+cls+'" title="'+esc(tip)+'" style="cursor:help;">'+sign+l.premiumPct+"%</span>";
   }
   var SORTS={
     price:{l:"總價",v:function(l){return l.price;}},
@@ -498,7 +499,8 @@
       var title=badges+esc(l.title)+(l.status==="delisted"?' <span class="badge">已下架</span>':"");
       if(l.status==="delisted"&&l.lvrMatch){
         var m=l.lvrMatch;
-        title+=' <span class="badge matched">🎯疑似成交 '+(m.totalPrice!=null?Number(m.totalPrice).toLocaleString()+"萬":"")
+        var mtip="疑似成交（"+(m.src||"實登")+"）："+m.date+(m.address?"｜"+m.address:"")+"｜配對：下架±窗口＋坪數±8%＋同樓層";
+        title+=' <span class="badge matched" title="'+esc(mtip)+'" style="cursor:help;">🎯疑似成交 '+(m.totalPrice!=null?Number(m.totalPrice).toLocaleString()+"萬":"")
           +(m.diffPct!=null?"（"+(m.diffPct>0?"+":"")+m.diffPct+"%）":"")+'</span>';
       }
       html+='<tr'+cls+'><td class="main" data-l="標題">'+title+'</td>'
@@ -515,9 +517,10 @@
     return html;
   }
   function lvrSaleBlock(c){
-    var html='<div class="lvr"><b>實價登錄買賣（近 3 年，統計剔除一樓）：</b>';
+    var html='<div class="lvr"><b>實登行情（近 3 年，樂居＋政府實登合併去重，統計剔除一樓/特殊交易）：</b>';
     if(!c.lvrSaleMatched)return html+'社區對不到實登（顯示行政區級距，不做行情統計）</div>';
-    html+='社區成交 '+(c.lvrSaleCount||0)+' 筆';
+    html+='社區成交 '+(c.lvrSaleCount||0)+' 筆'
+      +(c.statsSrc?'（樣本全史：樂居 '+c.statsSrc.leju+'＋實登補 '+c.statsSrc.lvr+'）':'');
     var stats=c.lvrSaleStats||[];
     if(stats.length){
       html+='<br>坪數分組（萬/坪）：'+stats.map(function(g){
