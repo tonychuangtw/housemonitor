@@ -93,7 +93,7 @@
 <p class="sub">登入後新增「社區」監控；掃描器自動列出該社區全部在售/在租 591 房源 + 實價登錄</p>
 
 <div id="signin-card" class="card">
-  <p>用 Google 登入後管理監控需求（僅限 Tony 本人帳號）</p>
+  <p>用 Google 登入後檢視與管理（僅限 Tony 本人帳號）</p>
   <div id="gsi-btn"></div>
 </div>
 
@@ -133,7 +133,6 @@
     <p id="push-msg" class="msg" style="margin:0 0 4px;"></p>
     <div id="watchlist"><p class="msg">載入中…</p></div>
   </div>
-</div>
 
 <h2 style="margin-top:26px;">📅 近 7 天變動</h2>
 <div class="card" id="events-card"><p class="msg">載入中…</p></div>
@@ -147,6 +146,8 @@
   <span class="msg" style="margin:0;">拉動滑桿看「預估獲利」欄在不同砍價幅度下的變化；欄位 tooltip 有每筆的損益兩平出價</span>
 </div>
 <div id="results"><p class="msg">載入中…</p></div>
+</div>
+
 <p class="foot">591 社區在架列表走官方 bff JSON API 定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新<br>
 預估獲利 = 同坪數組(±20%)實登中位數轉售價 − 開價 − 交易成本(買2%+賣4%) − 房地合一稅45%(持有≤2年)；未計土地漲價總數額/費用推計/議價空間，僅供粗篩</p>
 
@@ -277,14 +278,25 @@
   function $(id){return document.getElementById(id);}
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   function token(){try{return localStorage.getItem(TOKEN_KEY);}catch(e){return null;}}
+  // Google ID token 一小時過期。過期 token 別當已登入用——舊版在這裡踩雷：
+  // 帶過期 token 按「送出」→ 401 → 被踢到登入畫面，表單永遠卡在「送出中…」（2026-08-05 Tony 回報）
+  function tokenValid(){
+    var t=token(); if(!t)return false;
+    try{
+      var p=JSON.parse(atob(t.split(".")[1].replace(/-/g,"+").replace(/_/g,"/")));
+      return p.exp*1000>Date.now()+60000; // 留 60 秒餘裕
+    }catch(e){return false;}
+  }
   function fmtPrice(v,kind){if(v==null)return "—";return kind==="sale"?(v.toLocaleString()+" 萬"):(v.toLocaleString()+" 元/月");}
 
   function api(method,path,body,cb){
+    if(!tokenValid()){signOut();if(cb)cb("登入逾時，請重新登入（剛才的操作會自動補送）");return;}
     var x=new XMLHttpRequest(); x.open(method,API+path);
     x.setRequestHeader("Authorization","Bearer "+token());
     if(body)x.setRequestHeader("Content-Type","application/json"); x.timeout=20000;
     x.onload=function(){var d=null;try{d=JSON.parse(x.responseText);}catch(e){}
-      if(x.status===401){signOut();return;}
+      if(x.status===401){signOut();cb("登入逾時，請重新登入（剛才的操作會自動補送）");return;}
+      if(x.status===403){cb("此 Google 帳號無權限，僅限 Tony 本人帳號");return;}
       cb(x.status>=200&&x.status<300?null:((d&&d.error)||("HTTP "+x.status)),d);};
     x.onerror=function(){cb("連線失敗（主機或對外通道中斷；看門狗每 10 分鐘檢查一次，稍後重試）");}; x.ontimeout=function(){cb("連線逾時");};
     x.send(body?JSON.stringify(body):null);
@@ -338,14 +350,25 @@
     var sMax=$("f-size-max").value?Number($("f-size-max").value):null;
     if((sMin!=null&&(!isFinite(sMin)||sMin<=0))||(sMax!=null&&(!isFinite(sMax)||sMax<=0))){m.textContent="坪數要是正數";m.className="msg err";return;}
     if(sMin!=null&&sMax!=null&&sMin>sMax){m.textContent="坪數範圍最小不能大於最大";m.className="msg err";return;}
-    var btn=$("f-submit"); btn.disabled=true; m.textContent="送出中…"; m.className="msg";
-    api("POST","/api/house/watch",{name:name,
+    doAdd({name:name,
       city:city,cityName:CITIES[city].name,district:district,districtName:CITIES[city].districts[district],
       sizeMin:sMin,sizeMax:sMax,scanPerDay:parseInt($("f-scan").value,10),
-      mgmtFee:$("f-fee").value?Number($("f-fee").value):null},function(e,d){
+      mgmtFee:$("f-fee").value?Number($("f-fee").value):null});
+  }
+  // 登入逾時被打斷的新增，重登後由 showApp() 自動補送（PENDING_ADD）
+  var PENDING_ADD=null;
+  function doAdd(payload){
+    var m=$("f-msg"), btn=$("f-submit");
+    btn.disabled=true; m.textContent="送出中…"; m.className="msg";
+    PENDING_ADD=null;
+    api("POST","/api/house/watch",payload,function(e,d){
       btn.disabled=false;
-      if(e){m.textContent="失敗："+e;m.className="msg err";return;}
-      m.textContent="✅ 已加入「"+name+"」"; m.className="msg"; $("f-name").value=""; renderWatch(d.items);
+      if(e){
+        m.textContent="失敗："+e;m.className="msg err";
+        if(/登入/.test(e))PENDING_ADD=payload;
+        return;
+      }
+      m.textContent="✅ 已加入「"+payload.name+"」"; m.className="msg"; $("f-name").value=""; renderWatch(d.items);
     });
   }
 
@@ -740,22 +763,30 @@
     EVENTS=EVENTS.filter(function(e){return e.community!==name;});
     renderAll();
   }
-  var LEJU=null; // leju.json：樂居全史實登（上一手配對用），沒有這個檔也照常運作
+  var LEJU=null; // 樂居全史實登（上一手/明細配對用），跟 results 一起從後端 authed API 來
+  // 2026-08-05 起內容要登入 Tony 帳號才能看：results/leju 改走 /api/house/results（帶 token），
+  // 不再抓公開的 results.json / leju.json
   function loadResults(){
-    fetch("leju.json?t="+Date.now()).then(function(r){return r.ok?r.json():null;}).then(function(d){LEJU=d;})
-      .catch(function(_){LEJU=null;})
-      .then(function(){return fetch("results.json?t="+Date.now());}).then(function(r){return r.json();}).then(function(d){
-      COMMUNITIES=d.communities||[];
-      EVENTS=d.events||[];
-      lastUpdated=d.updated||"—";
+    if(!tokenValid())return;
+    api("GET","/api/house/results",null,function(e,d){
+      if(e){$("results").innerHTML='<p class="msg err">載入失敗：'+esc(e)+'</p>';return;}
+      LEJU=(d&&d.leju)||null;
+      var r=(d&&d.results)||{};
+      COMMUNITIES=r.communities||[];
+      EVENTS=r.events||[];
+      lastUpdated=r.updated||"—";
       renderAll();
-    }).catch(function(e){$("results").innerHTML='<p class="msg">載入 results.json 失敗：'+esc(e.message)+'</p>';});
+    });
   }
-  // 自動刷新：每 5 分鐘重抓 results.json；切回分頁時也立刻抓
+  // 自動刷新：每 5 分鐘重抓；切回分頁時也立刻抓（未登入時 loadResults 自己會略過）
   setInterval(loadResults,5*60*1000);
   document.addEventListener("visibilitychange",function(){if(!document.hidden)loadResults();});
 
-  function showApp(){$("signin-card").classList.add("hidden");$("app").classList.remove("hidden");refreshWatch();}
+  function showApp(){
+    $("signin-card").classList.add("hidden");$("app").classList.remove("hidden");
+    refreshWatch();loadResults();
+    if(PENDING_ADD){var p=PENDING_ADD;PENDING_ADD=null;doAdd(p);} // 補送剛才被登入打斷的新增
+  }
   function signOut(){try{localStorage.removeItem(TOKEN_KEY);}catch(e){}$("app").classList.add("hidden");$("signin-card").classList.remove("hidden");}
 
   function rebuildDistricts(){
@@ -781,7 +812,9 @@
       cs.addEventListener("change",rebuildDistricts);
       rebuildDistricts();
     })();
-    initGsi(); if(token())showApp();
+    initGsi();
+    if(tokenValid())showApp();
+    else if(token())signOut(); // 過期 token 直接視同未登入，別讓表單帶著殭屍登入狀態
     $("deal-pct").addEventListener("input",function(){
       DEAL_PCT=parseInt(this.value,10)||100;
       $("deal-pct-v").textContent=DEAL_PCT+"%";
@@ -791,7 +824,6 @@
     $("test-push").addEventListener("click",function(){
       var m=$("push-msg"); m.textContent="發送中…"; m.className="msg";
       api("POST","/api/house/test-push",{},function(e){ if(e){m.textContent="推播失敗："+e;m.className="msg err";return;} m.textContent="✅ 已發送，看 @housemonitortwbot"; });});
-    loadResults();
   });
 })();
 </script>
