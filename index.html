@@ -62,6 +62,9 @@ try{
   input, select { width:100%; padding:10px; border-radius:10px; border:1px solid var(--border);
     background:var(--bg); color:var(--text); font-size:0.95rem; transition:border-color .15s ease, box-shadow .15s ease; }
   input:focus, select:focus{ outline:none; border-color:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+  /* range 滑桿別吃上面 input 的 padding/border（padding 會讓拉到 100% 右邊多一截空白） */
+  input[type=range]{ padding:0; border:none; background:transparent; height:auto; accent-color:var(--accent); }
+  input[type=range]:focus{ box-shadow:none; }
   .row2{ display:flex; gap:10px; } .row2>div{ flex:1; }
   button{ border:none; border-radius:10px; padding:11px 18px; font-size:0.95rem; cursor:pointer; font-weight:600;
     transition:filter .12s ease, opacity .12s ease, border-color .15s ease; }
@@ -219,7 +222,7 @@ try{
 <div class="card hidden" id="deal-card" style="padding:10px 16px 12px;">
   🤝 議價假設：成交價 = 開價 × <b id="deal-pct-v" style="color:var(--accent)">100%</b>
   <input type="range" id="deal-pct" min="70" max="100" step="1" value="100" style="width:100%;margin:8px 0 4px;">
-  <span class="msg" style="margin:0;">拉動滑桿看「預估獲利」欄在不同砍價幅度下的變化；欄位 tooltip 有每筆的損益兩平出價</span>
+  <span class="msg" style="margin:0;">「預估獲利」預設假設照開價買進；實際成交通常低於開價 —— 拉到 90% 就是假設砍價一成成交，下方每筆的「預估獲利」會照這個買價即時重算。滑鼠停在獲利數字上可看該筆的損益兩平出價（低於這個價買進才不賠）</span>
 </div>
 <div id="results"><p class="msg">載入中…</p></div>
 </div>
