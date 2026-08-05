@@ -75,7 +75,7 @@ try{
   .scan:disabled{ opacity:.5; cursor:default; }
   .btn-row{ display:flex; gap:6px; flex-shrink:0; }
   .msg{ font-size:0.88rem; color:var(--text2); min-height:1.2em; margin-top:8px; } .msg.err{ color:var(--bad); }
-  .hidden{ display:none; }
+  .hidden{ display:none !important; }
   .entry{ border-bottom:1px solid var(--border); padding:10px 0; } .entry:last-child{ border-bottom:none; }
   .entry-head{ display:flex; justify-content:space-between; align-items:center; gap:10px; }
   .entry-name{ font-weight:700; } .entry-meta{ color:var(--text2); font-size:0.84rem; margin-top:2px; }
@@ -100,6 +100,26 @@ try{
   details.lvr-detail summary{ cursor:pointer; color:var(--text2); font-size:0.8rem; }
   details.lvr-detail table{ margin-top:6px; }
   .match-table td, .match-table th{ white-space:nowrap; }
+  /* 總覽列表（社區多也不會太長；點列進詳情） */
+  .ov-card{ padding:0; overflow:hidden; }
+  .ov-row{ display:flex; align-items:center; gap:10px; padding:12px 14px; border-bottom:1px solid var(--border); cursor:pointer;
+    transition:background-color .12s ease; }
+  .ov-row:last-child{ border-bottom:none; }
+  .ov-row:hover{ background:var(--card2); }
+  .ov-main{ flex:1; min-width:0; }
+  .ov-name{ font-weight:700; font-size:0.98rem; display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+  .ov-meta{ color:var(--text2); font-size:0.78rem; margin-top:2px; }
+  .ov-stats{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; font-size:0.8rem; color:var(--text2); text-align:right; }
+  .ov-stats b{ color:var(--text); font-size:0.92rem; }
+  .ov-arrow{ color:var(--dim); font-size:1.2rem; flex-shrink:0; }
+  .ov-sort{ display:flex; gap:6px; flex-wrap:wrap; margin:0 0 10px; }
+  .ov-sort button{ background:transparent; color:var(--text2); border:1px solid var(--border); padding:4px 11px; font-size:0.8rem; border-radius:999px; font-weight:600; }
+  .ov-sort button.on{ background:var(--accent); color:var(--accent-ink); border-color:var(--accent); }
+  .back-btn{ background:var(--chip); color:var(--text); border:1px solid var(--border); padding:7px 14px; font-size:0.88rem; border-radius:999px; margin:2px 0 4px; }
+  @media (max-width:560px){
+    .ov-stats{ gap:8px; font-size:0.74rem; }
+    .ov-stats .ov-opt{ display:none; }
+  }
   /* community result cards */
   .summary{ display:flex; gap:8px; flex-wrap:wrap; margin:6px 0 12px; }
   .stat{ background:var(--card); border:1px solid var(--border); border-radius:10px; padding:7px 13px; font-size:0.88rem; }
@@ -154,7 +174,7 @@ try{
 </div>
 
 <div id="app" class="hidden">
-  <div class="card">
+  <div class="card" id="form-card">
     <h2>➕ 新增社區監控</h2>
     <label>社區名（必填，591 上的社區名稱）</label>
     <input id="f-name" placeholder="例：國王一號院" maxlength="50">
@@ -181,7 +201,7 @@ try{
     <p id="f-msg" class="msg"></p>
   </div>
 
-  <div class="card">
+  <div class="card" id="watchlist-card">
     <div style="display:flex;justify-content:space-between;align-items:center;margin:0 0 8px;">
       <h2 style="margin:0;">📋 監控需求清單</h2>
       <button id="test-push" class="pause">🔔 測試推播</button>
@@ -190,13 +210,13 @@ try{
     <div id="watchlist"><p class="msg">載入中…</p></div>
   </div>
 
-<h2 style="margin-top:26px;">📅 近 7 天變動</h2>
+<h2 style="margin-top:26px;" id="events-h2">📅 近 7 天變動</h2>
 <div class="card" id="events-card"><p class="msg">載入中…</p></div>
 
-<h2 style="margin-top:26px;">🎯 監控結果</h2>
+<h2 style="margin-top:26px;" id="res-h2">🎯 監控結果總覽</h2>
 <p class="sub" id="res-sub">載入中…</p>
 <div class="summary" id="summary"></div>
-<div class="card" style="padding:10px 16px 12px;">
+<div class="card hidden" id="deal-card" style="padding:10px 16px 12px;">
   🤝 議價假設：成交價 = 開價 × <b id="deal-pct-v" style="color:var(--accent)">100%</b>
   <input type="range" id="deal-pct" min="70" max="100" step="1" value="100" style="width:100%;margin:8px 0 4px;">
   <span class="msg" style="margin:0;">拉動滑桿看「預估獲利」欄在不同砍價幅度下的變化；欄位 tooltip 有每筆的損益兩平出價</span>
@@ -759,28 +779,110 @@ try{
       });
     });
   }
+  // ---- 單一社區完整卡片（詳情頁用） ----
+  function commCardEl(c){
+    (c.sale||[]).forEach(function(l){ l._prev=prevLvrFor(l,c); });
+    var card=document.createElement("div"); card.className="card";
+    var saleActive=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
+    var rentActive=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
+    var html='<div class="comm-title"><h2>🏘 '+esc(c.name)+'</h2>'
+      +'<span class="meta">'+esc(c.cityName)+esc(c.districtName)+' · 更新 '+(c.lastChecked||"—")+'</span></div>';
+    html+=infoBlock(c);
+    if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
+    html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
+      +listingTable(c.sale,"sale",c.id+":sale")
+      +liquidityBlock(c)+lvrSaleBlock(c)+matchBlock(c)+'</div>';
+    html+='<div class="sect"><p class="sect-head">🔑 租賃（'+rentActive+' 筆在租）</p>'
+      +listingTable(c.rent,"rent",c.id+":rent")
+      +lvrBlock(c.lvrRent,"rent","租賃")+rentYieldBlock(c)+'</div>';
+    card.innerHTML=html;
+    return card;
+  }
+
+  // ---- 路由：#c=<id> 進社區詳情，否則總覽（2026-08-05 Tony：社區多了頁面太長）----
+  function curCommId(){
+    var m=/^#c=(.+)$/.exec(location.hash||"");
+    return m?decodeURIComponent(m[1]):null;
+  }
+  function commStats(c){
+    var act=(c.sale||[]).filter(function(l){return l.status==="active";});
+    var prems=act.map(function(l){return l.premiumPct;}).filter(function(p){return p!=null;});
+    return {
+      saleActive:act.length,
+      rentActive:(c.rent||[]).filter(function(l){return l.status==="active";}).length,
+      minPrem:prems.length?Math.min.apply(null,prems):null,
+      bargain:prems.some(function(p){return p<=-15;}),
+      ev7:EVENTS.filter(function(e){return e.community===c.name;}).length
+    };
+  }
+  var OV_SORTS={
+    def:{l:"變動優先",v:function(s){return s.ev7*1000+(s.bargain?500:0)+s.saleActive;}},
+    prem:{l:"最低vs行情",v:function(s){return s.minPrem==null?-9999:-s.minPrem;}},
+    sale:{l:"在售多",v:function(s){return s.saleActive;}}
+  };
+  var ovSort="def";
+  function renderOverview(el){
+    var rows=COMMUNITIES.map(function(c){return {c:c,s:commStats(c)};});
+    rows.sort(function(a,b){return OV_SORTS[ovSort].v(b.s)-OV_SORTS[ovSort].v(a.s);});
+    var sortBar='<div class="ov-sort">'+Object.keys(OV_SORTS).map(function(k){
+      return '<button data-ovs="'+k+'"'+(ovSort===k?' class="on"':'')+'>'+OV_SORTS[k].l+'</button>';
+    }).join("")+'</div>';
+    var list=rows.map(function(r){
+      var c=r.c,s=r.s;
+      var badges="";
+      if(s.bargain)badges+=' <span class="badge bargain">💎撿漏</span>';
+      if(s.ev7)badges+=' <span class="badge new">'+s.ev7+' 變動</span>';
+      if(c.error)badges+=' <span class="badge" style="color:var(--bad);border-color:var(--bad);">⚠</span>';
+      var prem=s.minPrem!=null
+        ?'<b class="'+(s.minPrem<0?"down":"up")+'">'+(s.minPrem>0?"+":"")+s.minPrem+'%</b>'
+        :'<b style="color:var(--dim)">—</b>';
+      return '<div class="ov-row" data-cid="'+esc(c.id)+'">'
+        +'<div class="ov-main"><div class="ov-name">🏘 '+esc(c.name)+badges+'</div>'
+        +'<div class="ov-meta">'+esc(c.cityName)+esc(c.districtName)+' · 掃描 '+esc(String(c.lastChecked||"—").slice(5,16))+'</div></div>'
+        +'<div class="ov-stats">'
+        +'<span>在售<br><b>'+s.saleActive+'</b></span>'
+        +'<span>在租<br><b>'+s.rentActive+'</b></span>'
+        +'<span>最低vs行情<br>'+prem+'</span>'
+        +'<span class="ov-opt">近3年實登<br><b>'+(c.lvrSaleCount||0)+'</b></span>'
+        +'</div><div class="ov-arrow">›</div></div>';
+    }).join("");
+    el.innerHTML=sortBar+'<div class="card ov-card">'+list+'</div>'
+      +'<p class="msg" style="text-align:center;">點社區列可看完整表格與實登明細</p>';
+    el.querySelectorAll(".ov-row").forEach(function(r){
+      r.addEventListener("click",function(){location.hash="c="+encodeURIComponent(r.getAttribute("data-cid"));});
+    });
+    el.querySelectorAll("[data-ovs]").forEach(function(b){
+      b.addEventListener("click",function(ev){ev.stopPropagation();ovSort=b.getAttribute("data-ovs");renderResults();});
+    });
+  }
+  function setView(detail){
+    ["form-card","watchlist-card","events-h2","events-card","summary"].forEach(function(id){
+      var e=$(id); if(e)e.classList.toggle("hidden",detail);
+    });
+    $("deal-card").classList.toggle("hidden",!detail);
+    $("res-h2").textContent=detail?"🏘 社區詳情":"🎯 監控結果總覽";
+  }
   function renderResults(){
     var el=$("results");
+    var cid=curCommId();
+    var c=cid?COMMUNITIES.filter(function(x){return x.id===cid;})[0]:null;
+    if(cid&&!c&&COMMUNITIES.length){location.hash="";return;} // 已刪除的社區 → 回總覽
+    setView(!!c);
     if(!COMMUNITIES.length){el.innerHTML='<p class="msg">還沒有監控結果 —— 上方登入後用表單新增社區，掃描後結果會顯示在這裡。</p>';return;}
     el.innerHTML="";
-    COMMUNITIES.forEach(function(c){
-      (c.sale||[]).forEach(function(l){ l._prev=prevLvrFor(l,c); });
-      var card=document.createElement("div"); card.className="card";
-      var saleActive=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
-      var rentActive=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
-      var html='<div class="comm-title"><h2>🏘 '+esc(c.name)+'</h2>'
-        +'<span class="meta">'+esc(c.cityName)+esc(c.districtName)+' · 更新 '+(c.lastChecked||"—")+'</span></div>';
-      html+=infoBlock(c);
-      if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
-      html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
-        +listingTable(c.sale,"sale",c.id+":sale")
-        +liquidityBlock(c)+lvrSaleBlock(c)+matchBlock(c)+'</div>';
-      html+='<div class="sect"><p class="sect-head">🔑 租賃（'+rentActive+' 筆在租）</p>'
-        +listingTable(c.rent,"rent",c.id+":rent")
-        +lvrBlock(c.lvrRent,"rent","租賃")+rentYieldBlock(c)+'</div>';
-      card.innerHTML=html;
-      el.appendChild(card);
-    });
+    if(!c){renderOverview(el);return;}
+    // ---- 詳情 ----
+    var back=document.createElement("button"); back.className="back-btn"; back.textContent="← 返回總覽";
+    back.addEventListener("click",function(){location.hash="";});
+    el.appendChild(back);
+    var evs=EVENTS.filter(function(e){return e.community===c.name;});
+    if(evs.length){
+      var evCard=document.createElement("div"); evCard.className="card";
+      evCard.innerHTML='<p class="sect-head" style="margin:0 0 6px;">📅 本社區近 7 天變動</p>'
+        +'<ul class="timeline">'+evs.map(eventLine).join("")+'</ul>';
+      el.appendChild(evCard);
+    }
+    el.appendChild(commCardEl(c));
     // 表頭點擊排序（桌面）；手機用下拉
     el.querySelectorAll("th.sortable").forEach(function(th){
       th.addEventListener("click",function(){
@@ -799,6 +901,7 @@ try{
       });
     });
   }
+  window.addEventListener("hashchange",function(){window.scrollTo(0,0);renderResults();});
   var lastUpdated="—";
   function renderAll(){
     renderEvents();
