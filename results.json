@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05 09:08:06",
+  "updated": "2026-08-05 10:07:12",
   "events": [
     {
       "ts": "2026-08-04 21:57:23",
@@ -8388,6 +8388,152 @@
       "lvrMatches": [],
       "error": null,
       "lastChecked": "2026-08-05 09:07:38"
+    },
+    {
+      "id": "msffzxgwvqiu",
+      "name": "鳳凰交響曲",
+      "cityName": "高雄市",
+      "districtName": "新興區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [
+        {
+          "date": "2026-06-29",
+          "totalPrice": 4500000,
+          "unitPrice": null,
+          "unitPriceWanPerPing": null,
+          "size": 27.63,
+          "floor": "全/三層",
+          "floorNum": null,
+          "parkCount": 0,
+          "note": "親友、員工、共有人或其他特殊關係間之交易;",
+          "address": "新興區自立橫路０００６之１號",
+          "community": "",
+          "layout": "3房2廳3衛",
+          "buildingType": "透天厝"
+        },
+        {
+          "date": "2026-06-22",
+          "totalPrice": 11780000,
+          "unitPrice": 468737,
+          "unitPriceWanPerPing": 46.87,
+          "size": 29.42,
+          "floor": "十三層/十五層",
+          "floorNum": 13,
+          "parkCount": 1,
+          "note": "",
+          "address": "新興區復橫一路０１８０號十三樓之３",
+          "community": "利融藏御",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2026-06-22",
+          "totalPrice": 3080000,
+          "unitPrice": 160826,
+          "unitPriceWanPerPing": 16.08,
+          "size": 19.15,
+          "floor": "十層/十二層",
+          "floorNum": 10,
+          "parkCount": 0,
+          "note": "建號:1325買賣價:100萬(1房1衛)建號:1326買賣價:208萬(1房1衛)",
+          "address": "新興區五福二路０１９２號１０樓之７",
+          "community": "冠軍華廈",
+          "layout": "2房2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrRent": [
+        {
+          "date": "2023-08-29",
+          "totalPrice": 36000,
+          "unitPrice": null,
+          "unitPriceWanPerPing": null,
+          "size": 63.81,
+          "floor": "全/四層",
+          "floorNum": null,
+          "parkCount": 0,
+          "note": "",
+          "address": "新興區中正三路１之１５號",
+          "community": "",
+          "layout": "4房2廳2衛",
+          "buildingType": "透天厝"
+        },
+        {
+          "date": "2023-08-22",
+          "totalPrice": 50500,
+          "unitPrice": 889,
+          "unitPriceWanPerPing": 0.09,
+          "size": 56.72,
+          "floor": "見其他登記事項/五層",
+          "floorNum": null,
+          "parkCount": 0,
+          "note": "",
+          "address": "新興區大同一路３３號、３５號",
+          "community": "",
+          "layout": "",
+          "buildingType": "公寓(5樓含以下無電梯)"
+        },
+        {
+          "date": "2023-08-16",
+          "totalPrice": 41500,
+          "unitPrice": 902,
+          "unitPriceWanPerPing": 0.09,
+          "size": 46,
+          "floor": "見其他登記事項/十五層",
+          "floorNum": null,
+          "parkCount": 0,
+          "note": "",
+          "address": "新興區八德一路２０６號",
+          "community": "",
+          "layout": "",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "lvrSaleStats": [],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": null
+      },
+      "rentYield": null,
+      "lvrTrend": [],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": null,
+      "lastChecked": "2026-08-05 10:03:38"
+    },
+    {
+      "id": "msfg0ifrr8o7",
+      "name": "都廳苑",
+      "cityName": "高雄市",
+      "districtName": "新興區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [],
+      "lvrRent": [],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "lvrSaleStats": [],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": null
+      },
+      "rentYield": null,
+      "lvrTrend": [],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": null,
+      "lastChecked": null
     }
   ]
 }
