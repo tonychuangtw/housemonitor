@@ -131,6 +131,34 @@
       "mgmtFee": null,
       "active": true,
       "added": 1785854326819
+    },
+    {
+      "id": "msffzxgwvqiu",
+      "name": "鳳凰交響曲",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E06",
+      "districtName": "新興區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785895378736
+    },
+    {
+      "id": "msfg0ifrr8o7",
+      "name": "都廳苑",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E06",
+      "districtName": "新興區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785895405911
     }
   ]
 }
