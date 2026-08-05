@@ -159,6 +159,20 @@
       "mgmtFee": null,
       "active": true,
       "added": 1785895405911
+    },
+    {
+      "id": "msfist74lm0x",
+      "name": "科大湛",
+      "city": "J",
+      "cityName": "新竹縣",
+      "district": "J05",
+      "districtName": "竹北市",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785900085456
     }
   ]
 }
