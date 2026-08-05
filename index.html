@@ -552,18 +552,31 @@
         +'<circle cx="'+pts[pts.length-1].x.toFixed(1)+'" cy="'+pts[pts.length-1].y.toFixed(1)+'" r="2.5" fill="var(--accent)"/>'
         +'</svg>';
     }
-    var all=c.lvrSaleAll||[];
+    // 明細：樂居全史＋政府實登合併去重（同年月＋總價差<1萬＋樓層不衝突視為同筆，留樂居的），照時間排
+    var lj=(LEJU&&LEJU.communities&&LEJU.communities[c.id]&&LEJU.communities[c.id].deals)||[];
+    var L=lj.map(function(d){return {date:d.date,src:"樂居",wan:d.totalWan,unit:d.unitPrice,size:d.size,floorNum:d.floorNum,addr:d.address||"",note:d.note||"",special:d.special};});
+    var G=(c.lvrSaleAll||[]).map(function(d){return {date:d.date,src:"實登",wan:d.totalPrice!=null?Math.round(d.totalPrice/10000):null,unit:d.unitPriceWanPerPing,size:d.size,floorNum:d.floorNum,addr:d.address||"",note:d.note||"",special:0};})
+      .filter(function(g){return !L.some(function(j){
+        return String(j.date).slice(0,7)===String(g.date).slice(0,7)
+          &&j.wan!=null&&g.wan!=null&&Math.abs(j.wan-g.wan)<1
+          &&(j.floorNum==null||g.floorNum==null||j.floorNum===g.floorNum);});});
+    var all=L.concat(G).sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
     if(all.length){
-      html+='<details class="lvr-detail"><summary>明細（'+all.length+' 筆，點此展開）</summary>'
-        +'<table><thead><tr><th>日期</th><th>總價</th><th>單價</th><th>坪數</th><th>樓層</th></tr></thead><tbody>'
+      html+='<details class="lvr-detail"><summary>明細（全史 '+all.length+' 筆：樂居 '+L.length+'＋實登補 '+G.length+'，點此展開）</summary>'
+        +'<div style="color:var(--text2);font-size:.85em;margin:2px 0;">單價口徑：樂居＝剔除車位；實登＝總價/總坪含車位混算。⚠＝特殊交易</div>'
+        +'<table><thead><tr><th>日期</th><th>來源</th><th>總價</th><th>單價</th><th>坪數</th><th>樓層</th><th>地址</th></tr></thead><tbody>'
         +all.map(function(d){
-          return '<tr><td>'+esc(d.date)+'</td><td>'+(d.totalPrice!=null?Math.round(d.totalPrice/10000).toLocaleString()+"萬":"—")+'</td>'
-            +'<td>'+(d.unitPriceWanPerPing!=null?d.unitPriceWanPerPing+"萬/坪":"—")+'</td>'
-            +'<td>'+(d.size!=null?d.size+"坪":"—")+'</td><td>'+esc(d.floor||"—")+'</td></tr>';
+          var noteTip=d.special||d.note?' title="'+esc((d.special?"特殊交易":"")+(d.note?("："+d.note):""))+'" style="cursor:help;"':'';
+          return '<tr'+noteTip+'><td>'+esc(d.date)+'</td><td>'+d.src+'</td>'
+            +'<td>'+((d.special||SPECIAL_RE.test(d.note))?"⚠":"")+(d.wan!=null?d.wan.toLocaleString()+"萬":"—")+'</td>'
+            +'<td>'+(d.unit!=null?d.unit+"萬/坪":"—")+'</td>'
+            +'<td>'+(d.size!=null?d.size+"坪":"—")+'</td><td>'+(d.floorNum!=null?d.floorNum+"F":"—")+'</td>'
+            +'<td>'+esc(d.addr||"—")+'</td></tr>';
         }).join("")+'</tbody></table></details>';
     }
     return html+'</div>';
   }
+  var SPECIAL_RE=/親友|親屬|特殊關係|債務|急買|急賣|受災|凶宅|瑕疵|節稅|贈與|信託|拍賣|毛胚|增建|傢俱|家具|設備費|裝潢/;
   function lvrBlock(deals,kind,label){
     var html='<div class="lvr"><b>實價登錄'+label+'最近成交：</b>';
     if(!deals||!deals.length)return html+'查無成交</div>';
