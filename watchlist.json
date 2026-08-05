@@ -173,6 +173,34 @@
       "mgmtFee": null,
       "active": true,
       "added": 1785900085456
+    },
+    {
+      "id": "msg77lct9m87",
+      "name": "美術皇居",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E02",
+      "districtName": "鼓山區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785941085917
+    },
+    {
+      "id": "msg77s3ck4gn",
+      "name": "美術之星",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E02",
+      "districtName": "鼓山區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1785941094649
     }
   ]
 }
