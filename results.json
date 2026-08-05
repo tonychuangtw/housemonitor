@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05 10:48:00",
+  "updated": "2026-08-05 11:22:54",
   "events": [
     {
       "ts": "2026-08-05 10:43:41",
@@ -13976,6 +13976,274 @@
       "lvrMatches": [],
       "error": null,
       "lastChecked": "2026-08-05 10:41:12"
+    },
+    {
+      "id": "msfist74lm0x",
+      "name": "科大湛",
+      "cityName": "新竹縣",
+      "districtName": "竹北市",
+      "sale": [
+        {
+          "id": "20349757",
+          "title": "椰林科大湛|明亮舒爽🌿大三房",
+          "price": 3088,
+          "prevPrice": null,
+          "size": 55.39,
+          "floor": "12F/13F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20349757.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 55.75,
+          "premiumPct": 19,
+          "marketN": 4,
+          "marketYears": 5,
+          "estResale": 2595,
+          "estProfit": -659,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20463160",
+          "title": "🌹博士嚴選🌹成功學區｜科大湛｜高樓視野採光大三房",
+          "price": 3088,
+          "prevPrice": null,
+          "size": 55.39,
+          "floor": "12F/13F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20463160.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 55.75,
+          "premiumPct": 19,
+          "marketN": 4,
+          "marketYears": 5,
+          "estResale": 2595,
+          "estProfit": -659,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        }
+      ],
+      "rent": [],
+      "lvrSale": [
+        {
+          "date": "2025-03-16",
+          "totalPrice": 30200000,
+          "unitPrice": 460684,
+          "unitPriceWanPerPing": 46.07,
+          "size": 65.55,
+          "floor": "十一層/十三層",
+          "floorNum": 11,
+          "parkCount": 2,
+          "note": "",
+          "address": "竹北市科大二街51號十一樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-01-23",
+          "totalPrice": 29580000,
+          "unitPrice": 451226,
+          "unitPriceWanPerPing": 45.12,
+          "size": 65.55,
+          "floor": "十二層/十三層",
+          "floorNum": 12,
+          "parkCount": 2,
+          "note": "其他增建;",
+          "address": "竹北市科大二街51號十二樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-11-24",
+          "totalPrice": 34660000,
+          "unitPrice": 591640,
+          "unitPriceWanPerPing": 59.16,
+          "size": 71.41,
+          "floor": "十層/十三層",
+          "floorNum": 10,
+          "parkCount": 2,
+          "note": "",
+          "address": "竹北市科大二街43號十樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrRent": [
+        {
+          "date": "2023-08-11",
+          "totalPrice": 25000,
+          "unitPrice": null,
+          "unitPriceWanPerPing": null,
+          "size": 26.89,
+          "floor": "全/二層",
+          "floorNum": null,
+          "parkCount": 0,
+          "note": "",
+          "address": "竹北市中華路125巷46弄18號",
+          "community": "",
+          "layout": "6房2廳2衛",
+          "buildingType": "透天厝"
+        },
+        {
+          "date": "2023-08-05",
+          "totalPrice": 12000,
+          "unitPrice": 962,
+          "unitPriceWanPerPing": 0.1,
+          "size": 12.48,
+          "floor": "十二層/十三層",
+          "floorNum": 12,
+          "parkCount": 0,
+          "note": "",
+          "address": "竹北市嘉豐十路5號12樓之15",
+          "community": "竹冠富翼",
+          "layout": "1房1廳1衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-06-20",
+          "totalPrice": 40000,
+          "unitPrice": 1055,
+          "unitPriceWanPerPing": 0.11,
+          "size": 37.95,
+          "floor": "一層/十三層",
+          "floorNum": 1,
+          "parkCount": 0,
+          "note": "",
+          "address": "竹北市北新一街68號",
+          "community": "森陽JOY-Q",
+          "layout": "",
+          "buildingType": "店面（店舖)"
+        }
+      ],
+      "lvrSaleMatched": true,
+      "lvrSaleCount": 3,
+      "statsSrc": {
+        "leju": 30,
+        "lvr": 0
+      },
+      "lvrSaleStats": [
+        {
+          "lo": 60,
+          "hi": 70,
+          "n": 2,
+          "median": 45.59,
+          "avg": 45.59,
+          "parkPct": 100
+        },
+        {
+          "lo": 70,
+          "hi": 80,
+          "n": 1,
+          "median": 48.54,
+          "avg": 48.54,
+          "parkPct": 100
+        }
+      ],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": 0
+      },
+      "rentYield": null,
+      "lvrTrend": [
+        {
+          "q": "2024Q4",
+          "n": 1,
+          "median": 48.54
+        },
+        {
+          "q": "2025Q1",
+          "n": 2,
+          "median": 45.59
+        }
+      ],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [
+        {
+          "date": "2025-03-16",
+          "totalPrice": 30200000,
+          "unitPrice": 460684,
+          "unitPriceWanPerPing": 46.07,
+          "size": 65.55,
+          "floor": "十一層/十三層",
+          "floorNum": 11,
+          "parkCount": 2,
+          "note": "",
+          "address": "竹北市科大二街51號十一樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2025-01-23",
+          "totalPrice": 29580000,
+          "unitPrice": 451226,
+          "unitPriceWanPerPing": 45.12,
+          "size": 65.55,
+          "floor": "十二層/十三層",
+          "floorNum": 12,
+          "parkCount": 2,
+          "note": "其他增建;",
+          "address": "竹北市科大二街51號十二樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2024-11-24",
+          "totalPrice": 34660000,
+          "unitPrice": 591640,
+          "unitPriceWanPerPing": 59.16,
+          "size": 71.41,
+          "floor": "十層/十三層",
+          "floorNum": 10,
+          "parkCount": 2,
+          "note": "",
+          "address": "竹北市科大二街43號十樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-05-29",
+          "totalPrice": 27660000,
+          "unitPrice": 494152,
+          "unitPriceWanPerPing": 49.42,
+          "size": 55.97,
+          "floor": "十二層/十三層",
+          "floorNum": 12,
+          "parkCount": 1,
+          "note": "",
+          "address": "竹北市科大二街45號十二樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-03-26",
+          "totalPrice": 30000000,
+          "unitPrice": 420119,
+          "unitPriceWanPerPing": 42.01,
+          "size": 71.41,
+          "floor": "七層/十三層",
+          "floorNum": 7,
+          "parkCount": 2,
+          "note": "",
+          "address": "竹北市科大二街47號七樓",
+          "community": "科大湛",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        }
+      ],
+      "lvrMatches": [],
+      "error": null,
+      "lastChecked": "2026-08-05 11:21:52"
     }
   ]
 }
