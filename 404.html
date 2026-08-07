@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404</title>
+<script>
+// GitHub Pages 路徑分大小寫，且不能做伺服器端轉址 —— 這頁是唯一的掛勾點。
+// 2026-08-07 Tony：「網址大小寫不要區分」。做法：站內真實路徑清單（PATHS）比對時
+// 一律轉小寫，對到就轉去正確大小寫的網址；清單沒有的（之後新增的檔案）再試一次
+// 全小寫探測。兩者都對不上才顯示 404，不亂導。
+// ⚠️ PATHS 由 claude-shared 的 gen404.py 產生，新增頁面後重跑一次即可。
+(function () {
+  var BASE = "/housemonitor/";
+  var PATHS = ["index.html"];
+  var p = decodeURIComponent(location.pathname);
+  var rest = p.indexOf(BASE) === 0 ? p.slice(BASE.length) : p.replace(/^\//, '');
+  var key = rest.toLowerCase().replace(/^\/+/, '');
+  var hit = null;
+  for (var i = 0; i < PATHS.length; i++) {
+    if (PATHS[i].toLowerCase() === key) { hit = PATHS[i]; break; }
+  }
+  if (hit && hit !== rest.replace(/^\/+/, '')) {
+    location.replace(BASE + hit + location.search + location.hash);
+    return;
+  }
+  if (!hit && key && key !== rest.replace(/^\/+/, '')) {
+    // 清單外的檔案：試試全小寫版本存不存在，存在才導過去
+    fetch(BASE + key, { method: 'HEAD' }).then(function (r) {
+      if (r.ok) location.replace(BASE + key + location.search + location.hash);
+    }).catch(function () {});
+  }
+})();
+</script>
+<style>
+body{font-family:"Noto Sans TC",system-ui,sans-serif;background:#141822;color:#e8eaf2;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;margin:0}
+a{color:#7cc4ff}
+</style>
+</head>
+<body>
+<div><h1>404</h1><p>找不到這個頁面。<br><a href="/housemonitor/">回首頁</a></p></div>
+</body>
+</html>
