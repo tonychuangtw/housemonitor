@@ -1,6 +1,114 @@
 {
-  "updated": "2026-08-07 21:06:46",
+  "updated": "2026-08-08 09:11:57",
   "events": [
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "國王一號院",
+      "kind": "delisted",
+      "title": "固豪👍文化中心國王一號院3房平車",
+      "kindOfListing": "rent",
+      "price": 68000,
+      "url": "https://rent.591.com.tw/21232871"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "長耀雙峰滙",
+      "kind": "new_listing",
+      "title": "A9雙峰匯💖扶輪三井採光2房車💖",
+      "kindOfListing": "sale",
+      "price": 1786,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20687878.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "長耀雙峰滙",
+      "kind": "new_listing",
+      "title": "長耀雙峰匯💖景觀2房💖夜景超棒💖回家像渡假💖",
+      "kindOfListing": "sale",
+      "price": 1698,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20687783.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "長耀雙峰匯精美風格💘景觀2房扶輪公園⭐視野好",
+      "kindOfListing": "sale",
+      "price": 1988,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20348118.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "長耀雙峰匯✨高樓層☝️無敵景觀精美2房",
+      "kindOfListing": "sale",
+      "price": 1698,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20350205.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "🐥育翰精選#長耀雙峰滙#高樓層超大兩房平面車",
+      "kindOfListing": "sale",
+      "price": 2980,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20350672.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "輕齡屋|時尚🎉好視野|長耀PARK雙峰匯高樓美裝兩房車",
+      "kindOfListing": "sale",
+      "price": 1875,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20351985.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "捷市悅",
+      "kind": "delisted",
+      "title": "🟧近台積電🟧捷士悅🟧全新家具家電三房平車",
+      "kindOfListing": "rent",
+      "price": 27000,
+      "url": "https://rent.591.com.tw/21600393"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "科大湛",
+      "kind": "delisted",
+      "title": "椰林科大湛|明亮舒爽🌿大三房",
+      "kindOfListing": "sale",
+      "price": 3088,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20349757.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "美術皇居",
+      "kind": "new_listing",
+      "title": "劉威廷專約美術館大三房可改四房三面採光雙套房三衛浴連號雙平車",
+      "kindOfListing": "sale",
+      "price": 3998,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20694700.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "美術皇居",
+      "kind": "new_listing",
+      "title": "美術皇居｜遇見綠意｜邊間雙套房雙平車",
+      "kindOfListing": "sale",
+      "price": 3998,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20694645.html"
+    },
+    {
+      "ts": "2026-08-08 09:11:57",
+      "community": "美術皇居",
+      "kind": "delisted",
+      "title": "⭐美術館特區「美術皇居」指標豪宅3+1房雙平車一卡皮箱入住",
+      "kindOfListing": "sale",
+      "price": 3880,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20349379.html"
+    },
     {
       "ts": "2026-08-07 21:06:46",
       "community": "大悅",
@@ -345,116 +453,6 @@
       "kindOfListing": "sale",
       "price": 2998,
       "url": "https://sale.591.com.tw/home/house/detail/2/20326954.html"
-    },
-    {
-      "ts": "2026-08-04 09:12:10",
-      "community": "長耀雙峰滙",
-      "kind": "delisted",
-      "title": "🏆MR.周｜長耀雙峰匯可隔三房｜📞0917118737",
-      "kindOfListing": "sale",
-      "price": 2980,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20328949.html"
-    },
-    {
-      "ts": "2026-08-04 09:12:10",
-      "community": "長耀雙峰滙",
-      "kind": "delisted",
-      "title": "A9三井質感長耀雙峰滙高樓景觀2房車",
-      "kindOfListing": "sale",
-      "price": 1988,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20330210.html"
-    },
-    {
-      "ts": "2026-08-04 09:12:10",
-      "community": "長耀雙峰滙",
-      "kind": "delisted",
-      "title": "A9林口｜長耀Park｜全配2房車｜租金含車含管｜可報稅入籍",
-      "kindOfListing": "rent",
-      "price": 48000,
-      "url": "https://rent.591.com.tw/21692276"
-    },
-    {
-      "ts": "2026-08-03 21:10:36",
-      "community": "大悅",
-      "kind": "new_listing",
-      "title": "★專約勿擾★五福國中學區景觀2房",
-      "kindOfListing": "sale",
-      "price": 888,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20665930.html"
-    },
-    {
-      "ts": "2026-08-03 21:10:36",
-      "community": "國王一號院",
-      "kind": "new_listing",
-      "title": "👑信義MRT國王景觀品味大坪數4房平車-權威",
-      "kindOfListing": "rent",
-      "price": 60000,
-      "url": "https://rent.591.com.tw/21760783"
-    },
-    {
-      "ts": "2026-08-03 21:10:36",
-      "community": "國王一號院",
-      "kind": "new_listing",
-      "title": "國王一號院💎4房平車💎適公司主管",
-      "kindOfListing": "rent",
-      "price": 55000,
-      "url": "https://rent.591.com.tw/21758686"
-    },
-    {
-      "ts": "2026-08-03 09:05:03",
-      "community": "大悅",
-      "kind": "price",
-      "title": "文化中心五福學區雙捷運高樓層採光兩房",
-      "kindOfListing": "sale",
-      "price": 798,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20327904.html",
-      "from": 840,
-      "to": 798
-    },
-    {
-      "ts": "2026-08-03 09:05:03",
-      "community": "大悅",
-      "kind": "delisted",
-      "title": "（專約）文化中心捷運｜邊間雙面採光｜大兩房＋平車",
-      "kindOfListing": "sale",
-      "price": 1198,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20503106.html"
-    },
-    {
-      "ts": "2026-08-03 09:05:03",
-      "community": "大悅",
-      "kind": "delisted",
-      "title": "文化中心捷運｜大兩房＋平車｜邊間戶｜雙面採光無暗房｜雙陽台",
-      "kindOfListing": "sale",
-      "price": 1198,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20639343.html"
-    },
-    {
-      "ts": "2026-08-03 09:05:03",
-      "community": "國王一號院",
-      "kind": "delisted",
-      "title": "文化中心/信義國小/高樓大坪數平車豪邸",
-      "kindOfListing": "sale",
-      "price": 2988,
-      "url": "https://sale.591.com.tw/home/house/detail/2/19975137.html"
-    },
-    {
-      "ts": "2026-08-03 09:05:03",
-      "community": "長耀雙峰滙",
-      "kind": "delisted",
-      "title": "A9林口｜長耀Park｜全配2房車｜租金含車含管｜可報稅入籍",
-      "kindOfListing": "rent",
-      "price": 48000,
-      "url": "https://rent.591.com.tw/21647330"
-    },
-    {
-      "ts": "2026-08-02 21:12:01",
-      "community": "長耀雙峰滙",
-      "kind": "new_listing",
-      "title": "鼎級精選✨【長耀PARK雙峰匯】🍎優質高樓景觀裝潢２房車",
-      "kindOfListing": "sale",
-      "price": 1875,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20658717.html"
     }
   ],
   "communities": [
@@ -748,12 +746,12 @@
           "id": "20688660",
           "title": "【Tina】五福學區大悅文化中心捷運高樓層景觀宅",
           "price": 816,
-          "prevPrice": null,
+          "prevPrice": 816,
           "size": 19.03,
           "floor": "16F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20688660.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 42.88,
           "premiumPct": 19.2,
           "marketN": 19,
@@ -4571,7 +4569,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:00:48"
+      "lastChecked": "2026-08-08 09:05:51"
     },
     {
       "id": "mrych48q56fu",
@@ -4723,12 +4721,12 @@
           "id": "20692758",
           "title": "🏆文化中心｜國王一號院｜SRC鋼骨制震豪邸平車",
           "price": 3080,
-          "prevPrice": null,
+          "prevPrice": 3080,
           "size": 83.74,
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20692758.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 36.78,
           "premiumPct": 47.8,
           "marketN": 9,
@@ -4982,26 +4980,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21232871",
-          "title": "固豪👍文化中心國王一號院3房平車",
-          "price": 68000,
-          "prevPrice": 68000,
-          "size": 83.23,
-          "floor": "16F/33F",
-          "url": "https://rent.591.com.tw/21232871",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 817,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21698165",
           "title": "｜國王一號院｜市景高樓3+1房平車｜",
           "price": 68000,
@@ -5072,6 +5050,26 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 663,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21232871",
+          "title": "固豪👍文化中心國王一號院3房平車",
+          "price": 68000,
+          "prevPrice": 68000,
+          "size": 83.23,
+          "floor": "16F/33F",
+          "url": "https://rent.591.com.tw/21232871",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 817,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -5247,13 +5245,13 @@
         "activeMedianDays": 14
       },
       "rentYield": {
-        "rentUnit": 741,
+        "rentUnit": 664,
         "rentSize": 83.2,
-        "n": 6,
+        "n": 5,
         "baseUnit": 24.89,
-        "yieldPct": 3.57,
+        "yieldPct": 3.2,
         "mgmtFee": 60,
-        "netYieldPct": 3.28
+        "netYieldPct": 2.91
       },
       "lvrTrend": [
         {
@@ -8773,7 +8771,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:01:25"
+      "lastChecked": "2026-08-08 09:06:23"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9100,7 +9098,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:01:58"
+      "lastChecked": "2026-08-08 09:06:59"
     },
     {
       "id": "ms7outtntjzf",
@@ -9389,26 +9387,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20350672",
-          "title": "🐥育翰精選#長耀雙峰滙#高樓層超大兩房平面車",
-          "price": 2980,
-          "prevPrice": 2980,
-          "size": 54.08,
-          "floor": "15F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20350672.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 55.1,
-          "premiumPct": 7.9,
-          "marketN": 14,
-          "marketYears": 3,
-          "estResale": 2761,
-          "estProfit": -389,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20362404",
           "title": "‼️優先推薦‼️長耀雙峰匯3改2房獨立車位",
           "price": 2980,
@@ -9669,26 +9647,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20348118",
-          "title": "長耀雙峰匯精美風格💘景觀2房扶輪公園⭐視野好",
-          "price": 1988,
-          "prevPrice": 1988,
-          "size": 32.26,
-          "floor": "27F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20348118.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 61.62,
-          "premiumPct": 16.4,
-          "marketN": 7,
-          "marketYears": 3,
-          "estResale": 1708,
-          "estProfit": -388,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20379760",
           "title": "長耀雙峰匯🏡高樓視野好✨屋況很漂亮",
           "price": 1988,
@@ -9730,7 +9688,7 @@
         },
         {
           "id": "20459923",
-          "title": "A9林口【長耀雙峰匯】山海美景美裝2房車｜扶輪公園旁",
+          "title": "A9林口【長耀雙峰匯】山海美景美裝2房車��扶輪公園旁",
           "price": 1988,
           "prevPrice": 1988,
           "size": 32.25,
@@ -9784,26 +9742,6 @@
           "marketYears": 3,
           "estResale": 1708,
           "estProfit": -388,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20351985",
-          "title": "輕齡屋|時尚🎉好視野|長耀PARK雙峰匯高樓美裝兩房車",
-          "price": 1875,
-          "prevPrice": 1875,
-          "size": 32.26,
-          "floor": "27F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20351985.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 58.12,
-          "premiumPct": 9.8,
-          "marketN": 7,
-          "marketYears": 3,
-          "estResale": 1708,
-          "estProfit": -273,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -10152,12 +10090,12 @@
           "id": "20689229",
           "title": "力銘嚴選❤【雙峰匯】❤精品高樓層二房車",
           "price": 1875,
-          "prevPrice": null,
+          "prevPrice": 1875,
           "size": 32.25,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20689229.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 58.14,
           "premiumPct": 9.8,
           "marketN": 7,
@@ -10429,6 +10367,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20687878",
+          "title": "A9雙峰匯💖扶輪三井採光2房車💖",
+          "price": 1786,
+          "prevPrice": null,
+          "size": 31.51,
+          "floor": "20F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20687878.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 56.68,
+          "premiumPct": 7,
+          "marketN": 7,
+          "marketYears": 3,
+          "estResale": 1668,
+          "estProfit": -220,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20265759",
           "title": "長耀雙峰匯景觀2房",
           "price": 1698,
@@ -10436,26 +10394,6 @@
           "size": 26.07,
           "floor": "25F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20265759.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 65.13,
-          "premiumPct": 16.8,
-          "marketN": 3,
-          "marketYears": 3,
-          "estResale": 1454,
-          "estProfit": -336,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20350205",
-          "title": "長耀雙峰匯✨高樓層☝️無敵景觀精美2房",
-          "price": 1698,
-          "prevPrice": 1698,
-          "size": 26.07,
-          "floor": "25F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20350205.html",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 65.13,
@@ -10578,6 +10516,26 @@
           "url": "https://sale.591.com.tw/home/house/detail/2/20574926.html",
           "status": "active",
           "isNew": false,
+          "unitPricePerPing": 65.13,
+          "premiumPct": 16.8,
+          "marketN": 3,
+          "marketYears": 3,
+          "estResale": 1454,
+          "estProfit": -336,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20687783",
+          "title": "長耀雙峰匯💖景觀2房💖夜景超棒💖回家像渡假💖",
+          "price": 1698,
+          "prevPrice": null,
+          "size": 26.07,
+          "floor": "25F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20687783.html",
+          "status": "active",
+          "isNew": true,
           "unitPricePerPing": 65.13,
           "premiumPct": 16.8,
           "marketN": 3,
@@ -10729,6 +10687,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20350672",
+          "title": "🐥育翰精選#長耀雙峰滙#高樓層超大兩房平面車",
+          "price": 2980,
+          "prevPrice": 2980,
+          "size": 54.08,
+          "floor": "15F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20350672.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 55.1,
+          "premiumPct": 7.9,
+          "marketN": 14,
+          "marketYears": 3,
+          "estResale": 2761,
+          "estProfit": -389,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20490302",
           "title": "A9高樓層☀️長耀雙峰滙☀️扶輪公園２房１平車",
           "price": 2980,
@@ -10809,6 +10787,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20348118",
+          "title": "長耀雙峰匯精美風格💘景觀2房扶輪公園⭐視野好",
+          "price": 1988,
+          "prevPrice": 1988,
+          "size": 32.26,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20348118.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 61.62,
+          "premiumPct": 16.4,
+          "marketN": 7,
+          "marketYears": 3,
+          "estResale": 1708,
+          "estProfit": -388,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20337540",
           "title": "降價割愛✨雙峰滙✨質感高樓景觀裝潢兩房車",
           "price": 1875,
@@ -10869,6 +10867,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20351985",
+          "title": "輕齡屋|時尚🎉好視野|長耀PARK雙峰匯高樓美裝兩房車",
+          "price": 1875,
+          "prevPrice": 1875,
+          "size": 32.26,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20351985.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 58.12,
+          "premiumPct": 9.8,
+          "marketN": 7,
+          "marketYears": 3,
+          "estResale": 1708,
+          "estProfit": -273,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20318280",
           "title": "林口💯長耀雙峰滙💯飯店式管理🏆高檔裝潢小豪宅",
           "price": 1698,
@@ -10876,6 +10894,26 @@
           "size": 26.07,
           "floor": "25F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20318280.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 65.13,
+          "premiumPct": 16.8,
+          "marketN": 3,
+          "marketYears": 3,
+          "estResale": 1454,
+          "estProfit": -336,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20350205",
+          "title": "長耀雙峰匯✨高樓層☝️無敵景觀精美2房",
+          "price": 1698,
+          "prevPrice": 1698,
+          "size": 26.07,
+          "floor": "25F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20350205.html",
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 65.13,
@@ -11229,9 +11267,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 15,
-        "delistedMedianDays": 3,
-        "activeMedianDays": 7
+        "delistedN": 19,
+        "delistedMedianDays": 4,
+        "activeMedianDays": 8
       },
       "rentYield": {
         "rentUnit": 1618,
@@ -17538,7 +17576,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:02:23"
+      "lastChecked": "2026-08-08 09:07:27"
     },
     {
       "id": "msepyyktt72w",
@@ -17830,12 +17868,12 @@
           "id": "20667335",
           "title": "後勁捷運｜捷市悦｜兩房雙衛開窗大平車",
           "price": 1250,
-          "prevPrice": null,
+          "prevPrice": 1250,
           "size": 36.5,
           "floor": "15F/15F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20667335.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 34.25,
           "premiumPct": 19.4,
           "marketN": 173,
@@ -17990,12 +18028,12 @@
           "id": "20144492",
           "title": "精選!!!捷市悅全新裝潢2房+車位捷運宅/近台積電",
           "price": 1038,
-          "prevPrice": null,
+          "prevPrice": 1038,
           "size": 34.42,
           "floor": "2F/15F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20144492.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 30.16,
           "premiumPct": 5.8,
           "marketN": 107,
@@ -18389,26 +18427,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21600393",
-          "title": "🟧近台積電🟧捷士悅🟧全新家具家電三房平車",
-          "price": 27000,
-          "prevPrice": 27000,
-          "size": 21.979,
-          "floor": "12F/15F",
-          "url": "https://rent.591.com.tw/21600393",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1228,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21687299",
           "title": "阿怡💖近台積電捷士悅全新三房平車",
           "price": 26000,
@@ -18479,6 +18497,26 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 890,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21600393",
+          "title": "🟧近台積電🟧捷士悅🟧全新家具家電三房平車",
+          "price": 27000,
+          "prevPrice": 27000,
+          "size": 21.979,
+          "floor": "12F/15F",
+          "url": "https://rent.591.com.tw/21600393",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1228,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -18661,14 +18699,14 @@
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 1,
-        "activeMedianDays": 2
+        "activeMedianDays": 3
       },
       "rentYield": {
-        "rentUnit": 1347,
-        "rentSize": 22,
-        "n": 13,
+        "rentUnit": 1472,
+        "rentSize": 22.8,
+        "n": 12,
         "baseUnit": 28.09,
-        "yieldPct": 5.75
+        "yieldPct": 6.29
       },
       "lvrTrend": [
         {
@@ -23518,7 +23556,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:03:05"
+      "lastChecked": "2026-08-08 09:08:09"
     },
     {
       "id": "mserk1lv2gzp",
@@ -24143,7 +24181,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:03:40"
+      "lastChecked": "2026-08-08 09:08:44"
     },
     {
       "id": "msffzxgwvqiu",
@@ -24507,7 +24545,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:04:11"
+      "lastChecked": "2026-08-08 09:09:14"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -29565,7 +29603,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:04:41"
+      "lastChecked": "2026-08-08 09:09:46"
     },
     {
       "id": "msfist74lm0x",
@@ -29574,13 +29612,13 @@
       "districtName": "竹北市",
       "sale": [
         {
-          "id": "20349757",
-          "title": "椰林科大湛|明亮舒爽🌿大三房",
+          "id": "20463160",
+          "title": "🌹博士嚴選🌹成功學區｜科大湛｜高樓視野採光大三房",
           "price": 3088,
           "prevPrice": 3088,
           "size": 55.39,
           "floor": "12F/13F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20349757.html",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20463160.html",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 55.75,
@@ -29594,14 +29632,14 @@
           "lvrMatch": null
         },
         {
-          "id": "20463160",
-          "title": "🌹博士嚴選🌹成功學區｜科大湛｜高樓視野採光大三房",
+          "id": "20349757",
+          "title": "椰林科大湛|明亮舒爽🌿大三房",
           "price": 3088,
           "prevPrice": 3088,
           "size": 55.39,
           "floor": "12F/13F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20463160.html",
-          "status": "active",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20349757.html",
+          "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 55.75,
           "premiumPct": 19,
@@ -29735,8 +29773,8 @@
       ],
       "lvrFloorStats": [],
       "liquidity": {
-        "delistedN": 0,
-        "delistedMedianDays": null,
+        "delistedN": 1,
+        "delistedMedianDays": 1,
         "activeMedianDays": 2
       },
       "rentYield": null,
@@ -30253,7 +30291,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:05:20"
+      "lastChecked": "2026-08-08 09:10:28"
     },
     {
       "id": "msg77lct9m87",
@@ -30662,21 +30700,41 @@
           "lvrMatch": null
         },
         {
-          "id": "20349379",
-          "title": "⭐美術館特區「美術皇居」指標豪宅3+1房雙平車一卡皮箱入住",
-          "price": 3880,
-          "prevPrice": 3880,
-          "size": 72.3,
-          "floor": "16F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20349379.html",
+          "id": "20694645",
+          "title": "美術皇居｜遇見綠意｜邊間雙套房雙平車",
+          "price": 3998,
+          "prevPrice": null,
+          "size": 74.8,
+          "floor": "3F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20694645.html",
           "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 53.67,
-          "premiumPct": 21,
+          "isNew": true,
+          "unitPricePerPing": 53.45,
+          "premiumPct": 20.5,
           "marketN": 12,
           "marketYears": 3,
-          "estResale": 3206,
-          "estProfit": -880,
+          "estResale": 3317,
+          "estProfit": -894,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20694700",
+          "title": "劉威廷專約美術館大三房可改四房三面採光雙套房三衛浴連號雙平車",
+          "price": 3998,
+          "prevPrice": null,
+          "size": 74.8,
+          "floor": "3F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20694700.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 53.45,
+          "premiumPct": 20.5,
+          "marketN": 12,
+          "marketYears": 3,
+          "estResale": 3317,
+          "estProfit": -894,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30857,6 +30915,26 @@
           "marketYears": null,
           "estResale": null,
           "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20349379",
+          "title": "⭐美術館特區「美術皇居」指標豪宅3+1房雙平車一卡皮箱入住",
+          "price": 3880,
+          "prevPrice": 3880,
+          "size": 72.3,
+          "floor": "16F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20349379.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 53.67,
+          "premiumPct": 21,
+          "marketN": 12,
+          "marketYears": 3,
+          "estResale": 3206,
+          "estProfit": -880,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -31086,9 +31164,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 0,
-        "delistedMedianDays": null,
-        "activeMedianDays": 1
+        "delistedN": 1,
+        "delistedMedianDays": 1,
+        "activeMedianDays": 2
       },
       "rentYield": {
         "rentUnit": 1702,
@@ -36835,7 +36913,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:05:50"
+      "lastChecked": "2026-08-08 09:10:59"
     },
     {
       "id": "msg77s3ck4gn",
@@ -37521,7 +37599,7 @@
       "liquidity": {
         "delistedN": 0,
         "delistedMedianDays": null,
-        "activeMedianDays": 1
+        "activeMedianDays": 2
       },
       "rentYield": null,
       "lvrTrend": [
@@ -40142,7 +40220,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-07 21:06:17"
+      "lastChecked": "2026-08-08 09:11:28"
     }
   ]
 }
