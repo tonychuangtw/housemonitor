@@ -1,6 +1,33 @@
 {
-  "updated": "2026-08-09 21:11:34",
+  "updated": "2026-08-10 09:12:01",
   "events": [
+    {
+      "ts": "2026-08-10 09:12:01",
+      "community": "國王一號院",
+      "kind": "delisted",
+      "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+      "kindOfListing": "sale",
+      "price": 3150,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20363941.html"
+    },
+    {
+      "ts": "2026-08-10 09:12:01",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "‼️優先推薦‼️長耀雙峰匯3改2房獨立車位",
+      "kindOfListing": "sale",
+      "price": 2980,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20362404.html"
+    },
+    {
+      "ts": "2026-08-10 09:12:01",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "A9林口【雙峰滙】優質高樓景觀裝潢2房車",
+      "kindOfListing": "sale",
+      "price": 1875,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20365633.html"
+    },
     {
       "ts": "2026-08-09 21:11:34",
       "community": "長耀雙峰滙",
@@ -426,33 +453,6 @@
       "kindOfListing": "sale",
       "price": 1465,
       "url": "https://sale.591.com.tw/home/house/detail/2/20672837.html"
-    },
-    {
-      "ts": "2026-08-04 21:10:08",
-      "community": "國王一號院",
-      "kind": "new_listing",
-      "title": "文化中心/信義國小/高樓大坪數平車豪邸",
-      "kindOfListing": "sale",
-      "price": 2988,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20669501.html"
-    },
-    {
-      "ts": "2026-08-04 21:10:08",
-      "community": "長耀雙峰滙",
-      "kind": "new_listing",
-      "title": "大家房屋曹店長🏠⭐長耀雙峰滙高樓層美妝兩房車",
-      "kindOfListing": "sale",
-      "price": 1875,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20672920.html"
-    },
-    {
-      "ts": "2026-08-04 21:10:08",
-      "community": "長耀雙峰滙",
-      "kind": "new_listing",
-      "title": "💦長耀雙峰匯2房車💦精緻美裝*高樓山海景觀戶",
-      "kindOfListing": "sale",
-      "price": 1988,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20671148.html"
     }
   ],
   "communities": [
@@ -4589,7 +4589,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:04:49"
+      "lastChecked": "2026-08-10 09:03:51"
     },
     {
       "id": "mrych48q56fu",
@@ -4625,26 +4625,6 @@
           "size": 90.56,
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20290646.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 34.78,
-          "premiumPct": 39.8,
-          "marketN": 10,
-          "marketYears": 5,
-          "estResale": 2252,
-          "estProfit": -1051,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20363941",
-          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
-          "price": 3150,
-          "prevPrice": 3150,
-          "size": 90.56,
-          "floor": "7F/33F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20363941.html",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 34.78,
@@ -4945,6 +4925,26 @@
           "size": 90.56,
           "floor": "7F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20325272.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 34.78,
+          "premiumPct": 39.8,
+          "marketN": 10,
+          "marketYears": 5,
+          "estResale": 2252,
+          "estProfit": -1051,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20363941",
+          "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
+          "price": 3150,
+          "prevPrice": 3150,
+          "size": 90.56,
+          "floor": "7F/33F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20363941.html",
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 34.78,
@@ -5260,8 +5260,8 @@
       ],
       "lvrFloorStats": [],
       "liquidity": {
-        "delistedN": 7,
-        "delistedMedianDays": 2,
+        "delistedN": 8,
+        "delistedMedianDays": 4,
         "activeMedianDays": 16
       },
       "rentYield": {
@@ -8791,7 +8791,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:05:28"
+      "lastChecked": "2026-08-10 09:04:34"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9118,7 +9118,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:06:02"
+      "lastChecked": "2026-08-10 09:05:13"
     },
     {
       "id": "ms7outtntjzf",
@@ -9402,26 +9402,6 @@
           "marketYears": 3,
           "estResale": 2478,
           "estProfit": -679,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20362404",
-          "title": "‼️優先推薦‼️長耀雙峰匯3改2房獨立車位",
-          "price": 2980,
-          "prevPrice": 2980,
-          "size": 54.09,
-          "floor": "15F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20362404.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 55.09,
-          "premiumPct": 7.9,
-          "marketN": 14,
-          "marketYears": 3,
-          "estResale": 2762,
-          "estProfit": -388,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -9770,38 +9750,18 @@
           "id": "20701679",
           "title": "長耀雙峰匯精美風格💘景觀2房扶輪公園⭐視野好",
           "price": 1988,
-          "prevPrice": null,
+          "prevPrice": 1988,
           "size": 32.26,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20701679.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 61.62,
           "premiumPct": 16.4,
           "marketN": 7,
           "marketYears": 3,
           "estResale": 1708,
           "estProfit": -388,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20365633",
-          "title": "A9林口【雙峰滙】優質高樓景觀裝潢2房車",
-          "price": 1875,
-          "prevPrice": 1875,
-          "size": 32.26,
-          "floor": "27F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20365633.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 58.12,
-          "premiumPct": 9.8,
-          "marketN": 7,
-          "marketYears": 3,
-          "estResale": 1708,
-          "estProfit": -273,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -10150,12 +10110,12 @@
           "id": "20702414",
           "title": "蓉蓉⭐長耀雙峰滙⭐高樓層美妝兩房車",
           "price": 1875,
-          "prevPrice": null,
+          "prevPrice": 1875,
           "size": 32.25,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20702414.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 58.14,
           "premiumPct": 9.8,
           "marketN": 7,
@@ -10767,6 +10727,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20362404",
+          "title": "‼️優先推薦‼️長耀雙峰匯3改2房獨立車位",
+          "price": 2980,
+          "prevPrice": 2980,
+          "size": 54.09,
+          "floor": "15F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20362404.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 55.09,
+          "premiumPct": 7.9,
+          "marketN": 14,
+          "marketYears": 3,
+          "estResale": 2762,
+          "estProfit": -388,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20490302",
           "title": "A9高樓層☀️長耀雙峰滙☀️扶輪公園２房１平車",
           "price": 2980,
@@ -10934,6 +10914,26 @@
           "size": 32.26,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20351985.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 58.12,
+          "premiumPct": 9.8,
+          "marketN": 7,
+          "marketYears": 3,
+          "estResale": 1708,
+          "estProfit": -273,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20365633",
+          "title": "A9林口【雙峰滙】優質高樓景觀裝潢2房車",
+          "price": 1875,
+          "prevPrice": 1875,
+          "size": 32.26,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20365633.html",
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 58.12,
@@ -11327,9 +11327,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 19,
+        "delistedN": 21,
         "delistedMedianDays": 4,
-        "activeMedianDays": 9
+        "activeMedianDays": 10
       },
       "rentYield": {
         "rentUnit": 1862,
@@ -11765,7 +11765,7 @@
           "note": "親友、員工、共有人或其他特殊關係間之交易;",
           "address": "林口區忠孝路103號十七樓",
           "community": "長耀雙峰匯",
-          "layout": "2房1廳1衛",
+          "layout": "2���1廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -17636,7 +17636,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:06:38"
+      "lastChecked": "2026-08-10 09:05:47"
     },
     {
       "id": "msepyyktt72w",
@@ -18779,7 +18779,7 @@
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 1,
-        "activeMedianDays": 4
+        "activeMedianDays": 5
       },
       "rentYield": {
         "rentUnit": 1347,
@@ -19176,7 +19176,7 @@
           "address": "楠梓區加昌路88巷60號五樓",
           "community": "捷市悅",
           "layout": "2房2廳2衛",
-          "buildingType": "住宅大樓(11層含以���有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2024-12-21",
@@ -19742,7 +19742,7 @@
           "floor": "一層/十五層",
           "floorNum": 1,
           "parkCount": 1,
-          "note": "預售屋、或土地及建物分件登記案件;",
+          "note": "預售屋、或土地���建物分件登記案件;",
           "address": "楠梓區加昌路78號",
           "community": "捷市悅",
           "layout": "",
@@ -20073,7 +20073,7 @@
           "floorNum": 6,
           "parkCount": 1,
           "note": "預售屋、或土地及建物分件登記案件;",
-          "address": "楠梓區加昌路88巷30號六樓",
+          "address": "���梓區加昌路88巷30號六樓",
           "community": "",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -20568,7 +20568,7 @@
           "floorNum": 11,
           "parkCount": 1,
           "note": "預售屋、或土地及建物分件登記案件;",
-          "address": "楠梓區加昌路88巷50號十一樓",
+          "address": "楠梓區加昌路88巷0���0號十一樓",
           "community": "",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -23636,7 +23636,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:07:29"
+      "lastChecked": "2026-08-10 09:06:35"
     },
     {
       "id": "mserk1lv2gzp",
@@ -24166,7 +24166,7 @@
           "address": "楠梓區惠義街210號十樓",
           "community": "文陽河豐",
           "layout": "1房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住���大樓(11層含以上有電梯)"
         },
         {
           "date": "2026-04-06",
@@ -24261,7 +24261,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:08:08"
+      "lastChecked": "2026-08-10 09:07:29"
     },
     {
       "id": "msffzxgwvqiu",
@@ -24625,7 +24625,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:08:42"
+      "lastChecked": "2026-08-10 09:08:16"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -24717,12 +24717,12 @@
           "id": "20702696",
           "title": "霸氣磅礡帝王角窗高樓景觀都廳苑",
           "price": 7500,
-          "prevPrice": null,
+          "prevPrice": 7500,
           "size": 184.38,
           "floor": "19F/24F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20702696.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 40.68,
           "premiumPct": 39.9,
           "marketN": 10,
@@ -25235,7 +25235,7 @@
         },
         {
           "id": "20658016",
-          "title": "專約-���觀高樓層-雅緻裝潢+雙平車$$$屋主誠售",
+          "title": "專約-景觀高樓層-雅緻裝潢+雙平車$$$屋主誠售",
           "price": 4580,
           "prevPrice": 4580,
           "size": 110.3,
@@ -29703,7 +29703,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:09:16"
+      "lastChecked": "2026-08-10 09:09:04"
     },
     {
       "id": "msfist74lm0x",
@@ -30391,7 +30391,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:09:53"
+      "lastChecked": "2026-08-10 09:10:02"
     },
     {
       "id": "msg77lct9m87",
@@ -30410,11 +30410,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 56.66,
-          "premiumPct": 27.8,
-          "marketN": 12,
+          "premiumPct": 28.5,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3819,
-          "estProfit": -1311,
+          "estResale": 3798,
+          "estProfit": -1332,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30430,11 +30430,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 49.6,
-          "premiumPct": 9.9,
-          "marketN": 10,
+          "premiumPct": 11.2,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 3973,
-          "estProfit": -641,
+          "estResale": 3927,
+          "estProfit": -685,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30450,11 +30450,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 46.76,
-          "premiumPct": 3.6,
-          "marketN": 10,
+          "premiumPct": 4.8,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 4040,
-          "estProfit": -393,
+          "estResale": 3994,
+          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30470,11 +30470,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 46.76,
-          "premiumPct": 3.6,
-          "marketN": 10,
+          "premiumPct": 4.8,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 4040,
-          "estProfit": -393,
+          "estResale": 3994,
+          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30490,11 +30490,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 46.76,
-          "premiumPct": 3.6,
-          "marketN": 10,
+          "premiumPct": 4.8,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 4040,
-          "estProfit": -393,
+          "estResale": 3994,
+          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30510,11 +30510,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 46.76,
-          "premiumPct": 3.6,
-          "marketN": 10,
+          "premiumPct": 4.8,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 4040,
-          "estProfit": -393,
+          "estResale": 3994,
+          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30530,11 +30530,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 46.76,
-          "premiumPct": 3.6,
-          "marketN": 10,
+          "premiumPct": 4.8,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 4040,
-          "estProfit": -393,
+          "estResale": 3994,
+          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30550,11 +30550,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 46.76,
-          "premiumPct": 3.6,
-          "marketN": 10,
+          "premiumPct": 4.8,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 4040,
-          "estProfit": -393,
+          "estResale": 3994,
+          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30570,11 +30570,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 46.76,
-          "premiumPct": 3.6,
-          "marketN": 10,
+          "premiumPct": 4.8,
+          "marketN": 11,
           "marketYears": 3,
-          "estResale": 4040,
-          "estProfit": -393,
+          "estResale": 3994,
+          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30590,11 +30590,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30610,11 +30610,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30630,11 +30630,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30650,11 +30650,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30670,11 +30670,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30690,11 +30690,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30710,11 +30710,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.44,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30730,11 +30730,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30750,11 +30750,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30770,11 +30770,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.44,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30790,11 +30790,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.44,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30810,11 +30810,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30830,11 +30830,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.67,
-          "premiumPct": 21,
-          "marketN": 12,
+          "premiumPct": 21.7,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3206,
-          "estProfit": -880,
+          "estResale": 3188,
+          "estProfit": -897,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30850,11 +30850,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.67,
-          "premiumPct": 21,
-          "marketN": 12,
+          "premiumPct": 21.7,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3206,
-          "estProfit": -880,
+          "estResale": 3188,
+          "estProfit": -897,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30870,11 +30870,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.67,
-          "premiumPct": 21,
-          "marketN": 12,
+          "premiumPct": 21.7,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3206,
-          "estProfit": -880,
+          "estResale": 3188,
+          "estProfit": -897,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30890,11 +30890,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.67,
-          "premiumPct": 21,
-          "marketN": 12,
+          "premiumPct": 21.7,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3206,
-          "estProfit": -880,
+          "estResale": 3188,
+          "estProfit": -897,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -30910,11 +30910,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.67,
-          "premiumPct": 21,
-          "marketN": 12,
+          "premiumPct": 21.7,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3206,
-          "estProfit": -880,
+          "estResale": 3188,
+          "estProfit": -897,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -31010,11 +31010,11 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 53.45,
-          "premiumPct": 20.5,
-          "marketN": 12,
+          "premiumPct": 21.2,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3317,
-          "estProfit": -894,
+          "estResale": 3299,
+          "estProfit": -911,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -31030,11 +31030,11 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 53.67,
-          "premiumPct": 21,
-          "marketN": 12,
+          "premiumPct": 21.7,
+          "marketN": 13,
           "marketYears": 3,
-          "estResale": 3206,
-          "estProfit": -880,
+          "estResale": 3188,
+          "estProfit": -897,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -31179,16 +31179,16 @@
       "lvrSaleMatched": true,
       "lvrSaleCount": 86,
       "statsSrc": {
-        "leju": 0,
-        "lvr": 378
+        "leju": 379,
+        "lvr": 1
       },
       "lvrSaleStats": [
         {
           "lo": 60,
           "hi": 70,
           "n": 2,
-          "median": 41.17,
-          "avg": 41.17,
+          "median": 41.18,
+          "avg": 41.18,
           "parkPct": 100
         },
         {
@@ -31202,9 +31202,9 @@
         {
           "lo": 80,
           "hi": 90,
-          "n": 6,
-          "median": 43.69,
-          "avg": 44.43,
+          "n": 7,
+          "median": 42.78,
+          "avg": 42.28,
           "parkPct": 100
         },
         {
@@ -31219,16 +31219,16 @@
           "lo": 120,
           "hi": 130,
           "n": 25,
-          "median": 31.96,
-          "avg": 32.89,
+          "median": 32.32,
+          "avg": 33.18,
           "parkPct": 92
         },
         {
           "lo": 130,
           "hi": 140,
           "n": 8,
-          "median": 36.72,
-          "avg": 36.63,
+          "median": 36.74,
+          "avg": 36.85,
           "parkPct": 100
         },
         {
@@ -31246,40 +31246,40 @@
           "lo": 2,
           "hi": 14,
           "n": 23,
-          "median": 31.88
+          "median": 32.18
         },
         {
           "label": "中樓層",
           "lo": 14,
           "hi": 19,
-          "n": 24,
-          "median": 34.02
+          "n": 25,
+          "median": 34.03
         },
         {
           "label": "高樓層",
           "lo": 19,
           "hi": 28,
           "n": 23,
-          "median": 34.47
+          "median": 34.45
         }
       ],
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 1,
-        "activeMedianDays": 3
+        "activeMedianDays": 4
       },
       "rentYield": {
         "rentUnit": 1702,
         "rentSize": 66.9,
         "n": 2,
-        "baseUnit": 44.905,
+        "baseUnit": 44.91,
         "yieldPct": 4.55
       },
       "lvrTrend": [
         {
           "q": "2023Q3",
-          "n": 2,
-          "median": 34.88
+          "n": 3,
+          "median": 31.67
         },
         {
           "q": "2023Q4",
@@ -31289,7 +31289,7 @@
         {
           "q": "2024Q1",
           "n": 19,
-          "median": 32.21
+          "median": 32.32
         },
         {
           "q": "2024Q2",
@@ -31304,7 +31304,7 @@
         {
           "q": "2024Q4",
           "n": 4,
-          "median": 36.6
+          "median": 37.16
         },
         {
           "q": "2025Q1",
@@ -31314,17 +31314,17 @@
         {
           "q": "2025Q2",
           "n": 3,
-          "median": 36.39
+          "median": 36.73
         },
         {
           "q": "2025Q3",
           "n": 2,
-          "median": 35.14
+          "median": 34.88
         },
         {
           "q": "2025Q4",
           "n": 1,
-          "median": 42.3
+          "median": 42.6
         },
         {
           "q": "2026Q1",
@@ -31451,7 +31451,7 @@
           "unitPrice": 324714,
           "unitPriceWanPerPing": 32.47,
           "size": 135.09,
-          "floor": "二十三層/二十九���",
+          "floor": "二十三層/二十九層",
           "floorNum": 23,
           "parkCount": 3,
           "note": "親友、員工、共有人或其他特殊關係間之交易;",
@@ -32280,7 +32280,7 @@
           "floorNum": 14,
           "parkCount": 1,
           "note": "",
-          "address": "鼓山區美術北五街88號���四樓",
+          "address": "鼓山區美術北五街88號十四樓",
           "community": "美術皇居",
           "layout": "4房2廳5衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -37013,7 +37013,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:10:24"
+      "lastChecked": "2026-08-10 09:10:41"
     },
     {
       "id": "msg77s3ck4gn",
@@ -37052,11 +37052,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.71,
-          "premiumPct": 20.1,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4706,
-          "estProfit": -1245,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37072,11 +37072,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.71,
-          "premiumPct": 20.1,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4706,
-          "estProfit": -1245,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37092,11 +37092,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.71,
-          "premiumPct": 20.1,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4706,
-          "estProfit": -1245,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37112,11 +37112,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.93,
-          "premiumPct": 20.6,
-          "marketN": 4,
+          "premiumPct": 20.8,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4683,
-          "estProfit": -1267,
+          "estResale": 4678,
+          "estProfit": -1272,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37132,11 +37132,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.84,
-          "premiumPct": 20.4,
-          "marketN": 4,
+          "premiumPct": 20.5,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4693,
-          "estProfit": -1258,
+          "estResale": 4688,
+          "estProfit": -1263,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37152,11 +37152,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.71,
-          "premiumPct": 20.1,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4706,
-          "estProfit": -1245,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37172,11 +37172,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37192,11 +37192,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37212,11 +37212,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4702,
+          "estProfit": -1249,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37232,11 +37232,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37252,11 +37252,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.71,
-          "premiumPct": 20.1,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4706,
-          "estProfit": -1245,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37272,11 +37272,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37292,11 +37292,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37312,11 +37312,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37332,11 +37332,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4702,
+          "estProfit": -1249,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37352,11 +37352,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37372,11 +37372,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37392,11 +37392,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4702,
+          "estProfit": -1249,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37412,11 +37412,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4702,
+          "estProfit": -1249,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37432,11 +37432,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37452,11 +37452,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37472,11 +37472,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
-          "premiumPct": 20,
-          "marketN": 4,
+          "premiumPct": 20.2,
+          "marketN": 5,
           "marketYears": 3,
-          "estResale": 4707,
-          "estProfit": -1244,
+          "estResale": 4701,
+          "estProfit": -1250,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37492,11 +37492,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 37.94,
-          "premiumPct": -0.2,
-          "marketN": 3,
+          "premiumPct": 3.4,
+          "marketN": 4,
           "marketYears": 3,
-          "estResale": 4992,
-          "estProfit": -287,
+          "estResale": 4816,
+          "estProfit": -456,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37512,11 +37512,11 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 37.94,
-          "premiumPct": -0.2,
-          "marketN": 3,
+          "premiumPct": 3.4,
+          "marketN": 4,
           "marketYears": 3,
-          "estResale": 4992,
-          "estProfit": -287,
+          "estResale": 4816,
+          "estProfit": -456,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -37620,8 +37620,8 @@
       "lvrSaleMatched": true,
       "lvrSaleCount": 44,
       "statsSrc": {
-        "leju": 0,
-        "lvr": 172
+        "leju": 63,
+        "lvr": 110
       },
       "lvrSaleStats": [
         {
@@ -37657,6 +37657,14 @@
           "parkPct": 100
         },
         {
+          "lo": 120,
+          "hi": 130,
+          "n": 1,
+          "median": 32.03,
+          "avg": 32.03,
+          "parkPct": 100
+        },
+        {
           "lo": 130,
           "hi": 140,
           "n": 1,
@@ -37685,8 +37693,8 @@
           "label": "中樓層",
           "lo": 6,
           "hi": 11,
-          "n": 14,
-          "median": 42.24
+          "n": 15,
+          "median": 42.04
         },
         {
           "label": "高樓層",
@@ -37699,14 +37707,14 @@
       "liquidity": {
         "delistedN": 0,
         "delistedMedianDays": null,
-        "activeMedianDays": 3
+        "activeMedianDays": 4
       },
       "rentYield": null,
       "lvrTrend": [
         {
           "q": "2023Q3",
-          "n": 15,
-          "median": 42.04
+          "n": 16,
+          "median": 41.76
         },
         {
           "q": "2023Q4",
@@ -37870,7 +37878,7 @@
           "address": "鼓山區西藏街26號十四樓",
           "community": "學院美術之星",
           "layout": "3房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "���宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2024-02-06",
@@ -38279,21 +38287,6 @@
         },
         {
           "date": "2023-09-06",
-          "totalPrice": 19510000,
-          "unitPrice": 438962,
-          "unitPriceWanPerPing": 43.9,
-          "size": 46.65,
-          "floor": "十二層/十五層",
-          "floorNum": 12,
-          "parkCount": 1,
-          "note": "",
-          "address": "鼓���區西藏街26號十二樓",
-          "community": "學院美術之星",
-          "layout": "3房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
-        },
-        {
-          "date": "2023-09-06",
           "totalPrice": 24200000,
           "unitPrice": 424238,
           "unitPriceWanPerPing": 42.42,
@@ -38305,6 +38298,21 @@
           "address": "鼓山區西藏街28號五樓",
           "community": "學院美術之星",
           "layout": "2房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-09-06",
+          "totalPrice": 19510000,
+          "unitPrice": 438962,
+          "unitPriceWanPerPing": 43.9,
+          "size": 46.65,
+          "floor": "十二層/十五層",
+          "floorNum": 12,
+          "parkCount": 1,
+          "note": "",
+          "address": "鼓山區西藏街26號十二樓",
+          "community": "學院美術之星",
+          "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -38377,7 +38385,7 @@
           "floorNum": 6,
           "parkCount": 1,
           "note": "",
-          "address": "鼓山區西藏街28號六樓",
+          "address": "���山區西藏街28號六樓",
           "community": "學院美術之星",
           "layout": "2房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -40320,7 +40328,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-09 21:10:59"
+      "lastChecked": "2026-08-10 09:11:16"
     }
   ]
 }
