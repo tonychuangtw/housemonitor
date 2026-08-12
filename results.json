@@ -1,6 +1,51 @@
 {
-  "updated": "2026-08-12 09:09:07",
+  "updated": "2026-08-12 21:07:43",
   "events": [
+    {
+      "ts": "2026-08-12 21:07:43",
+      "community": "長耀雙峰滙",
+      "kind": "new_listing",
+      "title": "眾城團隊⭐頂級公設｜長耀雙峰匯精品兩房平面車位",
+      "kindOfListing": "sale",
+      "price": 3688,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20721583.html"
+    },
+    {
+      "ts": "2026-08-12 21:07:43",
+      "community": "長耀雙峰滙",
+      "kind": "relisted",
+      "title": "長耀雙峰匯景觀2房",
+      "kindOfListing": "sale",
+      "price": 1698,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20265759.html"
+    },
+    {
+      "ts": "2026-08-12 21:07:43",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "力群/雙峰匯大兩房佳俱全(可租補",
+      "kindOfListing": "rent",
+      "price": 27500,
+      "url": "https://rent.591.com.tw/21706403"
+    },
+    {
+      "ts": "2026-08-12 21:07:43",
+      "community": "捷市悅",
+      "kind": "new_listing",
+      "title": "高科大楠梓校區台積電第一站全新溫馨花園宅（可申請政府補助）",
+      "kindOfListing": "rent",
+      "price": 21800,
+      "url": "https://rent.591.com.tw/21816656"
+    },
+    {
+      "ts": "2026-08-12 21:07:43",
+      "community": "捷市悅",
+      "kind": "delisted",
+      "title": "🐟社會住宅🐟後勁商圈｜拎包入住輕奢美學2房平車",
+      "kindOfListing": "rent",
+      "price": 25000,
+      "url": "https://rent.591.com.tw/21624351"
+    },
     {
       "ts": "2026-08-12 09:09:07",
       "community": "國王一號院",
@@ -419,51 +464,6 @@
       "kindOfListing": "sale",
       "price": 3150,
       "url": "https://sale.591.com.tw/home/house/detail/2/20363941.html"
-    },
-    {
-      "ts": "2026-08-10 09:12:01",
-      "community": "長耀雙峰滙",
-      "kind": "delisted",
-      "title": "‼️優先推薦‼️長耀雙峰匯3改2房獨立車位",
-      "kindOfListing": "sale",
-      "price": 2980,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20362404.html"
-    },
-    {
-      "ts": "2026-08-10 09:12:01",
-      "community": "長耀雙峰滙",
-      "kind": "delisted",
-      "title": "A9林口【雙峰滙】優質高樓景觀裝潢2房車",
-      "kindOfListing": "sale",
-      "price": 1875,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20365633.html"
-    },
-    {
-      "ts": "2026-08-09 21:11:34",
-      "community": "長耀雙峰滙",
-      "kind": "new_listing",
-      "title": "蓉蓉⭐長耀雙峰滙⭐高樓層美妝兩房車",
-      "kindOfListing": "sale",
-      "price": 1875,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20702414.html"
-    },
-    {
-      "ts": "2026-08-09 21:11:34",
-      "community": "長耀雙峰滙",
-      "kind": "new_listing",
-      "title": "長耀雙峰匯精美風格💘景觀2房扶輪公園⭐視野好",
-      "kindOfListing": "sale",
-      "price": 1988,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20701679.html"
-    },
-    {
-      "ts": "2026-08-09 21:11:34",
-      "community": "都廳苑",
-      "kind": "new_listing",
-      "title": "霸氣磅礡帝王角窗高樓景觀都廳苑",
-      "kindOfListing": "sale",
-      "price": 7500,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20702696.html"
     }
   ],
   "communities": [
@@ -1516,7 +1516,7 @@
       "liquidity": {
         "delistedN": 9,
         "delistedMedianDays": 10,
-        "activeMedianDays": 20
+        "activeMedianDays": 21
       },
       "rentYield": {
         "rentUnit": 1388,
@@ -4680,7 +4680,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:00:51"
+      "lastChecked": "2026-08-12 21:00:51"
     },
     {
       "id": "mrych48q56fu",
@@ -5373,7 +5373,7 @@
       "liquidity": {
         "delistedN": 9,
         "delistedMedianDays": 6,
-        "activeMedianDays": 18
+        "activeMedianDays": 19
       },
       "rentYield": {
         "rentUnit": 723,
@@ -8902,7 +8902,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:01:39"
+      "lastChecked": "2026-08-12 21:01:32"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9229,7 +9229,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:02:32"
+      "lastChecked": "2026-08-12 21:02:07"
     },
     {
       "id": "ms7outtntjzf",
@@ -9237,6 +9237,26 @@
       "cityName": "新北市",
       "districtName": "林口區",
       "sale": [
+        {
+          "id": "20721583",
+          "title": "眾城團隊⭐頂級公設｜長耀雙峰匯精品兩房平面車位",
+          "price": 3688,
+          "prevPrice": null,
+          "size": 59.92,
+          "floor": "3F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20721583.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 61.55,
+          "premiumPct": 18.2,
+          "marketN": 8,
+          "marketYears": 3,
+          "estResale": 3119,
+          "estProfit": -768,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
         {
           "id": "20391970",
           "title": "不是空間變大，而是生活終於有了餘裕😍雙峰匯三房車",
@@ -9379,7 +9399,7 @@
         },
         {
           "id": "20404202",
-          "title": "獨家⚠️如果你不想再花時間裝潢，這間真���要看🥹景觀雙峰匯",
+          "title": "獨家⚠️如果你不想再花時間裝潢，這間真的要看🥹景觀雙峰匯",
           "price": 3288,
           "prevPrice": 3288,
           "size": 54.47,
@@ -10318,6 +10338,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20265759",
+          "title": "長耀雙峰匯景觀2房",
+          "price": 1698,
+          "prevPrice": 1698,
+          "size": 26.07,
+          "floor": "25F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20265759.html",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 65.13,
+          "premiumPct": 16.8,
+          "marketN": 3,
+          "marketYears": 3,
+          "estResale": 1454,
+          "estProfit": -336,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20459790",
           "title": "A9林口【長耀雙峰匯】全室美裝潢2房2廳｜扶輪公園旁",
           "price": 1698,
@@ -11018,26 +11058,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20265759",
-          "title": "長耀雙峰匯景觀2房",
-          "price": 1698,
-          "prevPrice": 1698,
-          "size": 26.07,
-          "floor": "25F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20265759.html",
-          "status": "delisted",
-          "isNew": false,
-          "unitPricePerPing": 65.13,
-          "premiumPct": 16.8,
-          "marketN": 3,
-          "marketYears": 3,
-          "estResale": 1454,
-          "estProfit": -336,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20318280",
           "title": "林口💯長耀雙峰滙💯飯店式管理🏆高檔裝潢小豪宅",
           "price": 1698,
@@ -11260,26 +11280,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21706403",
-          "title": "力群/雙峰匯大兩房佳俱全(可租補",
-          "price": 27500,
-          "prevPrice": 27500,
-          "size": 17,
-          "floor": "4F/29F",
-          "url": "https://rent.591.com.tw/21706403",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1618,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21647330",
           "title": "A9林口｜長耀Park｜全配2房車｜租金含車含管｜可報稅入籍",
           "price": 48000,
@@ -11350,6 +11350,26 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 1280,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21706403",
+          "title": "力群/雙峰匯大兩房佳俱全(可租補",
+          "price": 27500,
+          "prevPrice": 27500,
+          "size": 17,
+          "floor": "4F/29F",
+          "url": "https://rent.591.com.tw/21706403",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1618,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -11518,16 +11538,16 @@
         }
       ],
       "liquidity": {
-        "delistedN": 34,
-        "delistedMedianDays": 7,
+        "delistedN": 33,
+        "delistedMedianDays": 6,
         "activeMedianDays": 12
       },
       "rentYield": {
-        "rentUnit": 1821,
+        "rentUnit": 2023,
         "rentSize": 22.8,
-        "n": 8,
+        "n": 7,
         "baseUnit": 48.14,
-        "yieldPct": 4.54
+        "yieldPct": 5.04
       },
       "lvrTrend": [
         {
@@ -17827,7 +17847,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:03:09"
+      "lastChecked": "2026-08-12 21:02:38"
     },
     {
       "id": "msepyyktt72w",
@@ -18718,26 +18738,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21624351",
-          "title": "🐟社會住宅🐟後勁商圈｜拎包入住輕奢美學2房平車",
-          "price": 25000,
-          "prevPrice": 25000,
-          "size": 15.66,
-          "floor": "2F/15F",
-          "url": "https://rent.591.com.tw/21624351",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1596,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21672996",
           "title": "台積電第一站全新溫馨花園甜蜜宅（可申請政府補助）",
           "price": 21800,
@@ -18767,6 +18767,26 @@
           "url": "https://rent.591.com.tw/21673363",
           "status": "active",
           "isNew": false,
+          "unitPricePerPing": 890,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21816656",
+          "title": "高科大楠梓校區台積電第一站全新溫馨花園宅（可申請政府補助）",
+          "price": 21800,
+          "prevPrice": null,
+          "size": 24.5,
+          "floor": "2F/15F",
+          "url": "https://rent.591.com.tw/21816656",
+          "status": "active",
+          "isNew": true,
           "unitPricePerPing": 890,
           "premiumPct": null,
           "marketN": null,
@@ -18808,6 +18828,26 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 1228,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21624351",
+          "title": "🐟社會住宅🐟後勁商圈｜拎包入住輕奢美學2房平車",
+          "price": 25000,
+          "prevPrice": 25000,
+          "size": 15.66,
+          "floor": "2F/15F",
+          "url": "https://rent.591.com.tw/21624351",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1596,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -18993,11 +19033,11 @@
         "activeMedianDays": 7
       },
       "rentYield": {
-        "rentUnit": 1347,
-        "rentSize": 22,
+        "rentUnit": 1183,
+        "rentSize": 23.6,
         "n": 13,
         "baseUnit": 28.09,
-        "yieldPct": 5.75
+        "yieldPct": 5.05
       },
       "lvrTrend": [
         {
@@ -23862,7 +23902,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:03:59"
+      "lastChecked": "2026-08-12 21:03:26"
     },
     {
       "id": "mserk1lv2gzp",
@@ -24592,7 +24632,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:04:46"
+      "lastChecked": "2026-08-12 21:04:02"
     },
     {
       "id": "msffzxgwvqiu",
@@ -24889,7 +24929,7 @@
           "parkCount": 1,
           "note": "",
           "address": "苓雅區永樂街8號二樓",
-          "community": "鳳凰交響曲",
+          "community": "���凰交響曲",
           "layout": "4房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
@@ -24933,7 +24973,7 @@
           "floorNum": 4,
           "parkCount": 1,
           "note": "",
-          "address": "苓雅區永��街2號4樓之3",
+          "address": "苓雅區永樂街2號4樓之3",
           "community": "鳳凰交響曲",
           "layout": "4房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -24956,7 +24996,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:05:36"
+      "lastChecked": "2026-08-12 21:04:35"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -25887,7 +25927,7 @@
       "liquidity": {
         "delistedN": 2,
         "delistedMedianDays": 2,
-        "activeMedianDays": 6
+        "activeMedianDays": 7
       },
       "rentYield": null,
       "lvrTrend": [
@@ -30028,7 +30068,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:06:20"
+      "lastChecked": "2026-08-12 21:05:25"
     },
     {
       "id": "msfist74lm0x",
@@ -30200,7 +30240,7 @@
       "liquidity": {
         "delistedN": 1,
         "delistedMedianDays": 1,
-        "activeMedianDays": 6
+        "activeMedianDays": 7
       },
       "rentYield": null,
       "lvrTrend": [
@@ -30716,7 +30756,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:07:07"
+      "lastChecked": "2026-08-12 21:06:02"
     },
     {
       "id": "msg77lct9m87",
@@ -37358,7 +37398,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:08:01"
+      "lastChecked": "2026-08-12 21:06:38"
     },
     {
       "id": "msg77s3ck4gn",
@@ -40673,7 +40713,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-12 09:08:31"
+      "lastChecked": "2026-08-12 21:07:12"
     }
   ]
 }
