@@ -1,6 +1,24 @@
 {
-  "updated": "2026-08-13 09:13:49",
+  "updated": "2026-08-13 21:13:35",
   "events": [
+    {
+      "ts": "2026-08-13 21:13:35",
+      "community": "長耀雙峰滙",
+      "kind": "new_listing",
+      "title": "21王先生【雙峰滙】🔥",
+      "kindOfListing": "sale",
+      "price": 1875,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20614662.html"
+    },
+    {
+      "ts": "2026-08-13 21:13:35",
+      "community": "長耀雙峰滙",
+      "kind": "relisted",
+      "title": "❤️長耀雙峰匯高樓美妝宅含車位❤️",
+      "kindOfListing": "sale",
+      "price": 1988,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20153110.html"
+    },
     {
       "ts": "2026-08-13 09:13:49",
       "community": "長耀雙峰滙",
@@ -444,24 +462,6 @@
       "url": null,
       "lvrKind": "sale",
       "count": 2
-    },
-    {
-      "ts": "2026-08-11 09:12:50",
-      "community": "美術皇居",
-      "kind": "delisted",
-      "title": "獨家❤️美術皇居❤️邊間.雙套房.雙平車豪邸",
-      "kindOfListing": "sale",
-      "price": 3998,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20211225.html"
-    },
-    {
-      "ts": "2026-08-11 09:12:50",
-      "community": "美術皇居",
-      "kind": "delisted",
-      "title": "⭐【美術館皇室生活】室內+陽台29坪2房+平車⭐",
-      "kindOfListing": "sale",
-      "price": 2558,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20371795.html"
     }
   ],
   "communities": [
@@ -1514,7 +1514,7 @@
       "liquidity": {
         "delistedN": 9,
         "delistedMedianDays": 10,
-        "activeMedianDays": 21
+        "activeMedianDays": 22
       },
       "rentYield": {
         "rentUnit": 1388,
@@ -4678,7 +4678,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:04:51"
+      "lastChecked": "2026-08-13 21:03:51"
     },
     {
       "id": "mrych48q56fu",
@@ -5371,7 +5371,7 @@
       "liquidity": {
         "delistedN": 9,
         "delistedMedianDays": 6,
-        "activeMedianDays": 19
+        "activeMedianDays": 20
       },
       "rentYield": {
         "rentUnit": 723,
@@ -8900,7 +8900,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:05:36"
+      "lastChecked": "2026-08-13 21:04:52"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9227,7 +9227,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:06:19"
+      "lastChecked": "2026-08-13 21:05:50"
     },
     {
       "id": "ms7outtntjzf",
@@ -9716,6 +9716,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20153110",
+          "title": "❤️長耀雙峰匯高樓美妝宅含車位❤️",
+          "price": 1988,
+          "prevPrice": 1988,
+          "size": 32.26,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20153110.html",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 61.62,
+          "premiumPct": 16.4,
+          "marketN": 7,
+          "marketYears": 3,
+          "estResale": 1708,
+          "estProfit": -388,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20387415",
           "title": "🥇如意精選💛【雙峰匯】扶輪公園｜高樓景觀兩房車",
           "price": 1988,
@@ -9933,6 +9953,26 @@
           "estProfit": -273,
           "drops": 1,
           "totalDrop": 113,
+          "lvrMatch": null
+        },
+        {
+          "id": "20614662",
+          "title": "21王先生【雙峰滙】🔥",
+          "price": 1875,
+          "prevPrice": null,
+          "size": 32.25,
+          "floor": "27F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20614662.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 58.14,
+          "premiumPct": 9.8,
+          "marketN": 7,
+          "marketYears": 3,
+          "estResale": 1708,
+          "estProfit": -273,
+          "drops": 0,
+          "totalDrop": 0,
           "lvrMatch": null
         },
         {
@@ -10377,7 +10417,7 @@
         },
         {
           "id": "20574926",
-          "title": "A9⭐長耀雙峰匯⭐一卡皮箱入住⭐藝術家的氣息美兩房",
+          "title": "A9⭐長耀雙峰匯⭐一卡皮箱入住⭐藝術家的氣息美兩���",
           "price": 1698,
           "prevPrice": 1698,
           "size": 26.07,
@@ -10691,26 +10731,6 @@
           "marketYears": 3,
           "estResale": 1708,
           "estProfit": -398,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20153110",
-          "title": "❤️長耀雙峰匯高樓美妝宅含車位❤️",
-          "price": 1988,
-          "prevPrice": 1988,
-          "size": 32.26,
-          "floor": "27F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20153110.html",
-          "status": "delisted",
-          "isNew": false,
-          "unitPricePerPing": 61.62,
-          "premiumPct": 16.4,
-          "marketN": 7,
-          "marketYears": 3,
-          "estResale": 1708,
-          "estProfit": -388,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -11536,7 +11556,7 @@
         }
       ],
       "liquidity": {
-        "delistedN": 35,
+        "delistedN": 34,
         "delistedMedianDays": 7,
         "activeMedianDays": 13
       },
@@ -17845,7 +17865,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:06:59"
+      "lastChecked": "2026-08-13 21:06:35"
     },
     {
       "id": "msepyyktt72w",
@@ -17855,7 +17875,7 @@
       "sale": [
         {
           "id": "20446801",
-          "title": "【聚星展昕店】捷市悅｜近捷運｜全新未住三房平車｜雙衛開窗",
+          "title": "【聚星展昕店】捷市悅｜近捷運｜全���未住三房平車｜雙衛開窗",
           "price": 1498,
           "prevPrice": 1498,
           "size": 43.58,
@@ -18739,12 +18759,12 @@
           "id": "21820962",
           "title": "🐟社會住宅🐟後勁商圈｜拎包入住輕奢美學2房平車",
           "price": 25000,
-          "prevPrice": null,
+          "prevPrice": 25000,
           "size": 15.66,
           "floor": "2F/15F",
           "url": "https://rent.591.com.tw/21820962",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 1596,
           "premiumPct": null,
           "marketN": null,
@@ -23920,7 +23940,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:07:55"
+      "lastChecked": "2026-08-13 21:07:32"
     },
     {
       "id": "mserk1lv2gzp",
@@ -24650,7 +24670,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:08:52"
+      "lastChecked": "2026-08-13 21:08:43"
     },
     {
       "id": "msffzxgwvqiu",
@@ -25014,7 +25034,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:09:43"
+      "lastChecked": "2026-08-13 21:09:34"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -25945,7 +25965,7 @@
       "liquidity": {
         "delistedN": 4,
         "delistedMedianDays": 5,
-        "activeMedianDays": 7
+        "activeMedianDays": 8
       },
       "rentYield": null,
       "lvrTrend": [
@@ -30086,7 +30106,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:10:17"
+      "lastChecked": "2026-08-13 21:10:28"
     },
     {
       "id": "msfist74lm0x",
@@ -30258,7 +30278,7 @@
       "liquidity": {
         "delistedN": 1,
         "delistedMedianDays": 1,
-        "activeMedianDays": 7
+        "activeMedianDays": 8
       },
       "rentYield": null,
       "lvrTrend": [
@@ -30774,7 +30794,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:11:07"
+      "lastChecked": "2026-08-13 21:11:22"
     },
     {
       "id": "msg77lct9m87",
@@ -31264,7 +31284,7 @@
         },
         {
           "id": "20666918",
-          "title": "美術皇居指標豪宅大樓3+1房��平車",
+          "title": "美術皇居指標豪宅大樓3+1房雙平車",
           "price": 3880,
           "prevPrice": 3880,
           "size": 72.3,
@@ -37416,7 +37436,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:12:15"
+      "lastChecked": "2026-08-13 21:12:12"
     },
     {
       "id": "msg77s3ck4gn",
@@ -40731,7 +40751,7 @@
       ],
       "lvrMatches": [],
       "error": null,
-      "lastChecked": "2026-08-13 09:12:59"
+      "lastChecked": "2026-08-13 21:12:51"
     }
   ]
 }
