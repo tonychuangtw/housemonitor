@@ -1,13 +1,26 @@
 {
- "updated": "2026-08-09 20:11:09",
+ "updated": "2026-08-16 20:07:13",
  "communities": {
   "mrvzb6fv40ia": {
    "name": "大悅",
    "lejuId": "L2e011027119b98",
    "lejuName": "興富發大悅",
-   "fetchedAt": "2026-08-09T20:00:10.405Z",
-   "total": 516,
+   "fetchedAt": "2026-08-16T19:56:08.048Z",
+   "total": 517,
    "deals": [
+    {
+     "date": "2026-06",
+     "address": "七賢一路121號25樓-1",
+     "floorNum": 25,
+     "totalWan": 1080,
+     "parkWan": 160,
+     "size": 44.54,
+     "houseSize": 30.4,
+     "parkSize": 14.14,
+     "unitPrice": 30.26,
+     "special": 0,
+     "note": ""
+    },
     {
      "date": "2026-02",
      "address": "七賢一路121號2樓-6",
@@ -6722,7 +6735,7 @@
    "name": "國王一號院",
    "lejuId": "L6f6109058efeef",
    "lejuName": "國王1號院",
-   "fetchedAt": "2026-08-09T20:01:06.991Z",
+   "fetchedAt": "2026-08-16T19:57:06.268Z",
    "total": 236,
    "deals": [
     {
@@ -9799,7 +9812,7 @@
    "name": "宏傑肯泰",
    "lejuId": "L593138453bac",
    "lejuName": "宏傑肯泰大樓",
-   "fetchedAt": "2026-08-09T20:01:09.697Z",
+   "fetchedAt": "2026-08-16T19:57:08.936Z",
    "total": 9,
    "deals": [
     {
@@ -9925,7 +9938,7 @@
    "name": "長耀雙峰滙",
    "lejuId": "L2ae1014944130c",
    "lejuName": "長耀PARK/長耀雙峰滙",
-   "fetchedAt": "2026-08-09T20:03:36.368Z",
+   "fetchedAt": "2026-08-16T19:59:39.266Z",
    "total": 544,
    "deals": [
     {
@@ -17006,9 +17019,22 @@
    "name": "捷市悅",
    "lejuId": "L262125307f8b80",
    "lejuName": "和築捷市悅",
-   "fetchedAt": "2026-08-09T20:09:24.870Z",
-   "total": 607,
+   "fetchedAt": "2026-08-16T20:05:27.949Z",
+   "total": 608,
    "deals": [
+    {
+     "date": "2026-06",
+     "address": "加昌路88巷80號9樓",
+     "floorNum": 9,
+     "totalWan": 830,
+     "parkWan": 60,
+     "size": 31.54,
+     "houseSize": 25.82,
+     "parkSize": 5.72,
+     "unitPrice": 29.82,
+     "special": 0,
+     "note": ""
+    },
     {
      "date": "2026-06",
      "address": "加昌路88巷56號11樓",
@@ -17232,19 +17258,6 @@
     },
     {
      "date": "2024-12",
-     "address": "加昌路88巷36號7樓",
-     "floorNum": 7,
-     "totalWan": 1488,
-     "parkWan": 100,
-     "size": 43.88,
-     "houseSize": 36.53,
-     "parkSize": 7.36,
-     "unitPrice": 38,
-     "special": 0,
-     "note": ""
-    },
-    {
-     "date": "2024-12",
      "address": "加昌路88巷60號5樓",
      "floorNum": 5,
      "totalWan": 1160,
@@ -17253,6 +17266,19 @@
      "houseSize": 28.85,
      "parkSize": 7.36,
      "unitPrice": 36.85,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2024-12",
+     "address": "加昌路88巷36號7樓",
+     "floorNum": 7,
+     "totalWan": 1488,
+     "parkWan": 100,
+     "size": 43.88,
+     "houseSize": 36.53,
+     "parkSize": 7.36,
+     "unitPrice": 38,
      "special": 0,
      "note": ""
     },
@@ -24906,9 +24932,35 @@
    "name": "文陽河豐",
    "lejuId": "Lee8155394bb38f",
    "lejuName": "文陽河豐",
-   "fetchedAt": "2026-08-09T20:10:04.130Z",
-   "total": 29,
+   "fetchedAt": "2026-08-16T20:06:09.106Z",
+   "total": 36,
    "deals": [
+    {
+     "date": "2026-05",
+     "address": "惠義街212號5樓",
+     "floorNum": 5,
+     "totalWan": 1438,
+     "parkWan": 170,
+     "size": 51.21,
+     "houseSize": 41.13,
+     "parkSize": 10.08,
+     "unitPrice": 30.83,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-05",
+     "address": "惠義街208號13樓",
+     "floorNum": 13,
+     "totalWan": 1088,
+     "parkWan": 180,
+     "size": 36.24,
+     "houseSize": 26.16,
+     "parkSize": 10.08,
+     "unitPrice": 34.71,
+     "special": 0,
+     "note": ""
+    },
     {
      "date": "2026-05",
      "address": "惠義街212號7樓",
@@ -24919,6 +24971,19 @@
      "houseSize": 41.13,
      "parkSize": 10.08,
      "unitPrice": 32.09,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-04",
+     "address": "惠義街206號7樓",
+     "floorNum": 7,
+     "totalWan": 1520,
+     "parkWan": 180,
+     "size": 51.22,
+     "houseSize": 41.14,
+     "parkSize": 10.08,
+     "unitPrice": 32.57,
      "special": 0,
      "note": ""
     },
@@ -24950,14 +25015,27 @@
     },
     {
      "date": "2026-04",
-     "address": "惠義街210號13樓",
-     "floorNum": 13,
-     "totalWan": 1098,
-     "parkWan": 190,
+     "address": "惠義街210號11樓",
+     "floorNum": 11,
+     "totalWan": 1080,
+     "parkWan": 180,
      "size": 36.24,
      "houseSize": 26.16,
      "parkSize": 10.08,
-     "unitPrice": 34.71,
+     "unitPrice": 34.4,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-04",
+     "address": "惠義街210號9樓",
+     "floorNum": 9,
+     "totalWan": 1060,
+     "parkWan": 180,
+     "size": 36.24,
+     "houseSize": 26.16,
+     "parkSize": 10.08,
+     "unitPrice": 33.64,
      "special": 0,
      "note": ""
     },
@@ -24976,14 +25054,14 @@
     },
     {
      "date": "2026-04",
-     "address": "惠義街210號9樓",
-     "floorNum": 9,
-     "totalWan": 1060,
-     "parkWan": 180,
+     "address": "惠義街210號13樓",
+     "floorNum": 13,
+     "totalWan": 1098,
+     "parkWan": 190,
      "size": 36.24,
      "houseSize": 26.16,
      "parkSize": 10.08,
-     "unitPrice": 33.64,
+     "unitPrice": 34.71,
      "special": 0,
      "note": ""
     },
@@ -25041,19 +25119,6 @@
     },
     {
      "date": "2026-04",
-     "address": "惠義街208號11樓",
-     "floorNum": 11,
-     "totalWan": 1086,
-     "parkWan": 190,
-     "size": 36.24,
-     "houseSize": 26.16,
-     "parkSize": 10.08,
-     "unitPrice": 34.25,
-     "special": 0,
-     "note": ""
-    },
-    {
-     "date": "2026-04",
      "address": "惠義街218號7樓",
      "floorNum": 7,
      "totalWan": 1408,
@@ -25062,6 +25127,19 @@
      "houseSize": 39.29,
      "parkSize": 10.08,
      "unitPrice": 31.25,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-04",
+     "address": "惠義街208號11樓",
+     "floorNum": 11,
+     "totalWan": 1086,
+     "parkWan": 190,
+     "size": 36.24,
+     "houseSize": 26.16,
+     "parkSize": 10.08,
+     "unitPrice": 34.25,
      "special": 0,
      "note": ""
     },
@@ -25119,27 +25197,14 @@
     },
     {
      "date": "2026-04",
-     "address": "惠義街210號5樓",
-     "floorNum": 5,
-     "totalWan": 988,
-     "parkWan": 170,
-     "size": 36.24,
-     "houseSize": 26.16,
-     "parkSize": 10.08,
-     "unitPrice": 31.27,
-     "special": 0,
-     "note": ""
-    },
-    {
-     "date": "2026-04",
-     "address": "惠義街212號4樓",
-     "floorNum": 4,
-     "totalWan": 1408,
-     "parkWan": 170,
-     "size": 51.21,
-     "houseSize": 41.13,
-     "parkSize": 10.08,
-     "unitPrice": 30.1,
+     "address": "惠義街210號2樓",
+     "floorNum": 2,
+     "totalWan": 788,
+     "parkWan": 0,
+     "size": 26.28,
+     "houseSize": 26.28,
+     "parkSize": 0,
+     "unitPrice": 29.98,
      "special": 0,
      "note": ""
     },
@@ -25158,27 +25223,14 @@
     },
     {
      "date": "2026-04",
-     "address": "惠義街212號6樓",
-     "floorNum": 6,
-     "totalWan": 1476,
+     "address": "惠義街212號4樓",
+     "floorNum": 4,
+     "totalWan": 1408,
      "parkWan": 170,
      "size": 51.21,
      "houseSize": 41.13,
      "parkSize": 10.08,
-     "unitPrice": 31.75,
-     "special": 0,
-     "note": ""
-    },
-    {
-     "date": "2026-04",
-     "address": "惠義街216號5樓",
-     "floorNum": 5,
-     "totalWan": 1376,
-     "parkWan": 170,
-     "size": 50.57,
-     "houseSize": 40.49,
-     "parkSize": 10.08,
-     "unitPrice": 29.79,
+     "unitPrice": 30.1,
      "special": 0,
      "note": ""
     },
@@ -25210,6 +25262,32 @@
     },
     {
      "date": "2026-04",
+     "address": "惠義街210號5樓",
+     "floorNum": 5,
+     "totalWan": 988,
+     "parkWan": 170,
+     "size": 36.24,
+     "houseSize": 26.16,
+     "parkSize": 10.08,
+     "unitPrice": 31.27,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-04",
+     "address": "惠義街216號5樓",
+     "floorNum": 5,
+     "totalWan": 1376,
+     "parkWan": 170,
+     "size": 50.57,
+     "houseSize": 40.49,
+     "parkSize": 10.08,
+     "unitPrice": 29.79,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-04",
      "address": "惠義街206號5樓",
      "floorNum": 5,
      "totalWan": 1438,
@@ -25231,6 +25309,19 @@
      "houseSize": 26.16,
      "parkSize": 10.08,
      "unitPrice": 31.27,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-04",
+     "address": "惠義街212號6樓",
+     "floorNum": 6,
+     "totalWan": 1476,
+     "parkWan": 170,
+     "size": 51.21,
+     "houseSize": 41.13,
+     "parkSize": 10.08,
+     "unitPrice": 31.75,
      "special": 0,
      "note": ""
     },
@@ -25285,6 +25376,32 @@
      "unitPrice": 30.09,
      "special": 0,
      "note": ""
+    },
+    {
+     "date": "2026-03",
+     "address": "惠義街206號6樓",
+     "floorNum": 6,
+     "totalWan": 1478,
+     "parkWan": 170,
+     "size": 51.22,
+     "houseSize": 41.14,
+     "parkSize": 10.08,
+     "unitPrice": 31.79,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2026-03",
+     "address": "惠義街210號6樓",
+     "floorNum": 6,
+     "totalWan": 988,
+     "parkWan": 170,
+     "size": 36.24,
+     "houseSize": 26.16,
+     "parkSize": 10.08,
+     "unitPrice": 31.27,
+     "special": 0,
+     "note": ""
     }
    ]
   },
@@ -25292,7 +25409,7 @@
    "name": "鳳凰交響曲",
    "lejuId": "Ldd7109067a198c",
    "lejuName": "鳳凰交響曲",
-   "fetchedAt": "2026-08-09T20:10:06.503Z",
+   "fetchedAt": "2026-08-16T20:06:11.534Z",
    "total": 12,
    "deals": [
     {
@@ -25457,7 +25574,7 @@
    "name": "都廳苑",
    "lejuId": "Lbc690277912d9",
    "lejuName": "都廳苑",
-   "fetchedAt": "2026-08-09T20:10:26.606Z",
+   "fetchedAt": "2026-08-16T20:06:31.906Z",
    "total": 260,
    "deals": [
     {
@@ -28846,7 +28963,7 @@
    "name": "科大湛",
    "lejuId": "L0b71028937854f",
    "lejuName": "科大湛",
-   "fetchedAt": "2026-08-09T20:10:30.447Z",
+   "fetchedAt": "2026-08-16T20:06:36.051Z",
    "total": 30,
    "deals": [
     {
@@ -29245,7 +29362,7 @@
    "name": "美術皇居",
    "lejuId": "L925111089d963f",
    "lejuName": "京城美術皇居",
-   "fetchedAt": "2026-08-09T20:11:03.630Z",
+   "fetchedAt": "2026-08-16T20:07:08.207Z",
    "total": 379,
    "deals": [
     {
@@ -34181,7 +34298,7 @@
    "name": "美術之星",
    "lejuId": "L04b902702ed62",
    "lejuName": "美術之星",
-   "fetchedAt": "2026-08-09T20:11:09.079Z",
+   "fetchedAt": "2026-08-16T20:07:13.889Z",
    "total": 63,
    "deals": [
     {
