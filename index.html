@@ -879,6 +879,8 @@ try{
       +'<span class="meta">'+esc(c.cityName)+esc(c.districtName)+' · 更新 '+(c.lastChecked||"—")+'</span></div>';
     html+=infoBlock(c);
     if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
+    // 政府實登單獨掛掉不算掃描失敗：591 上下架/降價與樂居行情都是新的，只有實登區塊是上輪快取
+    else if(c.lvrStale)html+='<p class="msg">ℹ 政府實登本輪暫用快取（'+esc(c.lvrError||"查詢失敗")+'）；591 與樂居行情為最新</p>';
     html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
       +listingTable(c.sale,"sale",c.id+":sale")
       +liquidityBlock(c)+lvrSaleBlock(c)+matchBlock(c)+'</div>';
