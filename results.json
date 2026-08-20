@@ -1,6 +1,78 @@
 {
-  "updated": "2026-08-19 21:10:14",
+  "updated": "2026-08-20 09:18:20",
   "events": [
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "固豪👍信義國小大悅1+1房可寵可租補",
+      "kindOfListing": "rent",
+      "price": 20000,
+      "url": "https://rent.591.com.tw/21863917"
+    },
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "七賢民族文化中心商圈精緻全新大2房(可租補)",
+      "kindOfListing": "rent",
+      "price": 23000,
+      "url": "https://rent.591.com.tw/21863889"
+    },
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "大悅",
+      "kind": "delisted",
+      "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
+      "kindOfListing": "rent",
+      "price": 20500,
+      "url": "https://rent.591.com.tw/21673303"
+    },
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "大悅",
+      "kind": "delisted",
+      "title": "近信義國小捷運站｜大悅｜超美高樓2房(寵物可談)",
+      "kindOfListing": "rent",
+      "price": 20500,
+      "url": "https://rent.591.com.tw/21740446"
+    },
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "長耀雙峰滙",
+      "kind": "delisted",
+      "title": "筱珍推薦👍高質感裝潢💯景觀雙峰匯大三房平車",
+      "kindOfListing": "sale",
+      "price": 3288,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20419520.html"
+    },
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "捷市悅",
+      "kind": "delisted",
+      "title": "台積電第一站全新溫馨花園甜蜜宅（可申請政府補助）",
+      "kindOfListing": "rent",
+      "price": 21800,
+      "url": "https://rent.591.com.tw/21672996"
+    },
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "捷市悅",
+      "kind": "delisted",
+      "title": "台積電第一站全新溫馨花園甜蜜宅（可申請政府補助）",
+      "kindOfListing": "rent",
+      "price": 21800,
+      "url": "https://rent.591.com.tw/21673363"
+    },
+    {
+      "ts": "2026-08-20 09:18:20",
+      "community": "都廳苑",
+      "kind": "delisted",
+      "title": "面高雄市政府景觀豪宅,精美高檔裝潢附B1雙平車",
+      "kindOfListing": "sale",
+      "price": 4580,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20418258.html"
+    },
     {
       "ts": "2026-08-19 21:10:14",
       "community": "大悅",
@@ -392,82 +464,6 @@
       "url": "https://sale.591.com.tw/home/house/detail/2/20606882.html",
       "from": 3880,
       "to": 3680
-    },
-    {
-      "ts": "2026-08-17 21:13:06",
-      "community": "美術皇居",
-      "kind": "new_listing",
-      "title": "🏆指標豪宅『美術皇居』中高樓層3+1房雙平車",
-      "kindOfListing": "sale",
-      "price": 3680,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20749226.html"
-    },
-    {
-      "ts": "2026-08-17 21:13:06",
-      "community": "美術皇居",
-      "kind": "price",
-      "title": "📢美術皇居指標豪宅大樓3+1房雙平車",
-      "kindOfListing": "sale",
-      "price": 3680,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20661317.html",
-      "from": 3880,
-      "to": 3680
-    },
-    {
-      "ts": "2026-08-17 21:13:06",
-      "community": "美術皇居",
-      "kind": "new_listing",
-      "title": "♦️京城美術皇居｜27樓景觀三房・連號雙平車",
-      "kindOfListing": "sale",
-      "price": 3980,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20613315.html"
-    },
-    {
-      "ts": "2026-08-17 21:13:06",
-      "community": "美術皇居",
-      "kind": "price",
-      "title": "美術皇居指標豪宅大樓3+1房雙平車",
-      "kindOfListing": "sale",
-      "price": 3680,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20666918.html",
-      "from": 3880,
-      "to": 3680
-    },
-    {
-      "ts": "2026-08-17 21:13:06",
-      "community": "美術皇居",
-      "kind": "new_listing",
-      "title": "🏡彥選宅｜美術館指標豪宅｜美術皇居3+1房高樓雙平車",
-      "kindOfListing": "sale",
-      "price": 3680,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20662923.html"
-    },
-    {
-      "ts": "2026-08-17 21:13:06",
-      "community": "美術皇居",
-      "kind": "new_listing",
-      "title": "💛美術館►遇見綠意✦輕屋齡♥邊間雙套房✦雙平車",
-      "kindOfListing": "sale",
-      "price": 3998,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20606891.html"
-    },
-    {
-      "ts": "2026-08-17 09:37:20",
-      "community": "國王一號院",
-      "kind": "new_listing",
-      "title": "國王1號院拎包入住精緻裝潢最低價高級豪宅平車",
-      "kindOfListing": "sale",
-      "price": 3150,
-      "url": "https://sale.591.com.tw/home/house/detail/2/24832051.html"
-    },
-    {
-      "ts": "2026-08-17 09:37:20",
-      "community": "長耀雙峰滙",
-      "kind": "new_listing",
-      "title": "獨家銷售典藏美宅💯景觀雙峰匯裝潢大三房車💯",
-      "kindOfListing": "sale",
-      "price": 3288,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20744756.html"
     }
   ],
   "communities": [
@@ -1123,12 +1119,12 @@
           "id": "21860007",
           "title": "七賢大悅｜無邊際泳池｜2房都會美宅",
           "price": 24000,
-          "prevPrice": null,
+          "prevPrice": 24000,
           "size": 14.227,
           "floor": "2F/29F",
           "url": "https://rent.591.com.tw/21860007",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 1687,
           "premiumPct": null,
           "marketN": null,
@@ -1157,6 +1153,26 @@
           "estProfit": null,
           "drops": 1,
           "totalDrop": 500,
+          "lvrMatch": null
+        },
+        {
+          "id": "21863889",
+          "title": "七賢民族文化中心商圈精緻全新大2房(可租補)",
+          "price": 23000,
+          "prevPrice": null,
+          "size": 44,
+          "floor": "10F/29F",
+          "url": "https://rent.591.com.tw/21863889",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 523,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
           "lvrMatch": null
         },
         {
@@ -1200,46 +1216,6 @@
           "lvrMatch": null
         },
         {
-          "id": "21673303",
-          "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
-          "price": 20500,
-          "prevPrice": 20500,
-          "size": 10.4,
-          "floor": "20F/29F",
-          "url": "https://rent.591.com.tw/21673303",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1971,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 1,
-          "totalDrop": 500,
-          "lvrMatch": null
-        },
-        {
-          "id": "21740446",
-          "title": "近信義國小捷運站｜大悅｜超美高樓2房(寵物可談)",
-          "price": 20500,
-          "prevPrice": 20500,
-          "size": 12,
-          "floor": "20F/29F",
-          "url": "https://rent.591.com.tw/21740446",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 1708,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "21794914",
           "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
           "price": 20500,
@@ -1263,12 +1239,12 @@
           "id": "21858515",
           "title": "文化中心雙捷運高樓2房｜傢俱電齊全可租補",
           "price": 20500,
-          "prevPrice": null,
+          "prevPrice": 20500,
           "size": 10.4,
           "floor": "20F/29F",
           "url": "https://rent.591.com.tw/21858515",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 1971,
           "premiumPct": null,
           "marketN": null,
@@ -1283,13 +1259,33 @@
           "id": "21861988",
           "title": "⭐️文化中心雙捷運高樓2房✨傢俱電齊全可租補💛",
           "price": 20500,
-          "prevPrice": null,
+          "prevPrice": 20500,
           "size": 10.4,
           "floor": "20F/29F",
           "url": "https://rent.591.com.tw/21861988",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 1971,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21863917",
+          "title": "固豪👍信義國小大悅1+1房可寵可租補",
+          "price": 20000,
+          "prevPrice": null,
+          "size": 19.45,
+          "floor": "9F/29F",
+          "url": "https://rent.591.com.tw/21863917",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 1028,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -1420,6 +1416,26 @@
           "lvrMatch": null
         },
         {
+          "id": "21673303",
+          "title": "苓雅興富發大悅超美高樓2房出租馬上入住",
+          "price": 20500,
+          "prevPrice": 20500,
+          "size": 10.4,
+          "floor": "20F/29F",
+          "url": "https://rent.591.com.tw/21673303",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1971,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 1,
+          "totalDrop": 500,
+          "lvrMatch": null
+        },
+        {
           "id": "21739951",
           "title": "信義國小站-大悅超美高樓2房出租馬上入住",
           "price": 20500,
@@ -1430,6 +1446,26 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 1627,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21740446",
+          "title": "近信義國小捷運站｜大悅｜超美高樓2房(寵物可談)",
+          "price": 20500,
+          "prevPrice": 20500,
+          "size": 12,
+          "floor": "20F/29F",
+          "url": "https://rent.591.com.tw/21740446",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 1708,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -1620,9 +1656,17 @@
       "liquidity": {
         "delistedN": 15,
         "delistedMedianDays": 12,
-        "activeMedianDays": 20
+        "activeMedianDays": 21
       },
-      "rentYield": null,
+      "rentYield": {
+        "rentUnit": 1388,
+        "rentSize": 17.9,
+        "n": 11,
+        "baseUnit": 35.98,
+        "yieldPct": 4.63,
+        "mgmtFee": 80,
+        "netYieldPct": 4.36
+      },
       "lvrTrend": [
         {
           "q": "2023Q3",
@@ -1933,7 +1977,7 @@
           "floorNum": 12,
           "parkCount": 0,
           "note": "",
-          "address": "苓雅區七賢一路12��號十二樓之12",
+          "address": "苓雅區七賢一路121號十二樓之12",
           "community": "大悅",
           "layout": "2房1廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -2428,7 +2472,7 @@
           "floorNum": 26,
           "parkCount": 0,
           "note": "",
-          "address": "苓雅區七賢一路12���號二十六樓之12",
+          "address": "苓雅區七賢一路121號二十六樓之12",
           "community": "大悅",
           "layout": "2房2廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -4778,7 +4822,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:02:51"
+      "lastChecked": "2026-08-20 09:07:51"
     },
     {
       "id": "mrych48q56fu",
@@ -5272,12 +5316,12 @@
           "id": "21861759",
           "title": "👑文化中心國王一號院｜泳池景觀宅3+1房平車權威",
           "price": 68000,
-          "prevPrice": null,
+          "prevPrice": 68000,
           "size": 83.23,
           "floor": "16F/33F",
           "url": "https://rent.591.com.tw/21861759",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 817,
           "premiumPct": null,
           "marketN": null,
@@ -5809,6 +5853,21 @@
         },
         {
           "date": "2023-05-14",
+          "totalPrice": 26500000,
+          "unitPrice": 319207,
+          "unitPriceWanPerPing": 31.92,
+          "size": 83.02,
+          "floor": "二十層/三十三層",
+          "floorNum": 20,
+          "parkCount": 1,
+          "note": "含傢俱設備費;",
+          "address": "苓雅區民族二路72號二十樓之2",
+          "community": "國王1號院",
+          "layout": "3房2廳2衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-05-14",
           "totalPrice": 26800000,
           "unitPrice": 231712,
           "unitPriceWanPerPing": 23.17,
@@ -5820,21 +5879,6 @@
           "address": "苓雅區民族二路72號十五樓",
           "community": "國王1號院",
           "layout": "",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
-        },
-        {
-          "date": "2023-05-14",
-          "totalPrice": 26500000,
-          "unitPrice": 319207,
-          "unitPriceWanPerPing": 31.92,
-          "size": 83.02,
-          "floor": "二十層/三十三層",
-          "floorNum": 20,
-          "parkCount": 1,
-          "note": "含傢俱設備費;",
-          "address": "苓雅區民族二路72號二十樓之2",
-          "community": "國��1號院",
-          "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -9082,7 +9126,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:03:31"
+      "lastChecked": "2026-08-20 09:08:54"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9411,7 +9455,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:04:14"
+      "lastChecked": "2026-08-20 09:09:45"
     },
     {
       "id": "ms7outtntjzf",
@@ -9435,26 +9479,6 @@
           "marketYears": 3,
           "estResale": 3119,
           "estProfit": -768,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20419520",
-          "title": "筱珍推薦👍高質感裝潢💯景觀雙峰匯大三房平車",
-          "price": 3288,
-          "prevPrice": 3288,
-          "size": 54.46,
-          "floor": "15F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20419520.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 60.37,
-          "premiumPct": 18.2,
-          "marketN": 14,
-          "marketYears": 3,
-          "estResale": 2780,
-          "estProfit": -685,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -10447,6 +10471,26 @@
           "size": 54.46,
           "floor": "15F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20408202.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 60.37,
+          "premiumPct": 18.2,
+          "marketN": 14,
+          "marketYears": 3,
+          "estResale": 2780,
+          "estProfit": -685,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20419520",
+          "title": "筱珍推薦👍高質感裝潢💯景觀雙峰匯大三房平車",
+          "price": 3288,
+          "prevPrice": 3288,
+          "size": 54.46,
+          "floor": "15F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20419520.html",
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 60.37,
@@ -11525,12 +11569,12 @@
           "id": "21862754",
           "title": "可租補雙峰匯/長耀park兩房/室內籃球場健身房公設齊全",
           "price": 28000,
-          "prevPrice": null,
+          "prevPrice": 28000,
           "size": 17.303,
           "floor": "16F/29F",
           "url": "https://rent.591.com.tw/21862754",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 1618,
           "premiumPct": null,
           "marketN": null,
@@ -11920,9 +11964,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 60,
+        "delistedN": 61,
         "delistedMedianDays": 10,
-        "activeMedianDays": 19
+        "activeMedianDays": 20
       },
       "rentYield": {
         "rentUnit": 1550,
@@ -13482,7 +13526,7 @@
           "parkCount": 2,
           "note": "",
           "address": "忠孝路117號二十三樓",
-          "community": "���耀雙峰匯",
+          "community": "長耀雙峰匯",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
@@ -13841,7 +13885,7 @@
           "floorNum": 25,
           "parkCount": 0,
           "note": "",
-          "address": "忠孝路107號二十五樓",
+          "address": "忠孝路107號���十五樓",
           "community": "長耀雙峰匯",
           "layout": "2房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -14443,7 +14487,7 @@
           "note": "",
           "address": "忠孝路99號九樓",
           "community": "長耀雙峰匯",
-          "layout": "3房2廳2衛",
+          "layout": "3房2廳2��",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -14515,7 +14559,7 @@
           "floor": "六層/二十九層",
           "floorNum": 6,
           "parkCount": 1,
-          "note": "本案簽訂日期109年10月17日，於109年12月05日讓渡。預售屋、或土地及建物分件登記案件;",
+          "note": "本案簽訂日期109年10月17日，於109年12月05日讓渡。預售屋、或土地及建物分��登記案件;",
           "address": "忠孝路113號六樓",
           "community": "長耀雙峰匯",
           "layout": "2房1廳1衛",
@@ -15374,7 +15418,7 @@
           "address": "忠孝路111號十樓",
           "community": "長耀雙峰匯",
           "layout": "3房2廳2衛",
-          "buildingType": "住宅大樓(11層含��上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2020-07-10",
@@ -15477,7 +15521,7 @@
           "parkCount": 1,
           "note": "",
           "address": "忠孝路111號十二樓",
-          "community": "長��雙峰匯",
+          "community": "長耀雙峰匯",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
@@ -17099,7 +17143,7 @@
           "address": "林口區忠孝路99號四樓",
           "community": "長耀雙峰匯",
           "layout": "3房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有��梯)"
         },
         {
           "date": "2015-06-08",
@@ -17332,7 +17376,7 @@
           "unitPrice": 404850,
           "unitPriceWanPerPing": 40.48,
           "size": 60.25,
-          "floor": "十層/二十九層",
+          "floor": "十層/二十九��",
           "floorNum": 10,
           "parkCount": 2,
           "note": "",
@@ -17922,7 +17966,7 @@
           "parkCount": 1,
           "note": "",
           "address": "林口區忠孝路103號七樓",
-          "community": "長耀雙峰匯",
+          "community": "長耀雙峰��",
           "layout": "2房1廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
@@ -17966,7 +18010,7 @@
           "floorNum": 28,
           "parkCount": 1,
           "note": "",
-          "address": "林口區忠孝路117號二十八樓",
+          "address": "林口區忠孝路117號二��八樓",
           "community": "長耀雙峰匯",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -18231,7 +18275,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:04:48"
+      "lastChecked": "2026-08-20 09:10:54"
     },
     {
       "id": "msepyyktt72w",
@@ -19205,53 +19249,13 @@
           "id": "21861913",
           "title": "芊好宅📢捷市悅｜走路到後勁捷運+機械車位｜兩房兩衛",
           "price": 22000,
-          "prevPrice": null,
+          "prevPrice": 22000,
           "size": 17.3,
           "floor": "2F/15F",
           "url": "https://rent.591.com.tw/21861913",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 1272,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "21672996",
-          "title": "台積電第一站全新溫馨花園甜蜜宅（可申請政府補助）",
-          "price": 21800,
-          "prevPrice": 21800,
-          "size": 24.5,
-          "floor": "2F/15F",
-          "url": "https://rent.591.com.tw/21672996",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 890,
-          "premiumPct": null,
-          "marketN": null,
-          "marketYears": null,
-          "estResale": null,
-          "estProfit": null,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "21673363",
-          "title": "台積電第一站全新溫馨花園甜蜜宅（可申請政府補助）",
-          "price": 21800,
-          "prevPrice": 21800,
-          "size": 24.5,
-          "floor": "2F/15F",
-          "url": "https://rent.591.com.tw/21673363",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 890,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -19352,6 +19356,46 @@
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 1596,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21672996",
+          "title": "台積電第一站全新溫馨花園甜蜜宅（可申請政府補助）",
+          "price": 21800,
+          "prevPrice": 21800,
+          "size": 24.5,
+          "floor": "2F/15F",
+          "url": "https://rent.591.com.tw/21672996",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 890,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "21673363",
+          "title": "台積電第一站全新溫馨花園甜蜜宅（可申請政府補助）",
+          "price": 21800,
+          "prevPrice": 21800,
+          "size": 24.5,
+          "floor": "2F/15F",
+          "url": "https://rent.591.com.tw/21673363",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 890,
           "premiumPct": null,
           "marketN": null,
           "marketYears": null,
@@ -19534,14 +19578,14 @@
       "liquidity": {
         "delistedN": 3,
         "delistedMedianDays": 1,
-        "activeMedianDays": 14
+        "activeMedianDays": 15
       },
       "rentYield": {
-        "rentUnit": 1037,
-        "rentSize": 24.1,
-        "n": 16,
+        "rentUnit": 1228,
+        "rentSize": 22.8,
+        "n": 14,
         "baseUnit": 28.09,
-        "yieldPct": 4.43
+        "yieldPct": 5.24
       },
       "lvrTrend": [
         {
@@ -19779,7 +19823,7 @@
           "parkCount": 1,
           "note": "",
           "address": "楠梓區加昌路88巷68號九樓",
-          "community": "捷市悅",
+          "community": "捷市��",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
@@ -19885,7 +19929,7 @@
           "note": "含傢俱設備費;",
           "address": "楠梓區加昌路88巷62號七樓",
           "community": "捷市悅",
-          "layout": "2��1廳1衛",
+          "layout": "2房1廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -20575,7 +20619,7 @@
           "note": "預售屋、或土地及建物分件登記案件;",
           "address": "楠梓區加昌路88巷58號七樓",
           "community": "",
-          "layout": "3房2廳2衛",
+          "layout": "3房2廳2��",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -21517,7 +21561,7 @@
           "floor": "十三層/十五層",
           "floorNum": 13,
           "parkCount": 1,
-          "note": "預售屋、或土地及建物分件登記案件;",
+          "note": "預售屋、或土地及建物分件登記案��;",
           "address": "楠梓區加昌路88巷50號十三樓",
           "community": "",
           "layout": "3房2廳2衛",
@@ -22031,7 +22075,7 @@
           "address": "楠梓區加昌路88巷66號十樓",
           "community": "",
           "layout": "2房2廳1衛",
-          "buildingType": "住��大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2023-06-30",
@@ -22733,7 +22777,7 @@
           "floorNum": 3,
           "parkCount": 1,
           "note": "預售屋、或土地及建物分件登記案件;",
-          "address": "楠梓區加昌路88巷70號三樓",
+          "address": "楠��區加昌路88巷70號三樓",
           "community": "捷市悅",
           "layout": "2房2廳1衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -24408,7 +24452,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:05:28"
+      "lastChecked": "2026-08-20 09:11:56"
     },
     {
       "id": "mserk1lv2gzp",
@@ -24458,7 +24502,7 @@
           "floorNum": 7,
           "parkCount": 1,
           "note": "",
-          "address": "楠梓區惠義街212號七樓",
+          "address": "楠梓區惠義���212號七樓",
           "community": "文陽河豐",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -24635,7 +24679,7 @@
           "floorNum": 7,
           "parkCount": 1,
           "note": "",
-          "address": "楠梓區惠義街212號七樓",
+          "address": "楠梓區惠義���212號七樓",
           "community": "文陽河豐",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -24799,7 +24843,7 @@
           "floor": "三層/十四層",
           "floorNum": 3,
           "parkCount": 1,
-          "note": "",
+          "note": "含裝潢費;",
           "address": "楠梓區惠義街210號三樓",
           "community": "文陽河豐",
           "layout": "1房2廳2衛",
@@ -25140,7 +25184,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:06:25"
+      "lastChecked": "2026-08-20 09:12:52"
     },
     {
       "id": "msffzxgwvqiu",
@@ -25506,7 +25550,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:06:58"
+      "lastChecked": "2026-08-20 09:13:45"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -25915,26 +25959,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20418258",
-          "title": "面高雄市政府景觀豪宅,精美高檔裝潢附B1雙平車",
-          "price": 4580,
-          "prevPrice": 4580,
-          "size": 110.05,
-          "floor": "22F/24F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20418258.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 41.62,
-          "premiumPct": 24.6,
-          "marketN": 5,
-          "marketYears": 3,
-          "estResale": 3676,
-          "estProfit": -1143,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20425594",
           "title": "專約好案🌟都廳苑台灣人才豪邸🌟景觀高樓層雅緻裝潢+雙平車",
           "price": 4580,
@@ -26162,6 +26186,26 @@
           "size": 110.05,
           "floor": "22F/24F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20404212.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 41.62,
+          "premiumPct": 24.6,
+          "marketN": 5,
+          "marketYears": 3,
+          "estResale": 3676,
+          "estProfit": -1143,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20418258",
+          "title": "面高雄市政府景觀豪宅,精美高檔裝潢附B1雙平車",
+          "price": 4580,
+          "prevPrice": 4580,
+          "size": 110.05,
+          "floor": "22F/24F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20418258.html",
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 41.62,
@@ -26435,8 +26479,8 @@
         }
       ],
       "liquidity": {
-        "delistedN": 5,
-        "delistedMedianDays": 6,
+        "delistedN": 6,
+        "delistedMedianDays": 8,
         "activeMedianDays": 14
       },
       "rentYield": null,
@@ -30580,7 +30624,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:07:45"
+      "lastChecked": "2026-08-20 09:14:23"
     },
     {
       "id": "msfist74lm0x",
@@ -30956,7 +31000,7 @@
           "unitPrice": 228142,
           "unitPriceWanPerPing": 22.81,
           "size": 65.75,
-          "floor": "七層/���三層",
+          "floor": "七層/十三層",
           "floorNum": 7,
           "parkCount": 2,
           "note": "",
@@ -30993,7 +31037,7 @@
           "address": "竹北市科大二街43號7樓",
           "community": "科大湛",
           "layout": "3房2廳2衛",
-          "buildingType": "住宅大樓(11層含以���有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2017-05-26",
@@ -31143,7 +31187,7 @@
           "address": "竹北市科大二街41號十樓",
           "community": "科大湛",
           "layout": "3房2廳2衛",
-          "buildingType": "��宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2014-09-25",
@@ -31270,7 +31314,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:08:17"
+      "lastChecked": "2026-08-20 09:15:10"
     },
     {
       "id": "msg77lct9m87",
@@ -31682,12 +31726,12 @@
           "id": "20502937",
           "title": "✨專約承辦✨JOEMAN最愛的美術皇居｜社區最便宜三房雙平車",
           "price": 3980,
-          "prevPrice": null,
+          "prevPrice": 3980,
           "size": 86.32,
           "floor": "27F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20502937.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 46.11,
           "premiumPct": 4.6,
           "marketN": 13,
@@ -32284,12 +32328,12 @@
           "id": "21861924",
           "title": "🌿美術皇居|泳池精湛3+1間套房|雙平車權威",
           "price": 108800,
-          "prevPrice": null,
+          "prevPrice": 108800,
           "size": 129.59,
           "floor": "2F/29F",
           "url": "https://rent.591.com.tw/21861924",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 840,
           "premiumPct": null,
           "marketN": null,
@@ -32525,7 +32569,7 @@
       "liquidity": {
         "delistedN": 9,
         "delistedMedianDays": 7,
-        "activeMedianDays": 12
+        "activeMedianDays": 13
       },
       "rentYield": {
         "rentUnit": 821,
@@ -32789,7 +32833,7 @@
           "floorNum": 22,
           "parkCount": 3,
           "note": "",
-          "address": "鼓山區美術北五���92號二十二樓",
+          "address": "鼓山區美術北五街92號二十二樓",
           "community": "美術皇居",
           "layout": "4房2廳5衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -33085,7 +33129,7 @@
           "unitPrice": 392274,
           "unitPriceWanPerPing": 39.23,
           "size": 129.55,
-          "floor": "十一層/二��九層",
+          "floor": "十一層/二十九層",
           "floorNum": 11,
           "parkCount": 2,
           "note": "含裝潢費6,000,000元;",
@@ -33985,7 +34029,7 @@
           "unitPrice": 409947,
           "unitPriceWanPerPing": 40.99,
           "size": 76.3,
-          "floor": "二十七層/��十九層",
+          "floor": "二十七層/二十九層",
           "floorNum": 27,
           "parkCount": 2,
           "note": "含裝潢費;含傢俱設備費;",
@@ -35177,7 +35221,7 @@
           "address": "美術北五街82號十二樓",
           "community": "美術皇居",
           "layout": "3房2廳3衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "���宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2021-01-09",
@@ -36115,7 +36159,7 @@
           "unitPrice": 321038,
           "unitPriceWanPerPing": 32.1,
           "size": 73.8,
-          "floor": "十九層/二十九層",
+          "floor": "十九層/���十九層",
           "floorNum": 19,
           "parkCount": 2,
           "note": "",
@@ -37979,7 +38023,7 @@
           "floorNum": 27,
           "parkCount": 2,
           "note": "",
-          "address": "鼓山區美術北���街88號二十七樓",
+          "address": "鼓山區美術北��街88號二十七樓",
           "community": "美術皇居",
           "layout": "4房2廳4衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -38274,7 +38318,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:08:49"
+      "lastChecked": "2026-08-20 09:16:36"
     },
     {
       "id": "msg77s3ck4gn",
@@ -38988,7 +39032,7 @@
       "liquidity": {
         "delistedN": 3,
         "delistedMedianDays": 7,
-        "activeMedianDays": 13
+        "activeMedianDays": 14
       },
       "rentYield": null,
       "lvrTrend": [
@@ -39683,7 +39727,7 @@
           "note": "",
           "address": "鼓山區西藏街20號五樓",
           "community": "學院美術之星",
-          "layout": "2房2廳2��",
+          "layout": "2房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -39786,7 +39830,7 @@
           "floorNum": 5,
           "parkCount": 1,
           "note": "",
-          "address": "鼓山區西��街16號五樓",
+          "address": "鼓山區西藏街16號五樓",
           "community": "學院美術之星",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -40281,7 +40325,7 @@
           "floorNum": 7,
           "parkCount": 1,
           "note": "親友、員工、共有人或其他特殊關係間之交易;",
-          "address": "鼓山區西���街26號七樓",
+          "address": "鼓山區西��街26號七樓",
           "community": "學院美術之星",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -40449,7 +40493,7 @@
           "address": "鼓山區西藏街20號十三樓",
           "community": "學院美術之星",
           "layout": "2房2廳2衛",
-          "buildingType": "住宅大���(11層含以上有電梯)"
+          "buildingType": "住宅大��(11層含以上有電梯)"
         },
         {
           "date": "2022-09-09",
@@ -41214,7 +41258,7 @@
           "address": "鼓山區美術東四路382號六樓",
           "community": "美術之星",
           "layout": "4房2廳4衛",
-          "buildingType": "住��大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
           "date": "2013-12-11",
@@ -41611,7 +41655,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-19 21:09:43"
+      "lastChecked": "2026-08-20 09:17:28"
     }
   ]
 }
