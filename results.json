@@ -1,6 +1,33 @@
 {
-  "updated": "2026-08-22 09:13:05",
+  "updated": "2026-08-22 21:08:53",
   "events": [
+    {
+      "ts": "2026-08-22 21:08:53",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "💎文化中心雙捷運｜高樓層邊間雙面採光｜兩房＋平車💎",
+      "kindOfListing": "sale",
+      "price": 1268,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20777791.html"
+    },
+    {
+      "ts": "2026-08-22 21:08:53",
+      "community": "美術皇居",
+      "kind": "new_listing",
+      "title": "專約/美術皇居-精裝豪宅/高樓景觀三平車",
+      "kindOfListing": "sale",
+      "price": 4188,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20775502.html"
+    },
+    {
+      "ts": "2026-08-22 21:08:53",
+      "community": "美術皇居",
+      "kind": "delisted",
+      "title": "專約/美術皇居-精裝豪宅/高樓景觀三平車",
+      "kindOfListing": "sale",
+      "price": 4188,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20430828.html"
+    },
     {
       "ts": "2026-08-22 09:13:05",
       "community": "大悅",
@@ -431,33 +458,6 @@
       "kindOfListing": "rent",
       "price": 25000,
       "url": "https://rent.591.com.tw/21854968"
-    },
-    {
-      "ts": "2026-08-19 09:14:33",
-      "community": "美術皇居",
-      "kind": "delisted",
-      "title": "【美術館皇室生活】智能&精裝宅 室內+陽台48坪+3個平車",
-      "kindOfListing": "sale",
-      "price": 4188,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20414568.html"
-    },
-    {
-      "ts": "2026-08-18 21:15:54",
-      "community": "大悅",
-      "kind": "new_listing",
-      "title": "大悅\\邊間二房\\大平車雙陽台\\明星學區",
-      "kindOfListing": "sale",
-      "price": 1388,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20755464.html"
-    },
-    {
-      "ts": "2026-08-18 21:15:54",
-      "community": "國王一號院",
-      "kind": "new_listing",
-      "title": "李欣/輕奢/國王一號院/低總價/入住/高級豪宅+平車",
-      "kindOfListing": "sale",
-      "price": 3150,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20755852.html"
     }
   ],
   "communities": [
@@ -563,6 +563,26 @@
           "marketYears": 3,
           "estResale": 1111,
           "estProfit": -349,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20777791",
+          "title": "💎文化中心雙捷運｜高樓層邊間雙面採光｜兩房＋平車💎",
+          "price": 1268,
+          "prevPrice": null,
+          "size": 44.54,
+          "floor": "21F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20777791.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 28.47,
+          "premiumPct": 11.2,
+          "marketN": 13,
+          "marketYears": 3,
+          "estResale": 1141,
+          "estProfit": -198,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -1670,7 +1690,7 @@
       "liquidity": {
         "delistedN": 16,
         "delistedMedianDays": 15,
-        "activeMedianDays": 21
+        "activeMedianDays": 18
       },
       "rentYield": {
         "rentUnit": 1183,
@@ -4836,7 +4856,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:06:51"
+      "lastChecked": "2026-08-22 21:01:51"
     },
     {
       "id": "mrych48q56fu",
@@ -5609,7 +5629,7 @@
       "liquidity": {
         "delistedN": 11,
         "delistedMedianDays": 6,
-        "activeMedianDays": 28
+        "activeMedianDays": 29
       },
       "rentYield": {
         "rentUnit": 723,
@@ -9140,7 +9160,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:07:24"
+      "lastChecked": "2026-08-22 21:02:29"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9469,7 +9489,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:07:55"
+      "lastChecked": "2026-08-22 21:03:07"
     },
     {
       "id": "ms7outtntjzf",
@@ -18329,7 +18349,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:08:26"
+      "lastChecked": "2026-08-22 21:03:40"
     },
     {
       "id": "msepyyktt72w",
@@ -24626,7 +24646,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:09:02"
+      "lastChecked": "2026-08-22 21:04:20"
     },
     {
       "id": "mserk1lv2gzp",
@@ -25358,7 +25378,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:09:40"
+      "lastChecked": "2026-08-22 21:05:04"
     },
     {
       "id": "msffzxgwvqiu",
@@ -25724,7 +25744,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:10:18"
+      "lastChecked": "2026-08-22 21:05:38"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -26675,7 +26695,7 @@
       "liquidity": {
         "delistedN": 7,
         "delistedMedianDays": 10,
-        "activeMedianDays": 16
+        "activeMedianDays": 17
       },
       "rentYield": null,
       "lvrTrend": [
@@ -30833,7 +30853,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:10:47"
+      "lastChecked": "2026-08-22 21:06:15"
     },
     {
       "id": "msfist74lm0x",
@@ -31013,7 +31033,7 @@
       "liquidity": {
         "delistedN": 1,
         "delistedMedianDays": 1,
-        "activeMedianDays": 16
+        "activeMedianDays": 17
       },
       "rentYield": null,
       "lvrTrend": [
@@ -31551,7 +31571,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:11:24"
+      "lastChecked": "2026-08-22 21:07:02"
     },
     {
       "id": "msg77lct9m87",
@@ -31575,26 +31595,6 @@
           "marketYears": 3,
           "estResale": 3798,
           "estProfit": -1332,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20430828",
-          "title": "專約/美術皇居-精裝豪宅/高樓景觀三平車",
-          "price": 4188,
-          "prevPrice": 4188,
-          "size": 89.56,
-          "floor": "26F/29F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20430828.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 46.76,
-          "premiumPct": 4.8,
-          "marketN": 11,
-          "marketYears": 3,
-          "estResale": 3994,
-          "estProfit": -438,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -31669,6 +31669,26 @@
           "url": "https://sale.591.com.tw/home/house/detail/2/20669776.html",
           "status": "active",
           "isNew": false,
+          "unitPricePerPing": 46.76,
+          "premiumPct": 4.8,
+          "marketN": 11,
+          "marketYears": 3,
+          "estResale": 3994,
+          "estProfit": -438,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20775502",
+          "title": "專約/美術皇居-精裝豪宅/高樓景觀三平車",
+          "price": 4188,
+          "prevPrice": null,
+          "size": 89.56,
+          "floor": "26F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20775502.html",
+          "status": "active",
+          "isNew": true,
           "unitPricePerPing": 46.76,
           "premiumPct": 4.8,
           "marketN": 11,
@@ -32400,6 +32420,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20430828",
+          "title": "專約/美術皇居-精裝豪宅/高樓景觀三平車",
+          "price": 4188,
+          "prevPrice": 4188,
+          "size": 89.56,
+          "floor": "26F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20430828.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 46.76,
+          "premiumPct": 4.8,
+          "marketN": 11,
+          "marketYears": 3,
+          "estResale": 3994,
+          "estProfit": -438,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20629830",
           "title": "霸氣釋出/智能宅/精裝景觀三平車決心出售",
           "price": 4188,
@@ -32824,9 +32864,9 @@
         }
       ],
       "liquidity": {
-        "delistedN": 10,
+        "delistedN": 11,
         "delistedMedianDays": 7,
-        "activeMedianDays": 15
+        "activeMedianDays": 14
       },
       "rentYield": {
         "rentUnit": 821,
@@ -38575,7 +38615,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:11:57"
+      "lastChecked": "2026-08-22 21:07:36"
     },
     {
       "id": "msg77s3ck4gn",
@@ -41912,7 +41952,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-22 09:12:35"
+      "lastChecked": "2026-08-22 21:08:21"
     }
   ]
 }
