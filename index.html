@@ -265,6 +265,10 @@ try{
   "use strict";
   var CLIENT_ID="481860179039-gb37qsdogd4vgnn2g5umh73jen02avj4.apps.googleusercontent.com";
   var API="https://claudebot500.tailfcf67f.ts.net", TOKEN_KEY="housemonitor.token";
+  // 長效 session（2026-08-22 Tony：「不要一直要求登入」）：原本存的是 Google ID token，
+  // 只有 1 小時壽命 → 每次隔一陣子開站都要重登。改成登入後打 POST /api/session
+  // 換一顆後端簽的 30 天 token，每次開頁滾動續期。
+  var SESS_KEY="housemonitor.sess";
   // lvr 縣市/行政區代碼（來源：lvr.land.moi.gov.tw /SERVICE/CITY 與 /SERVICE/CITY/{code}/）
   var CITIES={
     "A":{name:"台北市",districts:{
@@ -385,7 +389,23 @@ try{
   };
   function $(id){return document.getElementById(id);}
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
-  function token(){try{return localStorage.getItem(TOKEN_KEY);}catch(e){return null;}}
+  function token(){try{return localStorage.getItem(SESS_KEY)||localStorage.getItem(TOKEN_KEY);}catch(e){return null;}}
+  function tokenPayload(){
+    var t=token(); if(!t)return null;
+    try{return JSON.parse(atob(t.split(".")[1].replace(/-/g,"+").replace(/_/g,"/")));}catch(e){return null;}
+  }
+  // 拿現有 token（Google ID token 或還沒過期的 sess）換一顆新的 30 天 token
+  function refreshSession(){
+    var t=token(); if(!t)return;
+    var x=new XMLHttpRequest(); x.open("POST",API+"/api/session");
+    x.setRequestHeader("Authorization","Bearer "+t); x.timeout=20000;
+    x.onload=function(){
+      if(x.status<200||x.status>=300)return;
+      var d=null; try{d=JSON.parse(x.responseText);}catch(e){}
+      if(d&&d.token){try{localStorage.setItem(SESS_KEY,d.token);localStorage.removeItem(TOKEN_KEY);}catch(e){}}
+    };
+    x.send();
+  }
 
   // ---- 站內彈窗（2026-08-15 Tony：全站不准再用原生 alert/confirm）----
   function toast(text,isErr){
@@ -444,10 +464,9 @@ try{
   // 帶過期 token 按「送出」→ 401 → 被踢到登入畫面，表單永遠卡在「送出中…」（2026-08-05 Tony 回報）
   function tokenValid(){
     var t=token(); if(!t)return false;
-    try{
-      var p=JSON.parse(atob(t.split(".")[1].replace(/-/g,"+").replace(/_/g,"/")));
-      return p.exp*1000>Date.now()+60000; // 留 60 秒餘裕
-    }catch(e){return false;}
+    var p=tokenPayload(); if(!p)return false;
+    if(t.indexOf("sess.")===0)return p.x>Date.now()+60000;   // sess payload {e,s,x:到期毫秒}
+    return p.exp*1000>Date.now()+60000; // Google ID token，留 60 秒餘裕
   }
   function fmtPrice(v,kind){if(v==null)return "—";return kind==="sale"?(v.toLocaleString()+" 萬"):(v.toLocaleString()+" 元/月");}
 
@@ -1064,8 +1083,8 @@ try{
 
   // ---- 頂欄登入狀態 ----
   function userEmail(){
-    var t=token(); if(!t)return null;
-    try{return JSON.parse(atob(t.split(".")[1].replace(/-/g,"+").replace(/_/g,"/"))).email||null;}catch(e){return null;}
+    var p=tokenPayload(); if(!p)return null;
+    return p.email||p.e||null;   // Google ID token 用 email、sess 用 e
   }
   function updateAuthUI(){
     var logged=tokenValid();
@@ -1082,7 +1101,7 @@ try{
     if(PENDING_ADD){var p=PENDING_ADD;PENDING_ADD=null;doAdd(p);} // 補送剛才被登入打斷的新增
   }
   function signOut(){
-    try{localStorage.removeItem(TOKEN_KEY);}catch(e){}
+    try{localStorage.removeItem(TOKEN_KEY);localStorage.removeItem(SESS_KEY);}catch(e){}
     $("app").classList.add("hidden");$("signin-card").classList.remove("hidden");
     updateAuthUI();
   }
@@ -1127,7 +1146,7 @@ try{
       (function poll(){
         if(window.google&&google.accounts&&google.accounts.id){
           var slot=$("gsi-btn");
-          google.accounts.id.initialize({client_id:CLIENT_ID,callback:function(resp){try{localStorage.setItem(TOKEN_KEY,resp.credential);}catch(e){}showApp();}});
+          google.accounts.id.initialize({client_id:CLIENT_ID,callback:function(resp){try{localStorage.setItem(TOKEN_KEY,resp.credential);}catch(e){}refreshSession();showApp();}});
           slot.innerHTML=""; slot.setAttribute("data-gsi","1");
           google.accounts.id.renderButton(slot,{theme:"filled_black",size:"large",text:"signin_with"});
           $("gsi-hint").classList.add("hidden");
@@ -1156,7 +1175,7 @@ try{
       else $("signin-card").scrollIntoView({behavior:"smooth",block:"center"});
     });
     initGsi();
-    if(tokenValid())showApp();
+    if(tokenValid()){refreshSession();showApp();}   // 已有長效 token：滾動續期
     else if(token())signOut(); // 過期 token 直接視同未登入，別讓表單帶著殭屍登入狀態
     updateAuthUI();
     $("deal-pct").addEventListener("input",function(){
