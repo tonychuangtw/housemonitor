@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-16 20:07:13",
+ "updated": "2026-08-23 19:55:21",
  "communities": {
   "mrvzb6fv40ia": {
    "name": "大悅",
    "lejuId": "L2e011027119b98",
    "lejuName": "興富發大悅",
-   "fetchedAt": "2026-08-16T19:56:08.048Z",
+   "fetchedAt": "2026-08-23T19:44:12.967Z",
    "total": 517,
    "deals": [
     {
@@ -6735,7 +6735,7 @@
    "name": "國王一號院",
    "lejuId": "L6f6109058efeef",
    "lejuName": "國王1號院",
-   "fetchedAt": "2026-08-16T19:57:06.268Z",
+   "fetchedAt": "2026-08-23T19:45:09.520Z",
    "total": 236,
    "deals": [
     {
@@ -9812,7 +9812,7 @@
    "name": "宏傑肯泰",
    "lejuId": "L593138453bac",
    "lejuName": "宏傑肯泰大樓",
-   "fetchedAt": "2026-08-16T19:57:08.936Z",
+   "fetchedAt": "2026-08-23T19:45:12.645Z",
    "total": 9,
    "deals": [
     {
@@ -9938,7 +9938,7 @@
    "name": "長耀雙峰滙",
    "lejuId": "L2ae1014944130c",
    "lejuName": "長耀PARK/長耀雙峰滙",
-   "fetchedAt": "2026-08-16T19:59:39.266Z",
+   "fetchedAt": "2026-08-23T19:47:40.212Z",
    "total": 544,
    "deals": [
     {
@@ -17019,7 +17019,7 @@
    "name": "捷市悅",
    "lejuId": "L262125307f8b80",
    "lejuName": "和築捷市悅",
-   "fetchedAt": "2026-08-16T20:05:27.949Z",
+   "fetchedAt": "2026-08-23T19:53:38.187Z",
    "total": 608,
    "deals": [
     {
@@ -24932,7 +24932,7 @@
    "name": "文陽河豐",
    "lejuId": "Lee8155394bb38f",
    "lejuName": "文陽河豐",
-   "fetchedAt": "2026-08-16T20:06:09.106Z",
+   "fetchedAt": "2026-08-23T19:54:18.105Z",
    "total": 36,
    "deals": [
     {
@@ -25409,7 +25409,7 @@
    "name": "鳳凰交響曲",
    "lejuId": "Ldd7109067a198c",
    "lejuName": "鳳凰交響曲",
-   "fetchedAt": "2026-08-16T20:06:11.534Z",
+   "fetchedAt": "2026-08-23T19:54:20.162Z",
    "total": 12,
    "deals": [
     {
@@ -25574,9 +25574,22 @@
    "name": "都廳苑",
    "lejuId": "Lbc690277912d9",
    "lejuName": "都廳苑",
-   "fetchedAt": "2026-08-16T20:06:31.906Z",
-   "total": 260,
+   "fetchedAt": "2026-08-23T19:54:39.502Z",
+   "total": 261,
    "deals": [
+    {
+     "date": "2026-06",
+     "address": "四維三路11號4樓",
+     "floorNum": 4,
+     "totalWan": 3988,
+     "parkWan": 230,
+     "size": 140.83,
+     "houseSize": 134.14,
+     "parkSize": 6.69,
+     "unitPrice": 28.02,
+     "special": 0,
+     "note": ""
+    },
     {
      "date": "2026-05",
      "address": "四維三路21號20樓",
@@ -26320,19 +26333,6 @@
     },
     {
      "date": "2019-09",
-     "address": "四維三路1號11樓",
-     "floorNum": 11,
-     "totalWan": 4250,
-     "parkWan": 480,
-     "size": 184.38,
-     "houseSize": 164.31,
-     "parkSize": 20.06,
-     "unitPrice": 22.94,
-     "special": 0,
-     "note": ""
-    },
-    {
-     "date": "2019-09",
      "address": "民權一路63號10樓",
      "floorNum": 10,
      "totalWan": 3556,
@@ -26341,6 +26341,19 @@
      "houseSize": 113.63,
      "parkSize": 13.37,
      "unitPrice": 27.77,
+     "special": 0,
+     "note": ""
+    },
+    {
+     "date": "2019-09",
+     "address": "四維三路1號11樓",
+     "floorNum": 11,
+     "totalWan": 4250,
+     "parkWan": 480,
+     "size": 184.38,
+     "houseSize": 164.31,
+     "parkSize": 20.06,
+     "unitPrice": 22.94,
      "special": 0,
      "note": ""
     },
@@ -28963,9 +28976,22 @@
    "name": "科大湛",
    "lejuId": "L0b71028937854f",
    "lejuName": "科大湛",
-   "fetchedAt": "2026-08-16T20:06:36.051Z",
-   "total": 30,
+   "fetchedAt": "2026-08-23T19:54:42.858Z",
+   "total": 31,
    "deals": [
+    {
+     "date": "2026-06",
+     "address": "科大二街43號2樓",
+     "floorNum": 2,
+     "totalWan": 3980,
+     "parkWan": 300,
+     "size": 82.33,
+     "houseSize": 64.44,
+     "parkSize": 17.9,
+     "unitPrice": 57.11,
+     "special": 0,
+     "note": ""
+    },
     {
      "date": "2025-03",
      "address": "科大二街51號11樓",
@@ -29362,7 +29388,7 @@
    "name": "美術皇居",
    "lejuId": "L925111089d963f",
    "lejuName": "京城美術皇居",
-   "fetchedAt": "2026-08-16T20:07:08.207Z",
+   "fetchedAt": "2026-08-23T19:55:15.056Z",
    "total": 379,
    "deals": [
     {
@@ -34298,7 +34324,7 @@
    "name": "美術之星",
    "lejuId": "L04b902702ed62",
    "lejuName": "美術之星",
-   "fetchedAt": "2026-08-16T20:07:13.889Z",
+   "fetchedAt": "2026-08-23T19:55:21.922Z",
    "total": 63,
    "deals": [
     {
