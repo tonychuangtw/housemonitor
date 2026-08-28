@@ -201,6 +201,20 @@
       "mgmtFee": null,
       "active": true,
       "added": 1785941094649
+    },
+    {
+      "id": "mtd235hxyxfs",
+      "name": "華人匯",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E02",
+      "districtName": "鼓山區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1787927864469
     }
   ]
 }
