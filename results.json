@@ -1,6 +1,133 @@
 {
-  "updated": "2026-08-28 09:09:39",
+  "updated": "2026-08-28 21:11:59",
   "events": [
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "大悅",
+      "kind": "new_listing",
+      "title": "文化中心雙捷運｜大悅景觀2房+雙車位",
+      "kindOfListing": "sale",
+      "price": 1080,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20805620.html"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "國王一號院",
+      "kind": "price",
+      "title": "國王一號院質感豪宅45坪好規劃獨立大車位",
+      "kindOfListing": "sale",
+      "price": 2500,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20539644.html",
+      "from": 2688,
+      "to": 2500
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "國王一號院",
+      "kind": "price",
+      "title": "【國王一號院】文化中心質感大宅｜三房平車",
+      "kindOfListing": "sale",
+      "price": 2500,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20484057.html",
+      "from": 2688,
+      "to": 2500
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "國王一號院",
+      "kind": "new_listing",
+      "title": "國王一號院｜高樓景觀尊榮四房車位",
+      "kindOfListing": "rent",
+      "price": 60000,
+      "url": "https://rent.591.com.tw/21911022"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "都廳苑",
+      "kind": "new_listing",
+      "title": "都廳苑│市政府│景觀高樓層典雅裝潢+B1雙平車",
+      "kindOfListing": "sale",
+      "price": 4580,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20691331.html"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "都廳苑",
+      "kind": "new_listing",
+      "title": "近復華中學｜四維國小｜都廳苑高樓層雙平車",
+      "kindOfListing": "sale",
+      "price": 4580,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20628059.html"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "美術皇居",
+      "kind": "new_listing",
+      "title": "美術館特區｜皇居｜質感裝潢大三房雙平車豪邸",
+      "kindOfListing": "sale",
+      "price": 3680,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20805144.html"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "美術皇居",
+      "kind": "new_listing",
+      "title": "美術皇居｜遇見綠意｜邊間雙套房雙平車",
+      "kindOfListing": "sale",
+      "price": 3998,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20807898.html"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "美術皇居",
+      "kind": "new_listing",
+      "title": "小茵❗獨家指標豪邸美術皇居｜遇見綠意雙主臥！雙平車（非轉折處",
+      "kindOfListing": "sale",
+      "price": 3790,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20511267.html"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "美術皇居",
+      "kind": "new_listing",
+      "title": "美術館美術皇居72坪泳池奢華精緻高樓層景觀三主臥房雙平車",
+      "kindOfListing": "rent",
+      "price": 100000,
+      "url": "https://rent.591.com.tw/21910122"
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "美術之星",
+      "kind": "price",
+      "title": "美術之星超高樓排景觀角間雙平車",
+      "kindOfListing": "sale",
+      "price": 5450,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20544023.html",
+      "from": 5650,
+      "to": 5450
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "美術之星",
+      "kind": "price",
+      "title": "凱駖獨家｜美術館最閃亮的那顆星【美術之星】四房雙平車",
+      "kindOfListing": "sale",
+      "price": 5450,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20532190.html",
+      "from": 5650,
+      "to": 5450
+    },
+    {
+      "ts": "2026-08-28 21:11:59",
+      "community": "美術之星",
+      "kind": "price",
+      "title": "【專約】美術之星｜超高樓排景觀｜角間雙連號平車",
+      "kindOfListing": "sale",
+      "price": 5450,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20511260.html",
+      "from": 5650,
+      "to": 5450
+    },
     {
       "ts": "2026-08-28 09:09:39",
       "community": "大悅",
@@ -351,143 +478,6 @@
       "url": "https://sale.591.com.tw/home/house/detail/2/20647766.html",
       "from": 5650,
       "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "降價美術館豪邸美術之星超高樓首排景觀+雙平面車位",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20610277.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "美術館指標豪邸~鼎宇美術之星｜首排絕美景觀・尊爵雙主臥雙平車",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20609840.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "怡安🏠專約-鼎宇美術之星｜高樓層景觀雙主臥雙平車豪邸",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20603641.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "專約⭐美術之星｜高樓邊間三面採光｜第一排五房連號雙平車",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20593508.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "指標豪宅★美術之星｜高樓景觀宅｜雙平車",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20578048.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "【劉凱】稀有釋出🔥美術之星｜首排高樓層雙主臥＋雙平車",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20570514.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "專約✨美術館首排景觀✨鼎宇建設指標豪邸雙平車",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20540031.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "小茵✔獨家美術之星永久首排景觀雙主臥!B2雙平車!",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20529075.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 21:14:55",
-      "community": "美術之星",
-      "kind": "price",
-      "title": "美術之星高樓景觀雙平車",
-      "kindOfListing": "sale",
-      "price": 5450,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20528458.html",
-      "from": 5650,
-      "to": 5450
-    },
-    {
-      "ts": "2026-08-26 09:09:03",
-      "community": "長耀雙峰滙",
-      "kind": "delisted",
-      "title": "力銘嚴選❤【雙峰匯】❤精品高樓層二房車",
-      "kindOfListing": "sale",
-      "price": 1875,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20689229.html"
-    },
-    {
-      "ts": "2026-08-26 09:09:03",
-      "community": "捷市悅",
-      "kind": "price",
-      "title": "可租補後勁楠梓兩房兩衛全新大樓",
-      "kindOfListing": "rent",
-      "price": 20000,
-      "url": "https://rent.591.com.tw/17944970",
-      "from": 21000,
-      "to": 20000
-    },
-    {
-      "ts": "2026-08-26 09:09:03",
-      "community": "捷市悅",
-      "kind": "delisted",
-      "title": "精選!!!捷市悅全新裝潢2房+車位捷運宅/近台積電",
-      "kindOfListing": "sale",
-      "price": 1098,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20144492.html"
-    },
-    {
-      "ts": "2026-08-26 09:09:03",
-      "community": "捷市悅",
-      "kind": "delisted",
-      "title": "後勁*捷市悅*有裝潢兩房兩衛開窗+車位",
-      "kindOfListing": "sale",
-      "price": 1098,
-      "url": "https://sale.591.com.tw/home/house/detail/2/20769625.html"
     }
   ],
   "communities": [
@@ -613,6 +603,26 @@
           "marketYears": 3,
           "estResale": 991,
           "estProfit": -150,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20805620",
+          "title": "文化中心雙捷運｜大悅景觀2房+雙車位",
+          "price": 1080,
+          "prevPrice": null,
+          "size": 34.8,
+          "floor": "17F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20805620.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 31.03,
+          "premiumPct": 34.2,
+          "marketN": 9,
+          "marketYears": 5,
+          "estResale": 805,
+          "estProfit": -329,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -4926,7 +4936,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:02:58"
+      "lastChecked": "2026-08-28 21:05:58"
     },
     {
       "id": "mrych48q56fu",
@@ -5097,41 +5107,41 @@
         {
           "id": "20484057",
           "title": "【國王一號院】文化中心質感大宅｜三房平車",
-          "price": 2688,
-          "prevPrice": 2688,
+          "price": 2500,
+          "prevPrice": 2500,
           "size": 82.87,
           "floor": "4F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20484057.html",
           "status": "active",
           "isNew": false,
-          "unitPricePerPing": 32.44,
-          "premiumPct": 30.3,
+          "unitPricePerPing": 30.17,
+          "premiumPct": 21.2,
           "marketN": 9,
           "marketYears": 5,
           "estResale": 2063,
-          "estProfit": -761,
-          "drops": 0,
-          "totalDrop": 0,
+          "estProfit": -570,
+          "drops": 1,
+          "totalDrop": 188,
           "lvrMatch": null
         },
         {
           "id": "20539644",
           "title": "國王一號院質感豪宅45坪好規劃獨立大車位",
-          "price": 2688,
-          "prevPrice": 2688,
+          "price": 2500,
+          "prevPrice": 2500,
           "size": 82.87,
           "floor": "4F/33F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20539644.html",
           "status": "active",
           "isNew": false,
-          "unitPricePerPing": 32.44,
-          "premiumPct": 30.3,
+          "unitPricePerPing": 30.17,
+          "premiumPct": 21.2,
           "marketN": 9,
           "marketYears": 5,
           "estResale": 2063,
-          "estProfit": -761,
-          "drops": 0,
-          "totalDrop": 0,
+          "estProfit": -570,
+          "drops": 1,
+          "totalDrop": 188,
           "lvrMatch": null
         },
         {
@@ -5537,6 +5547,26 @@
           "lvrMatch": null
         },
         {
+          "id": "21911022",
+          "title": "國王一號院｜高樓景觀尊榮四房車位",
+          "price": 60000,
+          "prevPrice": null,
+          "size": 48.99,
+          "floor": "32F/33F",
+          "url": "https://rent.591.com.tw/21911022",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 1225,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20654497",
           "title": "固豪👍信義國小國王一號院3+1房平車",
           "price": 55000,
@@ -5779,12 +5809,12 @@
       "liquidity": {
         "delistedN": 11,
         "delistedMedianDays": 6,
-        "activeMedianDays": 34
+        "activeMedianDays": 35
       },
       "rentYield": {
         "rentUnit": 817,
         "rentSize": 83.2,
-        "n": 12,
+        "n": 13,
         "baseUnit": 24.89,
         "yieldPct": 3.94,
         "mgmtFee": 60,
@@ -5880,7 +5910,7 @@
           "floorNum": 5,
           "parkCount": 1,
           "note": "陽台外推;",
-          "address": "苓雅區中東街185號五樓",
+          "address": "��雅區中東街185號五樓",
           "community": "國王1號院",
           "layout": "3房2廳3衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -9307,10 +9337,10 @@
         }
       ],
       "lvrMatches": [],
-      "error": "AggregateError",
+      "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:03:38"
+      "lastChecked": "2026-08-28 21:06:31"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9639,7 +9669,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:03:52"
+      "lastChecked": "2026-08-28 21:07:03"
     },
     {
       "id": "ms7outtntjzf",
@@ -10209,7 +10239,7 @@
         },
         {
           "id": "20611680",
-          "title": "A9雙峰匯★精品建商★飯店式管理★在家樓下就能打球★來電賞屋",
+          "title": "A9雙峰匯★精���建商★飯店式管理★在家樓下就能打球★來電賞屋",
           "price": 1786,
           "prevPrice": 1786,
           "size": 31.51,
@@ -18659,7 +18689,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:04:25"
+      "lastChecked": "2026-08-28 21:07:34"
     },
     {
       "id": "msepyyktt72w",
@@ -22237,7 +22267,7 @@
           "unitPrice": 307081,
           "unitPriceWanPerPing": 30.71,
           "size": 35.9,
-          "floor": "八層/十五層",
+          "floor": "八層/十���層",
           "floorNum": 8,
           "parkCount": 1,
           "note": "預售屋、或土地及建物分件登記案件;",
@@ -22522,13 +22552,13 @@
           "unitPrice": 301755,
           "unitPriceWanPerPing": 30.18,
           "size": 43.58,
-          "floor": "十三層/十五層",
+          "floor": "十三層/十五���",
           "floorNum": 13,
           "parkCount": 1,
           "note": "預售屋、或土地及建物分件登記案件;",
           "address": "楠梓區加昌路88巷68號十三樓",
           "community": "",
-          "layout": "3房2廳2衛",
+          "layout": "3房2��2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -22784,7 +22814,7 @@
           "address": "楠梓區加昌路88巷88號十樓",
           "community": "",
           "layout": "2房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11層含���上有電梯)"
         },
         {
           "date": "2023-04-28",
@@ -24996,7 +25026,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:05:01"
+      "lastChecked": "2026-08-28 21:08:10"
     },
     {
       "id": "mserk1lv2gzp",
@@ -25728,7 +25758,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:05:38"
+      "lastChecked": "2026-08-28 21:08:42"
     },
     {
       "id": "msffzxgwvqiu",
@@ -26094,7 +26124,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:06:10"
+      "lastChecked": "2026-08-28 21:09:13"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -26463,6 +26493,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20628059",
+          "title": "近復華中學｜四維國小｜都廳苑高樓層雙平車",
+          "price": 4580,
+          "prevPrice": null,
+          "size": 110.05,
+          "floor": "22F/24F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20628059.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 41.62,
+          "premiumPct": 24.6,
+          "marketN": 5,
+          "marketYears": 3,
+          "estResale": 3676,
+          "estProfit": -1143,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20658016",
           "title": "專約-景觀高樓層-雅緻裝潢+雙平車$$$屋主誠售",
           "price": 4580,
@@ -26472,6 +26522,26 @@
           "url": "https://sale.591.com.tw/home/house/detail/2/20658016.html",
           "status": "active",
           "isNew": false,
+          "unitPricePerPing": 41.52,
+          "premiumPct": 24.3,
+          "marketN": 5,
+          "marketYears": 3,
+          "estResale": 3684,
+          "estProfit": -1135,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20691331",
+          "title": "都廳苑│市政府│景觀高樓層典雅裝潢+B1雙平車",
+          "price": 4580,
+          "prevPrice": null,
+          "size": 110.3,
+          "floor": "22F/24F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20691331.html",
+          "status": "active",
+          "isNew": true,
           "unitPricePerPing": 41.52,
           "premiumPct": 24.3,
           "marketN": 5,
@@ -27065,7 +27135,7 @@
       "liquidity": {
         "delistedN": 14,
         "delistedMedianDays": 16,
-        "activeMedianDays": 22
+        "activeMedianDays": 23
       },
       "rentYield": null,
       "lvrTrend": [
@@ -27312,7 +27382,7 @@
           "floor": "二十一層/二十四層",
           "floorNum": 21,
           "parkCount": 6,
-          "note": "親��、員工、共有人或其他特殊關係間之交易;",
+          "note": "親友、員工、共有人或其他特殊關係間之交易;",
           "address": "苓雅區四維三路1號二十一樓",
           "community": "都廳苑",
           "layout": "4房2廳2衛",
@@ -27627,7 +27697,7 @@
           "floor": "十五層/二十四層",
           "floorNum": 15,
           "parkCount": 3,
-          "note": "本次合約總價為4658萬元整,其中土地價格為新台幣33246451,建物價���為新台幣13333549",
+          "note": "本次合約總價為4658萬元整,其中土地價格為新台幣33246451,建物價格為新台幣13333549",
           "address": "苓雅區四維三路5號十五樓",
           "community": "都廳苑",
           "layout": "4房2廳5衛",
@@ -31223,7 +31293,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:06:41"
+      "lastChecked": "2026-08-28 21:09:43"
     },
     {
       "id": "msfist74lm0x",
@@ -31403,7 +31473,7 @@
       "liquidity": {
         "delistedN": 1,
         "delistedMedianDays": 1,
-        "activeMedianDays": 22
+        "activeMedianDays": 23
       },
       "rentYield": null,
       "lvrTrend": [
@@ -31941,7 +32011,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:07:23"
+      "lastChecked": "2026-08-28 21:10:17"
     },
     {
       "id": "msg77lct9m87",
@@ -32220,6 +32290,26 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 53.45,
+          "premiumPct": 21.2,
+          "marketN": 13,
+          "marketYears": 3,
+          "estResale": 3299,
+          "estProfit": -911,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20807898",
+          "title": "美術皇居｜遇見綠意｜邊間雙套房雙平車",
+          "price": 3998,
+          "prevPrice": null,
+          "size": 74.81,
+          "floor": "3F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20807898.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 53.44,
           "premiumPct": 21.2,
           "marketN": 13,
           "marketYears": 3,
@@ -32530,6 +32620,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20511267",
+          "title": "小茵❗獨家指標豪邸美術皇居｜遇見綠意雙主臥！雙平車（非轉折處",
+          "price": 3790,
+          "prevPrice": null,
+          "size": 74.8,
+          "floor": "3F/27F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20511267.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 50.67,
+          "premiumPct": 14.9,
+          "marketN": 13,
+          "marketYears": 3,
+          "estResale": 3299,
+          "estProfit": -699,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20514113",
           "title": "小茵！美術皇居｜遇見綠意｜邊間雙套房雙平車",
           "price": 3790,
@@ -32673,12 +32783,12 @@
           "id": "20804569",
           "title": "美術皇居｜三面採光邊間雙主臥雙平車樹梢宅",
           "price": 3790,
-          "prevPrice": null,
+          "prevPrice": 3790,
           "size": 74.81,
           "floor": "3F/29F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20804569.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 50.66,
           "premiumPct": 14.9,
           "marketN": 13,
@@ -32800,6 +32910,26 @@
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 50.91,
+          "premiumPct": 15.4,
+          "marketN": 13,
+          "marketYears": 3,
+          "estResale": 3188,
+          "estProfit": -693,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20805144",
+          "title": "美術館特區｜皇居｜質感裝潢大三房雙平車豪邸",
+          "price": 3680,
+          "prevPrice": null,
+          "size": 72.3,
+          "floor": "16F/29F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20805144.html",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 50.9,
           "premiumPct": 15.4,
           "marketN": 13,
           "marketYears": 3,
@@ -33192,6 +33322,26 @@
           "lvrMatch": null
         },
         {
+          "id": "21910122",
+          "title": "美術館美術皇居72坪泳池奢華精緻高樓層景觀三主臥房雙平車",
+          "price": 100000,
+          "prevPrice": null,
+          "size": 135.08,
+          "floor": "23F/29F",
+          "url": "https://rent.591.com.tw/21910122",
+          "status": "active",
+          "isNew": true,
+          "unitPricePerPing": 740,
+          "premiumPct": null,
+          "marketN": null,
+          "marketYears": null,
+          "estResale": null,
+          "estProfit": null,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "21842081",
           "title": "美術館3+1房+平車無邊際泳池飯店宅門口收垃圾",
           "price": 65000,
@@ -33419,11 +33569,11 @@
         "activeMedianDays": 12
       },
       "rentYield": {
-        "rentUnit": 1127,
-        "rentSize": 95.5,
-        "n": 4,
-        "baseUnit": 43.69,
-        "yieldPct": 3.09
+        "rentUnit": 840,
+        "rentSize": 129.6,
+        "n": 5,
+        "baseUnit": 33.415,
+        "yieldPct": 3.02
       },
       "lvrTrend": [
         {
@@ -34610,7 +34760,7 @@
           "floorNum": 5,
           "parkCount": 2,
           "note": "",
-          "address": "鼓山區美術北五街80號��樓",
+          "address": "鼓山區美術北五街80號五樓",
           "community": "美術皇居",
           "layout": "4房2廳5衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -34808,7 +34958,7 @@
           "address": "鼓山區美術北五街88號十五樓",
           "community": "美術皇居",
           "layout": "4房2廳5衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
+          "buildingType": "住宅大樓(11���含以上有電梯)"
         },
         {
           "date": "2023-06-08",
@@ -39165,7 +39315,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:08:09"
+      "lastChecked": "2026-08-28 21:10:47"
     },
     {
       "id": "msg77s3ck4gn",
@@ -39214,46 +39364,6 @@
           "lvrMatch": null
         },
         {
-          "id": "20511260",
-          "title": "【專約】美術之星｜超高樓排景觀｜角間雙連號平車",
-          "price": 5650,
-          "prevPrice": 5650,
-          "size": 123.26,
-          "floor": "21F/27F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20511260.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 45.84,
-          "premiumPct": 20.5,
-          "marketN": 5,
-          "marketYears": 3,
-          "estResale": 4688,
-          "estProfit": -1263,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20532190",
-          "title": "凱駖獨家｜美術館最閃亮的那顆星【美術之星】四房雙平車",
-          "price": 5650,
-          "prevPrice": 5650,
-          "size": 123.62,
-          "floor": "21F/27F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20532190.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 45.7,
-          "premiumPct": 20.2,
-          "marketN": 5,
-          "marketYears": 3,
-          "estResale": 4701,
-          "estProfit": -1250,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
           "id": "20535441",
           "title": "美術館第一排－鼎宇建設－超高樓排景觀雙平車豪邸",
           "price": 5650,
@@ -39261,26 +39371,6 @@
           "size": 123.62,
           "floor": "21F/27F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20535441.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 45.7,
-          "premiumPct": 20.2,
-          "marketN": 5,
-          "marketYears": 3,
-          "estResale": 4701,
-          "estProfit": -1250,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20544023",
-          "title": "美術之星超高樓排景觀角間雙平車",
-          "price": 5650,
-          "prevPrice": 5650,
-          "size": 123.62,
-          "floor": "21F/21F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20544023.html",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 45.7,
@@ -39354,6 +39444,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20511260",
+          "title": "【專約】美術之星｜超高樓排景觀｜角間雙連號平車",
+          "price": 5450,
+          "prevPrice": 5450,
+          "size": 123.26,
+          "floor": "21F/27F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20511260.html",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 44.22,
+          "premiumPct": 16.3,
+          "marketN": 5,
+          "marketYears": 3,
+          "estResale": 4688,
+          "estProfit": -1059,
+          "drops": 1,
+          "totalDrop": 200,
+          "lvrMatch": null
+        },
+        {
           "id": "20528458",
           "title": "美術之星高樓景觀雙平車",
           "price": 5450,
@@ -39394,6 +39504,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20532190",
+          "title": "凱駖獨家｜美術館最閃亮的那顆星【美術之星】四房雙平車",
+          "price": 5450,
+          "prevPrice": 5450,
+          "size": 123.62,
+          "floor": "21F/27F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20532190.html",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 44.09,
+          "premiumPct": 15.9,
+          "marketN": 5,
+          "marketYears": 3,
+          "estResale": 4701,
+          "estProfit": -1046,
+          "drops": 1,
+          "totalDrop": 200,
+          "lvrMatch": null
+        },
+        {
           "id": "20532547",
           "title": "美術館鼎宇代表作丨美術之星丨超高樓排景觀邊間雙平車",
           "price": 5450,
@@ -39421,6 +39551,26 @@
           "size": 123.61,
           "floor": "21F/27F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20540031.html",
+          "status": "active",
+          "isNew": false,
+          "unitPricePerPing": 44.09,
+          "premiumPct": 15.9,
+          "marketN": 5,
+          "marketYears": 3,
+          "estResale": 4701,
+          "estProfit": -1046,
+          "drops": 1,
+          "totalDrop": 200,
+          "lvrMatch": null
+        },
+        {
+          "id": "20544023",
+          "title": "美術之星超高樓排景觀角間雙平車",
+          "price": 5450,
+          "prevPrice": 5450,
+          "size": 123.62,
+          "floor": "21F/21F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20544023.html",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 44.09,
@@ -40047,7 +40197,7 @@
           "floorNum": 15,
           "parkCount": 1,
           "note": "",
-          "address": "鼓山區西藏街22號���五樓",
+          "address": "鼓山區西藏街22號十五樓",
           "community": "學院美術之星",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -42547,7 +42697,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-28 09:09:09"
+      "lastChecked": "2026-08-28 21:11:26"
     }
   ]
 }
