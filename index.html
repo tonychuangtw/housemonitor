@@ -595,7 +595,7 @@ try{
   function prevLvrRecords(c){
     var lj=(LEJU&&LEJU.communities&&LEJU.communities[c.id]&&LEJU.communities[c.id].deals)||null;
     if(lj&&lj.length)return lj.map(function(d){
-      return {date:d.date,size:d.size,floorNum:d.floorNum,wan:d.totalWan,addr:d.address||"",unit:d.unitPrice,layout:"",special:d.special,note:d.note||"",src:"樂居"};
+      return {date:d.date,size:d.size,houseSize:d.houseSize,floorNum:d.floorNum,wan:d.totalWan,addr:d.address||"",unit:d.unitPrice,layout:"",special:d.special,note:d.note||"",src:"樂居"};
     });
     return (c.lvrSaleAll||[]).map(function(d){
       return {date:d.date,size:d.size,floorNum:d.floorNum,wan:d.totalPrice!=null?Math.round(d.totalPrice/10000):null,addr:d.address||"",unit:d.unitPriceWanPerPing,layout:d.layout||"",special:0,note:d.note||"",src:"實登"};
@@ -606,9 +606,18 @@ try{
     var lf=listingFloorNumOf(l.floor);
     if(lf==null)return null;
     var mm=l.lvrMatch||null;
+    // 坪數口徑兩種都比：樂居的 size 是「含車位總坪」，591 開價頁的坪數常是「不含車位」的建物坪。
+    // 車位動輒 8–16 坪（美術之星 15.96 坪 ≈ 13%），只比 size 會讓整棟大樓的在售戶全部落在 ±8% 外，
+    // 「上一手實登」就一路空白。任一口徑進 ±8% 就算對上（政府實登沒有拆車位坪，houseSize 為 null）。
+    var near=function(v){return v!=null&&Math.abs(v-l.size)/l.size<=0.08;};
+    var gap=function(d){
+      var g=[]; if(d.size!=null)g.push(Math.abs(d.size-l.size));
+      if(d.houseSize!=null)g.push(Math.abs(d.houseSize-l.size));
+      return g.length?Math.min.apply(null,g):Infinity;
+    };
     var cands=prevLvrRecords(c).filter(function(d){
-      if(d.size==null||d.floorNum==null||d.floorNum!==lf)return false;
-      if(Math.abs(d.size-l.size)/l.size>0.08)return false;
+      if(d.floorNum==null||d.floorNum!==lf)return false;
+      if(!near(d.size)&&!near(d.houseSize))return false;
       if(mm&&String(d.date).slice(0,7)===String(mm.date).slice(0,7)&&d.wan===mm.totalPrice)return false;
       return true;
     });
@@ -619,22 +628,23 @@ try{
       (byAddr[k]=byAddr[k]||[]).push(d);
     });
     var addrs=Object.keys(byAddr).sort(function(a,b){
-      var da=Math.min.apply(null,byAddr[a].map(function(d){return Math.abs(d.size-l.size);}));
-      var db=Math.min.apply(null,byAddr[b].map(function(d){return Math.abs(d.size-l.size);}));
+      var da=Math.min.apply(null,byAddr[a].map(gap));
+      var db=Math.min.apply(null,byAddr[b].map(gap));
       return da-db;
     });
     var recs=byAddr[addrs[0]].slice().sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
     var m=recs[0];
     var pct=(m.wan&&l.price!=null)?+(((l.price-m.wan)/m.wan)*100).toFixed(1):null;
-    return {date:m.date,wan:m.wan,pct:pct,size:m.size,addr:m.addr,layout:m.layout,unit:m.unit,special:m.special,note:m.note,src:m.src,multi:addrs.length};
+    return {date:m.date,wan:m.wan,pct:pct,size:m.size,houseSize:m.houseSize,addr:m.addr,layout:m.layout,unit:m.unit,special:m.special,note:m.note,src:m.src,multi:addrs.length};
   }
   function fmtPrevLvr(l){
     var p=l._prev;
-    if(!p)return '<span title="同樓層＋坪數±8% 內查無實登紀錄" style="cursor:help;">—</span>';
+    if(!p)return '<span title="同樓層＋坪數±8%（含車位／剔車位任一口徑）內查無實登紀錄" style="cursor:help;">—</span>';
     var tip="上一手（"+p.src+"）："+p.date+" 成交 "+(p.wan!=null?p.wan.toLocaleString()+"萬":"—")
-      +(p.unit!=null?"（"+p.unit+"萬/坪）":"")+(p.size!=null?"｜"+p.size+"坪":"")
+      +(p.unit!=null?"（"+p.unit+"萬/坪）":"")
+      +(p.size!=null?"｜"+p.size+"坪"+(p.houseSize!=null&&Math.abs(p.houseSize-p.size)>0.5?"（剔車位 "+p.houseSize+" 坪）":""):"")
       +(p.layout?"｜"+p.layout:"")+(p.addr?"｜"+p.addr:"")
-      +"｜配對條件：同樓層＋坪數±8%"
+      +"｜配對條件：同樓層＋坪數±8%（含車位／剔車位任一口徑）"
       +(p.special?"｜⚠ 特殊交易"+(p.note?"（"+p.note+"）":""):"")
       +(p.multi>1?"｜⚠ 同層有 "+p.multi+" 戶條件相近，不保證同一戶":"")
       +(p.pct!=null?"｜開價比上一手 "+(p.pct>0?"+":"")+p.pct+"%":"");
