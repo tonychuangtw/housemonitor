@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30 22:22:33",
+  "updated": "2026-08-30 22:23:50",
   "events": [
     {
       "ts": "2026-08-30 21:11:24",
@@ -42911,9 +42911,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-30 22:22:01",
-      "lvrSaleHist": [],
-      "lvrHistAt": null
+      "lastChecked": "2026-08-30 22:23:20"
     },
     {
       "id": "mtd235hxyxfs",
