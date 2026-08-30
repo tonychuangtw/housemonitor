@@ -42911,7 +42911,9 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-30 22:22:01"
+      "lastChecked": "2026-08-30 22:22:01",
+      "lvrSaleHist": [],
+      "lvrHistAt": null
     },
     {
       "id": "mtd235hxyxfs",
