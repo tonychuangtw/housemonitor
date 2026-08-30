@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30 21:11:24",
+  "updated": "2026-08-30 22:22:33",
   "events": [
     {
       "ts": "2026-08-30 21:11:24",
@@ -40181,65 +40181,35 @@
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
-          "date": "2024-05-03",
-          "totalPrice": 15160000,
-          "unitPrice": 389950,
-          "unitPriceWanPerPing": 38.99,
-          "size": 44.42,
-          "floor": "一層/十五層",
-          "floorNum": 1,
+          "date": "2024-01-23",
+          "totalPrice": 39800000,
+          "unitPrice": 381177,
+          "unitPriceWanPerPing": 38.12,
+          "size": 104.41,
+          "floor": "十九層/二十七層",
+          "floorNum": 19,
           "parkCount": 2,
           "note": "",
-          "address": "鼓山區西藏街8巷1號",
-          "community": "學院美術之星",
-          "layout": "",
+          "address": "鼓山區美術東四路378號十九樓",
+          "community": "美術之星",
+          "layout": "4房2廳3衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         }
       ],
       "lvrRent": [
         {
-          "date": "2023-08-07",
-          "totalPrice": 45000,
-          "unitPrice": 764,
-          "unitPriceWanPerPing": 0.08,
-          "size": 58.97,
-          "floor": "十層/十五層",
+          "date": "2023-03-13",
+          "totalPrice": 80000,
+          "unitPrice": 585,
+          "unitPriceWanPerPing": 0.06,
+          "size": 136.48,
+          "floor": "十層/二十七層",
           "floorNum": 10,
-          "parkCount": 1,
+          "parkCount": 2,
           "note": "",
-          "address": "鼓山區西藏街18號10樓",
-          "community": "學院美術之星",
-          "layout": "3房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
-        },
-        {
-          "date": "2023-07-12",
-          "totalPrice": 41000,
-          "unitPrice": 787,
-          "unitPriceWanPerPing": 0.08,
-          "size": 52.09,
-          "floor": "八層/十五層",
-          "floorNum": 8,
-          "parkCount": 0,
-          "note": "",
-          "address": "鼓山區西藏街18號八樓",
-          "community": "學院美術之星",
-          "layout": "4房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
-        },
-        {
-          "date": "2023-06-26",
-          "totalPrice": 40000,
-          "unitPrice": 747,
-          "unitPriceWanPerPing": 0.07,
-          "size": 53.61,
-          "floor": "十四層/十五層",
-          "floorNum": 14,
-          "parkCount": 1,
-          "note": "",
-          "address": "鼓山區西藏街12號14樓",
-          "community": "學院美術之星",
-          "layout": "3房2廳2衛",
+          "address": "鼓山區美術東四路386號10樓",
+          "community": "美術之星",
+          "layout": "4房2廳3衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         }
       ],
@@ -40441,7 +40411,7 @@
           "floorNum": 15,
           "parkCount": 1,
           "note": "",
-          "address": "鼓山區西藏街22號十五樓",
+          "address": "鼓山區西藏街22號���五樓",
           "community": "學院美術之星",
           "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
@@ -41333,21 +41303,6 @@
         },
         {
           "date": "2023-03-01",
-          "totalPrice": 17300000,
-          "unitPrice": 388106,
-          "unitPriceWanPerPing": 38.81,
-          "size": 46.74,
-          "floor": "四層/十五層",
-          "floorNum": 4,
-          "parkCount": 1,
-          "note": "",
-          "address": "鼓山區西藏街12號四樓",
-          "community": "學院美術之星",
-          "layout": "3房2廳2衛",
-          "buildingType": "住宅大樓(11層含以上有電梯)"
-        },
-        {
-          "date": "2023-03-01",
           "totalPrice": 39950000,
           "unitPrice": 311617,
           "unitPriceWanPerPing": 31.16,
@@ -41359,6 +41314,21 @@
           "address": "鼓山區美術東四路386號二樓",
           "community": "美術之星",
           "layout": "5房3廳5衛",
+          "buildingType": "住宅大樓(11層含以上有電梯)"
+        },
+        {
+          "date": "2023-03-01",
+          "totalPrice": 17300000,
+          "unitPrice": 388106,
+          "unitPriceWanPerPing": 38.81,
+          "size": 46.74,
+          "floor": "四層/十五層",
+          "floorNum": 4,
+          "parkCount": 1,
+          "note": "",
+          "address": "鼓山區西藏街12號四樓",
+          "community": "學院美術之星",
+          "layout": "3房2廳2衛",
           "buildingType": "住宅大樓(11層含以上有電梯)"
         },
         {
@@ -42941,7 +42911,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-08-30 21:10:21"
+      "lastChecked": "2026-08-30 22:22:01"
     },
     {
       "id": "mtd235hxyxfs",
