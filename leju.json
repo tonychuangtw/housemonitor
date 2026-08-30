@@ -1,11 +1,11 @@
 {
- "updated": "2026-08-23 19:55:21",
+ "updated": "2026-08-30 19:48:28",
  "communities": {
   "mrvzb6fv40ia": {
    "name": "大悅",
    "lejuId": "L2e011027119b98",
    "lejuName": "興富發大悅",
-   "fetchedAt": "2026-08-23T19:44:12.967Z",
+   "fetchedAt": "2026-08-30T19:37:29.227Z",
    "total": 517,
    "deals": [
     {
@@ -6735,7 +6735,7 @@
    "name": "國王一號院",
    "lejuId": "L6f6109058efeef",
    "lejuName": "國王1號院",
-   "fetchedAt": "2026-08-23T19:45:09.520Z",
+   "fetchedAt": "2026-08-30T19:38:25.340Z",
    "total": 236,
    "deals": [
     {
@@ -9812,7 +9812,7 @@
    "name": "宏傑肯泰",
    "lejuId": "L593138453bac",
    "lejuName": "宏傑肯泰大樓",
-   "fetchedAt": "2026-08-23T19:45:12.645Z",
+   "fetchedAt": "2026-08-30T19:38:28.065Z",
    "total": 9,
    "deals": [
     {
@@ -9938,7 +9938,7 @@
    "name": "長耀雙峰滙",
    "lejuId": "L2ae1014944130c",
    "lejuName": "長耀PARK/長耀雙峰滙",
-   "fetchedAt": "2026-08-23T19:47:40.212Z",
+   "fetchedAt": "2026-08-30T19:41:00.696Z",
    "total": 544,
    "deals": [
     {
@@ -17019,7 +17019,7 @@
    "name": "捷市悅",
    "lejuId": "L262125307f8b80",
    "lejuName": "和築捷市悅",
-   "fetchedAt": "2026-08-23T19:53:38.187Z",
+   "fetchedAt": "2026-08-30T19:46:42.592Z",
    "total": 608,
    "deals": [
     {
@@ -24932,7 +24932,7 @@
    "name": "文陽河豐",
    "lejuId": "Lee8155394bb38f",
    "lejuName": "文陽河豐",
-   "fetchedAt": "2026-08-23T19:54:18.105Z",
+   "fetchedAt": "2026-08-30T19:47:22.750Z",
    "total": 36,
    "deals": [
     {
@@ -25409,7 +25409,7 @@
    "name": "鳳凰交響曲",
    "lejuId": "Ldd7109067a198c",
    "lejuName": "鳳凰交響曲",
-   "fetchedAt": "2026-08-23T19:54:20.162Z",
+   "fetchedAt": "2026-08-30T19:47:25.254Z",
    "total": 12,
    "deals": [
     {
@@ -25574,7 +25574,7 @@
    "name": "都廳苑",
    "lejuId": "Lbc690277912d9",
    "lejuName": "都廳苑",
-   "fetchedAt": "2026-08-23T19:54:39.502Z",
+   "fetchedAt": "2026-08-30T19:47:44.601Z",
    "total": 261,
    "deals": [
     {
@@ -28976,7 +28976,7 @@
    "name": "科大湛",
    "lejuId": "L0b71028937854f",
    "lejuName": "科大湛",
-   "fetchedAt": "2026-08-23T19:54:42.858Z",
+   "fetchedAt": "2026-08-30T19:47:48.355Z",
    "total": 31,
    "deals": [
     {
@@ -29388,7 +29388,7 @@
    "name": "美術皇居",
    "lejuId": "L925111089d963f",
    "lejuName": "京城美術皇居",
-   "fetchedAt": "2026-08-23T19:55:15.056Z",
+   "fetchedAt": "2026-08-30T19:48:20.153Z",
    "total": 379,
    "deals": [
     {
@@ -34324,7 +34324,7 @@
    "name": "美術之星",
    "lejuId": "L04b902702ed62",
    "lejuName": "美術之星",
-   "fetchedAt": "2026-08-23T19:55:21.922Z",
+   "fetchedAt": "2026-08-30T19:48:26.843Z",
    "total": 63,
    "deals": [
     {
@@ -35147,6 +35147,11 @@
      "note": ""
     }
    ]
+  },
+  "mtd235hxyxfs": {
+   "name": "華人匯",
+   "error": "leju 查無社區",
+   "fetchedAt": "2026-08-30T19:48:28.425Z"
   }
  }
 }
