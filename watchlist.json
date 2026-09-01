@@ -243,6 +243,20 @@
       "mgmtFee": null,
       "active": true,
       "added": 1788237497058
+    },
+    {
+      "id": "mti6i068ndsi",
+      "name": "悅誠",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E03",
+      "districtName": "左營區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1788237606752
     }
   ]
 }
