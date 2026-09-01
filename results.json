@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-01 09:15:27",
+  "updated": "2026-09-01 10:17:51",
   "events": [
+    {
+      "ts": "2026-09-01 10:17:51",
+      "community": "捷市悅",
+      "kind": "delisted",
+      "title": "台積電捷運旁230公尺全新完工雙衛開窗大2房車位",
+      "kindOfListing": "sale",
+      "price": 968,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20485119.html"
+    },
+    {
+      "ts": "2026-09-01 10:17:51",
+      "community": "捷市悅",
+      "kind": "delisted",
+      "title": "可談全新R21三房平車",
+      "kindOfListing": "sale",
+      "price": 1498,
+      "url": "https://sale.591.com.tw/home/house/detail/2/20771159.html"
+    },
     {
       "ts": "2026-09-01 09:15:27",
       "community": "大悅",
@@ -446,24 +464,6 @@
       "kindOfListing": "rent",
       "price": 28000,
       "url": "https://rent.591.com.tw/21862754"
-    },
-    {
-      "ts": "2026-08-30 09:14:03",
-      "community": "捷市悅",
-      "kind": "new_listing",
-      "title": "免仲介費可租補-五泰小麟-楠梓溫馨2房含管含車",
-      "kindOfListing": "rent",
-      "price": 24000,
-      "url": "https://rent.591.com.tw/21918058"
-    },
-    {
-      "ts": "2026-08-30 09:14:03",
-      "community": "捷市悅",
-      "kind": "delisted",
-      "title": "可租補後勁楠梓兩房兩衛全新大樓",
-      "kindOfListing": "rent",
-      "price": 20000,
-      "url": "https://rent.591.com.tw/17944970"
     }
   ],
   "communities": [
@@ -5002,7 +5002,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:08:58"
+      "lastChecked": "2026-09-01 10:10:14"
     },
     {
       "id": "mrych48q56fu",
@@ -9466,7 +9466,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:09:28"
+      "lastChecked": "2026-09-01 10:10:53"
     },
     {
       "id": "ms1sosbl0bgc",
@@ -9795,7 +9795,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:10:00"
+      "lastChecked": "2026-09-01 10:11:26"
     },
     {
       "id": "ms7outtntjzf",
@@ -9885,7 +9885,7 @@
         },
         {
           "id": "20744756",
-          "title": "獨家銷售���藏美宅💯景觀雙峰匯裝潢大三房車💯",
+          "title": "獨家銷售典藏美宅💯景觀雙峰匯裝潢大三房車💯",
           "price": 3198,
           "prevPrice": 3198,
           "size": 54.46,
@@ -10385,7 +10385,7 @@
         },
         {
           "id": "20786344",
-          "title": "獨家⭐長耀雙峰匯⭐A9蛋黃區⭐近扶輪公園三井⭐高樓景觀兩房車",
+          "title": "��家⭐長耀雙峰匯⭐A9蛋黃區⭐近扶輪公園三井⭐高樓景觀兩房車",
           "price": 1786,
           "prevPrice": 1786,
           "size": 31.51,
@@ -18895,7 +18895,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:10:26"
+      "lastChecked": "2026-09-01 10:11:54"
     },
     {
       "id": "msepyyktt72w",
@@ -19031,26 +19031,6 @@
           "size": 43.58,
           "floor": "8F/15F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20770607.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 34.37,
-          "premiumPct": 16.4,
-          "marketN": 176,
-          "marketYears": 3,
-          "estResale": 1287,
-          "estProfit": -292,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20771159",
-          "title": "可談全新R21三房平車",
-          "price": 1498,
-          "prevPrice": 1498,
-          "size": 43.58,
-          "floor": "8F/15F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20771159.html",
           "status": "active",
           "isNew": false,
           "unitPricePerPing": 34.37,
@@ -19259,26 +19239,6 @@
           "marketYears": 3,
           "estResale": 985,
           "estProfit": -174,
-          "drops": 0,
-          "totalDrop": 0,
-          "lvrMatch": null
-        },
-        {
-          "id": "20485119",
-          "title": "台積電捷運旁230公尺全新完工雙衛開窗大2房車位",
-          "price": 968,
-          "prevPrice": 968,
-          "size": 31.41,
-          "floor": "14F/15F",
-          "url": "https://sale.591.com.tw/home/house/detail/2/20485119.html",
-          "status": "active",
-          "isNew": false,
-          "unitPricePerPing": 30.82,
-          "premiumPct": 7.6,
-          "marketN": 102,
-          "marketYears": 3,
-          "estResale": 899,
-          "estProfit": -124,
           "drops": 0,
           "totalDrop": 0,
           "lvrMatch": null
@@ -19564,6 +19524,26 @@
           "lvrMatch": null
         },
         {
+          "id": "20771159",
+          "title": "可談全新R21三房平車",
+          "price": 1498,
+          "prevPrice": 1498,
+          "size": 43.58,
+          "floor": "8F/15F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20771159.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 34.37,
+          "premiumPct": 16.4,
+          "marketN": 176,
+          "marketYears": 3,
+          "estResale": 1287,
+          "estProfit": -292,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
           "id": "20432064",
           "title": "台積電園區後勁捷運站2房2衛開窗獨立大平車",
           "price": 1250,
@@ -19711,6 +19691,26 @@
           "size": 31.41,
           "floor": "14F/15F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20456821.html",
+          "status": "delisted",
+          "isNew": false,
+          "unitPricePerPing": 30.82,
+          "premiumPct": 7.6,
+          "marketN": 102,
+          "marketYears": 3,
+          "estResale": 899,
+          "estProfit": -124,
+          "drops": 0,
+          "totalDrop": 0,
+          "lvrMatch": null
+        },
+        {
+          "id": "20485119",
+          "title": "台積電捷運旁230公尺全新完工雙衛開窗大2房車位",
+          "price": 968,
+          "prevPrice": 968,
+          "size": 31.41,
+          "floor": "14F/15F",
+          "url": "https://sale.591.com.tw/home/house/detail/2/20485119.html",
           "status": "delisted",
           "isNew": false,
           "unitPricePerPing": 30.82,
@@ -20456,7 +20456,7 @@
         }
       ],
       "liquidity": {
-        "delistedN": 15,
+        "delistedN": 17,
         "delistedMedianDays": 19,
         "activeMedianDays": 27
       },
@@ -25332,7 +25332,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:11:00"
+      "lastChecked": "2026-09-01 10:12:31"
     },
     {
       "id": "mserk1lv2gzp",
@@ -26109,7 +26109,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:11:31"
+      "lastChecked": "2026-09-01 10:13:07"
     },
     {
       "id": "msffzxgwvqiu",
@@ -26475,7 +26475,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:12:03"
+      "lastChecked": "2026-09-01 10:13:37"
     },
     {
       "id": "msfg0ifrr8o7",
@@ -27506,7 +27506,7 @@
       "liquidity": {
         "delistedN": 18,
         "delistedMedianDays": 18,
-        "activeMedianDays": 26
+        "activeMedianDays": 27
       },
       "rentYield": null,
       "lvrTrend": [
@@ -31664,7 +31664,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:12:33"
+      "lastChecked": "2026-09-01 10:14:12"
     },
     {
       "id": "msfist74lm0x",
@@ -32382,7 +32382,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:13:05"
+      "lastChecked": "2026-09-01 10:14:50"
     },
     {
       "id": "msg77lct9m87",
@@ -39761,7 +39761,7 @@
       "error": null,
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:13:38"
+      "lastChecked": "2026-09-01 10:15:21"
     },
     {
       "id": "msg77s3ck4gn",
@@ -40193,12 +40193,12 @@
           "id": "20696253",
           "title": "劉威廷專約美術館首排雙主臥超大五房B2雙平車",
           "price": 5450,
-          "prevPrice": null,
+          "prevPrice": 5450,
           "size": 123.62,
           "floor": "21F/27F",
           "url": "https://sale.591.com.tw/home/house/detail/2/20696253.html",
           "status": "active",
-          "isNew": true,
+          "isNew": false,
           "unitPricePerPing": 44.09,
           "premiumPct": 15.8,
           "marketN": 4,
@@ -41486,10 +41486,10 @@
         }
       ],
       "lvrMatches": [],
-      "error": null,
+      "error": "timeout https://sale.591.com.tw/",
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:14:18"
+      "lastChecked": "2026-09-01 10:16:01"
     },
     {
       "id": "mtd235hxyxfs",
@@ -47637,10 +47637,43 @@
         }
       ],
       "lvrMatches": [],
-      "error": null,
+      "error": "timeout https://sale.591.com.tw/",
       "lvrStale": false,
       "lvrError": null,
-      "lastChecked": "2026-09-01 09:14:53"
+      "lastChecked": "2026-09-01 10:16:38"
+    },
+    {
+      "id": "mti14g314saf",
+      "name": "國家盛宴",
+      "cityName": "高雄市",
+      "districtName": "三民區",
+      "sale": [],
+      "rent": [],
+      "lvrSale": [],
+      "lvrRent": [],
+      "lvrSaleMatched": false,
+      "lvrSaleCount": 0,
+      "statsSrc": {
+        "leju": 0,
+        "lvr": 0
+      },
+      "lvrSaleStats": [],
+      "lvrFloorStats": [],
+      "liquidity": {
+        "delistedN": 0,
+        "delistedMedianDays": null,
+        "activeMedianDays": null
+      },
+      "rentYield": null,
+      "lvrTrend": [],
+      "mgmtFee": null,
+      "info": null,
+      "lvrSaleAll": [],
+      "lvrMatches": [],
+      "error": "timeout https://sale.591.com.tw/",
+      "lvrStale": false,
+      "lvrError": null,
+      "lastChecked": "2026-09-01 10:17:15"
     }
   ]
 }
