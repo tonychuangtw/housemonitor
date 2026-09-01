@@ -229,6 +229,20 @@
       "mgmtFee": null,
       "active": true,
       "added": 1788228576109
+    },
+    {
+      "id": "mti6fnj6y2a0",
+      "name": "擁樂",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E02",
+      "districtName": "鼓山區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1788237497058
     }
   ]
 }
