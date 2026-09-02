@@ -1140,8 +1140,15 @@ try{
     });
   }
   // ---- 單一社區完整卡片（詳情頁用） ----
+  // 前次價：後端的 prevPrice 是「上一輪掃描價」，掃過一輪就跟現價一樣（2026-09-02 Tony：軌跡寫 3998→3790 但前次價沒變）。
+  // 有調價軌跡就改用「最後一次調價前的價」，漲跌／降價 badge 才會一直對得上軌跡
+  function fixPrev(l){
+    var h=l.priceHistory||[];
+    if(h.length>1&&h[h.length-1].price===l.price)l.prevPrice=h[h.length-2].price;
+  }
   function commCardEl(c){
-    (c.sale||[]).forEach(function(l){ l._prev=prevLvrFor(l,c); LISTING_BY_ID[l.id]=l; });
+    (c.rent||[]).forEach(fixPrev);
+    (c.sale||[]).forEach(function(l){ fixPrev(l); l._prev=prevLvrFor(l,c); LISTING_BY_ID[l.id]=l; });
     var card=document.createElement("div"); card.className="card";
     var saleRaw=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
     var rentRaw=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
