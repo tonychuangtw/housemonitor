@@ -200,12 +200,14 @@ try{
     #toast-wrap{ bottom:80px; }
   }
   /* #10 詳情頁頂端社區切換 chip（sticky 在頂欄下） */
-  .comm-nav{ position:sticky; top:46px; z-index:40; display:flex; gap:6px; align-items:center; overflow-x:auto; padding:8px 12px; margin:0 -12px 6px;
-    background:var(--topbar); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); scrollbar-width:none; }
-  .comm-nav::-webkit-scrollbar{ display:none; }
+  .comm-nav{ position:sticky; top:46px; z-index:40; display:flex; gap:8px; align-items:center; padding:8px 12px; margin:0 -12px 6px;
+    background:var(--topbar); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
   .comm-nav button{ flex-shrink:0; background:var(--chip); color:var(--text2); border:1px solid var(--border); border-radius:999px; padding:5px 12px; font-size:.8rem; font-weight:600; white-space:nowrap; }
   .comm-nav button.on{ background:var(--accent); color:var(--accent-ink); border-color:var(--accent); }
-  .comm-nav button.home{ position:sticky; left:0; z-index:1; color:var(--text); background:var(--card); box-shadow:4px 0 8px -2px var(--bg); }
+  .comm-nav button.home{ color:var(--text); }
+  /* 「← 總覽」固定在左，右邊才是可橫捲的社區名（分隔線隔開，不會疊在一起） */
+  .comm-chips{ flex:1; min-width:0; display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; padding-left:8px; border-left:1px solid var(--border); }
+  .comm-chips::-webkit-scrollbar{ display:none; }
   /* #6 物件列表：桌面表格／手機緊湊卡 */
   .lt-cards{ display:none; }
   @media (max-width:560px){ .lt-table{ display:none; } .lt-cards{ display:block; } }
@@ -1245,14 +1247,14 @@ try{
     // ---- 詳情 ----
     // #10 頂端社區切換 chip（sticky）：不用回總覽就能在社區間橫向切換
     var nav=document.createElement("div"); nav.className="comm-nav";
-    nav.innerHTML='<button class="home" data-cid="">← 總覽</button>'+COMMUNITIES.map(function(x){
-      return '<button data-cid="'+esc(x.id)+'"'+(x.id===c.id?' class="on"':'')+'>'+esc(x.name)+'</button>';}).join("");
+    nav.innerHTML='<button class="home" data-cid="">← 總覽</button><div class="comm-chips">'+COMMUNITIES.map(function(x){
+      return '<button data-cid="'+esc(x.id)+'"'+(x.id===c.id?' class="on"':'')+'>'+esc(x.name)+'</button>';}).join("")+'</div>';
     nav.querySelectorAll("button").forEach(function(b){b.addEventListener("click",function(){
       var id=b.getAttribute("data-cid"); location.hash=id?"c="+encodeURIComponent(id):"";});});
     el.appendChild(nav);
-    // 目前社區捲進可視範圍（「← 總覽」是 sticky，不會被推出去）
-    var on=nav.querySelector(".on"), home=nav.querySelector(".home");
-    if(on)nav.scrollLeft=Math.max(0,on.offsetLeft-(home?home.offsetWidth+10:0)-nav.clientWidth/2+on.offsetWidth/2);
+    // 目前社區捲進可視範圍（只捲右邊的 chip 列，「← 總覽」在列外不受影響）
+    var chips=nav.querySelector(".comm-chips"), on=chips.querySelector(".on");
+    if(on)chips.scrollLeft=Math.max(0,on.offsetLeft-chips.offsetLeft-chips.clientWidth/2+on.offsetWidth/2);
     var evs=EVENTS.filter(function(e){return e.community===c.name;});
     if(evs.length){
       var evCard=document.createElement("div"); evCard.className="card";
