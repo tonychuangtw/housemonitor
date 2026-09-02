@@ -180,6 +180,54 @@ try{
     details.lvr-detail td{ display:table-cell; border-bottom:1px solid var(--border); padding:5px 7px; }
     details.lvr-detail td::before{ content:""; }
   }
+  /* ===== 2026-09-02 Gemini review 改版 ===== */
+  /* #1 ⚙️ 管理抽屜（新增表單＋監控清單） */
+  .drawer-ov{ position:fixed; inset:0; z-index:150; background:rgba(0,0,0,.5); -webkit-backdrop-filter:blur(3px); backdrop-filter:blur(3px); }
+  .drawer{ position:fixed; top:0; right:0; bottom:0; z-index:160; width:min(440px,100%); background:var(--bg); border-left:1px solid var(--border);
+    box-shadow:var(--shadow); overflow-y:auto; padding:0 14px 40px; transform:translateX(100%); transition:transform .22s ease; }
+  .drawer.open{ transform:none; }
+  .drawer-head{ position:sticky; top:0; z-index:1; background:var(--bg); display:flex; justify-content:space-between; align-items:center; padding:12px 0 8px; border-bottom:1px solid var(--border); }
+  .drawer-head h2{ margin:0; }
+  /* #10 手機底部導航 */
+  .bnav{ display:none; }
+  @media (max-width:640px){
+    body{ padding-bottom:88px; }
+    .bnav{ position:fixed; left:0; right:0; bottom:0; z-index:120; display:flex; background:var(--topbar); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+      border-top:1px solid var(--border); padding:5px 8px calc(5px + env(safe-area-inset-bottom)); }
+    .bnav button{ flex:1; background:transparent; color:var(--text2); border:none; border-radius:10px; padding:4px 2px; font-size:.7rem; font-weight:600; line-height:1.2; }
+    .bnav button b{ display:block; font-size:1.15rem; font-weight:400; }
+    .bnav button.on{ color:var(--accent); }
+    #toast-wrap{ bottom:80px; }
+  }
+  /* #10 詳情頁頂端社區切換 chip（sticky 在頂欄下） */
+  .comm-nav{ position:sticky; top:46px; z-index:40; display:flex; gap:6px; align-items:center; overflow-x:auto; padding:8px 12px; margin:0 -12px 6px;
+    background:var(--topbar); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); scrollbar-width:none; }
+  .comm-nav::-webkit-scrollbar{ display:none; }
+  .comm-nav button{ flex-shrink:0; background:var(--chip); color:var(--text2); border:1px solid var(--border); border-radius:999px; padding:5px 12px; font-size:.8rem; font-weight:600; white-space:nowrap; }
+  .comm-nav button.on{ background:var(--accent); color:var(--accent-ink); border-color:var(--accent); }
+  .comm-nav button.home{ color:var(--text); }
+  /* #6 物件列表：桌面表格／手機緊湊卡 */
+  .lt-cards{ display:none; }
+  @media (max-width:560px){ .lt-table{ display:none; } .lt-cards{ display:block; } }
+  .lc{ border:1px solid var(--border); border-radius:12px; padding:8px 10px; margin:7px 0; cursor:pointer; background:var(--card2); }
+  .lc.delisted{ opacity:.62; }
+  .lc-top{ display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+  .lc-fl{ font-weight:700; font-size:.92rem; }
+  .lc-price{ font-weight:800; font-size:1.08rem; white-space:nowrap; }
+  .lc-price small{ font-weight:500; font-size:.72rem; color:var(--text2); margin-left:4px; }
+  .lc-mid{ display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; font-size:.76rem; color:var(--text2); margin-top:2px; }
+  .lc-badges{ display:flex; flex-wrap:wrap; gap:4px 6px; margin-top:4px; font-size:.76rem; align-items:center; }
+  .lc-badges .badge{ font-size:.7rem; padding:0 7px; }
+  .lc-title{ font-size:.76rem; color:var(--dim); margin-top:3px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .lc-hist{ font-size:.72rem; color:var(--text2); margin-top:3px; }
+  /* #5 聯賣群組 */
+  .grp-btn{ background:transparent; color:var(--accent); border:1px solid var(--border); border-radius:999px; padding:1px 8px; font-size:.72rem; font-weight:600; }
+  tr.grp-sub{ display:none; } tr.grp-sub.show{ display:table-row; }
+  tr.grp-sub td{ background:var(--card2); }
+  .lc.grp-sub{ display:none; margin-left:14px; border-style:dashed; } .lc.grp-sub.show{ display:block; }
+  .cal{ font-size:.68rem; color:var(--dim); margin-left:2px; }
+  .hist-line{ font-size:.74rem; color:var(--text2); margin-top:2px; font-weight:400; }
+  .lvr-more{ margin:8px 0 0; }
 </style>
 </head>
 <body>
@@ -187,12 +235,13 @@ try{
   <h1 class="brand" style="margin:0;font-size:1.02rem;">🏠 社區房源監控</h1>
   <div class="top-actions">
     <span id="accent-row" class="accent-row" title="強調色"></span>
+    <button id="mgmt-btn" class="icon-btn hidden" title="新增／管理監控">⚙️ 管理</button>
     <button id="theme-toggle" class="icon-btn" title="深／淺色切換">☀️</button>
     <span id="user-chip" class="user-chip hidden"></span>
     <button id="auth-btn" class="icon-btn">登入</button>
   </div>
 </div></header>
-<p class="sub" style="margin-top:12px;">登入後新增「社區」監控；掃描器自動列出該社區全部在售/在租 591 房源 + 實價登錄</p>
+<p class="sub" style="margin-top:12px;">近 7 天變動＋社區總覽；新增／管理監控在右上角 ⚙️</p>
 
 <div id="signin-card" class="card signin">
   <div class="big">🏠</div>
@@ -203,6 +252,9 @@ try{
 </div>
 
 <div id="app" class="hidden">
+<div id="drawer-ov" class="drawer-ov hidden"></div>
+<div id="drawer" class="drawer" aria-label="管理">
+  <div class="drawer-head"><h2>⚙️ 管理</h2><button id="drawer-close" class="icon-btn">✕ 關閉</button></div>
   <div class="card" id="form-card">
     <h2>➕ 新增社區監控</h2>
     <label>社區名（必填，591 上的社區名稱）</label>
@@ -238,8 +290,28 @@ try{
     <p id="push-msg" class="msg" style="margin:0 0 4px;"></p>
     <div id="watchlist"><p class="msg">載入中…</p></div>
   </div>
+  <div class="card" id="hold-card">
+    <h2>💰 持有成本假設</h2>
+    <p class="msg" style="margin:0 0 4px;">租金報酬與每月淨現金流用這組數字算；改了立刻套用到每個社區</p>
+    <div class="row2">
+      <div><label>房貸利率（%）</label><input id="h-rate" type="number" step="0.05" min="0"></div>
+      <div><label>貸款成數（%）</label><input id="h-ltv" type="number" step="5" min="0" max="100"></div>
+    </div>
+    <div class="row2">
+      <div><label>房屋稅＋地價稅（年租金 %）</label><input id="h-tax" type="number" step="1" min="0"></div>
+      <div><label>或實際年繳（元，填了優先）</label><input id="h-taxamt" type="number" step="1000" min="0" placeholder="空白＝用左邊 %"></div>
+    </div>
+    <label>空置（每年幾個月收不到租）</label>
+    <input id="h-vac" type="number" step="0.5" min="0" max="12">
+    <div style="display:flex;gap:8px;margin-top:12px;">
+      <button id="h-save" class="primary" style="margin:0;">套用</button>
+      <button id="h-reset" class="ghost">回預設</button>
+    </div>
+    <p id="h-msg" class="msg"></p>
+  </div>
+</div>
 
-<h2 style="margin-top:26px;" id="events-h2">📅 近 7 天變動</h2>
+<h2 style="margin-top:14px;" id="events-h2">📅 近 7 天變動</h2>
 <div class="card" id="events-card"><p class="msg">載入中…</p></div>
 
 <h2 style="margin-top:26px;" id="res-h2">🎯 監控結果總覽</h2>
@@ -251,6 +323,13 @@ try{
   <span class="msg" style="margin:0;">「預估獲利」預設假設照開價買進；實際成交通常低於開價 —— 拉到 90% 就是假設砍價一成成交，下方每筆的「預估獲利」會照這個買價即時重算。滑鼠停在獲利數字上可看該筆的損益兩平出價（低於這個價買進才不賠）</span>
 </div>
 <div id="results"><p class="msg">載入中…</p></div>
+
+<nav class="bnav" id="bnav">
+  <button data-nav="home"><b>🏘</b>總覽</button>
+  <button data-nav="events"><b>📅</b>變動</button>
+  <button data-nav="mgmt"><b>⚙️</b>管理</button>
+  <button data-nav="top"><b>⬆️</b>頂端</button>
+</nav>
 </div>
 
 <p class="foot">591 社區在架列表走官方 bff JSON API 定時掃描 · 實價登錄走政府公開 API · 頁面每 5 分自動刷新<br>
@@ -566,16 +645,27 @@ try{
     var unit=kind==="sale"?" 萬":" 元";
     return '<span class="'+cls+'">'+arrow+Math.abs(d).toLocaleString()+unit+'</span>';
   }
+  // #2 單價／vs行情 兩種口徑並列：含車（開價÷刊登坪 vs 實登總價÷含車位總坪）、剔車（扣社區車位行情後÷刊登坪 vs 樂居剔車位單價）
   function fmtUnit(l,kind){
     if(l.unitPricePerPing==null)return "—";
-    return kind==="sale"?(l.unitPricePerPing.toLocaleString()+" 萬/坪"):(l.unitPricePerPing.toLocaleString()+" 元/坪");
+    if(kind!=="sale")return l.unitPricePerPing.toLocaleString()+" 元/坪";
+    var tip="開價÷刊登坪＝"+l.unitPricePerPing+" 萬/坪。591 刊登坪多半不含車位、總價多半含車位，這個數字會偏高；"
+      +"標題"+(l.hasPark?"有":"沒")+"提到車位"+(l.hasPark&&l.parkEstWan?"，剔車位口徑先扣社區車位行情 "+l.parkEstWan+" 萬再÷刊登坪＝"+l.unitPriceHouse+" 萬/坪":"");
+    return '<span title="'+esc(tip)+'" style="cursor:help;">'+l.unitPricePerPing.toLocaleString()+' 萬/坪'
+      +(l.unitPriceHouse!=null?'<span class="cal">剔車 '+l.unitPriceHouse+'</span>':'')+'</span>';
+  }
+  function vsSpan(pct,label,tip){
+    var cls=pct<0?"down":(pct>0?"up":"");
+    return '<span class="'+cls+'" title="'+esc(tip)+'" style="cursor:help;">'+(pct>0?"+":"")+pct+'%</span><span class="cal">'+label+'</span>';
   }
   function fmtVs(l){
-    if(l.premiumPct==null)return '<span title="同社區實登（樂居＋政府合併）坪數±20% 近3-5年樣本不足 3 筆，不評" style="cursor:help;">樣本不足</span>';
-    var cls=l.premiumPct<0?"down":(l.premiumPct>0?"up":"");
-    var sign=l.premiumPct>0?"+":"";
-    var tip="對比基準：同社區實登（樂居＋政府合併去重）坪數±20%、近"+(l.marketYears||3)+"年成交中位單價，樣本 "+(l.marketN!=null?l.marketN:"?")+" 筆（剔除一樓/特殊交易；單價均含車位混算）";
-    return '<span class="'+cls+'" title="'+esc(tip)+'" style="cursor:help;">'+sign+l.premiumPct+"%</span>";
+    if(l.premiumPct==null&&l.premiumHousePct==null)return '<span title="同社區實登（樂居＋政府合併）坪數±20% 近3-5年樣本不足 3 筆，不評" style="cursor:help;">樣本不足</span>';
+    var out=[];
+    if(l.premiumPct!=null)out.push(vsSpan(l.premiumPct,"含車",
+      "含車位口徑：開價÷刊登坪 "+l.unitPricePerPing+" 萬/坪，對同社區實登（樂居＋政府合併去重）坪數±20%、近"+(l.marketYears||3)+"年成交中位單價（總價÷含車位總坪），樣本 "+(l.marketN!=null?l.marketN:"?")+" 筆；剔除一樓/特殊交易"));
+    if(l.premiumHousePct!=null)out.push(vsSpan(l.premiumHousePct,"剔車",
+      "剔車位口徑：開價"+(l.hasPark&&l.parkEstWan?"扣社區車位行情 "+l.parkEstWan+" 萬":"（標題未提車位，不扣）")+"÷刊登坪＝"+l.unitPriceHouse+" 萬/坪，對樂居剔車位單價中位 "+l.marketHouseMedian+" 萬/坪（剔車位坪±20%，樣本 "+l.marketHouseN+" 筆）"));
+    return out.join(' <span class="cal">/</span> ');
   }
   var SORTS={
     price:{l:"總價",v:function(l){return l.price;}},
@@ -665,12 +755,19 @@ try{
   function fmtProfit(l){
     var p=profitAt(l,DEAL_PCT);
     if(p==null)return "—";
-    var cls=p>0?"down":"up"; // 綠=賺 紅=賠（沿用 down=綠 up=紅）
+    var cls=p>0?"up":"down"; // #8 紅漲綠跌：賺＝紅、賠＝綠（2026-09-02 Tony 定）
     var be=breakEven(l);
     var tip="成交假設 "+Math.round(l.price*DEAL_PCT/100).toLocaleString()+"萬（開價"+DEAL_PCT+"%）→ 轉售估 "
       +l.estResale.toLocaleString()+"萬，扣交易成本(買2%+賣4%)與 2 年內房地合一稅 45%"
       +(be!=null?"；損益兩平出價 ≈ "+be.toLocaleString()+"萬（開價的 "+Math.round(be/l.price*100)+"%）":"");
     return '<span class="'+cls+'" title="'+esc(tip)+'">'+(p>0?"+":"")+p.toLocaleString()+" 萬</span>";
+  }
+  // #4 議價滑桿拖動時只換獲利格，不整頁重繪
+  var LISTING_BY_ID={};
+  function updateProfitCells(){
+    document.querySelectorAll(".pcell[data-pid]").forEach(function(el){
+      var l=LISTING_BY_ID[el.getAttribute("data-pid")]; if(l)el.innerHTML=fmtProfit(l);
+    });
   }
   function sortList(list,skey,dir){
     var spec=SORTS[skey]; if(!spec)return list;
@@ -680,59 +777,162 @@ try{
       return dir==="asc"?va-vb:vb-va;
     });
   }
+  // #5 同戶多家聯賣去重：在售物件 同樓層＋坪數差<1＋開價差<5% 併成一組，開價最低的當代表
+  function groupListings(list){
+    var groups=[], order={};
+    (list||[]).forEach(function(l,i){order[l.id]=i;});
+    var act=(list||[]).filter(function(l){return l.status==="active";}).slice().sort(function(a,b){return (a.price||0)-(b.price||0);});
+    act.forEach(function(l){
+      var fl=listingFloorNumOf(l.floor), g=null;
+      if(fl!=null&&l.size!=null&&l.price!=null){
+        for(var i=0;i<groups.length;i++){var m=groups[i].main;
+          if(groups[i].fl===fl&&m.size!=null&&Math.abs(m.size-l.size)<1&&m.price&&Math.abs(l.price-m.price)/m.price<0.05){g=groups[i];break;}}
+      }
+      if(g)g.others.push(l); else groups.push({main:l,others:[],fl:fl});
+    });
+    (list||[]).filter(function(l){return l.status!=="active";}).forEach(function(l){groups.push({main:l,others:[],fl:null});});
+    groups.sort(function(a,b){return order[a.main.id]-order[b.main.id];});
+    return groups;
+  }
+  function activeCount(list){ return groupListings(list).filter(function(g){return g.main.status==="active";}).length; }
+  function daysBetweenTs(a,b){
+    if(!a||!b)return null;
+    var d=(new Date(String(b).replace(" ","T"))-new Date(String(a).replace(" ","T")))/86400000;
+    return isFinite(d)?Math.max(0,Math.round(d)):null;
+  }
+  function daysOnMarket(l){
+    var end=l.status==="delisted"?(l.delistedAt||l.lastSeen):(lastUpdated!=="—"?lastUpdated:null);
+    return daysBetweenTs(l.firstSeen,end);
+  }
+  // #12 調價軌跡：08/05 開 5,650 → 08/27 降 5,450
+  function histText(l,kind){
+    var h=l.priceHistory||[]; if(h.length<2)return "";
+    var u=kind==="sale"?"":"";
+    return h.map(function(x,i){
+      var d=String(x.ts||"").slice(5,10).replace("-","/");
+      var v=x.price!=null?Number(x.price).toLocaleString():"—";
+      if(i===0)return d+" 開 "+v;
+      var prev=h[i-1].price;
+      return d+(x.price<prev?" 降 ":" 漲 ")+v+u;
+    }).join(" → ");
+  }
+  function badgesOf(l,kind){
+    var b="";
+    var unit=kind==="sale"?"萬":"元";
+    if(l.price!=null&&l.prevPrice!=null&&l.price<l.prevPrice)b+='<span class="badge drop">📉降價 '+(l.prevPrice-l.price).toLocaleString()+unit+'</span> ';
+    if(l.drops>=2)b+='<span class="badge drop">📉降'+l.drops+'次 累計-'+Number(l.totalDrop).toLocaleString()+unit+'</span> ';
+    if(kind==="sale"&&l.premiumPct!=null&&l.premiumPct<=-15&&l.status==="active")b+='<span class="badge bargain">💎低於行情'+Math.abs(l.premiumPct)+'%</span> ';
+    if(l.isNew)b+='<span class="badge new">🆕新上架</span> ';
+    if(l.relistCount>0){
+      var dd=daysOnMarket(l);
+      b+='<span class="badge" title="'+esc("下架後又重新上架 "+l.relistCount+" 次（房仲洗刊登天數）；首次出現 "+String(l.firstSeen||"").slice(0,10)+(dd!=null?"，累計在架 "+dd+" 天":""))+'" style="cursor:help;color:#ffb86b;border-color:#ffb86b;">♻️重新刊登×'+l.relistCount+(dd!=null?'（累計 '+dd+' 天）':'')+'</span> ';
+    }
+    if(l.status==="delisted")b+='<span class="badge">已下架</span> ';
+    if(l.status==="delisted"&&l.lvrMatch){
+      var m=l.lvrMatch;
+      var mtip="疑似成交（"+(m.src||"實登")+"）："+m.date+(m.address?"｜"+m.address:"")+"｜配對：下架±窗口＋坪數±8%＋同樓層";
+      b+='<span class="badge matched" title="'+esc(mtip)+'" style="cursor:help;">🎯疑似成交 '+(m.totalPrice!=null?Number(m.totalPrice).toLocaleString()+"萬":"")
+        +(m.diffPct!=null?"（"+(m.diffPct>0?"+":"")+m.diffPct+"%）":"")+'</span> ';
+    }
+    return b;
+  }
+  function grpBtn(g,kind){
+    if(!g.others.length)return "";
+    var all=[g.main].concat(g.others), ps=all.map(function(x){return x.price;}).filter(function(v){return v!=null;});
+    var lo=Math.min.apply(null,ps), hi=Math.max.apply(null,ps), u=kind==="sale"?"萬":"元";
+    return '<button class="grp-btn" data-g="'+esc(g.main.id)+'" title="同樓層、坪數差<1、開價差<5%，視為同一戶多家房仲聯賣；點開看其他刊登">▸ '+all.length+' 家聯賣 '
+      +(lo===hi?lo.toLocaleString():lo.toLocaleString()+'～'+hi.toLocaleString())+u+'</button>';
+  }
+  function rowHtml(l,kind,g,sub){
+    var cls=(l.status==="delisted"?"delisted":"")+(sub?" grp-sub":"");
+    var priceLabel=kind==="sale"?"開價":"月租";
+    var hist=histText(l,kind);
+    var title=badgesOf(l,kind)+(sub?'<span class="cal">↳ 聯賣</span> ':'')+esc(l.title)
+      +(g&&!sub?' '+grpBtn(g,kind):'')
+      +(hist?'<div class="hist-line">'+esc(hist)+'</div>':'');
+    return '<tr class="'+cls+'"'+(sub?' data-g="'+esc(sub)+'"':'')+'><td class="main" data-l="標題">'+title+'</td>'
+      +'<td data-l="'+priceLabel+'">'+esc(fmtPrice(l.price,kind))+'</td>'
+      +'<td data-l="前次價">'+esc(fmtPrice(l.prevPrice,kind))+'</td>'
+      +'<td data-l="漲跌"'+(hist?' title="'+esc(hist)+'" style="cursor:help;"':'')+'>'+priceDiff(l,kind)+'</td>'
+      +'<td data-l="單價">'+fmtUnit(l,kind)+'</td>'
+      +(kind==="sale"?'<td data-l="vs行情">'+fmtVs(l)+'</td><td data-l="預估獲利" class="pcell" data-pid="'+esc(l.id)+'">'+fmtProfit(l)+'</td><td data-l="上一手實登">'+fmtPrevLvr(l)+'</td>':"")
+      +'<td data-l="坪數">'+(l.size!=null?esc(l.size)+" 坪":"—")+'</td>'
+      +'<td data-l="樓層">'+esc(l.floor||"—")+'</td>'
+      +'<td data-l="連結"><a href="'+esc(l.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
+  }
+  // #6 手機緊湊卡：第一行 樓層·坪數＋開價、第二行 單價＋vs行情、第三行 標籤，整卡點擊開 591
+  function cardHtml(l,kind,g,sub){
+    var cls="lc"+(l.status==="delisted"?" delisted":"")+(sub?" grp-sub":"");
+    var prev=(l.price!=null&&l.prevPrice!=null&&l.price!==l.prevPrice)?'<small>前次 '+l.prevPrice.toLocaleString()+'</small>':'';
+    var hist=histText(l,kind), dd=daysOnMarket(l);
+    var mid='<span>'+fmtUnit(l,kind)+'</span>'+(kind==="sale"?'<span>vs行情 '+fmtVs(l)+'</span>':'');
+    var extra="";
+    if(kind==="sale"){
+      var p=l._prev;
+      if(p)extra+='<span title="'+esc("上一手（"+p.src+"）"+p.date+" 成交 "+(p.wan!=null?p.wan.toLocaleString()+"萬":"—"))+'">上一手 '+fmtPrevLvr(l)+'</span>';
+      if(profitAt(l,DEAL_PCT)!=null)extra+='<span>獲利 <span class="pcell" data-pid="'+esc(l.id)+'">'+fmtProfit(l)+'</span></span>';
+    }
+    if(dd!=null&&l.status==="active")extra+='<span class="cal" style="font-size:.72rem;">在架 '+dd+' 天</span>';
+    return '<div class="'+cls+'" data-url="'+esc(l.url)+'"'+(sub?' data-g="'+esc(sub)+'"':'')+'>'
+      +'<div class="lc-top"><span class="lc-fl">'+esc(l.floor||"—")+' · '+(l.size!=null?esc(l.size)+' 坪':'—')+(sub?' <span class="cal">↳ 聯賣</span>':'')+'</span>'
+      +'<span class="lc-price">'+esc(fmtPrice(l.price,kind))+prev+'</span></div>'
+      +'<div class="lc-mid">'+mid+'</div>'
+      +'<div class="lc-badges">'+badgesOf(l,kind)+extra+(g&&!sub?grpBtn(g,kind):'')+'</div>'
+      +(hist?'<div class="lc-hist">'+esc(hist)+'</div>':'')
+      +'<div class="lc-title">'+esc(l.title)+'</div></div>';
+  }
   function listingTable(list,kind,sortKey){
     if(!list||!list.length)return '<p class="msg">目前無在架物件</p>';
     var st=sortState[sortKey]||{key:null,dir:"desc"};
     var priceLabel=kind==="sale"?"開價":"月租";
-    var unitLabel=kind==="sale"?"單價":"單價";
     function th(label,key){
       var arrow=st.key===key?(st.dir==="asc"?" ▲":" ▼"):"";
       return '<th class="sortable" data-sk="'+sortKey+'" data-k="'+key+'">'+label+arrow+'</th>';
     }
-    var rows=st.key?sortList(list,st.key,st.dir):list;
+    var groups=groupListings(list);
+    if(st.key&&SORTS[st.key]){
+      var spec=SORTS[st.key];
+      groups=groups.slice().sort(function(a,b){
+        var va=spec.v(a.main), vb=spec.v(b.main);
+        if(va==null&&vb==null)return 0; if(va==null)return 1; if(vb==null)return -1;
+        return st.dir==="asc"?va-vb:vb-va;
+      });
+    }
     var html='<div class="sort-row">排序 <select data-ssk="'+sortKey+'">'
       +'<option value="">預設</option>'
-      +Object.keys(SORTS).map(function(k){
+      +Object.keys(SORTS).filter(function(k){return kind==="sale"||(k!=="profit"&&k!=="prevpct");}).map(function(k){
           return '<option value="'+k+':desc"'+(st.key===k&&st.dir==="desc"?" selected":"")+'>'+SORTS[k].l+' 高→低</option>'
                + '<option value="'+k+':asc"'+(st.key===k&&st.dir==="asc"?" selected":"")+'>'+SORTS[k].l+' 低→高</option>';
         }).join("")
-      +'</select></div>'
-      +'<table><thead><tr><th>標題</th>'+th(priceLabel,"price")+'<th>前次價</th>'+th("漲跌","diff")+th(unitLabel,"unit")
-      +(kind==="sale"?'<th>vs行情</th>'+th("預估獲利","profit")+th("上一手實登","prevpct"):"")+th("坪數","size")+'<th>樓層</th><th>連結</th></tr></thead><tbody>';
-    rows.forEach(function(l){
-      var cls=l.status==="delisted"?' class="delisted"':"";
-      var badges="";
-      if(l.price!=null&&l.prevPrice!=null&&l.price<l.prevPrice){
-        var unit=kind==="sale"?" 萬":" 元";
-        badges+=' <span class="badge drop">📉降價 '+(l.prevPrice-l.price).toLocaleString()+unit+'</span>';
-      }
-      if(l.drops>=2){
-        var u2=kind==="sale"?"萬":"元";
-        badges+=' <span class="badge drop">📉降價'+l.drops+'次 累計-'+Number(l.totalDrop).toLocaleString()+u2+'</span>';
-      }
-      if(kind==="sale"&&l.premiumPct!=null&&l.premiumPct<=-15&&l.status==="active"){
-        badges+=' <span class="badge bargain">💎低於行情'+Math.abs(l.premiumPct)+'%</span>';
-      }
-      if(l.isNew)badges+=' <span class="badge new">🆕新上架</span>';
-      var title=badges+esc(l.title)+(l.status==="delisted"?' <span class="badge">已下架</span>':"");
-      if(l.status==="delisted"&&l.lvrMatch){
-        var m=l.lvrMatch;
-        var mtip="疑似成交（"+(m.src||"實登")+"）："+m.date+(m.address?"｜"+m.address:"")+"｜配對：下架±窗口＋坪數±8%＋同樓層";
-        title+=' <span class="badge matched" title="'+esc(mtip)+'" style="cursor:help;">🎯疑似成交 '+(m.totalPrice!=null?Number(m.totalPrice).toLocaleString()+"萬":"")
-          +(m.diffPct!=null?"（"+(m.diffPct>0?"+":"")+m.diffPct+"%）":"")+'</span>';
-      }
-      html+='<tr'+cls+'><td class="main" data-l="標題">'+title+'</td>'
-        +'<td data-l="'+priceLabel+'">'+esc(fmtPrice(l.price,kind))+'</td>'
-        +'<td data-l="前次價">'+esc(fmtPrice(l.prevPrice,kind))+'</td>'
-        +'<td data-l="漲跌">'+priceDiff(l,kind)+'</td>'
-        +'<td data-l="'+unitLabel+'">'+esc(fmtUnit(l,kind))+'</td>'
-        +(kind==="sale"?'<td data-l="vs行情">'+fmtVs(l)+'</td><td data-l="預估獲利">'+fmtProfit(l)+'</td><td data-l="上一手實登">'+fmtPrevLvr(l)+'</td>':"")
-        +'<td data-l="坪數">'+(l.size!=null?esc(l.size)+" 坪":"—")+'</td>'
-        +'<td data-l="樓層">'+esc(l.floor||"—")+'</td>'
-        +'<td data-l="連結"><a href="'+esc(l.url)+'" target="_blank" rel="noopener">591</a></td></tr>';
+      +'</select></div>';
+    var rows="", cards="";
+    groups.forEach(function(g){
+      rows+=rowHtml(g.main,kind,g,null); cards+=cardHtml(g.main,kind,g,null);
+      g.others.forEach(function(o){ rows+=rowHtml(o,kind,null,g.main.id); cards+=cardHtml(o,kind,null,g.main.id); });
     });
-    html+='</tbody></table>';
+    html+='<div class="lt-table"><table><thead><tr><th>標題</th>'+th(priceLabel,"price")+'<th>前次價</th>'+th("漲跌","diff")+th("單價","unit")
+      +(kind==="sale"?'<th>vs行情</th>'+th("預估獲利","profit")+th("上一手實登","prevpct"):"")+th("坪數","size")+'<th>樓層</th><th>連結</th></tr></thead><tbody>'
+      +rows+'</tbody></table></div><div class="lt-cards">'+cards+'</div>';
     return html;
+  }
+  // #7 實登明細預設 20 筆，其餘按鈕載入（大社區數百筆一次塞 DOM 手機會卡）
+  var LVR_ROWS={}, LVR_PAGE=20;
+  function lvrRowHtml(d){
+    var noteTip=d.special||d.note?' title="'+esc((d.special?"特殊交易":"")+(d.note?("："+d.note):""))+'" style="cursor:help;"':'';
+    return '<tr'+noteTip+'><td>'+esc(d.date)+'</td><td>'+d.src+'</td>'
+      +'<td>'+((d.special||SPECIAL_RE.test(d.note))?"⚠":"")+(d.wan!=null?d.wan.toLocaleString()+"萬":"—")+'</td>'
+      +'<td>'+(d.unit!=null?d.unit+"萬/坪":"—")+'</td>'
+      +'<td>'+(d.size!=null?d.size+"坪":"—")+'</td><td>'+(d.floorNum!=null?d.floorNum+"F":"—")+'</td>'
+      +'<td>'+esc(d.addr||"—")+'</td></tr>';
+  }
+  function lvrLoadMore(btn){
+    var cid=btn.getAttribute("data-cid"), off=parseInt(btn.getAttribute("data-off"),10)||0;
+    var all=LVR_ROWS[cid]||[], body=document.querySelector('tbody[data-lvr-body="'+cid.replace(/"/g,'')+'"]');
+    if(!body)return;
+    body.insertAdjacentHTML("beforeend",all.slice(off,off+LVR_PAGE).map(lvrRowHtml).join(""));
+    off+=LVR_PAGE;
+    if(off>=all.length)btn.parentNode.removeChild(btn);
+    else{btn.setAttribute("data-off",off);btn.textContent="載入更早 "+Math.min(LVR_PAGE,all.length-off)+" 筆（還有 "+(all.length-off)+" 筆）";}
   }
   function lvrSaleBlock(c){
     var html='<div class="lvr"><b>實登行情（近 3 年，樂居＋政府實登合併去重，統計剔除一樓/特殊交易）：</b>';
@@ -780,17 +980,13 @@ try{
           &&(j.floorNum==null||g.floorNum==null||j.floorNum===g.floorNum);});});
     var all=L.concat(G).sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
     if(all.length){
+      LVR_ROWS[c.id]=all;
       html+='<details class="lvr-detail"><summary>明細（全史 '+all.length+' 筆：樂居 '+L.length+'＋實登補 '+G.length+'，點此展開）</summary>'
         +'<div style="color:var(--text2);font-size:.85em;margin:2px 0;">單價口徑：樂居＝剔除車位；實登＝總價/總坪含車位混算。⚠＝特殊交易</div>'
-        +'<table><thead><tr><th>日期</th><th>來源</th><th>總價</th><th>單價</th><th>坪數</th><th>樓層</th><th>地址</th></tr></thead><tbody>'
-        +all.map(function(d){
-          var noteTip=d.special||d.note?' title="'+esc((d.special?"特殊交易":"")+(d.note?("："+d.note):""))+'" style="cursor:help;"':'';
-          return '<tr'+noteTip+'><td>'+esc(d.date)+'</td><td>'+d.src+'</td>'
-            +'<td>'+((d.special||SPECIAL_RE.test(d.note))?"⚠":"")+(d.wan!=null?d.wan.toLocaleString()+"萬":"—")+'</td>'
-            +'<td>'+(d.unit!=null?d.unit+"萬/坪":"—")+'</td>'
-            +'<td>'+(d.size!=null?d.size+"坪":"—")+'</td><td>'+(d.floorNum!=null?d.floorNum+"F":"—")+'</td>'
-            +'<td>'+esc(d.addr||"—")+'</td></tr>';
-        }).join("")+'</tbody></table></details>';
+        +'<table><thead><tr><th>日期</th><th>來源</th><th>總價</th><th>單價</th><th>坪數</th><th>樓層</th><th>地址</th></tr></thead><tbody data-lvr-body="'+esc(c.id)+'">'
+        +all.slice(0,LVR_PAGE).map(lvrRowHtml).join("")+'</tbody></table>'
+        +(all.length>LVR_PAGE?'<button class="pause lvr-more" data-cid="'+esc(c.id)+'" data-off="'+LVR_PAGE+'">載入更早 '+Math.min(LVR_PAGE,all.length-LVR_PAGE)+' 筆（還有 '+(all.length-LVR_PAGE)+' 筆）</button>':'')
+        +'</details>';
     }
     return html+'</div>';
   }
@@ -832,14 +1028,59 @@ try{
     if(q.activeMedianDays!=null)parts.push("在售中位已在架 <b>"+q.activeMedianDays+" 天</b>");
     return '<div class="lvr"><b>⏱ 脫手速度：</b>'+parts.join("・")+'（自監控起算，早於監控的上架時間抓不到）</div>';
   }
+  // #11 持有成本假設（Tony 2026-09-02 定：利率 2.3%／成數 70%／稅＝年租 5%／空置 1 月），localStorage 記憶
+  var HOLD_KEY="housemonitor.hold", HOLD_DEF={rate:2.3,ltv:70,taxPct:5,taxAmt:null,vac:1};
+  function holdGet(){
+    var h={}; try{h=JSON.parse(localStorage.getItem(HOLD_KEY)||"{}")||{};}catch(e){h={};}
+    var o={}; Object.keys(HOLD_DEF).forEach(function(k){o[k]=(h[k]!=null&&isFinite(h[k]))?Number(h[k]):HOLD_DEF[k];});
+    return o;
+  }
+  function holdFill(){
+    var h=holdGet();
+    $("h-rate").value=h.rate; $("h-ltv").value=h.ltv; $("h-tax").value=h.taxPct; $("h-taxamt").value=h.taxAmt!=null?h.taxAmt:""; $("h-vac").value=h.vac;
+  }
+  function holdSave(reset){
+    var h;
+    if(reset)h=Object.assign({},HOLD_DEF);
+    else{
+      var num=function(id){var v=$(id).value; return v===""?null:Number(v);};
+      h={rate:num("h-rate"),ltv:num("h-ltv"),taxPct:num("h-tax"),taxAmt:num("h-taxamt"),vac:num("h-vac")};
+      ["rate","ltv","taxPct","vac"].forEach(function(k){if(h[k]==null||!isFinite(h[k])||h[k]<0)h[k]=HOLD_DEF[k];});
+      if(h.vac>12)h.vac=12; if(h.ltv>100)h.ltv=100;
+      if(h.taxAmt!=null&&(!isFinite(h.taxAmt)||h.taxAmt<=0))h.taxAmt=null;
+    }
+    try{localStorage.setItem(HOLD_KEY,JSON.stringify(h));}catch(e){}
+    holdFill(); renderResults();
+    $("h-msg").textContent=reset?"已回預設":"✅ 已套用"; $("h-msg").className="msg";
+  }
   function rentYieldBlock(c){
     var y=c.rentYield; if(!y)return "";
     var eff=y.netYieldPct!=null?y.netYieldPct:y.yieldPct;
     var two=(eff*2).toFixed(1);
     var yieldTxt='年化 <b>'+y.yieldPct+'%</b>';
     if(y.netYieldPct!=null)yieldTxt+='（扣管理費 '+y.mgmtFee+' 元/坪/月 → 淨 <b>'+y.netYieldPct+'%</b>）';
-    return '<div class="lvr"><b>💰 租金報酬率：</b>在租中位 '+y.rentUnit.toLocaleString()+' 元/坪/月（'+y.n+' 筆・約 '+y.rentSize+' 坪）÷ 同坪數實登 '+y.baseUnit+' 萬/坪 → '+yieldTxt
-      +'<br><b>持有策略：</b>2 年內轉售房地合一 45%，持滿 2 年降到 35%（價差每 100 萬省 10 萬稅）＋期間收租約 '+two+'%（兩年'+(y.netYieldPct!=null?'淨':'毛')+'租金'+(y.netYieldPct!=null?'':'，未扣持有成本')+'）</div>';
+    var html='<div class="lvr"><b>💰 租金報酬率：</b>在租中位 '+y.rentUnit.toLocaleString()+' 元/坪/月（'+y.n+' 筆・約 '+y.rentSize+' 坪）÷ 同坪數實登 '+y.baseUnit+' 萬/坪 → '+yieldTxt
+      +'<br><b>持有策略：</b>2 年內轉售房地合一 45%，持滿 2 年降到 35%（價差每 100 萬省 10 萬稅）＋期間收租約 '+two+'%（兩年'+(y.netYieldPct!=null?'淨':'毛')+'租金'+(y.netYieldPct!=null?'':'，未扣持有成本')+'）';
+    // 真實持有現金流：月租 − 管理費 − 稅/12 − 房貸利息/12（只算利息不算本金），租金先扣空置
+    if(y.rentUnit&&y.rentSize&&y.baseUnit){
+      var h=holdGet();
+      var rentM=y.rentUnit*y.rentSize, price=y.baseUnit*y.rentSize*10000;
+      var rentY=rentM*(12-h.vac);
+      var mgmtY=(y.mgmtFee||c.mgmtFee||0)*y.rentSize*12;
+      var taxY=h.taxAmt!=null?h.taxAmt:rentM*12*h.taxPct/100;
+      var intY=price*h.ltv/100*h.rate/100;
+      var netY=rentY-mgmtY-taxY, netYield=+(netY/price*100).toFixed(2);
+      var cfM=Math.round((netY-intY)/12);
+      var cls=cfM>=0?"up":"down";
+      var tip="月租 "+Math.round(rentM).toLocaleString()+" 元 × "+(12-h.vac)+" 個月（空置 "+h.vac+" 月）＝ "+Math.round(rentY).toLocaleString()
+        +"；管理費 "+Math.round(mgmtY).toLocaleString()+"／年；稅 "+Math.round(taxY).toLocaleString()+"／年"+(h.taxAmt!=null?"（實際年繳）":"（年租 "+h.taxPct+"%）")
+        +"；房貸利息 "+Math.round(intY).toLocaleString()+"／年（房價 "+Math.round(price/10000).toLocaleString()+" 萬 × 成數 "+h.ltv+"% × 利率 "+h.rate+"%）；本金不算成本";
+      html+='<br><b>🏦 持有現金流：</b>淨年化 <b>'+netYield+'%</b>（扣管理費、稅、空置）・每月淨現金流 <b class="'+cls+'" title="'+esc(tip)+'" style="cursor:help;">'+(cfM>0?"+":"")+cfM.toLocaleString()+' 元</b>'
+        +'（含房貸利息 '+Math.round(intY/12).toLocaleString()+' 元/月，成數 '+h.ltv+'%・利率 '+h.rate+'%）'
+        +(cfM>=0?'，租金養得起利息':'，租金不夠付利息，每月倒貼 '+Math.abs(cfM).toLocaleString()+' 元')
+        +'<span class="cal">（假設在 ⚙️ 管理裡改）</span>';
+    }
+    return html+'</div>';
   }
   function matchBlock(c){
     var ms=c.lvrMatches||[];
@@ -900,20 +1141,21 @@ try{
   }
   // ---- 單一社區完整卡片（詳情頁用） ----
   function commCardEl(c){
-    (c.sale||[]).forEach(function(l){ l._prev=prevLvrFor(l,c); });
+    (c.sale||[]).forEach(function(l){ l._prev=prevLvrFor(l,c); LISTING_BY_ID[l.id]=l; });
     var card=document.createElement("div"); card.className="card";
-    var saleActive=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
-    var rentActive=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
+    var saleRaw=(c.sale||[]).filter(function(l){return l.status==="active";}).length;
+    var rentRaw=(c.rent||[]).filter(function(l){return l.status==="active";}).length;
+    var saleActive=activeCount(c.sale), rentActive=activeCount(c.rent);
     var html='<div class="comm-title"><h2>🏘 '+esc(c.name)+'</h2>'
       +'<span class="meta">'+esc(c.cityName)+esc(c.districtName)+' · 更新 '+(c.lastChecked||"—")+'</span></div>';
     html+=infoBlock(c);
     if(c.error)html+='<p class="msg err">⚠ 本輪掃描失敗：'+esc(c.error)+'（顯示上輪資料）</p>';
     // 政府實登單獨掛掉不算掃描失敗：591 上下架/降價與樂居行情都是新的，只有實登區塊是上輪快取
     else if(c.lvrStale)html+='<p class="msg">ℹ 政府實登本輪暫用快取（'+esc(c.lvrError||"查詢失敗")+'）；591 與樂居行情為最新</p>';
-    html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 筆在售）</p>'
+    html+='<div class="sect"><p class="sect-head">🏷 買賣（'+saleActive+' 戶在售'+(saleRaw!==saleActive?'，'+saleRaw+' 則刊登':'')+'）</p>'
       +listingTable(c.sale,"sale",c.id+":sale")
       +liquidityBlock(c)+lvrSaleBlock(c)+matchBlock(c)+'</div>';
-    html+='<div class="sect"><p class="sect-head">🔑 租賃（'+rentActive+' 筆在租）</p>'
+    html+='<div class="sect"><p class="sect-head">🔑 租賃（'+rentActive+' 戶在租'+(rentRaw!==rentActive?'，'+rentRaw+' 則刊登':'')+'）</p>'
       +listingTable(c.rent,"rent",c.id+":rent")
       +lvrBlock(c.lvrRent,"rent","租賃")+rentYieldBlock(c)+'</div>';
     card.innerHTML=html;
@@ -929,8 +1171,8 @@ try{
     var act=(c.sale||[]).filter(function(l){return l.status==="active";});
     var prems=act.map(function(l){return l.premiumPct;}).filter(function(p){return p!=null;});
     return {
-      saleActive:act.length,
-      rentActive:(c.rent||[]).filter(function(l){return l.status==="active";}).length,
+      saleActive:activeCount(c.sale), saleRaw:act.length,
+      rentActive:activeCount(c.rent),
       minPrem:prems.length?Math.min.apply(null,prems):null,
       bargain:prems.some(function(p){return p<=-15;}),
       ev7:EVENTS.filter(function(e){return e.community===c.name;}).length
@@ -961,7 +1203,7 @@ try{
         +'<div class="ov-main"><div class="ov-name">🏘 '+esc(c.name)+badges+'</div>'
         +'<div class="ov-meta">'+esc(c.cityName)+esc(c.districtName)+' · 掃描 '+esc(String(c.lastChecked||"—").slice(5,16))+'</div></div>'
         +'<div class="ov-stats">'
-        +'<span>在售<br><b>'+s.saleActive+'</b></span>'
+        +'<span title="同戶多家聯賣已合併'+(s.saleRaw!==s.saleActive?'（'+s.saleRaw+' 則刊登）':'')+'">在售<br><b>'+s.saleActive+'</b>'+(s.saleRaw!==s.saleActive?'<span class="cal">/'+s.saleRaw+'</span>':'')+'</span>'
         +'<span>在租<br><b>'+s.rentActive+'</b></span>'
         +'<span>最低vs行情<br>'+prem+'</span>'
         +'<span class="ov-opt">近3年實登<br><b>'+(c.lvrSaleCount||0)+'</b></span>'
@@ -977,11 +1219,12 @@ try{
     });
   }
   function setView(detail){
-    ["form-card","watchlist-card","events-h2","events-card","summary"].forEach(function(id){
+    ["events-h2","events-card","summary"].forEach(function(id){
       var e=$(id); if(e)e.classList.toggle("hidden",detail);
     });
     $("deal-card").classList.toggle("hidden",!detail);
     $("res-h2").textContent=detail?"🏘 社區詳情":"🎯 監控結果總覽";
+    document.querySelectorAll("#bnav [data-nav]").forEach(function(b){b.classList.toggle("on",b.getAttribute("data-nav")==="home"&&!detail);});
   }
   function renderResults(){
     var el=$("results");
@@ -993,9 +1236,14 @@ try{
     el.innerHTML="";
     if(!c){renderOverview(el);return;}
     // ---- 詳情 ----
-    var back=document.createElement("button"); back.className="back-btn"; back.textContent="← 返回總覽";
-    back.addEventListener("click",function(){location.hash="";});
-    el.appendChild(back);
+    // #10 頂端社區切換 chip（sticky）：不用回總覽就能在社區間橫向切換
+    var nav=document.createElement("div"); nav.className="comm-nav";
+    nav.innerHTML='<button class="home" data-cid="">← 總覽</button>'+COMMUNITIES.map(function(x){
+      return '<button data-cid="'+esc(x.id)+'"'+(x.id===c.id?' class="on"':'')+'>'+esc(x.name)+'</button>';}).join("");
+    nav.querySelectorAll("button").forEach(function(b){b.addEventListener("click",function(){
+      var id=b.getAttribute("data-cid"); location.hash=id?"c="+encodeURIComponent(id):"";});});
+    el.appendChild(nav);
+    var on=nav.querySelector(".on"); if(on)nav.scrollLeft=Math.max(0,on.offsetLeft-nav.clientWidth/2+on.offsetWidth/2);
     var evs=EVENTS.filter(function(e){return e.community===c.name;});
     if(evs.length){
       var evCard=document.createElement("div"); evCard.className="card";
@@ -1091,6 +1339,10 @@ try{
     applyTheme();
   }
 
+  // ---- #1 ⚙️ 管理抽屜 ----
+  function openDrawer(){ var d=$("drawer"),o=$("drawer-ov"); if(!d)return; o.classList.remove("hidden"); d.classList.add("open"); }
+  function closeDrawer(){ var d=$("drawer"),o=$("drawer-ov"); if(!d)return; o.classList.add("hidden"); d.classList.remove("open"); }
+
   // ---- 頂欄登入狀態 ----
   function userEmail(){
     var p=tokenPayload(); if(!p)return null;
@@ -1099,6 +1351,8 @@ try{
   function updateAuthUI(){
     var logged=tokenValid();
     var b=$("auth-btn"); if(b)b.textContent=logged?"登出":"登入";
+    var mb=$("mgmt-btn"); if(mb)mb.classList.toggle("hidden",!logged);
+    if(!logged)closeDrawer();
     var chip=$("user-chip");
     if(chip){var em=logged?userEmail():null;
       if(em){chip.textContent=em;chip.classList.remove("hidden");}else chip.classList.add("hidden");}
@@ -1188,10 +1442,55 @@ try{
     if(tokenValid()){refreshSession();showApp();}   // 已有長效 token：滾動續期
     else if(token())signOut(); // 過期 token 直接視同未登入，別讓表單帶著殭屍登入狀態
     updateAuthUI();
+    // #4 拖動只換獲利格；放開時若正按獲利排序才整頁重排
     $("deal-pct").addEventListener("input",function(){
       DEAL_PCT=parseInt(this.value,10)||100;
       $("deal-pct-v").textContent=DEAL_PCT+"%";
-      renderResults();
+      updateProfitCells();
+    });
+    $("deal-pct").addEventListener("change",function(){
+      var byProfit=Object.keys(sortState).some(function(k){return sortState[k]&&sortState[k].key==="profit";});
+      if(byProfit)renderResults();
+    });
+    // #11 持有成本假設
+    holdFill();
+    $("h-save").addEventListener("click",function(){holdSave(false);});
+    $("h-reset").addEventListener("click",function(){holdSave(true);});
+    // #1 管理抽屜
+    $("mgmt-btn").addEventListener("click",openDrawer);
+    $("drawer-close").addEventListener("click",closeDrawer);
+    $("drawer-ov").addEventListener("click",closeDrawer);
+    document.addEventListener("keydown",function(e){if(e.key==="Escape")closeDrawer();});
+    // #10 底部導航
+    document.querySelectorAll("#bnav [data-nav]").forEach(function(b){
+      b.addEventListener("click",function(){
+        var k=b.getAttribute("data-nav");
+        if(k==="home"){ if(location.hash)location.hash=""; else window.scrollTo({top:0,behavior:"smooth"}); }
+        else if(k==="events"){
+          if(location.hash){location.hash=""; setTimeout(function(){var h=$("events-h2");if(h)h.scrollIntoView({behavior:"smooth"});},60);}
+          else{var h=$("events-h2");if(h)h.scrollIntoView({behavior:"smooth"});}
+        }
+        else if(k==="mgmt")openDrawer();
+        else window.scrollTo({top:0,behavior:"smooth"});
+      });
+    });
+    // 結果區委派：聯賣展開、實登明細載入更多、手機卡片整卡開 591
+    $("results").addEventListener("click",function(e){
+      var t=e.target;
+      var gb=t.closest?t.closest(".grp-btn"):null;
+      if(gb){
+        e.preventDefault(); e.stopPropagation();
+        var id=gb.getAttribute("data-g"), open=gb.textContent.charAt(0)==="▾";
+        document.querySelectorAll('.grp-sub[data-g="'+id.replace(/"/g,'')+'"]').forEach(function(r){r.classList.toggle("show",!open);});
+        document.querySelectorAll('.grp-btn[data-g="'+id.replace(/"/g,'')+'"]').forEach(function(b){b.textContent=(open?"▸":"▾")+b.textContent.slice(1);});
+        return;
+      }
+      var lm=t.closest?t.closest(".lvr-more"):null;
+      if(lm){ e.preventDefault(); lvrLoadMore(lm); return; }
+      var card=t.closest?t.closest(".lc"):null;
+      if(card&&!(t.closest("button")||t.closest("a")||t.closest("select"))){
+        var u=card.getAttribute("data-url"); if(u)window.open(u,"_blank","noopener");
+      }
     });
     $("f-submit").addEventListener("click",submitForm);
     $("test-push").addEventListener("click",function(){
