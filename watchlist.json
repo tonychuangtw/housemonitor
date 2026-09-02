@@ -257,6 +257,20 @@
       "mgmtFee": null,
       "active": true,
       "added": 1788237606752
+    },
+    {
+      "id": "mtjms5mna4vd",
+      "name": "貝拉莫里",
+      "city": "E",
+      "cityName": "高雄市",
+      "district": "E09",
+      "districtName": "前鎮區",
+      "sizeMin": null,
+      "sizeMax": null,
+      "scanPerDay": 2,
+      "mgmtFee": null,
+      "active": true,
+      "added": 1788325420415
     }
   ]
 }
